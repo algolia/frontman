@@ -1,0 +1,9 @@
+Gemspec/RequiredRubyVersion:
+  Exclude:
+    - 'frontman-ssg.gemspec'
+
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+    - 'lib/frontman_ssg.rb'
