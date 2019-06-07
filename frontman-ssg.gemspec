@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
     'Maxime Locqueville', 'Sarah Dayan', 'Devin Beeuwkes'
   ]
   s.email                 = 'devin@algolia.com'
-  s.files                 = ['lib/frontman_ssg.rb']
+  s.files                 = ['lib/frontman.rb']
   s.homepage              = 'https://rubygems.org/gems/frontman-ssg'
   s.license               = 'MIT'
   s.required_ruby_version = '~> 2.6.0'

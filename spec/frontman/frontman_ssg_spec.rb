@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require './spec/spec_setup'
-require './lib/frontman_ssg'
+require './lib/frontman'
 
 describe Frontman do
   it 'should output Hello World' do
