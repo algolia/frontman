@@ -1,2 +1,4 @@
 *.gem
 /coverage
+Gemfile.lock
+spec/frontman/build

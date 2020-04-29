@@ -1,37 +1,52 @@
+# typed: true
 # frozen_string_literal: true
 
-require 'singleton'
+require 'sorbet-runtime'
 
 module Frontman
   class Config
-    include Singleton
+    class << self
+      extend T::Sig
 
-    def initialize
-      @config = {}
-    end
+      sig do
+        params(
+          key: T.any(String, Symbol), value: T.untyped
+        ).returns(T.self_type)
+      end
+      def set(key, value)
+        @@values ||= {}
+        @@values[key.to_sym] = value
+        self
+      end
 
-    def set(key, value)
-      @config[key.to_sym] = value
-    end
+      sig do
+        params(
+          key: T.any(String, Symbol), fallback: T.untyped
+        ).returns(T.untyped)
+      end
+      def get(key, fallback: nil)
+        @@values ||= {}
+        @@values.key?(key.to_sym) ? @@values[key.to_sym] : fallback
+      end
 
-    def has?(key)
-      @config.key?(key.to_sym)
-    end
+      sig { params(key: T.any(String, Symbol)).returns(T.self_type) }
+      def delete(key)
+        @@values ||= {}
+        @@values.delete(key)
+        self
+      end
 
-    def get(key, default = nil)
-      has?(key.to_sym) ? @config[key.to_sym] : default
-    end
+      sig { params(key: T.any(String, Symbol)).returns(T::Boolean) }
+      def has?(key)
+        @@values ||= {}
+        @@values.key?(key.to_sym)
+      end
 
-    def all
-      @config
-    end
-
-    def respond_to_missing?(method_name, _include_private = false)
-      has?(method_name.to_sym)
-    end
-
-    def method_missing(method_id, *arguments)
-      get(method_id.to_sym(*arguments))
+      sig { returns(Hash) }
+      def all
+        @@values ||= {}
+        @@values
+      end
     end
   end
 end

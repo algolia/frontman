@@ -6,4 +6,63 @@ Style/Documentation:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
-    - 'lib/frontman_ssg.rb'
+    - 'lib/**/*'
+
+Style/MethodMissingSuper:
+  Exclude:
+    - 'lib/**/*'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'lib/frontman/sitemap_tree.rb'
+    - 'lib/frontman/data_store.rb'
+    - 'lib/frontman/builder/builder.rb'
+    - 'lib/frontman/commands/**/*'
+    - 'lib/frontman/resource.rb'
+
+Metrics/AbcSize:
+  Exclude:
+    - 'lib/frontman/sitemap_tree.rb'
+    - 'lib/frontman/data_store.rb'
+    - 'lib/frontman/builder/statistics_collector.rb'
+    - 'lib/frontman/commands/**/*'
+    - 'lib/frontman/resource.rb'
+
+Style/ClassVars:
+  Exclude:
+    - 'lib/frontman/sitemap_tree.rb'
+    - 'lib/frontman/bootstrapper.rb'
+    - 'lib/frontman/config.rb'
+    - 'lib/frontman/resource.rb'
+    - 'lib/frontman/data_store_file.rb'
+
+Metrics/ClassLength:
+  Exclude:
+    - 'lib/frontman/sitemap_tree.rb'
+    - 'lib/frontman/resource.rb'
+    - 'lib/frontman/builder/builder.rb'
+
+Style/ConditionalAssignment:
+  Exclude:
+    - 'lib/frontman/builder/builder.rb'
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - 'lib/frontman/resource.rb'
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - 'lib/frontman/resource.rb'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - '*.gemspec'
+
+Metrics/LineLength:
+  Exclude:
+    - 'spec/**/*'
+
+Naming/FileName:
+  Exclude:
+    - 'spec/**/*'

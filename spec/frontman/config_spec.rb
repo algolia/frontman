@@ -1,43 +1,54 @@
+# typed: false
 # frozen_string_literal: true
 
 require './spec/spec_setup'
-require './lib/frontman/config'
+require 'frontman/config'
 
 describe Frontman::Config do
-  subject { Frontman::Config.instance }
-
-  it 'should hide the constructor for public use' do
-    expect { Frontman::Config.new }. to raise_error NoMethodError
+  before(:each) do
+    Frontman::Config.all.keys.each do |key|
+      Frontman::Config.delete(key)
+    end
   end
 
-  it 'should set configuration properly' do
-    subject.set 'foo', 'bar'
-    expect(subject.all.length).to eq 1
+  it 'should hold the correct value' do
+    Frontman::Config.set(:foo, 'bar')
+
+    expect(Frontman::Config.get('foo')).to eq 'bar'
   end
 
-  it 'should get configuration properly' do
-    subject.set 'foo', 'bar'
-    expect(subject.get('foo')).to eq 'bar'
+  it 'should not return the default if the set value is falsy' do
+    Frontman::Config.set(:foo, nil)
+
+    expect(Frontman::Config.get('foo', fallback: 'baz')).to eq nil
   end
 
-  it 'should return a default value if the provided key does not exist' do
-    subject.set 'foo', 'bar'
-    expect(subject.get('bar', 'default')).to eq 'default'
+  it 'should return the default value if the key is not set' do
+    expect(Frontman::Config.get('foo', fallback: 'baz')).to eq 'baz'
   end
 
-  it 'should return nil when assigned to a certain key' do
-    subject.set 'foo', nil
-    expect(subject.get('foo', 'default')).to eq nil
+  it 'should indicate whether the key exists' do
+    Frontman::Config.set(:foo, nil)
+
+    expect(Frontman::Config.has?('foo')).to eq true
+    expect(Frontman::Config.has?('bar')).to eq false
   end
 
-  it 'should respond to missing methods if the config key exists' do
-    subject.set 'foo', 'bar'
-    expect(subject.respond_to?('foo')).to eq true
-    expect(subject.respond_to?('bar')).to eq false
+  it 'should delete the config' do
+    expect(Frontman::Config.has?('foo')).to eq false
+    Frontman::Config.set(:foo, nil)
+    expect(Frontman::Config.has?('foo')).to eq true
+    Frontman::Config.delete(:foo)
+    expect(Frontman::Config.has?('foo')).to eq false
   end
 
-  it 'should forward missing method calls to get config values' do
-    subject.set 'foo', 'bar'
-    expect(subject.foo).to eq 'bar'
+  it 'should return all the config values' do
+    Frontman::Config.set(:foo, nil)
+    Frontman::Config.set('bar', 'baz')
+    expected = {
+      foo: nil,
+      bar: 'baz'
+    }
+    expect(Frontman::Config.all).to eq expected
   end
 end

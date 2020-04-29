@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'frontman/app'
+require 'frontman/bootstrapper'
+require 'frontman/cli'
+
+Frontman::Bootstrapper.bootstrap_app(Frontman::App.instance)
+Frontman::CLI.start

@@ -1,0 +1,670 @@
+batch_multiple_indices:
+  android: |
+    ```java
+    List<JSONObject> array = new ArrayList<>();
+    array.add(new JSONObject()
+      .put("action", "addObject")
+      .put("indexName", "index1")
+      .put("body", new JSONObject()
+        .put("firstname", "Jimmie")
+        .put("lastname", "Barninger")
+      )
+    );
+
+    array.add(new JSONObject()
+      .put("action", "updateObject")
+      .put("indexName", "index1")
+      .put("body", new JSONObject()
+        .put("objectID", "myID2")
+        .put("firstname", "Max")
+        .put("lastname", "Barninger")
+      )
+    );
+
+    array.add(new JSONObject()
+      .put("action", "partialUpdateObject")
+      .put("indexName", "index1")
+      .put("body", new JSONObject()
+        .put("objectID", "myID3")
+        .put("lastname", "McFarway")
+      )
+    );
+
+    array.add(new JSONObject()
+      .put("action", "partialUpdateObjectNoCreate")
+      .put("indexName", "index1")
+      .put("body", new JSONObject()
+        .put("objectID", "myID4")
+        .put("firstname", "Warren")
+      )
+    );
+
+    array.add(new JSONObject()
+      .put("action", "deleteObject")
+      .put("indexName", "index2")
+      .put("body", new JSONObject()
+        .put("objectID", "myID5")
+      )
+    );
+
+    client.batchAsync(new JSONArray(array), null);
+    ```
+
+  csharp: |
+    ```csharp
+      List<BatchOperation<Contact>> operations = new List<BatchOperation<Contact>>
+      {
+          new BatchOperation<Contact>
+          {
+            Action = BatchActionType.AddObject,
+            IndexName = "index1",
+            Body = new Contact { FirstName = "Jimmie", LastName = "Barninger" }
+          },
+          new BatchOperation<Contact>
+          {
+            Action = BatchActionType.UpdateObject,
+            IndexName = "index1",
+            Body = new Contact { ObjectID = "myID2", FirstName = "Max", LastName = "Barninger" }
+          },
+          new BatchOperation<Contact>
+          {
+            Action = BatchActionType.PartialUpdateObject,
+            IndexName = "index1",
+            Body = new Contact { ObjectID = "myID3", LastName = "McFarway" }
+          },
+          new BatchOperation<Contact>
+          {
+            Action = BatchActionType.PartialUpdateObjectNoCreate,
+            IndexName = "index1",
+            Body = new Contact { ObjectID = "myID4", LastName = "Warren" }
+          },
+          new BatchOperation<Contact>
+          {
+            Action = BatchActionType.DeleteObject,
+            IndexName = "index2",
+            Body = new Contact { ObjectID = "myID5" }
+          }
+      };
+
+    client.MultipleBatch(operations);
+
+    // Asynchronous
+    client.MultipleBatchAsync(operations);
+    ```
+
+  go: |
+    ```go
+    operations := []algoliasearch.BatchOperationIndexed{
+      {
+        IndexName: "index1",
+        BatchOperation: algoliasearch.BatchOperation{
+          Action: "addObject",
+          Body: algoliasearch.Map{
+            "firstname": "Jimmie",
+            "lastname":  "Barninger",
+          },
+        },
+      },
+      {
+        IndexName: "index1",
+        BatchOperation: algoliasearch.BatchOperation{
+          Action: "updateObject",
+          Body: algoliasearch.Map{
+            "objectID":  "myID2",
+            "firstname": "Max",
+            "lastname":  "Barninger",
+          },
+        },
+      },
+      {
+        IndexName: "index1",
+        BatchOperation: algoliasearch.BatchOperation{
+          Action: "partialUpdateObject",
+          Body: algoliasearch.Map{
+            "objectID": "myID3",
+            "lastname": "McFarway",
+          },
+        },
+      },
+      {
+        IndexName: "index1",
+        BatchOperation: algoliasearch.BatchOperation{
+          Action: "partialUpdateObjectNoCreate",
+          Body: algoliasearch.Map{
+            "objectID":  "myID4",
+            "firstname": "Warren",
+          },
+        },
+      },
+      {
+        IndexName: "index2",
+        BatchOperation: algoliasearch.BatchOperation{
+          Action: "deleteObject",
+          Body: algoliasearch.Map{
+            "objectID": "myID5",
+          },
+        },
+      },
+    }
+
+    res, err := client.Batch(operations)
+    ```
+
+  java: |
+    ```java
+    // Sync and Async version
+
+    client.batch(Arrays.asList(
+      new BatchAddObjectOperation<>(
+        "index1",
+        new Contact().setFirstName("Jimmie").setLastName("Barninger")
+      ),
+      new BatchUpdateObjectOperation<>(
+        "index1",
+        new Contact().setObjectID("myID2").setFirstName("Max").setLastName("Barninger")
+      ),
+      new BatchPartialUpdateObjectOperation<>(
+        "index1",
+        new Contact().setObjectID("myID3").setLastName("McFarway")
+      ),
+      new BatchPartialUpdateObjectNoCreateOperation<>(
+        "index1",
+        new Contact().setObjectID("myID4").setFirstName("Warren")
+      ),
+      new BatchDeleteObjectOperation(
+        "index2",
+        "myID5"
+      )
+    ));
+    ```
+
+  javascript: |
+    ```js
+    client.batch([
+      {
+        action: 'addObject',
+        indexName: 'index1',
+        body: {
+          firstname: 'Jimmie',
+          lastname: 'Barninger'
+        }
+      },
+      {
+        action: 'updateObject',
+        indexName: 'index1',
+        body: {
+          objectID: 'myID2',
+          firstname: 'Max',
+          lastname: 'Barninger'
+        }
+      },
+      {
+        action: 'partialUpdateObject',
+        indexName: 'index1',
+        body: {
+          objectID: 'myID3',
+          lastname: 'McFarway'
+        }
+      },
+      {
+        action: 'partialUpdateObjectNoCreate',
+        indexName: 'index1',
+        body: {
+          objectID: 'myID4',
+          firstname: 'Warren'
+        }
+      },
+      {
+        action: 'deleteObject',
+        indexName: 'index2',
+        body: {
+          objectID: 'myID5'
+        }
+      }
+    ], function(err, content) {
+      if (err) throw err;
+
+      console.log(content);
+    })
+    ```
+
+  php: |
+    ```php
+    $res = $client->multipleBatch(
+      [
+        [
+          'action'    => 'addObject',
+          'indexName' => 'index1',
+          'body'      => [
+            'firstname' => 'Jimmie',
+            'lastname'  => 'Barninger'
+          ]
+        ],
+        [
+          'action'    => 'updateObject',
+          'indexName' => 'index1',
+          'body'      => [
+            'objectID' => 'myID2',
+            'firstname' => 'Max',
+            'lastname'  => 'Barninger'
+          ]
+        ],
+        [
+          'action'    => 'partialUpdateObject',
+          'indexName' => 'index1',
+          'body'      => [
+            'objectID'  => 'myID3',
+            'lastname'  => 'McFarway'
+          ]
+        ],
+        [
+          'action'    => 'partialUpdateObjectNoCreate',
+          'indexName' => 'index1',
+          'body'      => [
+            'objectID'  => 'myID4',
+            'firstname' => 'Warren'
+          ]
+        ],
+        [
+          'action'    => 'deleteObject',
+          'indexName' => 'index2',
+          'body'      => [
+            'objectID'  => 'myID5'
+          ]
+        ]
+      ]
+    );
+    ```
+
+  python: |
+    ```python
+    res = client.multiple_batch([
+        {
+            'action': 'addObject',
+            'indexName': 'index1',
+            'body': {
+                'firstname': 'Jimmie',
+                'lastname': 'Barninger'
+            }
+        },
+        {
+            'action': 'updateObject',
+            'indexName': 'index1',
+            'body': {
+                'objectID': 'myID2',
+                'firstname': 'Max',
+                'lastname': 'Barninger'
+            }
+        },
+        {
+            'action': 'partialUpdateObject',
+            'indexName': 'index1',
+            'body': {
+                'objectID': 'myID3',
+                'lastname': 'McFarway'
+            }
+        },
+        {
+            'action': 'partialUpdateObjectNoCreate',
+            'indexName': 'index1',
+            'body': {
+                'objectID': 'myID4',
+                'firstname': 'Warren'
+            }
+        },
+        {
+            'action': 'deleteObject',
+            'indexName': 'index2',
+            'body': {
+                'objectID': 'myID5'
+            }
+        }
+    ])
+    ```
+
+  ruby: |
+    ```ruby
+    res = client.batch([
+      {
+        'action': 'addObject',
+        'indexName': 'index1',
+        'body': {
+          'firstname': 'Jimmie',
+          'lastname': 'Barninger'
+        }
+      },
+      {
+        'action': 'updateObject',
+        'indexName': 'index1',
+        'body': {
+          'objectID': 'myID2',
+          'firstname': 'Max',
+          'lastname': 'Barninger'
+        }
+      }
+      {
+        'action': 'partialUpdateObject',
+        'indexName': 'index1',
+        'body': {
+          'objectID': 'myID3',
+          'lastname': 'McFarway'
+        }
+      }
+      {
+        'action': 'partialUpdateObjectNoCreate',
+        'indexName': 'index1',
+        'body': {
+          'objectID': 'myID4',
+          'firstname': 'Warren'
+        }
+      }
+      {
+        'action': 'deleteObject',
+        'indexName': 'index2',
+        'body': {
+          'objectID': 'myID5'
+        }
+      }
+    ])
+    ```
+
+  scala: |
+    ```scala
+    client.execute {
+      batch(
+        index into "index1" `object` Contact("", "Jimmie", "Barninger"),
+        index into "index1" `object` ContactWithObjectID("myID2", "Max", "Barninger"),
+        partialUpdate from "index1" `object` ContactWithObjectID("myID3", "", "McFarway"),
+        partialUpdate from "index1" `object` ContactWithObjectID("myID4", "Warren", "") createIfNotExists false,
+        delete from "index2" objectId "myID5"
+      )
+    }
+    ```
+
+  swift: |
+    ```swift
+    let operations: [JSONObject] = [
+      [
+        "action": "addObject",
+        "indexName": "index1",
+        "body": [
+          "firstname": "Jimmie",
+          "lastname": "Barninger"
+        ]
+      ],
+      [
+        "action": "updateObject",
+        "indexName": "index1",
+        "body": [
+          "objectID": "myID2",
+          "firstname": "Max",
+          "lastname": "Barninger"
+        ]
+      ],
+      [
+        "action": "partialUpdateObject",
+        "indexName": "index1",
+        "body": [
+          "objectID": "myID3",
+          "lastname": "McFarway"
+        ]
+      ],
+      [
+        "action": "partialUpdateObjectNoCreate",
+        "indexName": "index1",
+        "body": [
+          "objectID": "myID4",
+          "firstname": "Warren"
+        ]
+      ],
+      [
+        "action": "deleteObject",
+        "indexName": "index2",
+        "body": [
+          "objectID": "myID5"
+        ]
+      ]
+    ]
+
+    client.batch(operations: operations) {
+      (content, error) in
+      // Handle response
+    }
+    ```
+
+batch_multiple_indices_with_extra_headers:
+  android: |
+    ```java
+    List<JSONObject> array = new ArrayList<>();
+
+    array.add(new JSONObject()
+      .put("action", "addObject")
+      .put("indexName", "index1")
+      .put("body", new JSONObject()
+        .put("firstname", "Jimmie")
+        .put("lastname", "Barninger")
+      )
+    );
+
+    array.add(new JSONObject()
+      .put("action", "addObject")
+      .put("indexName", "index2")
+      .put("body", new JSONObject()
+          .put("firstname", "Warren")
+          .put("lastname", "Speach")
+      )
+    );
+
+    client.batchAsync(
+      new JSONArray(array),
+      new RequestOptions().setHeader("X-Algolia-User-ID", "94.228.178.246"),
+      null
+    );
+    ```
+  csharp: |
+    ```csharp
+    RequestOptions requestOptions = new RequestOptions
+    {
+        Headers = new Dictionary<string,string>{ { "X-Algolia-User-ID", "user123" } }
+    };
+
+      List<BatchOperation<Contact>> operations = new List<BatchOperation<Contact>>
+      {
+          new BatchOperation<Contact>
+          {
+            Action = BatchActionType.AddObject,
+            IndexName = "index1",
+            Body = new Contact { FirstName = "Jimmie", LastName = "Barninger" }
+          },
+          new BatchOperation<Contact>
+          {
+            Action = BatchActionType.AddObject,
+            IndexName = "index1",
+            Body = new Contact { FirstName = "Warren", LastName = "Speach" }
+          }
+      };
+
+    client.MultipleBatch(operations, requestOptions);
+
+    // Asynchronous
+    client.MultipleBatchAsync(operations, requestOptions);
+    ```
+  go: |
+    ```go
+    person := algoliasearch.Map{
+      "firstname": "Jimmie",
+      "lastname":  "Barninger",
+    }
+
+    operation := algoliasearch.BatchOperation{
+      Action: "addObject",
+      Body:   person,
+    }
+
+    operations := []algoliasearch.BatchOperationIndexed{
+      {IndexName: "prodIndex", BatchOperation: operation},
+      {IndexName: "devIndex", BatchOperation: operation},
+    }
+
+    opts := &algoliasearch.RequestOptions{
+      ExtraHeaders: map[string]string{
+        "X-Algolia-User-ID": "userID2",
+      },
+    }
+
+    res, err := client.BatchWithRequestOptions(operations, opts)
+    ```
+
+  java: |
+    ```java
+    // Sync and Async version
+
+    client.batch(
+      Arrays.asList(
+        new BatchAddObjectOperation<>(
+          "index1",
+          new Contact().setFirstName("Jimmie").setLastName("Barninger")
+        ),
+        new BatchAddObjectOperation<>(
+          "index2",
+          new Contact().setFirstName("Warren").setLastName("Speach")
+        )
+      ),
+      new RequestOptions().addExtraHeader("X-Algolia-User-ID", "user123")
+    );
+    ```
+
+  javascript: |
+    ```js
+    client.setExtraHeader('X-FORWARDED-FOR', '94.228.178.246');
+    client.batch([
+      {
+        action: 'addObject',
+        indexName: 'index1',
+        body:
+        {
+          firstname: 'Jimmie',
+          lastname: 'Barninger'
+        }
+      },
+      {
+        action: 'addObject',
+        indexName: 'index2',
+        body: {
+          firstname: 'Warren',
+          lastname: 'Speach'
+        }
+      }
+    ], function(err, content) {
+      if (err) throw err;
+
+      console.log(content);
+    })
+    ```
+  php: |
+    ```php
+    $operations = [
+      [
+        'action' => 'addObject',
+        'indexName' => 'index1',
+        'body' => [
+          'firstname' => 'Jimmie',
+          'lastname' => 'Barninger'
+        ]
+      ],
+      [
+        'action' => 'addObject',
+        'indexName' => 'index2',
+        'body' => [
+          'firstname' => 'Warren',
+          'lastname' => 'Speach'
+        ]
+      ]
+    ];
+
+    $res = $client->multipleBatch($operations, [
+      'X-FORWARDED-FOR' => '94.228.178.246'
+    ]);
+    ```
+  python: |
+    ```python
+    res = client.multiple_batch(
+        [
+            {
+                'action': 'addObject',
+                'indexName': 'index1',
+                'body': {'firstname': 'Jimmie', 'lastname': 'Barninger'}
+            },
+            {
+                'action': 'addObject',
+                'indexName': 'index2',
+                'body': {'firstname': 'Warren', 'lastname': 'Speach'}
+            }
+        ],
+        {
+            'X-FORWARDED-FOR': '94.228.178.246'
+        }
+    )
+    ```
+  ruby: |
+    ```ruby
+    operations = [
+     {
+       'action': 'addObject',
+       'indexName': 'index1',
+       'body': {'firstname': 'Jimmie', 'lastname': 'Barninger'}
+     },
+     {
+       'action': 'addObject',
+       'indexName': 'index2',
+       'body': {'firstname': 'Warren', 'lastname': 'Speach'}
+     }
+    ]
+
+    extra_headers = {
+      'X-FORWARDED-FOR': '94.228.178.246'
+    }
+
+    res = client.batch(operations, extra_headers)
+    ```
+  scala: |
+    ```scala
+    client.execute {
+      batch(
+        index into "index1" `object` Contact("Jimmie", "Barninger"),
+        index into "index2" `object` Contact("Warren", "Speach")
+      ) options RequestOptions(extraHeaders = Some(
+        Map("X-Algolia-User-ID" => "user123"))
+      )
+    }
+    ```
+
+  swift: |
+    ```swift
+    let operations: [JSONObject] = [
+      [
+        "action": "addObject",
+        "indexName": "index1",
+        "body": [
+          "firstname": "Jimmie",
+          "lastname": "Barninger"
+        ]
+      ],
+      [
+        "action": "addObject",
+        "indexName": "index2",
+        "body": [
+          "firstname": "Warren",
+          "lastname": "Speach"
+        ]
+      ]
+    ]
+
+    let requestOptions = RequestOptions()
+    requestOptions.headers["X-Algolia-User-ID"] = "user123"
+
+    client.batch(operations: operations, requestOptions: requestOptions) {
+      (content, error) in
+      // Handle response
+    }
+    ```
