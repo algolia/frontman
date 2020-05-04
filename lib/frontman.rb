@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'frontman/app'
-require 'frontman/core_ext'
 require 'frontman/context'
 require 'frontman/config'
 require 'frontman/custom_struct'

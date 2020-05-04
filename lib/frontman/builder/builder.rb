@@ -1,27 +1,37 @@
+# typed: true
 # frozen_string_literal: true
 
-# typed: true
 require 'frontman/builder/file'
 require 'frontman/concerns/dispatch_events'
 require 'frontman/iterator'
+require 'sorbet-runtime'
 
 module Frontman
   module Builder
     class Builder
+      extend T::Sig
       include Frontman::DispatchEvents
 
       attr_accessor :build_directory, :current_build_files
 
+      sig { void }
       def initialize
         @emit_events = true
         @build_directory = Dir.pwd + '/build/'
         @current_build_files = []
       end
 
+      sig do
+        params(resource: Frontman::Resource).returns(Frontman::Builder::File)
+      end
       def build_resource(resource)
         build_from_content(create_path_from_resource(resource), resource.render)
       end
 
+      sig do
+        params(resources: T::Array[Frontman::Resource])
+          .returns(T::Array[String])
+      end
       def build_from_resources(resources)
         # Disable emitting of events, this causes problems when done in parallel
         @emit_events = false
@@ -38,6 +48,9 @@ module Frontman
         end
       end
 
+      sig do
+        params(assets_to_build: T::Array[String]).returns(T::Array[String])
+      end
       def build_assets(assets_to_build)
         # We need to go through ERB files at the end so assets_manifest filled
         assets_to_build.sort_by! { |f| f.end_with?('.erb') ? 1 : 0 }
@@ -58,6 +71,10 @@ module Frontman
         end
       end
 
+      sig do
+        params(path: String, manifest_path: String)
+          .returns(Frontman::Builder::File)
+      end
       def build_from_asset(path, manifest_path)
         path_with_digest = add_asset_to_manifest(manifest_path, path)
         target_path = create_target_path(path_with_digest)
@@ -65,11 +82,16 @@ module Frontman
         build_from_content(target_path, ::File.read(path))
       end
 
+      sig do
+        params(path: String, manifest_path: String)
+          .returns(Frontman::Builder::File)
+      end
       def build_from_erb(path, manifest_path)
         path_with_digest = add_asset_to_manifest(manifest_path, path)
         build_resource(Resource.from_path(path, path_with_digest))
       end
 
+      sig { returns(T::Array[Frontman::Builder::File]) }
       def build_redirects
         Frontman::App.instance.redirects.map do |from, to|
           build_file = build_redirect(from, to)
@@ -77,6 +99,7 @@ module Frontman
         end
       end
 
+      sig { params(files_to_delete: T::Array[String]).void }
       def delete_files(files_to_delete)
         files_to_delete.each do |path|
           delete_from_path(path)
@@ -85,6 +108,10 @@ module Frontman
 
       private
 
+      sig do
+        params(destination_path: String, redirect_to: String)
+          .returns(Frontman::Builder::File)
+      end
       def build_redirect(destination_path, redirect_to)
         content = <<~REDIRECT
           <!DOCTYPE html>
@@ -98,24 +125,35 @@ module Frontman
         build_from_content(create_target_path(destination_path), content)
       end
 
+      sig do
+        params(build_file: Frontman::Builder::File)
+          .returns(Frontman::Builder::File)
+      end
       def fire_build_event(build_file)
         emit(build_file.status, build_file) if @emit_events
         build_file
       end
 
+      sig { params(path: String).returns(Frontman::Builder::File) }
       def delete_from_path(path)
         FileUtils.rm_f(path)
         fire_build_event(File.deleted(path))
       end
 
+      sig { params(file_path: String, content: String).returns(T::Boolean) }
       def content_changed?(file_path, content)
         ::File.read(file_path) != content
       end
 
+      sig { params(file_path: String).returns(T::Boolean) }
       def exists_in_current_build?(file_path)
         current_build_files.include?(file_path)
       end
 
+      sig do
+        params(file_path: String, content: String)
+          .returns(Frontman::Builder::File)
+      end
       def build_from_content(file_path, content)
         file_exists = exists_in_current_build?(file_path)
 
@@ -130,22 +168,30 @@ module Frontman
         )
       end
 
+      sig { params(destination_path: String).returns(String) }
       def create_target_path(destination_path)
-        dir = destination_path.split('/')[0..-2].join('/')
+        # dir = destination_path.split('/')[0..-2].join('/')
+        dir = ::File.dirname(destination_path)
         destination = build_directory + dir
         FileUtils.mkdir_p(destination)
 
         build_directory + destination_path.sub(%r{^/}, '')
       end
 
+      sig { params(resource: Frontman::Resource).returns(String) }
       def create_path_from_resource(resource)
         create_target_path(resource.destination_path)
       end
 
+      sig { params(path: String).returns(String) }
       def digest(path)
         ::Digest::SHA1.file(path).hexdigest[0..7]
       end
 
+      sig do
+        params(manifest_path: String, file_path: String)
+          .returns(String)
+      end
       def add_asset_to_manifest(manifest_path, file_path)
         path_with_digest = manifest_path.sub(/\.(\w+)$/) do |ext|
           "-#{digest(file_path)}#{ext}"

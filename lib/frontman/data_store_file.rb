@@ -2,13 +2,23 @@
 # frozen_string_literal: false
 
 require 'pathname'
+require 'sorbet-runtime'
 require 'yaml'
 
 module Frontman
   class DataStoreFile
+    extend T::Sig
     attr_accessor :path, :file_name, :base_file_name, :parent,
                   :position, :data
 
+    sig do
+      params(
+        path: String,
+        file_name: String,
+        base_file_name: String,
+        parent: DataStore
+      ).void
+    end
     def initialize(path, file_name, base_file_name, parent)
       @path = path
       @file_name = file_name
@@ -29,10 +39,12 @@ module Frontman
       @data.respond_to? method_id
     end
 
+    sig { returns(String) }
     def current_path
       @path
     end
 
+    sig { void }
     def refresh
       return unless @parent.auto_reload_files
 
@@ -40,6 +52,7 @@ module Frontman
       @data = data.to_ostruct
     end
 
+    sig { returns(String) }
     def to_s
       "<DataStoreFile #{@data.keys.join(', ')} >"
     end

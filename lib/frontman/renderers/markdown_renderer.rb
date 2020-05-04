@@ -1,4 +1,5 @@
-# frozen_string_literal: false
+# typed: false
+# frozen_string_literal: true
 
 require 'kramdown'
 require 'frontman/renderers/renderer'

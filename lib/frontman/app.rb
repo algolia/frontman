@@ -1,18 +1,21 @@
 # typed: true
 # frozen_string_literal: false
 
-require 'singleton'
-require 'htmlentities'
 require 'frontman/sitemap_tree'
 require 'frontman/data_store'
+require 'htmlentities'
+require 'singleton'
+require 'sorbet-runtime'
 
 module Frontman
   class App
+    extend T::Sig
     include Singleton
 
     attr_accessor :current_page, :current_tree, :view_data
     attr_reader :layouts, :ignores, :redirects, :assets_manifest, :commands
 
+    sig { void }
     def initialize
       @current_page = nil
       @current_tree = nil
@@ -24,48 +27,46 @@ module Frontman
       @assets_manifest = {}
     end
 
+    sig { returns(Frontman::SitemapTree) }
     def sitemap_tree
       @sitemap_tree ||= Frontman::SitemapTree.new(nil)
     end
 
+    sig { returns(Frontman::DataStore) }
     def app_data
       @app_data ||= Frontman::DataStore.new
     end
 
+    sig { returns(T.self_type) }
     def app
       self
     end
 
+    sig { params(config: String).void }
     def run(config)
       instance_eval config
     end
 
+    sig { params(glob: String, layout_name: String).void }
     def register_layout(glob, layout_name)
       layout = glob, layout_name
       @layouts.push(layout)
     end
 
+    sig { params(helpers: T::Array[T::Hash[Symbol, String]]).void }
     def register_helpers(helpers)
       helpers.each do |helper|
-        require helper[:path]
-        singleton_class.send(:include, Object.const_get(helper[:name].to_sym))
+        require T.must(helper[:path])
+        singleton_class.send(:include, Object.const_get(T.must(helper[:name]).to_sym))
       end
     end
 
-    def register_commands(commands)
-      commands.each do |command|
-        @commands[File.basename(command, '.rb').to_sym] = command
-      end
-    end
-
-    def get_command(command)
-      @commands[command.to_sym]
-    end
-
+    sig { params(from: String, to: String).returns(String) }
     def add_redirect(from, to)
       @redirects[from] = to
     end
 
+    sig { params(key: String, value: String).returns(String) }
     def add_to_manifest(key, value)
       @assets_manifest[key] = '/' + value.sub(%r{^/}, '')
     end
@@ -90,6 +91,7 @@ module Frontman
     end
 
     # TODO: move this to helper
+    sig { params(str: String, salt: String).returns(String) }
     def generate_id(str, salt = '')
       id = slugify(str)
 
@@ -99,13 +101,15 @@ module Frontman
       @ids[salt.to_s + id] == 1 ? id : "#{id}-#{@ids[salt.to_s + id]}"
     end
 
+    sig { void }
     def reset_ids_generation
       @ids = {}
     end
 
+    sig { params(string: String).returns(String) }
     def slugify(string)
       HTMLEntities.new
-                  .decode(string || '')
+                  .decode(string)
                   .gsub(%r{</?[^>]*>}, '')
                   .gsub(/\s/, '-')
                   .gsub(%r{[\[\]()/",`'&<>\.*]}, '')
@@ -116,12 +120,14 @@ module Frontman
 
     private
 
+    sig { params(key: T.any(String, Symbol)).returns(T.untyped) }
     def get_from_current_page(key)
       return unless current_page && current_page.data.respond_to?(key)
 
       current_page.data[key]
     end
 
+    sig { params(key: T.any(String, Symbol)).returns(T.untyped) }
     def get_from_view_data(key)
       return if @view_data.empty? || @view_data.last.nil?
 

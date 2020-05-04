@@ -1,59 +1,65 @@
+# typed: true
 # frozen_string_literal: true
 
-# typed: true
-
-require 'yaml/front-matter'
 require 'frontman/renderers/renderer_resolver'
 require 'frontman/custom_struct'
 require 'frontman/context'
 require 'frontman/app'
 require 'frontman/sitemap_tree'
+require 'sorbet-runtime'
+require 'yaml/front-matter'
 
 module Frontman
   class Resource
+    extend T::Sig
+
     attr_reader :dir, :file, :extension
     attr_accessor :destination_path, :data, :renderers, :compiled, :file_path
 
-    def self.from_path(file_path, destination_path = nil, is_page = true)
-      destination_path ||= file_path
-      file_path = file_path.gsub(%r{^/}, '')
-      destination_path = destination_path.gsub(%r{^/}, '')
-                                         .gsub(%r{/[0-9]+?-}, '/')
-                                         .delete_prefix('source/')
+    class << self
+      extend T::Sig
 
-      # We cache the newly created resource so we avoid loosing the cache
-      # if from_path is called again with the same file
-      # This is especially important for perfs in case of layouts and templates
-      @@resources ||= {}
-      @@resources[destination_path] ||= new(
-        file_path, destination_path, is_page
-      )
+      sig { returns(T::Hash[String, Resource]) }
+      def resources
+        @@resources || {}
+      end
+
+      sig do
+        params(
+          file_path: String,
+          destination_path: T.nilable(String),
+          is_page: T::Boolean
+        ).returns(Resource)
+      end
+      def from_path(file_path, destination_path = nil, is_page = true)
+        destination_path ||= file_path
+        file_path = file_path.gsub(%r{^/}, '')
+        destination_path = destination_path.gsub(%r{^/}, '')
+                                           .gsub(%r{/[0-9]+?-}, '/')
+                                           .delete_prefix('source/')
+
+        # We cache the newly created resource so we avoid loosing the cache
+        # if from_path is called again with the same file
+        # This is especially important for perfs in case of layouts and templates
+        @@resources ||= {}
+        @@resources[destination_path] ||= new(
+          file_path, destination_path, is_page
+        )
+      end
     end
 
-    def self.resources
-      @@resources ||= {}
-    end
-
+    sig { params(path: String).returns(Array) }
     def strip_extensions(path)
       split = path.split('/')
-      without_extension = split.last.split('.')[0]
+      without_extension = T.must(split.last).split('.')[0]
       path_without_extensions = split.first(split.length - 1)
-                                     .append(without_extension)
+                                     .append(T.must(without_extension))
                                      .join('/')
-      extensions = split.last.split('.')[1..-1]
+      extensions = T.must(split.last).split('.')[1..-1]
       [path_without_extensions, extensions]
     end
 
-    def setup_extension_renderers
-      @file_path_without_extension, rendering_extensions = strip_extensions(
-        @file_path
-      )
-      rendering_extensions.reverse!
-      @renderers = rendering_extensions.map do |ext|
-        Frontman::RendererResolver.instance.get_renderer(ext)
-      end.compact
-    end
-
+    sig { void }
     def setup_destination
       destination_without_extension, dest_file_extensions = strip_extensions(
         @destination_path
@@ -68,6 +74,7 @@ module Frontman
       end
     end
 
+    sig { void }
     def parse_snippet_file
       # TODO: this is docs specific...
       snippet_file = @file_path_without_extension + '.yml'
@@ -81,6 +88,11 @@ module Frontman
       @data[:guide_snippet] = snippet_data
     end
 
+    sig do
+      params(
+        parse_parent: T::Boolean, data: T.any(NilClass, Hash, CustomStruct, OpenStruct)
+      ).void
+    end
     def parse_resource(parse_parent = false, data = nil)
       @rendered_content = nil
 
@@ -119,6 +131,12 @@ module Frontman
       parse_snippet_file if @is_page
     end
 
+    sig do
+      params(
+        content_for_layout: T.nilable(String),
+        extra_data: T.any(Hash, CustomStruct)
+      ).returns(String)
+    end
     def render(content_for_layout = nil, extra_data = {})
       view_data = data.to_h.merge(extra_data).to_ostruct
       layout_path = layout
@@ -184,6 +202,7 @@ module Frontman
       content
     end
 
+    sig { returns(T.nilable(String)) }
     def layout
       return nil unless @is_page
 
@@ -194,45 +213,35 @@ module Frontman
       nil
     end
 
+    sig { returns(Hash) }
     def content_blocks
       @content_blocks ||= {}
     end
 
+    sig { returns(Time) }
     def mtime
       @mtime ||= File.mtime(@file_path)
     end
 
+    sig { returns(String) }
     def inspect
       "Resource: #{@file_path}"
     end
 
+    sig { returns(T::Boolean) }
     def indexable?
       data.key?(:indexable) ? data[:indexable] : true
     end
 
-    def generate_pages_for_languages?
-      return false if data[:language]
-
-      !languages.empty? && !destination_path.include?('/api-client/methods/')
-    end
-
-    def languages
-      data[:languages] || []
-    end
-
-    def destination_path_for_language(lang)
-      target = destination_path
-      path = if target.end_with?('index.html')
-               target.gsub(%r{/index\.html}, "/#{lang}/index.html")
-             else
-               target.gsub(/(.+?)\.(.+?)/, "\\1/#{lang}.\\2")
-             end
-
-      "/#{path}"
-    end
-
     private
 
+    sig do
+      params(
+        file_path: String,
+        destination_path: String,
+        is_page: T::Boolean
+      ).void
+    end
     def initialize(file_path, destination_path, is_page)
       raise "File does not exists: #{file_path}" unless File.exist?(file_path)
 
@@ -244,6 +253,17 @@ module Frontman
       setup_destination
 
       parse_resource
+    end
+
+    sig { void }
+    def setup_extension_renderers
+      @file_path_without_extension, rendering_extensions = strip_extensions(
+        @file_path
+      )
+      rendering_extensions.reverse!
+      @renderers = rendering_extensions.map do |ext|
+        Frontman::RendererResolver.instance.get_renderer(ext)
+      end.compact
     end
   end
 end

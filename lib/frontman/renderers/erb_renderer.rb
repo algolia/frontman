@@ -1,7 +1,7 @@
-# frozen_string_literal: false
+# typed: false
+# frozen_string_literal: true
 
 require 'erubis'
-require 'singleton'
 require 'frontman/renderers/renderer'
 
 module Frontman

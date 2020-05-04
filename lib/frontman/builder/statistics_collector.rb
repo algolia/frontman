@@ -17,7 +17,7 @@ module Frontman
           mapping: Frontman::Builder::Mapping,
           timer: Frontman::Toolbox::Timer,
           new_files: T::Array[String]
-        ).returns(T.self_type)
+        ).void
       end
       def self.output(builder, mapping, timer, new_files = [])
         puts JSON.pretty_generate(mapping.all)
@@ -26,7 +26,7 @@ module Frontman
         puts "Current build size  : #{new_files.size} files"
 
         %i[updated created deleted unchanged].each do |status|
-          puts "#{status}    : #{mapping.all[status].length} files"
+          puts "#{status}    : #{Array(mapping.all[status]).length} files"
         end
 
         timer.stop

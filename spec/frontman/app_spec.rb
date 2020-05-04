@@ -1,4 +1,4 @@
-# typed: true
+# typed: false
 # frozen_string_literal: true
 
 require './spec/spec_setup'
@@ -21,19 +21,6 @@ describe Frontman::App do
           ]
         )
       end.to raise_error LoadError
-    end
-  end
-
-  context 'Commands' do
-    it 'should register commands correctly' do
-      subject.register_commands(['foo.rb'])
-      expect(subject.commands.size).to eq 1
-    end
-
-    it 'should retrieve commands correctly' do
-      expect(subject.get_command('bar')).to eq nil
-      subject.register_commands(['bar.rb'])
-      expect(subject.get_command('bar')).to eq 'bar.rb'
     end
   end
 

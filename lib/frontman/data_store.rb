@@ -3,12 +3,22 @@
 
 require 'pathname'
 require 'frontman/data_store_file'
+require 'sorbet-runtime'
 
 module Frontman
   class DataStore
+    extend T::Sig
+
     attr_reader :base_file_name, :current_path, :parent
     attr_accessor :auto_reload_files
 
+    sig do
+      params(
+        current_path: T.nilable(String),
+        base_file_name: T.nilable(String),
+        parent: T.nilable(DataStore)
+      ).void
+    end
     def initialize(current_path = nil, base_file_name = nil, parent = nil)
       @current_path = current_path.nil? ? Dir.pwd + '/app_data' : current_path
       @cache = {}
@@ -19,6 +29,7 @@ module Frontman
       load_files
     end
 
+    sig { returns(Array) }
     def flatten
       elements = []
 
@@ -62,12 +73,14 @@ module Frontman
       @cache.key?(method_name.to_s) || @cache.respond_to?(method_name)
     end
 
+    sig { returns(String) }
     def to_s
       "<DataStore #{@cache.keys.join(', ')} >"
     end
 
     private
 
+    sig { void }
     def load_files
       Dir.entries(@current_path).sort.each do |file|
         next if (file == '.') || (file == '..')

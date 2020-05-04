@@ -1,4 +1,4 @@
-# typed: true
+# typed: false
 # frozen_string_literal: true
 
 require './spec/spec_setup'
@@ -117,26 +117,6 @@ describe Frontman::Resource do
     end
   end
 
-  context 'Setup Extension Renderers' do
-    it 'should find the correct renderers for known extensions' do
-      subject.file_path = 'path/to/file.html.md.erb'
-      subject.setup_extension_renderers
-      expect(subject.renderers).to eq [Frontman::ErbRenderer.instance, Frontman::MarkdownRenderer.instance]
-    end
-
-    it 'should find no renderers for unknown extensions' do
-      subject.file_path = 'path/to/file.foo.bar'
-      subject.setup_extension_renderers
-      expect(subject.renderers.length).to eq 0
-    end
-
-    it 'should find no renderers when the path has no extensions' do
-      subject.file_path = 'path/to.path/file'
-      subject.setup_extension_renderers
-      expect(subject.renderers.length).to eq 0
-    end
-  end
-
   context 'Setup Destination' do
     it 'should set the right destination extension' do
       subject.destination_path = 'path/to/file.html.md.erb'
@@ -166,38 +146,6 @@ describe Frontman::Resource do
       subject.destination_path = 'file.html.haml'
       subject.setup_destination
       expect(subject.destination_path).to eq 'file/index.html'
-    end
-
-    it 'should find the right destination path for a given language' do
-      subject.destination_path = 'file.html.haml'
-      subject.setup_destination
-      expect(subject.destination_path_for_language('js')).to eq '/file/js/index.html'
-    end
-  end
-
-  context 'languages' do
-    it 'should return an array when looking up languages' do
-      expect(subject.languages).to eq []
-    end
-
-    it 'should not generate pages for each language if no languages are set' do
-      expect(subject.generate_pages_for_languages?).to eq false
-    end
-
-    it 'should generate pages for each language if languages are set' do
-      subject.data[:languages] = %w[js php]
-      expect(subject.generate_pages_for_languages?).to eq true
-    end
-
-    it 'should not generate pages for each language if languages are set and a single language is set' do
-      subject.data[:languages] = %w[js php]
-      subject.data[:language] = 'js'
-      expect(subject.generate_pages_for_languages?).to eq false
-    end
-
-    it 'should not generate pages for each language if it\'s for an API method' do
-      subject.destination_path = '/doc/api-client/method/search/index.html'
-      expect(subject.generate_pages_for_languages?).to eq false
     end
   end
 end

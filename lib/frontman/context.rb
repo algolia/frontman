@@ -2,20 +2,16 @@
 # frozen_string_literal: false
 
 require 'frontman/app'
+require 'frontman/concerns/forward_calls_to_app'
 require 'frontman/config'
+require 'sorbet-runtime'
 
 module Frontman
   class Context
-    def method_missing(method_id, *arguments, &block)
-      # We forward everything to App
-      Frontman::App.instance.public_send(method_id, *arguments, &block)
-    end
+    extend T::Sig
+    include Frontman::ForwardCallsToApp
 
-    def respond_to_missing?(method_name, _include_private = false)
-      # We forward everything to App
-      Frontman::App.instance.respond_to?(method_name)
-    end
-
+    sig { params(layout: String).returns(String) }
     def wrap_layout(layout)
       layout_dir = Frontman::Config.get(:layout_dir, fallback: 'views/layouts')
       layout_path = File.join(layout_dir, layout)
@@ -37,6 +33,10 @@ module Frontman
       Resource.from_path(layout_path, nil, false).render(content)
     end
 
+    sig do
+      params(template: String, data: T.any(Hash, CustomStruct))
+        .returns(String)
+    end
     def partial(template, data = {})
       partial_dir = Frontman::Config.get(
         :layout_dir, fallback: 'views/partials'
@@ -45,6 +45,10 @@ module Frontman
       r.render(nil, data)
     end
 
+    sig do
+      params(key: T.any(String, Symbol), content: T.untyped)
+        .returns(T.untyped)
+    end
     def content_for(key, content = nil)
       # Haml is not designed to do handle content_for properly
       # so we need to hack the buffer of haml that is set
@@ -66,17 +70,27 @@ module Frontman
 
       # We store the the content block inside the current page
       # because we don't know which renderer/layout/template will need it
+      current_page = Frontman::App.instance.current_page
       current_page.content_blocks[key.to_sym] = content unless current_page.nil?
     end
 
+    sig { params(key: T.any(String, Symbol)).returns(T::Boolean) }
     def content_for?(key)
-      current_page.content_blocks.key?(key.to_sym)
+      Frontman::App.instance.current_page.content_blocks.key?(key.to_sym)
     end
 
+    sig do
+      params(key: T.any(String, Symbol), _args: T.untyped).returns(T.untyped)
+    end
     def yield_content(key, *_args)
-      current_page.content_blocks[key.to_sym]
+      Frontman::App.instance.current_page.content_blocks[key.to_sym]
     end
 
+    sig do
+      params(
+        page: Frontman::Resource, options: T.any(Hash, CustomStruct)
+      ).returns(String)
+    end
     def render_page(page, options = {})
       # We force not to render any layout
       options[:layout] = nil
@@ -87,16 +101,23 @@ module Frontman
       page.render(nil, options)
     end
 
+    sig do
+      params(options: T.any(Hash, CustomStruct)).returns(String)
+    end
     def render_current_page(options = {})
-      render_page(current_page, options)
+      render_page(Frontman::App.instance.current_page, options)
     end
 
+    sig do
+      params(content: T.untyped).returns(T.untyped)
+    end
     def get_binding(&content)
       binding { content }
     end
 
     private
 
+    sig { void }
     def save_buffer
       haml_locals = instance_variable_get(:@_haml_locals)
 
@@ -113,6 +134,7 @@ module Frontman
       end
     end
 
+    sig { void }
     def restore_buffer
       haml_locals = instance_variable_get(:@_haml_locals)
 
@@ -123,6 +145,7 @@ module Frontman
       end
     end
 
+    sig { returns(T.untyped) }
     def load_buffer
       haml_locals = instance_variable_get(:@_haml_locals)
 

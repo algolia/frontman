@@ -6,6 +6,28 @@ module Frontman
     attr_reader :path, :children, :url_part
     attr_accessor :parent, :position, :resource, :url
 
+    class << self
+      def resources
+        @@resources ||= []
+      end
+
+      def proxy_resources
+        @@proxy_resources ||= {}
+      end
+
+      def proxy_resources_from_template(template)
+        proxy_resources[format_url(template)] || []
+      end
+
+      def format_url(url)
+        url.delete_suffix('index.html').gsub('.html', '')
+      end
+    end
+
+    def resources
+      @@resources ||= []
+    end
+
     def add(resource)
       return if resource.destination_path.end_with?('.js', '.css', '.yml')
 
@@ -29,21 +51,9 @@ module Frontman
       key = format_url(template)
 
       SitemapTree.proxy_resources[key] ||= []
-      SitemapTree.proxy_resources[key].push(resource)
+      T.must(SitemapTree.proxy_resources[key]).push(resource)
 
       add(resource)
-    end
-
-    def self.resources
-      @@resources ||= []
-    end
-
-    def self.proxy_resources
-      @@proxy_resources ||= {}
-    end
-
-    def self.proxy_resources_from_template(template)
-      proxy_resources[format_url(template)] || []
     end
 
     def initialize(url_part)
@@ -54,10 +64,6 @@ module Frontman
       @@urls ||= {}
       @position = nil
       @url = nil
-    end
-
-    def self.format_url(url)
-      url.delete_suffix('index.html').gsub('.html', '')
     end
 
     def format_url(url)

@@ -1,4 +1,4 @@
-# typed: true
+# typed: false
 # frozen_string_literal: false
 
 require 'ostruct'
@@ -6,6 +6,10 @@ require 'ostruct'
 class CustomStruct < OpenStruct
   def respond_to_missing?(method_id, *_arguments)
     to_h.respond_to?(method_id) || super(method_id)
+  end
+
+  def key?(key)
+    to_h.key?(key)
   end
 
   def method_missing(method_id, *arguments, &block)
