@@ -30,7 +30,9 @@ module Frontman
             :config_path,
             fallback: './config.rb'
           )
-          app.run(File.read(config_path))
+          if File.exist?(config_path)
+            app.run(File.read(config_path))
+          end
           @@bootstrapped = true
         end
 

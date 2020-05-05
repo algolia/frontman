@@ -13,7 +13,7 @@ module Frontman
   class Resource
     extend T::Sig
 
-    attr_reader :dir, :file, :extension
+    attr_reader :dir, :file, :extension, :path
     attr_accessor :destination_path, :data, :renderers, :compiled, :file_path
 
     class << self
@@ -72,6 +72,7 @@ module Frontman
       else
         @destination_path = destination_without_extension + '.' + @extension
       end
+      @path = "/#{@destination_path.delete_suffix('index.html')}"
     end
 
     sig { void }

@@ -4,7 +4,9 @@ require 'thor'
 require 'frontman/builder/builder'
 require 'frontman/builder/mapping'
 require 'frontman/builder/statistics_collector'
+require 'frontman/config'
 require 'frontman/toolbox/timer'
+require 'frontman/sitemap_tree'
 
 module Frontman
   class CLI < Thor

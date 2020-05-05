@@ -13,7 +13,7 @@ module Frontman
     desc 'serve', 'Serve your application'
     def serve
       Frontman::Config.set(:mode, 'serve')
-      listen_to_dirs = Frontman::Config.get(:observe_dirs, fallback: ['source'])
+      listen_to_dirs = Frontman::Config.get(:observe_dirs, fallback: ['source', 'views'])
       Frontman::App.instance.app_data.set_auto_reload_files(true)
 
       listener = Listen.to(*listen_to_dirs) do |modified, added|
