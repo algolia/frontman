@@ -64,7 +64,7 @@ module Frontman
       destination_without_extension, dest_file_extensions = strip_extensions(
         @destination_path
       )
-      is_index_page = destination_without_extension.end_with?('index')
+      is_index_page = destination_without_extension.end_with?('/index')
       @extension = dest_file_extensions.first
 
       if (@extension == 'html' || extension.nil?) && !is_index_page
@@ -143,10 +143,8 @@ module Frontman
       layout_path = layout
       layout_from_extra_data = false
 
-      if extra_data.key? 'layout'
-        layout_path = "views/layouts/#{view_data[:layout]}"
-        layout_from_extra_data = extra_data[:layout]
-      end
+      layout_from_extra_data = extra_data[:layout] if extra_data.key?(:layout)
+      layout_path = "views/layouts/#{view_data.layout}" if view_data.layout
 
       if @is_page && !view_data[:ignore_page]
         # We store that in App so it can be accessed from any view

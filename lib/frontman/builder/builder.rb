@@ -91,7 +91,7 @@ module Frontman
         build_resource(Resource.from_path(path, path_with_digest))
       end
 
-      sig { returns(T::Array[Frontman::Builder::File]) }
+      sig { returns(T::Array[String]) }
       def build_redirects
         Frontman::App.instance.redirects.map do |from, to|
           build_file = build_redirect(from, to)

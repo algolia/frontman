@@ -11,7 +11,7 @@ module Frontman
       Frontman::App.instance.public_send(method_id, *arguments, &block)
     end
 
-    def respond_to_missing?(method_name)
+    def respond_to_missing?(method_name, _ = false)
       Frontman::App.instance.respond_to?(method_name)
     end
 
@@ -20,7 +20,7 @@ module Frontman
         Frontman::App.instance.public_send(method_id, *arguments, &block)
       end
 
-      def respond_to_missing?(method_name)
+      def respond_to_missing?(method_name, _ = false)
         Frontman::App.instance.respond_to?(method_name)
       end
     end

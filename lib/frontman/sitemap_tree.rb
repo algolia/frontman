@@ -75,7 +75,7 @@ module Frontman
     end
 
     def from_resource(resource)
-      @@urls[format_url(resource.destination_path).to_sym]
+      from_url(format_url(resource.destination_path))
     end
 
     def from_url(url)
@@ -179,6 +179,10 @@ module Frontman
       @children.each do |child|
         child.pretty_print(space + 1)
       end
+    end
+
+    def all_urls
+      @@urls
     end
 
     def inspect
