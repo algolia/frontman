@@ -23,7 +23,10 @@ module Frontman
 
       copy_template(template, target_dir)
 
-      say 'Your project is ready. Run `bundle exec frontman serve` and start developing!'
+      command = path == '.' ? '' : "cd #{path} && "
+      command += 'bundle exec frontman serve'
+
+      say "Your project is ready. Run `#{command}` and start developing!"
     end
 
     private
