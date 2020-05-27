@@ -3,8 +3,7 @@
 
 require 'frontman/sitemap_tree'
 require 'frontman/data_store'
-require 'frontman/helpers/url_helper'
-require 'htmlentities'
+require 'frontman/helpers/UrlHelper'
 require 'singleton'
 require 'sorbet-runtime'
 
@@ -63,14 +62,14 @@ module Frontman
 
     sig { params(from: String, to: String).returns(String) }
     def add_redirect(from, to)
-      from = Frontman::Helpers::UrlHelper.format_url(from)
+      from = format_url(from)
 
       @redirects[from] = to
     end
 
     sig { params(url: String).returns(T.nilable(String)) }
     def get_redirect(url)
-      url = Frontman::Helpers::UrlHelper.format_url(url)
+      url = format_url(url)
 
       @redirects[url]
     end
@@ -98,34 +97,6 @@ module Frontman
     rescue StandardError
       super
     end
-
-    # TODO: move this to helper
-    sig { params(str: String, salt: String).returns(String) }
-    def generate_id(str, salt = '')
-      id = slugify(str)
-
-      @ids ||= {}
-      @ids[salt.to_s + id] ||= 0
-      @ids[salt.to_s + id] += 1
-      @ids[salt.to_s + id] == 1 ? id : "#{id}-#{@ids[salt.to_s + id]}"
-    end
-
-    sig { void }
-    def reset_ids_generation
-      @ids = {}
-    end
-
-    sig { params(string: String).returns(String) }
-    def slugify(string)
-      HTMLEntities.new
-                  .decode(string)
-                  .gsub(%r{</?[^>]*>}, '')
-                  .gsub(/\s/, '-')
-                  .gsub(%r{[\[\]()/",`'&<>\.*]}, '')
-                  .downcase
-    end
-    # if moved, require 'htmlentities' is not needed
-    # END TODO
 
     private
 

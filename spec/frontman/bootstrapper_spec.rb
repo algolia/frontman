@@ -16,17 +16,6 @@ describe Frontman::Bootstrapper do
     end
   end
 
-  context 'bootstrap app' do
-    it 'should only bootstrap the app once' do
-      Frontman::Config.set(:config_path, 'spec/frontman/mocks/config.rb')
-      app = Frontman::App.instance
-      expect(app).to receive(:run).once
-
-      Frontman::Bootstrapper.bootstrap_app(app)
-      Frontman::Bootstrapper.bootstrap_app(app)
-    end
-  end
-
   context 'resources' do
     it 'should find all resources in a given folder' do
       resources = Frontman::Bootstrapper.resources_from_dir('spec/frontman/mocks')

@@ -24,8 +24,7 @@ module Frontman
 
       sig { params(app: Frontman::App).returns(Frontman::App) }
       def bootstrap_app(app)
-        @@bootstrapped ||= false
-        unless @@bootstrapped == true
+        unless bootstrapped?
           config_path = Frontman::Config.get(
             :config_path,
             fallback: './config.rb'
@@ -33,6 +32,9 @@ module Frontman
           if File.exist?(config_path)
             app.run(File.read(config_path))
           end
+
+          register_default_helpers(app)
+
           @@bootstrapped = true
         end
 
@@ -50,6 +52,19 @@ module Frontman
         files.map do |path|
           Frontman::Resource.from_path(path, path.delete_prefix(content_root))
         end
+      end
+
+      def bootstrapped?
+        @@bootstrapped ||= false
+      end
+
+      private
+
+      sig { params(app: Frontman::App).void }
+      def register_default_helpers(app)
+        app.register_helpers(
+          find_helpers_in(File.join(__dir__, 'helpers'))
+        )
       end
     end
   end
