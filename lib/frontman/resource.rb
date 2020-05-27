@@ -64,6 +64,11 @@ module Frontman
       destination_without_extension, dest_file_extensions = strip_extensions(
         @destination_path
       )
+
+      if destination_without_extension == 'index'
+        destination_without_extension = ''
+      end
+
       is_index_page = destination_without_extension.end_with?('/index')
       @extension = dest_file_extensions.first
 
@@ -76,8 +81,7 @@ module Frontman
     end
 
     sig { void }
-    def parse_snippet_file
-      # TODO: this is docs specific...
+    def parse_data_file
       snippet_file = @file_path_without_extension + '.yml'
       return unless File.exist?(snippet_file)
 
@@ -129,7 +133,7 @@ module Frontman
       end
 
       # We need to do that after parsing the resource so @data exists
-      parse_snippet_file if @is_page
+      parse_data_file if @is_page
     end
 
     sig do
