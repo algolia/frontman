@@ -27,7 +27,7 @@ describe Frontman::App do
   context 'Redirects' do
     it 'should store redirects' do
       subject.add_redirect('/foo', '/bar')
-      expect(subject.redirects['/foo']).to eq '/bar'
+      expect(subject.get_redirect('/foo')).to eq '/bar'
     end
   end
 

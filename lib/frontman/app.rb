@@ -3,6 +3,7 @@
 
 require 'frontman/sitemap_tree'
 require 'frontman/data_store'
+require 'frontman/helpers/url_helper'
 require 'htmlentities'
 require 'singleton'
 require 'sorbet-runtime'
@@ -13,7 +14,7 @@ module Frontman
     include Singleton
 
     attr_accessor :current_page, :current_tree, :view_data
-    attr_reader :layouts, :ignores, :redirects, :assets_manifest, :commands
+    attr_reader :layouts, :ignores, :redirects, :assets_manifest
 
     sig { void }
     def initialize
@@ -23,7 +24,6 @@ module Frontman
       @layouts = []
       @ignores = []
       @redirects = {}
-      @commands = {}
       @assets_manifest = {}
     end
 
@@ -63,7 +63,16 @@ module Frontman
 
     sig { params(from: String, to: String).returns(String) }
     def add_redirect(from, to)
+      from = Frontman::Helpers::UrlHelper.format_url(from)
+
       @redirects[from] = to
+    end
+
+    sig { params(url: String).returns(T.nilable(String)) }
+    def get_redirect(url)
+      url = Frontman::Helpers::UrlHelper.format_url(url)
+
+      @redirects[url]
     end
 
     sig { params(key: String, value: String).returns(String) }

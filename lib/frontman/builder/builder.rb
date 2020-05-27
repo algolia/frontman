@@ -94,7 +94,7 @@ module Frontman
       sig { returns(T::Array[String]) }
       def build_redirects
         Frontman::App.instance.redirects.map do |from, to|
-          build_file = build_redirect(from, to)
+          build_file = build_redirect("#{from}index.html", to)
           build_file.path
         end
       end

@@ -56,12 +56,12 @@ class FrontManServer < Sinatra::Base
   BetterErrors.application_root = Dir.pwd
 
   get '*' do |path|
-    if Frontman::App.instance.redirects.key?("#{path}index.html")
-      target = Frontman::App.instance.redirects["#{path}index.html"]
-      return redirect to(target), 302
+    app = Frontman::App.instance
+    if app.get_redirect(path)
+      return redirect to (app.get_redirect(path)), 302
     end
 
-    tree = Frontman::App.instance.sitemap_tree.from_url(path)
+    tree = app.sitemap_tree.from_url(path)
     if tree&.resource
       tree.resource.render
     else
