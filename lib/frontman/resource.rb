@@ -82,15 +82,15 @@ module Frontman
 
     sig { void }
     def parse_data_file
-      snippet_file = @file_path_without_extension + '.yml'
-      return unless File.exist?(snippet_file)
+      data_file = @file_path_without_extension + '.yml'
+      return unless File.exist?(data_file)
 
       begin
-        snippet_data = YAML.safe_load(File.read(snippet_file)).to_ostruct
+        data = YAML.safe_load(File.read(data_file)).to_ostruct
       rescue Psych::SyntaxError => e
-        raise("#{e} - #{snippet_file}")
+        raise("#{e} - #{data_file}")
       end
-      @data[:guide_snippet] = snippet_data
+      @data[:yml] = data
     end
 
     sig do
@@ -148,7 +148,12 @@ module Frontman
       layout_from_extra_data = false
 
       layout_from_extra_data = extra_data[:layout] if extra_data.key?(:layout)
-      layout_path = "views/layouts/#{view_data.layout}" if view_data.layout
+      if view_data.layout
+        layout_path = File.join(
+          Frontman::Config.get(:layout_dir, fallback: 'views/layouts'),
+          view_data.layout
+        )
+      end
 
       if @is_page && !view_data[:ignore_page]
         # We store that in App so it can be accessed from any view

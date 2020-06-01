@@ -12,8 +12,8 @@ module Frontman
     extend T::Sig
     include Singleton
 
-    attr_accessor :current_page, :current_tree, :view_data
-    attr_reader :layouts, :ignores, :redirects, :assets_manifest
+    attr_accessor :current_page, :current_tree, :view_data, :refresh_data_files
+    attr_reader :layouts, :redirects, :assets_manifest, :data_dirs
 
     sig { void }
     def initialize
@@ -21,19 +21,15 @@ module Frontman
       @current_tree = nil
       @view_data = []
       @layouts = []
-      @ignores = []
       @redirects = {}
       @assets_manifest = {}
+      @data_dirs = {}
+      @refresh_data_files = false
     end
 
     sig { returns(Frontman::SitemapTree) }
     def sitemap_tree
       @sitemap_tree ||= Frontman::SitemapTree.new(nil)
-    end
-
-    sig { returns(Frontman::DataStore) }
-    def app_data
-      @app_data ||= Frontman::DataStore.new
     end
 
     sig { returns(T.self_type) }
@@ -77,6 +73,14 @@ module Frontman
     sig { params(key: String, value: String).returns(String) }
     def add_to_manifest(key, value)
       @assets_manifest[key] = '/' + value.sub(%r{^/}, '')
+    end
+
+    def register_data_dirs(dirs)
+      dirs.each do |dir|
+        define_singleton_method dir.to_sym do
+          @data_dirs[dir] ||= DataStore.new(File.join(Dir.pwd, dir))
+        end
+      end
     end
 
     def method_missing(method_id, *_)

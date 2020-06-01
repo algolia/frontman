@@ -46,7 +46,7 @@ module Frontman
 
     sig { void }
     def refresh
-      return unless @parent.auto_reload_files
+      return unless Frontman::App.instance.refresh_data_files
 
       data = YAML.load_file(@path) || {}
       @data = data.to_ostruct

@@ -13,22 +13,27 @@ module Frontman
     desc 'serve', 'Serve your application'
     def serve
       Frontman::Config.set(:mode, 'serve')
-      listen_to_dirs = Frontman::Config.get(:observe_dirs, fallback: ['source', 'views'])
-      Frontman::App.instance.app_data.set_auto_reload_files(true)
+      listen_to_dirs = Frontman::Config.get(:observe_dirs, fallback:
+        [
+          Frontman::Config.get(:layout_dir, fallback: 'views/layout'),
+          Frontman::Config.get(:partials_dir, fallback: 'views/layout'),
+          'source',
+          'helpers'
+        ])
+      Frontman::App.instance.refresh_data_files = true
 
       listener = Listen.to(*listen_to_dirs) do |modified, added|
         (added + modified).each do |m|
           resource_path = m.sub("#{Dir.pwd}/", '')
-          if resource_path.start_with?('source', 'views')
+          if resource_path.start_with?(*listen_to_dirs)
             r = Frontman::Resource.from_path(resource_path)
-
             r&.parse_resource(true)
-          elsif resource_path.start_with?('helpers')
-            helper_name = resource_path.gsub(%r{helpers/(.*?)\.rb}, '\1')
+          elsif resource_path.end_with?('Helper.rb')
+            helper_name = File.basename(resource_path).gsub('.rb', '')
             Frontman::App.instance.register_helpers(
               [{ path: File.join(Dir.pwd, resource_path), name: helper_name }]
             )
-          elsif resource_path.start_with?('lib')
+          elsif resource_path.end_with?('.rb')
             load("./#{resource_path}")
           end
         end

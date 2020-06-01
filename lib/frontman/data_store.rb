@@ -9,22 +9,20 @@ module Frontman
   class DataStore
     extend T::Sig
 
-    attr_reader :base_file_name, :current_path, :parent
-    attr_accessor :auto_reload_files
+    attr_reader :base_file_name, :path, :parent
 
     sig do
       params(
-        current_path: T.nilable(String),
+        path: String,
         base_file_name: T.nilable(String),
         parent: T.nilable(DataStore)
       ).void
     end
-    def initialize(current_path = nil, base_file_name = nil, parent = nil)
-      @current_path = current_path.nil? ? Dir.pwd + '/app_data' : current_path
+    def initialize(path = nil, base_file_name = nil, parent = nil)
+      @path = path
       @cache = {}
       @parent = parent
       @base_file_name = base_file_name
-      @auto_reload_files = false
 
       load_files
     end
@@ -33,7 +31,7 @@ module Frontman
     def flatten
       elements = []
 
-      @cache.sort_by { |_k, v| v.current_path }.each do |_k, v|
+      @cache.sort_by { |_k, v| v.path }.each do |_k, v|
         if v.instance_of?(Frontman::DataStoreFile)
           v.refresh
           elements.push(v)
@@ -54,7 +52,7 @@ module Frontman
       if @cache.key?(method_name.to_s)
         cached = @cache[method_name.to_s]
 
-        if @auto_reload_files
+        if Frontman::App.instance.refresh_data_files
           cached.refresh if cached.is_a?(Frontman::DataStoreFile)
         end
 
@@ -82,10 +80,10 @@ module Frontman
 
     sig { void }
     def load_files
-      Dir.entries(@current_path).sort.each do |file|
+      Dir.entries(@path).sort.each do |file|
         next if (file == '.') || (file == '..')
 
-        file_path = @current_path + '/' + file
+        file_path = @path + '/' + file
 
         # remove numbers and first '-' from the filename so we can
         # - generate nice urls

@@ -84,7 +84,7 @@ describe Frontman::Resource do
   it 'should parse an existing snippet file' do
     resource = Frontman::Resource.from_path('spec/frontman/mocks/snippet/html_file.html')
     resource.parse_data_file
-    expect(resource.data.guide_snippet.length).to eq 2
+    expect(resource.data.yml.length).to eq 2
   end
 
   it 'should have a modified-time' do

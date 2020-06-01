@@ -25,7 +25,7 @@ describe Frontman::Context do
     end
 
     it 'should render an existing partial' do
-      Frontman::Config.set(:layout_dir, 'spec/frontman/mocks/partials')
+      Frontman::Config.set(:partial_dir, 'spec/frontman/mocks/partials')
 
       expect(subject.partial('paragraph.haml', text: 'Testing'))
         .to eq("<p>\nThe passed text: Testing\n</p>\n")

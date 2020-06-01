@@ -31,6 +31,6 @@ describe Frontman::DataStore do
 
   it 'should have name and path' do
     expect(subject.nested.base_file_name).to eq 'nested'
-    expect(subject.nested.current_path).to eq "#{__dir__}/mocks/nested"
+    expect(subject.nested.path).to eq "#{__dir__}/mocks/nested"
   end
 end

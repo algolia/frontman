@@ -39,7 +39,7 @@ module Frontman
     end
     def partial(template, data = {})
       partial_dir = Frontman::Config.get(
-        :layout_dir, fallback: 'views/partials'
+        :partial_dir, fallback: 'views/partials'
       )
       r = Resource.from_path(File.join(partial_dir, template), nil, false)
       r.render(nil, data)
