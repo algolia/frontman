@@ -8,4 +8,3 @@ Frontman::Bootstrapper.resources_from_dir(
 ).each do |resource|
   sitemap_tree.add(resource)
 end
-

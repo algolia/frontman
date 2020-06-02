@@ -13,7 +13,6 @@ module Frontman
   class CLI < Thor
     desc 'serve', 'Serve your application'
     def serve
-
       assets_pipeline = Frontman::Builder::AssetPipeline.new(
         Frontman::App.instance
           .asset_pipelines
@@ -52,7 +51,8 @@ module Frontman
       listener.start
 
       FrontManServer.run! do
-        print "== View your site at \"http://localhost:#{FrontManServer.settings.port}/\"\n"
+        host = "http://localhost:#{FrontManServer.settings.port}"
+        print "== View your site at \"#{host}/\"\n"
         processes += assets_pipeline.run_in_background!(:after)
         at_exit { processes.each { |pid| Process.kill(0, pid) } }
       end
@@ -74,9 +74,7 @@ class FrontManServer < Sinatra::Base
 
   get '*' do |path|
     app = Frontman::App.instance
-    if app.get_redirect(path)
-      return redirect to (app.get_redirect(path)), 302
-    end
+    return redirect to app.get_redirect(path), 302 if app.get_redirect(path)
 
     tree = app.sitemap_tree.from_url(path)
     if tree&.resource

@@ -1,4 +1,5 @@
 # frozen_string_literal: false
+
 # typed: ignore
 
 require 'frontman/sitemap_tree'
@@ -54,7 +55,10 @@ module Frontman
     def register_helpers(helpers)
       helpers.each do |helper|
         require T.must(helper[:path])
-        singleton_class.send(:include, Object.const_get(T.must(helper[:name]).to_sym))
+        singleton_class.send(
+          :include,
+          Object.const_get(T.must(helper[:name]).to_sym)
+        )
       end
     end
 

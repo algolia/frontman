@@ -5,7 +5,6 @@ require 'thor'
 
 module Frontman
   class CLI < Thor
-
     option :template
     desc 'init', 'Bootstrap a new Frontman project'
     def init(path)

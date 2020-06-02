@@ -26,10 +26,10 @@ module LinkHelper
   sig { params(string: String).returns(String) }
   def slugify(string)
     HTMLEntities.new
-      .decode(string)
-      .gsub(%r{</?[^>]*>}, '')
-      .gsub(/\s/, '-')
-      .gsub(%r{[\[\]()/",`'&<>\.*]}, '')
-      .downcase
+                .decode(string)
+                .gsub(%r{</?[^>]*>}, '')
+                .gsub(/\s/, '-')
+                .gsub(%r{[\[\]()/",`'&<>\.*]}, '')
+                .downcase
   end
 end

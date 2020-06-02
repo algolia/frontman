@@ -38,9 +38,10 @@ Style/ClassVars:
 
 Metrics/ClassLength:
   Exclude:
-    - 'lib/frontman/sitemap_tree.rb'
-    - 'lib/frontman/resource.rb'
+    - 'lib/frontman/app.rb'
     - 'lib/frontman/builder/builder.rb'
+    - 'lib/frontman/resource.rb'
+    - 'lib/frontman/sitemap_tree.rb'
 
 Style/ConditionalAssignment:
   Exclude:
@@ -66,6 +67,7 @@ Metrics/LineLength:
 Naming/FileName:
   Exclude:
     - 'spec/**/*'
+    - 'lib/frontman/helpers/**/*'
 
 Metrics/ParameterLists:
   Exclude:

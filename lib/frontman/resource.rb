@@ -40,7 +40,7 @@ module Frontman
 
         # We cache the newly created resource so we avoid loosing the cache
         # if from_path is called again with the same file
-        # This is especially important for perfs in case of layouts and templates
+        # This is especially important for perf in case of layouts and templates
         @@resources ||= {}
         @@resources[destination_path] ||= new(
           file_path, destination_path, is_page
@@ -95,7 +95,8 @@ module Frontman
 
     sig do
       params(
-        parse_parent: T::Boolean, data: T.any(NilClass, Hash, CustomStruct, OpenStruct)
+        parse_parent: T::Boolean,
+        data: T.any(NilClass, Hash, CustomStruct, OpenStruct)
       ).void
     end
     def parse_resource(parse_parent = false, data = nil)

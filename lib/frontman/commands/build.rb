@@ -15,7 +15,6 @@ module Frontman
     option :verbose, type: :boolean
     desc 'build', 'Generate the HTML for your website'
     def build
-
       assets_pipeline = Frontman::Builder::AssetPipeline.new(
         Frontman::App.instance
           .asset_pipelines

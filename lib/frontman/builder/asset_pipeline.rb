@@ -50,7 +50,6 @@ module Frontman
       def get_by_timing(timing)
         @pipelines.filter { |pipeline| pipeline[:timing] == timing }
       end
-
     end
   end
 end
