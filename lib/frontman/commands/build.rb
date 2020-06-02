@@ -1,6 +1,7 @@
 # frozen_string_literal: false
 
 require 'thor'
+require 'frontman/builder/asset_pipeline'
 require 'frontman/builder/builder'
 require 'frontman/builder/mapping'
 require 'frontman/builder/statistics_collector'
@@ -14,6 +15,15 @@ module Frontman
     option :verbose, type: :boolean
     desc 'build', 'Generate the HTML for your website'
     def build
+
+      assets_pipeline = Frontman::Builder::AssetPipeline.new(
+        Frontman::App.instance
+          .asset_pipelines
+          .filter { |p| %i[all build].include?(p[:mode]) }
+      )
+
+      assets_pipeline.run!(:before)
+
       enable_parallel = !options[:sync]
 
       Frontman::Config.set(:mode, 'build')
@@ -52,6 +62,8 @@ module Frontman
 
       builder.delete_files(current_build_files - new_files)
       mapping.save_file
+
+      assets_pipeline.run!(:after)
 
       Builder::StatisticsCollector.output(builder, mapping, timer, new_files)
     end

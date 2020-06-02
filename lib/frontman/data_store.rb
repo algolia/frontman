@@ -18,7 +18,7 @@ module Frontman
         parent: T.nilable(DataStore)
       ).void
     end
-    def initialize(path = nil, base_file_name = nil, parent = nil)
+    def initialize(path, base_file_name = nil, parent = nil)
       @path = path
       @cache = {}
       @parent = parent

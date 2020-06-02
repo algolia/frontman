@@ -1,5 +1,5 @@
-# typed: true
 # frozen_string_literal: true
+# typed: ignore
 
 require 'sorbet-runtime'
 require 'frontman/app'

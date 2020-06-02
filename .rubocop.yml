@@ -66,3 +66,7 @@ Metrics/LineLength:
 Naming/FileName:
   Exclude:
     - 'spec/**/*'
+
+Metrics/ParameterLists:
+  Exclude:
+    - 'lib/frontman/app.rb'

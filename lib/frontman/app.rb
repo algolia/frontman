@@ -1,5 +1,5 @@
-# typed: true
 # frozen_string_literal: false
+# typed: ignore
 
 require 'frontman/sitemap_tree'
 require 'frontman/data_store'
@@ -12,7 +12,8 @@ module Frontman
     extend T::Sig
     include Singleton
 
-    attr_accessor :current_page, :current_tree, :view_data, :refresh_data_files
+    attr_accessor :current_page, :current_tree, :view_data, :refresh_data_files,
+                  :asset_pipelines
     attr_reader :layouts, :redirects, :assets_manifest, :data_dirs
 
     sig { void }
@@ -25,6 +26,7 @@ module Frontman
       @assets_manifest = {}
       @data_dirs = {}
       @refresh_data_files = false
+      @asset_pipelines = []
     end
 
     sig { returns(Frontman::SitemapTree) }
@@ -75,12 +77,37 @@ module Frontman
       @assets_manifest[key] = '/' + value.sub(%r{^/}, '')
     end
 
+    sig { params(dirs: Array).void }
     def register_data_dirs(dirs)
       dirs.each do |dir|
         define_singleton_method dir.to_sym do
           @data_dirs[dir] ||= DataStore.new(File.join(Dir.pwd, dir))
         end
       end
+    end
+
+    sig do
+      params(
+        command: String,
+        name: T.nilable(String),
+        source_dir: T.nilable(String),
+        timing: Symbol,
+        mode: Symbol,
+        delay: T.any(Integer, String)
+      ).returns(Array)
+    end
+    def add_asset_pipeline(
+      command:, name: nil, source_dir: nil,
+      timing: :before, mode: :all, delay: 0
+    )
+      @asset_pipelines.push(
+        name: name || command,
+        source_dir: source_dir,
+        command: command,
+        timing: timing == :after ? :after : :before,
+        mode: mode,
+        delay: delay
+      )
     end
 
     def method_missing(method_id, *_)
