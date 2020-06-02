@@ -1,6 +1,8 @@
 # frozen_string_literal: false
 
 require 'thor'
+require 'frontman/app'
+require 'frontman/bootstrapper'
 require 'frontman/builder/asset_pipeline'
 require 'frontman/builder/builder'
 require 'frontman/builder/mapping'
@@ -15,6 +17,10 @@ module Frontman
     option :verbose, type: :boolean
     desc 'build', 'Generate the HTML for your website'
     def build
+
+      Frontman::Config.set(:mode, 'build')
+      Frontman::Bootstrapper.bootstrap_app(Frontman::App.instance)
+
       assets_pipeline = Frontman::Builder::AssetPipeline.new(
         Frontman::App.instance
           .asset_pipelines
@@ -25,7 +31,6 @@ module Frontman
 
       enable_parallel = !options[:sync]
 
-      Frontman::Config.set(:mode, 'build')
       Frontman::Config.set(:parallel, enable_parallel)
 
       timer = Frontman::Toolbox::Timer.start

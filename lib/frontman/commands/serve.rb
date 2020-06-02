@@ -5,6 +5,7 @@ require 'sinatra/base'
 require 'better_errors'
 require 'listen'
 require 'frontman/app'
+require 'frontman/bootstrapper'
 require 'frontman/builder/asset_pipeline'
 require 'frontman/config'
 require 'frontman/resource'
@@ -13,6 +14,10 @@ module Frontman
   class CLI < Thor
     desc 'serve', 'Serve your application'
     def serve
+
+      Frontman::Config.set(:mode, 'serve')
+      Frontman::Bootstrapper.bootstrap_app(Frontman::App.instance)
+
       assets_pipeline = Frontman::Builder::AssetPipeline.new(
         Frontman::App.instance
           .asset_pipelines
@@ -20,7 +25,6 @@ module Frontman
       )
       processes = assets_pipeline.run_in_background!(:before)
 
-      Frontman::Config.set(:mode, 'serve')
       helpers_dir = Frontman::Config.get(:helpers_dir, fallback: 'helpers')
       listen_to_dirs = Frontman::Config.get(:observe_dirs, fallback:
         [
@@ -50,6 +54,9 @@ module Frontman
 
       listener.start
 
+      FrontManServer.set :public_folder, Frontman::Config.get(
+        :public_folder, fallback: 'public'
+      )
       FrontManServer.run! do
         host = "http://localhost:#{FrontManServer.settings.port}"
         print "== View your site at \"#{host}/\"\n"
@@ -61,7 +68,6 @@ module Frontman
 end
 
 class FrontManServer < Sinatra::Base
-  set :public_folder, Frontman::Config.get(:public_folder, fallback: 'public')
   set :port, 4568
   set :server_settings,
       # Avoid having webrick displaying logs for every requests to the serve
