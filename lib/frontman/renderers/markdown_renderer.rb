@@ -5,7 +5,7 @@ require 'kramdown'
 require 'frontman/renderers/renderer'
 
 module Frontman
-  class MarkdownRenderer < Renderer
+  class MarkdownRenderer < Frontman::Renderer
     def compile(layout)
       Kramdown::Document.new(
         layout,
