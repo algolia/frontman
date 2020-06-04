@@ -16,35 +16,44 @@ module Frontman
     def serve
 
       Frontman::Config.set(:mode, 'serve')
-      Frontman::Bootstrapper.bootstrap_app(Frontman::App.instance)
+      app = Frontman::App.instance
+      Frontman::Bootstrapper.bootstrap_app(app)
+
 
       assets_pipeline = Frontman::Builder::AssetPipeline.new(
-        Frontman::App.instance
+        app
           .asset_pipelines
           .filter { |p| %i[all serve].include?(p[:mode]) }
       )
       processes = assets_pipeline.run_in_background!(:before)
 
       helpers_dir = Frontman::Config.get(:helpers_dir, fallback: 'helpers')
+      content_dir = Frontman::Config.get(:content_dir, fallback: 'source/')
       listen_to_dirs = Frontman::Config.get(:observe_dirs, fallback:
         [
           Frontman::Config.get(:layout_dir, fallback: 'views/layouts'),
           Frontman::Config.get(:partials_dir, fallback: 'views/partials'),
-          Frontman::Config.get(:content_dir, fallback: 'source/'),
+          content_dir,
           helpers_dir
         ]).filter { |dir| Dir.exist?(dir) }
-      Frontman::App.instance.refresh_data_files = true
+      app.refresh_data_files = true
 
       listener = Listen.to(*listen_to_dirs) do |modified, added|
         (added + modified).each do |m|
           resource_path = m.sub("#{Dir.pwd}/", '')
           if resource_path.start_with?(helpers_dir)
             helper_name = File.basename(resource_path).gsub('.rb', '')
-            Frontman::App.instance.register_helpers(
+            app.register_helpers(
               [{ path: File.join(Dir.pwd, resource_path), name: helper_name }]
             )
           elsif resource_path.start_with?(*listen_to_dirs)
             r = Frontman::Resource.from_path(resource_path)
+
+            if resource_path.start_with?(content_dir)
+              exists = app.sitemap_tree.from_resource(r)
+              app.sitemap_tree.add(r) unless exists
+            end
+
             r&.parse_resource(true)
           elsif resource_path.end_with?('.rb')
             load("./#{resource_path}")
