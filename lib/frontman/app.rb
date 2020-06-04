@@ -1,10 +1,8 @@
 # frozen_string_literal: false
-
 # typed: ignore
 
 require 'frontman/sitemap_tree'
 require 'frontman/data_store'
-require 'frontman/helpers/UrlHelper'
 require 'singleton'
 require 'sorbet-runtime'
 
