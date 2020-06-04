@@ -32,7 +32,7 @@ module Frontman
           Frontman::Config.get(:partials_dir, fallback: 'views/partials'),
           Frontman::Config.get(:content_dir, fallback: 'source/'),
           helpers_dir
-        ])
+        ]).filter { |dir| Dir.exist?(dir) }
       Frontman::App.instance.refresh_data_files = true
 
       listener = Listen.to(*listen_to_dirs) do |modified, added|
