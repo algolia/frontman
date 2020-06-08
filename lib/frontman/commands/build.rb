@@ -13,7 +13,7 @@ require 'frontman/sitemap_tree'
 
 module Frontman
   class CLI < Thor
-    option :sync, type: :boolean
+    option :parallel, type: :boolean
     option :verbose, type: :boolean
     desc 'build', 'Generate the HTML for your website'
     def build
@@ -29,7 +29,7 @@ module Frontman
 
       assets_pipeline.run!(:before)
 
-      enable_parallel = !options[:sync]
+      enable_parallel = options[:parallel]
 
       Frontman::Config.set(:parallel, enable_parallel)
 
