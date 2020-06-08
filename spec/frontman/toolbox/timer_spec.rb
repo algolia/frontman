@@ -29,6 +29,6 @@ describe Frontman::Toolbox::Timer do
     timer = Frontman::Toolbox::Timer.new
     start_time = timer.begin
     end_time = timer.stop
-    expect(timer.output).to eq "Elapsed time: #{(end_time - start_time) * 1000} milliseconds.\n"
+    expect(timer.output).to eq "Elapsed time: ~#{((end_time - start_time) * 1000).ceil} milliseconds.\n"
   end
 end

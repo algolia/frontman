@@ -74,7 +74,7 @@ describe Frontman::Resource do
 
   it 'should find the correct layout' do
     Frontman::App.instance.register_layout('spec/frontman/*', 'correct_layout')
-    expect(subject.layout).to eq 'correct_layout'
+    expect(subject.layout).to eq 'views/layouts/correct_layout'
   end
 
   it 'should split extensions correctly' do

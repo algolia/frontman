@@ -42,7 +42,7 @@ module Frontman
 
       sig { returns(String) }
       def output
-        "Elapsed time: ~#{(diff * 1000).floor} milliseconds.\n"
+        "Elapsed time: ~#{(diff * 1000).ceil} milliseconds.\n"
       end
     end
   end
