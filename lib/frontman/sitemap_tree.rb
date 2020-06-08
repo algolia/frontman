@@ -38,6 +38,10 @@ module Frontman
         raise DuplicateResourceError.create(resource, url, existing_resource)
       end
 
+      if Frontman::App.instance.get_redirect(url)
+        raise ExistingRedirectError.create(resource, url)
+      end
+
       SitemapTree.resources.push(resource)
       parts = url.split('/')
       used_parts = []
@@ -194,6 +198,13 @@ module Frontman
     def self.create(resource, url, existing_resource)
       new("Unable to add #{resource.file_path} as #{url}.
            Resource #{existing_resource.file_path} already exists on this URL.")
+    end
+  end
+
+  class ExistingRedirectError < StandardError
+    def self.create(resource, url)
+      new("Unable to add #{resource.file_path} as #{url}.
+           A redirect already exists for this URL.")
     end
   end
 end

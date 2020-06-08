@@ -66,6 +66,10 @@ module Frontman
     def add_redirect(from, to)
       from = format_url(from)
 
+      if sitemap_tree.from_url(from)&.resource
+        raise ExistingResourceError.create(from, sitemap_tree.from_url(from)&.resource)
+      end
+
       @redirects[from] = to
     end
 
@@ -150,6 +154,13 @@ module Frontman
 
       local_data = @view_data.last[:locals]
       local_data[key] unless local_data.nil?
+    end
+
+    class ExistingResourceError < StandardError
+      def self.create(url, resource)
+        new("Unable to redirect for #{url},
+             the resource #{resource.file_path} already exists on this URL")
+      end
     end
   end
 end
