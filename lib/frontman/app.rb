@@ -45,7 +45,9 @@ module Frontman
 
     sig { params(glob: String, layout_name: String).void }
     def register_layout(glob, layout_name)
-      layout = glob, layout_name
+      layout_dir = Frontman::Config.get(:layout_dir, fallback: 'views/layouts')
+      layout = glob, File.join(layout_dir, layout_name)
+
       @layouts.push(layout)
     end
 
