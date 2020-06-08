@@ -32,7 +32,7 @@ module Frontman
       listen_to_dirs = Frontman::Config.get(:observe_dirs, fallback:
         [
           Frontman::Config.get(:layout_dir, fallback: 'views/layouts'),
-          Frontman::Config.get(:partials_dir, fallback: 'views/partials'),
+          Frontman::Config.get(:partial_dir, fallback: 'views/partials'),
           content_dir,
           helpers_dir
         ]).filter { |dir| Dir.exist?(dir) }
@@ -64,7 +64,7 @@ module Frontman
       listener.start
 
       FrontManServer.set :public_folder, Frontman::Config.get(
-        :public_folder, fallback: 'public'
+        :public_dir, fallback: 'public'
       )
       FrontManServer.run! do
         host = "http://localhost:#{FrontManServer.settings.port}"
