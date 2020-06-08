@@ -1,0 +1,5 @@
+- if build?
+  - vendor_scripts_by_chunk(file, Dir.entries("#{Frontman::Config.get(:public_dir)}/assets")).each do |file|
+    %script{ src: asset_url("/assets/#{file}") }
+
+%script{ src: asset_url("assets/#{file}.js") }

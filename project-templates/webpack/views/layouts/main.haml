@@ -1,0 +1,18 @@
+%html
+  %head
+    %link{ rel: 'stylesheet', href: asset_url('assets/style.css') }
+    %title
+      This is my website!
+
+  %body
+    %header
+      %ul
+        - sitemap_tree.resources.each do |r|
+          %li
+            %a{href: r.path}
+              = r.data.title
+    = yield
+    %footer
+      This is the footer of this website.
+
+= partial 'script_with_vendors.haml', locals: { file: 'index' }
