@@ -8,7 +8,7 @@ add_asset_pipeline(
   name: 'Webpack server',
   command: 'yarn run start',
   timing: :before,
-  mode: :serve,
+  mode: :serve
 )
 
 add_asset_pipeline(
