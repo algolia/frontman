@@ -6,14 +6,14 @@ register_layout '*', 'main.haml'
 
 add_asset_pipeline(
   name: 'Webpack server',
-  command: 'yarn run start',
+  command: 'npm run start',
   timing: :before,
   mode: :serve
 )
 
 add_asset_pipeline(
   name: 'Webpack build',
-  command: 'yarn run build',
+  command: 'npm run build',
   timing: :before,
   mode: :build
 )
