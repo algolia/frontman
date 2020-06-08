@@ -38,7 +38,9 @@ module Frontman
       current_build_files = Dir.glob(Dir.pwd + '/build/**/*').reject do |f|
         File.directory? f
       end
-      assets_to_build = Dir.glob('.tmp/dist/**/*').reject do |f|
+
+      public_dir = Frontman::Config.get(:public_dir, fallback: 'public/')
+      assets_to_build = Dir.glob(File.join(public_dir, '**/*')).reject do |f|
         File.directory? f
       end
 

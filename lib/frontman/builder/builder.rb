@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 require 'frontman/builder/file'
+require 'frontman/config'
 require 'frontman/concerns/dispatch_events'
 require 'frontman/iterator'
 require 'sorbet-runtime'
@@ -12,12 +13,13 @@ module Frontman
       extend T::Sig
       include Frontman::DispatchEvents
 
-      attr_accessor :build_directory, :current_build_files
+      attr_accessor :build_directory, :current_build_files, :public_dir
 
       sig { void }
       def initialize
         @emit_events = true
         @build_directory = Dir.pwd + '/build/'
+        @public_dir = Frontman::Config.get(:public_dir, fallback: 'public/')
         @current_build_files = []
       end
 
@@ -55,15 +57,16 @@ module Frontman
         # We need to go through ERB files at the end so assets_manifest filled
         assets_to_build.sort_by! { |f| f.end_with?('.erb') ? 1 : 0 }
         assets_to_build.map do |path|
+          public_dir = ::File.join(@public_dir, '')
           if path.end_with?('.erb')
             build_file = build_from_erb(
               path,
-              path.sub('.tmp/dist/', '').gsub('.erb', '')
+              path.sub(public_dir, '').gsub('.erb', '')
             )
           else
             build_file = build_from_asset(
               path,
-              path.sub('.tmp/dist/', '')
+              path.sub(public_dir, '')
             )
           end
 
