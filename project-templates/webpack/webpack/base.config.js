@@ -2,6 +2,8 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+const dist = 'assets'
+
 module.exports = {
   entry: {
     index: path.resolve(__dirname, '../assets/index.js'),
@@ -9,7 +11,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, '../.tmp'),
-    filename: '[name].js'
+    filename: `${dist}/[name].js`
   },
   module: {
     rules: [
@@ -32,8 +34,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[name].css'
+      filename: `${dist}/[name].css`,
+      chunkFilename: `${dist}/[name].css`
     }),
   ],
 };

@@ -1,5 +1,6 @@
 %html
   %head
+    %link{ rel: 'stylesheet', href: asset_url('assets/style.css') }
     %title
       This is my website!
 
@@ -13,3 +14,5 @@
     = yield
     %footer
       This is the footer of this website.
+
+= partial 'script_with_vendors.haml', locals: { file: 'index' }
