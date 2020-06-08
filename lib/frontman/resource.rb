@@ -78,7 +78,7 @@ module Frontman
         @destination_path = destination_without_extension + '.' + @extension
       end
       @path = "/#{@destination_path.delete_suffix('index.html')}"
-                .gsub('//', '/')
+              .gsub('//', '/')
     end
 
     sig { void }

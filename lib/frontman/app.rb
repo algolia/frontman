@@ -1,5 +1,5 @@
-# frozen_string_literal: false
 # typed: ignore
+# frozen_string_literal: false
 
 require 'frontman/sitemap_tree'
 require 'frontman/data_store'
@@ -66,9 +66,8 @@ module Frontman
     def add_redirect(from, to)
       from = format_url(from)
 
-      if sitemap_tree.from_url(from)&.resource
-        raise ExistingResourceError.create(from, sitemap_tree.from_url(from)&.resource)
-      end
+      resource = sitemap_tree.from_url(from)&.resource
+      raise ExistingResourceError.create(from, resource) if resource
 
       @redirects[from] = to
     end

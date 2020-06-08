@@ -17,7 +17,6 @@ module Frontman
     option :verbose, type: :boolean
     desc 'build', 'Generate the HTML for your website'
     def build
-
       Frontman::Config.set(:mode, 'build')
       Frontman::Bootstrapper.bootstrap_app(Frontman::App.instance)
 

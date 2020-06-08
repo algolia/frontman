@@ -14,11 +14,9 @@ module Frontman
   class CLI < Thor
     desc 'serve', 'Serve your application'
     def serve
-
       Frontman::Config.set(:mode, 'serve')
       app = Frontman::App.instance
       Frontman::Bootstrapper.bootstrap_app(app)
-
 
       assets_pipeline = Frontman::Builder::AssetPipeline.new(
         app
@@ -41,22 +39,27 @@ module Frontman
       listener = Listen.to(*listen_to_dirs) do |modified, added|
         (added + modified).each do |m|
           resource_path = m.sub("#{Dir.pwd}/", '')
-          if resource_path.start_with?(helpers_dir)
-            helper_name = File.basename(resource_path).gsub('.rb', '')
-            app.register_helpers(
-              [{ path: File.join(Dir.pwd, resource_path), name: helper_name }]
-            )
-          elsif resource_path.start_with?(*listen_to_dirs)
-            r = Frontman::Resource.from_path(resource_path)
+          begin
+            if resource_path.start_with?(helpers_dir)
+              helper_name = File.basename(resource_path).gsub('.rb', '')
+              app.register_helpers(
+                [{ path: File.join(Dir.pwd, resource_path), name: helper_name }]
+              )
+            elsif resource_path.start_with?(*listen_to_dirs)
+              r = Frontman::Resource.from_path(resource_path)
 
-            if resource_path.start_with?(content_dir)
-              exists = app.sitemap_tree.from_resource(r)
-              app.sitemap_tree.add(r) unless exists
+              if resource_path.start_with?(content_dir)
+                exists = app.sitemap_tree.from_resource(r)
+                app.sitemap_tree.add(r) unless exists
+              end
+
+              r&.parse_resource(true)
+            elsif resource_path.end_with?('.rb')
+              load("./#{resource_path}")
             end
-
-            r&.parse_resource(true)
-          elsif resource_path.end_with?('.rb')
-            load("./#{resource_path}")
+          rescue Error
+            # We ignore all errors to prevent the listener from crashing.
+            # Errors will be surfaced by the server instead.
           end
         end
       end
@@ -78,6 +81,7 @@ end
 
 class FrontManServer < Sinatra::Base
   set :port, 4568
+  set :environment, :development
   set :server_settings,
       # Avoid having webrick displaying logs for every requests to the serve
       AccessLog: [],

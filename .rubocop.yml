@@ -50,10 +50,12 @@ Style/ConditionalAssignment:
 Metrics/PerceivedComplexity:
   Exclude:
     - 'lib/frontman/resource.rb'
+    - 'lib/frontman/commands/serve.rb'
 
 Metrics/CyclomaticComplexity:
   Exclude:
     - 'lib/frontman/resource.rb'
+    - 'lib/frontman/commands/serve.rb'
 
 Metrics/BlockLength:
   Exclude:
@@ -72,3 +74,7 @@ Naming/FileName:
 Metrics/ParameterLists:
   Exclude:
     - 'lib/frontman/app.rb'
+
+Lint/HandleExceptions:
+  Exclude:
+    - 'lib/frontman/commands/serve.rb'
