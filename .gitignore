@@ -2,3 +2,4 @@
 /coverage
 Gemfile.lock
 spec/frontman/build
+node_modules
