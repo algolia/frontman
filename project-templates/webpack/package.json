@@ -8,7 +8,9 @@
     "url": "git://github.com/algolia/frontman.git"
   },
   "scripts": {
+    "prestart": "yarn install",
     "start": "webpack --watch --config ./webpack/dev.config.js",
+    "prebuild": "yarn install",
     "build": "webpack --config ./webpack/prod.config.js"
   },
   "license": "MIT",
