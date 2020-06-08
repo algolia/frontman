@@ -81,7 +81,6 @@ end
 
 class FrontManServer < Sinatra::Base
   set :port, 4568
-  set :environment, :development
   set :server_settings,
       # Avoid having webrick displaying logs for every requests to the serve
       AccessLog: [],
