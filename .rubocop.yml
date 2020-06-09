@@ -2,6 +2,7 @@ AllCops:
   TargetRubyVersion: 2.6
   Exclude:
     - '**/Rakefile'
+    - 'vendor/**/*'
 
 Gemspec/RequiredRubyVersion:
   Exclude:
