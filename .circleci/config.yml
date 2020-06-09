@@ -18,6 +18,7 @@ jobs:
     - run:
         name: Install dependencies
         command: |
+          gem install bundler
           bundle check || bundle install --jobs=4 --retry=3 --path vendor/bundle
 
     - run:
