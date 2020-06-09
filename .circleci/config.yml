@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
     - image: circleci/ruby:2.6
-
+    - image: circleci/ruby:2.7
     steps:
     - checkout
 
@@ -24,7 +24,7 @@ jobs:
     - run:
         name: Check types
         command: |
-          bundle exec srb t
+          bundle exec srb t --ignore=/vendor
 
     - run:
         name: Run tests
