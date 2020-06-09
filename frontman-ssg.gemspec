@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.email                 = 'devin@algolia.com'
   s.homepage              = 'https://rubygems.org/gems/frontman-ssg'
   s.license               = 'MIT'
-  s.required_ruby_version = '~> 2.6.0'
+  s.required_ruby_version = '~> 2', '>= 2.6.0'
   s.files                 = `git ls-files`.split("\n")
   s.require_path          = 'lib'
   s.executables           = ['frontman']
