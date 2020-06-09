@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.files                 = `git ls-files`.split("\n")
   s.require_path          = 'lib'
   s.executables           = ['frontman']
-  s.add_development_dependency 'rake',       '~> 0'
+  s.add_development_dependency 'rake', '>= 12.3.3'
   s.add_development_dependency 'rspec', '~> 3.8'
   s.add_development_dependency 'rubocop', '~> 0.71.0'
   s.add_development_dependency 'rubocop-performance', '~> 1.3.0'
