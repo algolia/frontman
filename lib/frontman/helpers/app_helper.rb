@@ -8,7 +8,7 @@ module AppHelper
 
   sig { returns(T::Boolean) }
   def build?
-    Frontman::Config.get :mode == 'build'
+    Frontman::Config.get(:mode) == 'build'
   end
 
   sig { returns(T::Boolean) }

@@ -34,18 +34,6 @@ module Frontman
     end
 
     sig do
-      params(template: String, data: T.any(Hash, CustomStruct))
-        .returns(String)
-    end
-    def partial(template, data = {})
-      partial_dir = Frontman::Config.get(
-        :partial_dir, fallback: 'views/partials'
-      )
-      r = Resource.from_path(File.join(partial_dir, template), nil, false)
-      r.render(nil, data)
-    end
-
-    sig do
       params(key: T.any(String, Symbol), content: T.untyped)
         .returns(T.untyped)
     end
@@ -84,28 +72,6 @@ module Frontman
     end
     def yield_content(key, *_args)
       Frontman::App.instance.current_page.content_blocks[key.to_sym]
-    end
-
-    sig do
-      params(
-        page: Frontman::Resource, options: T.any(Hash, CustomStruct)
-      ).returns(String)
-    end
-    def render_page(page, options = {})
-      # We force not to render any layout
-      options[:layout] = nil
-      options[:ignore_page] = true
-
-      # We don't need to cache here since it already done in the render function
-      # of the resource
-      page.render(nil, options)
-    end
-
-    sig do
-      params(options: T.any(Hash, CustomStruct)).returns(String)
-    end
-    def render_current_page(options = {})
-      render_page(Frontman::App.instance.current_page, options)
     end
 
     sig do
