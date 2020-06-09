@@ -4,3 +4,4 @@
 require 'frontman/commands/serve'
 require 'frontman/commands/build'
 require 'frontman/commands/init'
+require 'frontman/commands/links'

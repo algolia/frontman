@@ -52,11 +52,13 @@ Metrics/PerceivedComplexity:
   Exclude:
     - 'lib/frontman/resource.rb'
     - 'lib/frontman/commands/serve.rb'
+    - 'lib/frontman/commands/links.rb'
 
 Metrics/CyclomaticComplexity:
   Exclude:
     - 'lib/frontman/resource.rb'
     - 'lib/frontman/commands/serve.rb'
+    - 'lib/frontman/commands/links.rb'
 
 Metrics/BlockLength:
   Exclude:
@@ -79,3 +81,7 @@ Metrics/ParameterLists:
 Lint/HandleExceptions:
   Exclude:
     - 'lib/frontman/commands/serve.rb'
+
+Style/GlobalVars:
+  Exclude:
+    - 'lib/frontman/commands/links.rb'
