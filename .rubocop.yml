@@ -1,3 +1,7 @@
+AllCops:
+  Exclude:
+    - 'Rakefile'
+
 Gemspec/RequiredRubyVersion:
   Exclude:
     - 'frontman-ssg.gemspec'
