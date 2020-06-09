@@ -349,21 +349,445 @@
 # wrong constant name of_caller
 # wrong constant name <static-init>
 # wrong constant name <static-init>
+# wrong constant name <Class:APIResponseMismatchError>
+# wrong constant name <Class:BuildMetadata>
+# wrong constant name <Class:BundlerError>
+# wrong constant name <Class:CurrentRuby>
+# wrong constant name <Class:CyclicDependencyError>
+# wrong constant name <Class:Definition>
+# wrong constant name <Class:DepProxy>
+# wrong constant name <Class:Dependency>
+# wrong constant name <Class:DeprecatedError>
+# wrong constant name <Class:Dsl>
+# wrong constant name <Class:EndpointSpecification>
+# wrong constant name <Class:Env>
+# wrong constant name <Class:EnvironmentPreserver>
+# wrong constant name <Class:FeatureFlag>
+# wrong constant name <Class:Fetcher>
+# wrong constant name <Class:FileUtils>
+# wrong constant name <Class:GemHelper>
+# wrong constant name <Class:GemHelpers>
+# wrong constant name <Class:GemNotFound>
+# wrong constant name <Class:GemRequireError>
+# wrong constant name <Class:GemVersionPromoter>
+# wrong constant name <Class:GemfileError>
+# wrong constant name <Class:GemfileEvalError>
+# wrong constant name <Class:GemfileLockNotFound>
+# wrong constant name <Class:GemfileNotFound>
+# wrong constant name <Class:GemspecError>
+# wrong constant name <Class:GenericSystemCallError>
+# wrong constant name <Class:GitError>
+# wrong constant name <Class:Graph>
+# wrong constant name <Class:HTTPError>
+# wrong constant name <Class:Index>
+# wrong constant name <Class:Injector>
+# wrong constant name <Class:InstallError>
+# wrong constant name <Class:InstallHookError>
+# wrong constant name <Class:Installer>
+# wrong constant name <Class:InvalidOption>
+# wrong constant name <Class:LazySpecification>
+# wrong constant name <Class:LockfileError>
+# wrong constant name <Class:LockfileParser>
+# wrong constant name <Class:MarshalError>
+# wrong constant name <Class:MatchPlatform>
+# wrong constant name <Class:Molinillo>
+# wrong constant name <Class:NoSpaceOnDeviceError>
+# wrong constant name <Class:OperationNotSupportedError>
+# wrong constant name <Class:PathError>
+# wrong constant name <Class:PermissionError>
+# wrong constant name <Class:Plugin>
+# wrong constant name <Class:PluginError>
+# wrong constant name <Class:ProcessLock>
+# wrong constant name <Class:ProductionError>
+# wrong constant name <Class:RemoteSpecification>
+# wrong constant name <Class:Resolver>
+# wrong constant name <Class:Retry>
+# wrong constant name <Class:RubyDsl>
+# wrong constant name <Class:RubyGemsGemInstaller>
+# wrong constant name <Class:RubyVersion>
+# wrong constant name <Class:RubyVersionMismatch>
+# wrong constant name <Class:RubygemsIntegration>
+# wrong constant name <Class:Runtime>
+# wrong constant name <Class:SecurityError>
+# wrong constant name <Class:Settings>
+# wrong constant name <Class:SharedHelpers>
+# wrong constant name <Class:Source>
+# wrong constant name <Class:SourceList>
+# wrong constant name <Class:SpecSet>
+# wrong constant name <Class:StubSpecification>
+# wrong constant name <Class:SudoNotPermittedError>
+# wrong constant name <Class:TemporaryResourceError>
+# wrong constant name <Class:Thor>
+# wrong constant name <Class:ThreadCreationError>
+# wrong constant name <Class:UI>
+# wrong constant name <Class:URI>
+# wrong constant name <Class:URICredentialsFilter>
+# wrong constant name <Class:VersionConflict>
+# wrong constant name <Class:VersionRanges>
+# wrong constant name <Class:VirtualProtocolError>
+# wrong constant name <Class:YamlSyntaxError>
+# wrong constant name status_code
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name built_at
+# wrong constant name git_commit_sha
+# wrong constant name release?
+# wrong constant name to_h
+# wrong constant name <static-init>
+# wrong constant name all_errors
+# wrong constant name status_code
+# wrong constant name jruby?
+# wrong constant name jruby_18?
+# wrong constant name jruby_19?
+# wrong constant name jruby_1?
+# wrong constant name jruby_20?
+# wrong constant name jruby_21?
+# wrong constant name jruby_22?
+# wrong constant name jruby_23?
+# wrong constant name jruby_24?
+# wrong constant name jruby_25?
+# wrong constant name jruby_26?
+# wrong constant name jruby_27?
+# wrong constant name jruby_2?
+# wrong constant name maglev?
+# wrong constant name maglev_18?
+# wrong constant name maglev_19?
+# wrong constant name maglev_1?
+# wrong constant name maglev_20?
+# wrong constant name maglev_21?
+# wrong constant name maglev_22?
+# wrong constant name maglev_23?
+# wrong constant name maglev_24?
+# wrong constant name maglev_25?
+# wrong constant name maglev_26?
+# wrong constant name maglev_27?
+# wrong constant name maglev_2?
+# wrong constant name mingw?
+# wrong constant name mingw_18?
+# wrong constant name mingw_19?
+# wrong constant name mingw_1?
+# wrong constant name mingw_20?
+# wrong constant name mingw_21?
+# wrong constant name mingw_22?
+# wrong constant name mingw_23?
+# wrong constant name mingw_24?
+# wrong constant name mingw_25?
+# wrong constant name mingw_26?
+# wrong constant name mingw_27?
+# wrong constant name mingw_2?
+# wrong constant name mri?
+# wrong constant name mri_18?
+# wrong constant name mri_19?
+# wrong constant name mri_1?
+# wrong constant name mri_20?
+# wrong constant name mri_21?
+# wrong constant name mri_22?
+# wrong constant name mri_23?
+# wrong constant name mri_24?
+# wrong constant name mri_25?
+# wrong constant name mri_26?
+# wrong constant name mri_27?
+# wrong constant name mri_2?
+# wrong constant name mswin64?
+# wrong constant name mswin64_18?
+# wrong constant name mswin64_19?
+# wrong constant name mswin64_1?
+# wrong constant name mswin64_20?
+# wrong constant name mswin64_21?
+# wrong constant name mswin64_22?
+# wrong constant name mswin64_23?
+# wrong constant name mswin64_24?
+# wrong constant name mswin64_25?
+# wrong constant name mswin64_26?
+# wrong constant name mswin64_27?
+# wrong constant name mswin64_2?
+# wrong constant name mswin?
+# wrong constant name mswin_18?
+# wrong constant name mswin_19?
+# wrong constant name mswin_1?
+# wrong constant name mswin_20?
+# wrong constant name mswin_21?
+# wrong constant name mswin_22?
+# wrong constant name mswin_23?
+# wrong constant name mswin_24?
+# wrong constant name mswin_25?
+# wrong constant name mswin_26?
+# wrong constant name mswin_27?
+# wrong constant name mswin_2?
+# wrong constant name on_18?
+# wrong constant name on_19?
+# wrong constant name on_1?
+# wrong constant name on_20?
+# wrong constant name on_21?
+# wrong constant name on_22?
+# wrong constant name on_23?
+# wrong constant name on_24?
+# wrong constant name on_25?
+# wrong constant name on_26?
+# wrong constant name on_27?
+# wrong constant name on_2?
+# wrong constant name rbx?
+# wrong constant name rbx_18?
+# wrong constant name rbx_19?
+# wrong constant name rbx_1?
+# wrong constant name rbx_20?
+# wrong constant name rbx_21?
+# wrong constant name rbx_22?
+# wrong constant name rbx_23?
+# wrong constant name rbx_24?
+# wrong constant name rbx_25?
+# wrong constant name rbx_26?
+# wrong constant name rbx_27?
+# wrong constant name rbx_2?
+# wrong constant name ruby?
+# wrong constant name ruby_18?
+# wrong constant name ruby_19?
+# wrong constant name ruby_1?
+# wrong constant name ruby_20?
+# wrong constant name ruby_21?
+# wrong constant name ruby_22?
+# wrong constant name ruby_23?
+# wrong constant name ruby_24?
+# wrong constant name ruby_25?
+# wrong constant name ruby_26?
+# wrong constant name ruby_27?
+# wrong constant name ruby_2?
+# wrong constant name truffleruby?
+# wrong constant name truffleruby_18?
+# wrong constant name truffleruby_19?
+# wrong constant name truffleruby_1?
+# wrong constant name truffleruby_20?
+# wrong constant name truffleruby_21?
+# wrong constant name truffleruby_22?
+# wrong constant name truffleruby_23?
+# wrong constant name truffleruby_24?
+# wrong constant name truffleruby_25?
+# wrong constant name truffleruby_26?
+# wrong constant name truffleruby_27?
+# wrong constant name truffleruby_2?
+# wrong constant name x64_mingw?
+# wrong constant name x64_mingw_18?
+# wrong constant name x64_mingw_19?
+# wrong constant name x64_mingw_1?
+# wrong constant name x64_mingw_20?
+# wrong constant name x64_mingw_21?
+# wrong constant name x64_mingw_22?
+# wrong constant name x64_mingw_23?
+# wrong constant name x64_mingw_24?
+# wrong constant name x64_mingw_25?
+# wrong constant name x64_mingw_26?
+# wrong constant name x64_mingw_27?
+# wrong constant name x64_mingw_2?
+# wrong constant name <static-init>
+# wrong constant name status_code
+# wrong constant name <static-init>
+# undefined method `ensure_equivalent_gemfile_and_lockfile<defaultArg>1' for class `Bundler::Definition'
+# undefined method `initialize<defaultArg>1' for class `Bundler::Definition'
+# Did you mean?  initialize_dup
+# undefined method `initialize<defaultArg>2' for class `Bundler::Definition'
+# Did you mean?  initialize_dup
+# undefined method `initialize<defaultArg>3' for class `Bundler::Definition'
+# Did you mean?  initialize_dup
+# undefined method `lock<defaultArg>1' for class `Bundler::Definition'
+# uninitialized constant Bundler::Definition::GENERICS
+# uninitialized constant Bundler::Definition::GENERIC_CACHE
+# wrong constant name add_current_platform
+# wrong constant name add_platform
+# wrong constant name current_dependencies
+# wrong constant name dependencies
+# wrong constant name ensure_equivalent_gemfile_and_lockfile<defaultArg>1
+# wrong constant name ensure_equivalent_gemfile_and_lockfile
+# wrong constant name find_indexed_specs
+# wrong constant name find_resolved_spec
+# wrong constant name gem_version_promoter
+# wrong constant name gemfiles
+# wrong constant name groups
+# wrong constant name has_local_dependencies?
+# wrong constant name has_rubygems_remotes?
+# wrong constant name index
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize<defaultArg>2
+# wrong constant name initialize<defaultArg>3
+# wrong constant name initialize
+# wrong constant name lock<defaultArg>1
+# wrong constant name lock
+# wrong constant name locked_bundler_version
+# wrong constant name locked_deps
+# wrong constant name locked_gems
+# wrong constant name locked_ruby_version
+# wrong constant name locked_ruby_version_object
+# wrong constant name lockfile
+# wrong constant name missing_specs
+# wrong constant name missing_specs?
+# wrong constant name new_platform?
+# wrong constant name new_specs
+# wrong constant name nothing_changed?
+# wrong constant name platforms
+# wrong constant name remove_platform
+# wrong constant name removed_specs
+# wrong constant name requested_specs
+# wrong constant name requires
+# wrong constant name resolve
+# wrong constant name resolve_remotely!
+# wrong constant name resolve_with_cache!
+# wrong constant name ruby_version
+# wrong constant name spec_git_paths
+# wrong constant name specs
+# wrong constant name specs_for
+# wrong constant name to_lock
+# wrong constant name unlocking?
+# wrong constant name validate_platforms!
+# wrong constant name validate_ruby!
+# wrong constant name validate_runtime!
+# wrong constant name <static-init>
+# wrong constant name build
+# wrong constant name ==
+# wrong constant name __platform
+# wrong constant name dep
+# wrong constant name eql?
+# wrong constant name initialize
+# wrong constant name name
+# wrong constant name requirement
+# wrong constant name type
+# wrong constant name <static-init>
+# undefined method `initialize<defaultArg>1' for class `Bundler::Dependency'
+# Did you mean?  initialize_dup
 # uninitialized constant Bundler::Dependency::TYPES
+# wrong constant name autorequire
 # wrong constant name branch
+# wrong constant name current_env?
+# wrong constant name current_platform?
 # wrong constant name expanded_platforms
+# wrong constant name gem_platforms
+# wrong constant name gemfile
 # wrong constant name git
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
+# wrong constant name platforms
+# wrong constant name should_include?
+# wrong constant name <static-init>
+# wrong constant name status_code
+# wrong constant name <static-init>
+# undefined method `eval_gemfile<defaultArg>1' for class `Bundler::Dsl'
+# undefined method `gemspec<defaultArg>1' for class `Bundler::Dsl'
+# undefined method `git<defaultArg>1' for class `Bundler::Dsl'
+# undefined method `github<defaultArg>1' for class `Bundler::Dsl'
+# undefined method `path<defaultArg>1' for class `Bundler::Dsl'
+# wrong constant name <Class:DSLError>
+# wrong constant name dependencies
+# wrong constant name dependencies=
+# wrong constant name env
+# wrong constant name eval_gemfile<defaultArg>1
+# wrong constant name eval_gemfile
+# wrong constant name gem
+# wrong constant name gemspec<defaultArg>1
+# wrong constant name gemspec
+# wrong constant name gemspecs
+# wrong constant name git<defaultArg>1
+# wrong constant name git
+# wrong constant name git_source
+# wrong constant name github<defaultArg>1
+# wrong constant name github
+# wrong constant name group
+# wrong constant name install_if
+# wrong constant name method_missing
+# wrong constant name path<defaultArg>1
+# wrong constant name path
+# wrong constant name platform
+# wrong constant name platforms
+# wrong constant name plugin
+# wrong constant name source
+# wrong constant name to_definition
+# undefined method `initialize<defaultArg>1' for class `Bundler::Dsl::DSLError'
+# Did you mean?  initialize_dup
+# wrong constant name contents
+# wrong constant name description
+# wrong constant name dsl_path
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name evaluate
+# undefined method `initialize<defaultArg>1' for class `Bundler::EndpointSpecification'
+# Did you mean?  initialize_dup
+# uninitialized constant Bundler::EndpointSpecification::CURRENT_SPECIFICATION_VERSION
+# uninitialized constant Bundler::EndpointSpecification::DateLike
+# Did you mean?  DateTime
+# uninitialized constant Bundler::EndpointSpecification::DateTimeFormat
+# uninitialized constant Bundler::EndpointSpecification::EMPTY
+# uninitialized constant Bundler::EndpointSpecification::GENERICS
+# uninitialized constant Bundler::EndpointSpecification::GENERIC_CACHE
+# uninitialized constant Bundler::EndpointSpecification::INITIALIZE_CODE_FOR_DEFAULTS
+# uninitialized constant Bundler::EndpointSpecification::MARSHAL_FIELDS
+# uninitialized constant Bundler::EndpointSpecification::NONEXISTENT_SPECIFICATION_VERSION
+# uninitialized constant Bundler::EndpointSpecification::NOT_FOUND
+# uninitialized constant Bundler::EndpointSpecification::SPECIFICATION_VERSION_HISTORY
+# uninitialized constant Bundler::EndpointSpecification::TODAY
+# uninitialized constant Bundler::EndpointSpecification::VALID_NAME_PATTERN
+# wrong constant name __swap__
+# wrong constant name _local_specification
+# wrong constant name checksum
+# wrong constant name dependencies=
+# wrong constant name fetch_platform
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
+# wrong constant name <static-init>
+# uninitialized constant Bundler::EndpointSpecification::Elem
 # undefined singleton method `report<defaultArg>1' for `Bundler::Env'
 # wrong constant name <static-init>
 # wrong constant name environment
 # wrong constant name report<defaultArg>1
 # wrong constant name report
 # wrong constant name write
+# wrong constant name backup
+# wrong constant name initialize
+# wrong constant name restore
+# wrong constant name <static-init>
+# wrong constant name allow_bundler_dependency_conflicts?
+# wrong constant name allow_offline_install?
+# wrong constant name auto_clean_without_path?
+# wrong constant name auto_config_jobs?
+# wrong constant name bundler_10_mode?
+# wrong constant name bundler_1_mode?
+# wrong constant name bundler_2_mode?
+# wrong constant name bundler_3_mode?
+# wrong constant name bundler_4_mode?
+# wrong constant name bundler_5_mode?
+# wrong constant name bundler_6_mode?
+# wrong constant name bundler_7_mode?
+# wrong constant name bundler_8_mode?
+# wrong constant name bundler_9_mode?
+# wrong constant name cache_all?
+# wrong constant name default_cli_command
+# wrong constant name default_install_uses_path?
+# wrong constant name deployment_means_frozen?
+# wrong constant name disable_multisource?
+# wrong constant name forget_cli_options?
+# wrong constant name global_gem_cache?
+# wrong constant name initialize
+# wrong constant name only_update_to_newer_versions?
+# wrong constant name path_relative_to_cwd?
+# wrong constant name plugins?
+# wrong constant name print_only_version_number?
+# wrong constant name setup_makes_kernel_gem_public?
+# wrong constant name skip_default_git_sources?
+# wrong constant name specific_platform?
+# wrong constant name suppress_install_using_messages?
+# wrong constant name unlock_source_unlocks_spec?
+# wrong constant name update_requires_all_flag?
+# wrong constant name use_gem_version_promoter_for_major_updates?
+# wrong constant name <static-init>
+# wrong constant name <Class:AuthenticationRequiredError>
+# wrong constant name <Class:BadAuthenticationError>
 # wrong constant name <Class:Base>
+# wrong constant name <Class:CertificateFailureError>
 # wrong constant name <Class:CompactIndex>
 # wrong constant name <Class:Dependency>
 # wrong constant name <Class:Downloader>
+# wrong constant name <Class:FallbackError>
 # wrong constant name <Class:Index>
+# wrong constant name <Class:NetworkDownError>
+# wrong constant name <Class:SSLError>
 # wrong constant name <Class:TooManyRequestsError>
 # wrong constant name fetch_spec
 # wrong constant name fetchers
@@ -375,7 +799,9 @@
 # wrong constant name use_api
 # wrong constant name user_agent
 # wrong constant name initialize
+# wrong constant name <static-init>
 # wrong constant name initialize
+# wrong constant name <static-init>
 # wrong constant name api_fetcher?
 # wrong constant name available?
 # wrong constant name display_uri
@@ -386,6 +812,7 @@
 # wrong constant name remote_uri
 # wrong constant name <static-init>
 # wrong constant name initialize
+# wrong constant name <static-init>
 # wrong constant name <Class:ClientFetcher>
 # wrong constant name available?
 # wrong constant name fetch_spec
@@ -424,13 +851,16 @@
 # wrong constant name redirect_limit
 # wrong constant name request
 # wrong constant name <static-init>
+# wrong constant name <static-init>
 # wrong constant name fetch_spec
 # wrong constant name specs
+# wrong constant name <static-init>
 # wrong constant name <static-init>
 # undefined method `initialize<defaultArg>1' for class `Bundler::Fetcher::SSLError'
 # Did you mean?  initialize_dup
 # wrong constant name initialize<defaultArg>1
 # wrong constant name initialize
+# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name api_timeout
@@ -441,21 +871,356 @@
 # wrong constant name max_retries=
 # wrong constant name redirect_limit
 # wrong constant name redirect_limit=
+# wrong constant name <Class:DryRun>
+# wrong constant name <Class:Entry_>
+# wrong constant name <Class:LowMethods>
+# wrong constant name <Class:NoWrite>
+# wrong constant name <Class:StreamUtils_>
+# wrong constant name <Class:Verbose>
+# uninitialized constant Bundler::FileUtils::DryRun::LOW_METHODS
+# Did you mean?  Bundler::FileUtils::DryRun::LowMethods
+#                Bundler::FileUtils::LowMethods
+#                Bundler::FileUtils::LOW_METHODS
+# uninitialized constant Bundler::FileUtils::DryRun::METHODS
+# Did you mean?  Method
+#                Bundler::FileUtils::METHODS
+# uninitialized constant Bundler::FileUtils::DryRun::OPT_TABLE
+# Did you mean?  Bundler::FileUtils::OPT_TABLE
+# uninitialized constant Bundler::FileUtils::DryRun::VERSION
+# Did you mean?  Bundler::FileUtils::VERSION
+#                Bundler::VERSION
+# wrong constant name <static-init>
+# undefined method `initialize<defaultArg>1' for class `Bundler::FileUtils::Entry_'
+# Did you mean?  initialize_dup
+# undefined method `initialize<defaultArg>2' for class `Bundler::FileUtils::Entry_'
+# Did you mean?  initialize_dup
+# wrong constant name blockdev?
+# wrong constant name chardev?
+# wrong constant name chmod
+# wrong constant name chown
+# wrong constant name copy
+# wrong constant name copy_file
+# wrong constant name copy_metadata
+# wrong constant name dereference?
+# wrong constant name directory?
+# wrong constant name door?
+# wrong constant name entries
+# wrong constant name exist?
+# wrong constant name file?
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize<defaultArg>2
+# wrong constant name initialize
 # wrong constant name link
+# wrong constant name lstat
+# wrong constant name lstat!
+# wrong constant name path
+# wrong constant name pipe?
+# wrong constant name platform_support
+# wrong constant name postorder_traverse
+# wrong constant name prefix
+# wrong constant name preorder_traverse
+# wrong constant name rel
+# wrong constant name remove
+# wrong constant name remove_dir1
+# wrong constant name remove_file
+# wrong constant name socket?
+# wrong constant name stat
+# wrong constant name stat!
+# wrong constant name symlink?
+# wrong constant name traverse
+# wrong constant name wrap_traverse
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant Bundler::FileUtils::NoWrite::LOW_METHODS
+# Did you mean?  Bundler::FileUtils::NoWrite::LowMethods
+#                Bundler::FileUtils::LowMethods
+#                Bundler::FileUtils::LOW_METHODS
+# uninitialized constant Bundler::FileUtils::NoWrite::METHODS
+# Did you mean?  Method
+#                Bundler::FileUtils::METHODS
+# uninitialized constant Bundler::FileUtils::NoWrite::OPT_TABLE
+# Did you mean?  Bundler::FileUtils::OPT_TABLE
+# uninitialized constant Bundler::FileUtils::NoWrite::VERSION
+# Did you mean?  Bundler::FileUtils::VERSION
+#                Bundler::VERSION
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant Bundler::FileUtils::Verbose::LOW_METHODS
+# Did you mean?  Bundler::FileUtils::Verbose::LowMethods
+#                Bundler::FileUtils::LowMethods
+#                Bundler::FileUtils::LOW_METHODS
+# uninitialized constant Bundler::FileUtils::Verbose::METHODS
+# Did you mean?  Method
+#                Bundler::FileUtils::METHODS
+# uninitialized constant Bundler::FileUtils::Verbose::OPT_TABLE
+# Did you mean?  Bundler::FileUtils::OPT_TABLE
+# uninitialized constant Bundler::FileUtils::Verbose::VERSION
+# Did you mean?  Bundler::FileUtils::VERSION
+#                Bundler::VERSION
+# wrong constant name <static-init>
+# undefined singleton method `cd<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `chdir<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `chmod<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `chmod<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `chmod_R<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `chmod_R<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `chmod_R<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `chown<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `chown<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `chown_R<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `chown_R<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `chown_R<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `copy<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `copy<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `copy<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `copy_entry<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `copy_entry<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `copy_entry<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `copy_file<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `copy_file<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `cp<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `cp<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `cp<defaultArg>3' for `Bundler::FileUtils'
 # undefined singleton method `cp_lr<defaultArg>1' for `Bundler::FileUtils'
 # undefined singleton method `cp_lr<defaultArg>2' for `Bundler::FileUtils'
 # undefined singleton method `cp_lr<defaultArg>3' for `Bundler::FileUtils'
 # undefined singleton method `cp_lr<defaultArg>4' for `Bundler::FileUtils'
+# undefined singleton method `cp_r<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `cp_r<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `cp_r<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `cp_r<defaultArg>4' for `Bundler::FileUtils'
+# undefined singleton method `cp_r<defaultArg>5' for `Bundler::FileUtils'
+# undefined singleton method `install<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `install<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `install<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `install<defaultArg>4' for `Bundler::FileUtils'
+# undefined singleton method `install<defaultArg>5' for `Bundler::FileUtils'
+# undefined singleton method `install<defaultArg>6' for `Bundler::FileUtils'
+# undefined singleton method `link<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `link<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `link<defaultArg>3' for `Bundler::FileUtils'
 # undefined singleton method `link_entry<defaultArg>1' for `Bundler::FileUtils'
 # undefined singleton method `link_entry<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `ln<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `ln<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `ln<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `ln_s<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `ln_s<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `ln_s<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `ln_sf<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `ln_sf<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `makedirs<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `makedirs<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `makedirs<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `mkdir<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `mkdir<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `mkdir<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `mkdir_p<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `mkdir_p<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `mkdir_p<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `mkpath<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `mkpath<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `mkpath<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `move<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `move<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `move<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `move<defaultArg>4' for `Bundler::FileUtils'
+# undefined singleton method `mv<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `mv<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `mv<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `mv<defaultArg>4' for `Bundler::FileUtils'
+# undefined singleton method `remove<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `remove<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `remove<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `remove_dir<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `remove_entry<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `remove_entry_secure<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `remove_file<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `rm<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `rm<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `rm<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `rm_f<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `rm_f<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `rm_r<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `rm_r<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `rm_r<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `rm_r<defaultArg>4' for `Bundler::FileUtils'
+# undefined singleton method `rm_rf<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `rm_rf<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `rm_rf<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `rmdir<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `rmdir<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `rmdir<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `rmtree<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `rmtree<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `rmtree<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `safe_unlink<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `safe_unlink<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `symlink<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `symlink<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `symlink<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `touch<defaultArg>1' for `Bundler::FileUtils'
+# undefined singleton method `touch<defaultArg>2' for `Bundler::FileUtils'
+# undefined singleton method `touch<defaultArg>3' for `Bundler::FileUtils'
+# undefined singleton method `touch<defaultArg>4' for `Bundler::FileUtils'
+# wrong constant name <static-init>
+# wrong constant name cd<defaultArg>1
+# wrong constant name cd
+# wrong constant name chdir<defaultArg>1
+# wrong constant name chdir
+# wrong constant name chmod<defaultArg>1
+# wrong constant name chmod<defaultArg>2
+# wrong constant name chmod
+# wrong constant name chmod_R<defaultArg>1
+# wrong constant name chmod_R<defaultArg>2
+# wrong constant name chmod_R<defaultArg>3
+# wrong constant name chmod_R
+# wrong constant name chown<defaultArg>1
+# wrong constant name chown<defaultArg>2
+# wrong constant name chown
+# wrong constant name chown_R<defaultArg>1
+# wrong constant name chown_R<defaultArg>2
+# wrong constant name chown_R<defaultArg>3
+# wrong constant name chown_R
+# wrong constant name cmp
+# wrong constant name collect_method
+# wrong constant name commands
+# wrong constant name compare_file
+# wrong constant name compare_stream
+# wrong constant name copy<defaultArg>1
+# wrong constant name copy<defaultArg>2
+# wrong constant name copy<defaultArg>3
+# wrong constant name copy
+# wrong constant name copy_entry<defaultArg>1
+# wrong constant name copy_entry<defaultArg>2
+# wrong constant name copy_entry<defaultArg>3
+# wrong constant name copy_entry
+# wrong constant name copy_file<defaultArg>1
+# wrong constant name copy_file<defaultArg>2
+# wrong constant name copy_file
+# wrong constant name copy_stream
+# wrong constant name cp<defaultArg>1
+# wrong constant name cp<defaultArg>2
+# wrong constant name cp<defaultArg>3
+# wrong constant name cp
 # wrong constant name cp_lr<defaultArg>1
 # wrong constant name cp_lr<defaultArg>2
 # wrong constant name cp_lr<defaultArg>3
 # wrong constant name cp_lr<defaultArg>4
 # wrong constant name cp_lr
+# wrong constant name cp_r<defaultArg>1
+# wrong constant name cp_r<defaultArg>2
+# wrong constant name cp_r<defaultArg>3
+# wrong constant name cp_r<defaultArg>4
+# wrong constant name cp_r<defaultArg>5
+# wrong constant name cp_r
+# wrong constant name getwd
+# wrong constant name have_option?
+# wrong constant name identical?
+# wrong constant name install<defaultArg>1
+# wrong constant name install<defaultArg>2
+# wrong constant name install<defaultArg>3
+# wrong constant name install<defaultArg>4
+# wrong constant name install<defaultArg>5
+# wrong constant name install<defaultArg>6
+# wrong constant name install
+# wrong constant name link<defaultArg>1
+# wrong constant name link<defaultArg>2
+# wrong constant name link<defaultArg>3
+# wrong constant name link
 # wrong constant name link_entry<defaultArg>1
 # wrong constant name link_entry<defaultArg>2
 # wrong constant name link_entry
+# wrong constant name ln<defaultArg>1
+# wrong constant name ln<defaultArg>2
+# wrong constant name ln<defaultArg>3
+# wrong constant name ln
+# wrong constant name ln_s<defaultArg>1
+# wrong constant name ln_s<defaultArg>2
+# wrong constant name ln_s<defaultArg>3
+# wrong constant name ln_s
+# wrong constant name ln_sf<defaultArg>1
+# wrong constant name ln_sf<defaultArg>2
+# wrong constant name ln_sf
+# wrong constant name makedirs<defaultArg>1
+# wrong constant name makedirs<defaultArg>2
+# wrong constant name makedirs<defaultArg>3
+# wrong constant name makedirs
+# wrong constant name mkdir<defaultArg>1
+# wrong constant name mkdir<defaultArg>2
+# wrong constant name mkdir<defaultArg>3
+# wrong constant name mkdir
+# wrong constant name mkdir_p<defaultArg>1
+# wrong constant name mkdir_p<defaultArg>2
+# wrong constant name mkdir_p<defaultArg>3
+# wrong constant name mkdir_p
+# wrong constant name mkpath<defaultArg>1
+# wrong constant name mkpath<defaultArg>2
+# wrong constant name mkpath<defaultArg>3
+# wrong constant name mkpath
+# wrong constant name move<defaultArg>1
+# wrong constant name move<defaultArg>2
+# wrong constant name move<defaultArg>3
+# wrong constant name move<defaultArg>4
+# wrong constant name move
+# wrong constant name mv<defaultArg>1
+# wrong constant name mv<defaultArg>2
+# wrong constant name mv<defaultArg>3
+# wrong constant name mv<defaultArg>4
+# wrong constant name mv
+# wrong constant name options
+# wrong constant name options_of
+# wrong constant name private_module_function
+# wrong constant name pwd
+# wrong constant name remove<defaultArg>1
+# wrong constant name remove<defaultArg>2
+# wrong constant name remove<defaultArg>3
+# wrong constant name remove
+# wrong constant name remove_dir<defaultArg>1
+# wrong constant name remove_dir
+# wrong constant name remove_entry<defaultArg>1
+# wrong constant name remove_entry
+# wrong constant name remove_entry_secure<defaultArg>1
+# wrong constant name remove_entry_secure
+# wrong constant name remove_file<defaultArg>1
+# wrong constant name remove_file
+# wrong constant name rm<defaultArg>1
+# wrong constant name rm<defaultArg>2
+# wrong constant name rm<defaultArg>3
+# wrong constant name rm
+# wrong constant name rm_f<defaultArg>1
+# wrong constant name rm_f<defaultArg>2
+# wrong constant name rm_f
+# wrong constant name rm_r<defaultArg>1
+# wrong constant name rm_r<defaultArg>2
+# wrong constant name rm_r<defaultArg>3
+# wrong constant name rm_r<defaultArg>4
+# wrong constant name rm_r
+# wrong constant name rm_rf<defaultArg>1
+# wrong constant name rm_rf<defaultArg>2
+# wrong constant name rm_rf<defaultArg>3
+# wrong constant name rm_rf
+# wrong constant name rmdir<defaultArg>1
+# wrong constant name rmdir<defaultArg>2
+# wrong constant name rmdir<defaultArg>3
+# wrong constant name rmdir
+# wrong constant name rmtree<defaultArg>1
+# wrong constant name rmtree<defaultArg>2
+# wrong constant name rmtree<defaultArg>3
+# wrong constant name rmtree
+# wrong constant name safe_unlink<defaultArg>1
+# wrong constant name safe_unlink<defaultArg>2
+# wrong constant name safe_unlink
+# wrong constant name symlink<defaultArg>1
+# wrong constant name symlink<defaultArg>2
+# wrong constant name symlink<defaultArg>3
+# wrong constant name symlink
+# wrong constant name touch<defaultArg>1
+# wrong constant name touch<defaultArg>2
+# wrong constant name touch<defaultArg>3
+# wrong constant name touch<defaultArg>4
+# wrong constant name touch
+# wrong constant name uptodate?
 # undefined method `git_push<defaultArg>1' for class `Bundler::GemHelper'
 # undefined method `initialize<defaultArg>1' for class `Bundler::GemHelper'
 # Did you mean?  initialize_dup
@@ -464,6 +1229,16 @@
 # undefined method `install_gem<defaultArg>1' for class `Bundler::GemHelper'
 # undefined method `install_gem<defaultArg>2' for class `Bundler::GemHelper'
 # undefined method `perform_git_push<defaultArg>1' for class `Bundler::GemHelper'
+# uninitialized constant Bundler::GemHelper::DEFAULT
+# uninitialized constant Bundler::GemHelper::LN_SUPPORTED
+# uninitialized constant Bundler::GemHelper::LOW_METHODS
+# Did you mean?  Bundler::GemHelper::LowMethods
+# uninitialized constant Bundler::GemHelper::METHODS
+# Did you mean?  Method
+# uninitialized constant Bundler::GemHelper::OPT_TABLE
+# uninitialized constant Bundler::GemHelper::RUBY
+# uninitialized constant Bundler::GemHelper::VERSION
+# Did you mean?  Bundler::VERSION
 # wrong constant name allowed_push_host
 # wrong constant name already_tagged?
 # wrong constant name base
@@ -504,6 +1279,32 @@
 # wrong constant name install_tasks
 # wrong constant name instance
 # wrong constant name instance=
+# wrong constant name <Class:PlatformMatch>
+# wrong constant name <=>
+# uninitialized constant Bundler::GemHelpers::PlatformMatch::Elem
+# wrong constant name cpu_match
+# wrong constant name cpu_match=
+# wrong constant name os_match
+# wrong constant name os_match=
+# wrong constant name platform_version_match
+# wrong constant name platform_version_match=
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name cpu_match
+# wrong constant name members
+# wrong constant name os_match
+# wrong constant name platform_version_match
+# wrong constant name <static-init>
+# wrong constant name generic
+# wrong constant name generic_local_platform
+# wrong constant name platform_specificity_match
+# wrong constant name select_best_platform_match
+# wrong constant name status_code
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name orig_exception
+# wrong constant name status_code
+# wrong constant name <static-init>
 # undefined method `initialize<defaultArg>1' for class `Bundler::GemVersionPromoter'
 # Did you mean?  initialize_dup
 # undefined method `initialize<defaultArg>2' for class `Bundler::GemVersionPromoter'
@@ -522,6 +1323,21 @@
 # wrong constant name strict
 # wrong constant name strict=
 # wrong constant name unlock_gems
+# wrong constant name <static-init>
+# wrong constant name status_code
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name status_code
+# wrong constant name <static-init>
+# wrong constant name status_code
+# wrong constant name <static-init>
+# wrong constant name status_code
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name status_code
+# wrong constant name underlying_error
+# wrong constant name <static-init>
+# wrong constant name status_code
 # wrong constant name <static-init>
 # undefined method `initialize<defaultArg>1' for class `Bundler::Graph'
 # Did you mean?  initialize_dup
@@ -549,7 +1365,41 @@
 # wrong constant name run
 # wrong constant name <static-init>
 # wrong constant name <static-init>
+# wrong constant name filter_uri
+# wrong constant name status_code
+# wrong constant name <static-init>
+# undefined method `[]<defaultArg>1' for class `Bundler::Index'
+# undefined method `local_search<defaultArg>1' for class `Bundler::Index'
+# undefined method `search<defaultArg>1' for class `Bundler::Index'
+# undefined method `use<defaultArg>1' for class `Bundler::Index'
+# wrong constant name <<
+# wrong constant name ==
 # uninitialized constant Bundler::Index::Elem
+# wrong constant name []<defaultArg>1
+# wrong constant name []
+# wrong constant name add_source
+# wrong constant name all_specs
+# wrong constant name dependencies_eql?
+# wrong constant name dependency_names
+# wrong constant name each
+# wrong constant name empty?
+# wrong constant name local_search<defaultArg>1
+# wrong constant name local_search
+# wrong constant name search<defaultArg>1
+# wrong constant name search
+# wrong constant name search_all
+# wrong constant name size
+# wrong constant name sort_specs
+# wrong constant name sources
+# wrong constant name spec_names
+# wrong constant name specs
+# wrong constant name unmet_dependency_names
+# wrong constant name unsorted_search
+# wrong constant name use<defaultArg>1
+# wrong constant name use
+# wrong constant name <static-init>
+# wrong constant name build
+# wrong constant name sort_specs
 # undefined method `initialize<defaultArg>1' for class `Bundler::Injector'
 # Did you mean?  initialize_dup
 # wrong constant name initialize<defaultArg>1
@@ -563,6 +1413,10 @@
 # wrong constant name inject
 # wrong constant name remove<defaultArg>1
 # wrong constant name remove
+# wrong constant name status_code
+# wrong constant name <static-init>
+# wrong constant name status_code
+# wrong constant name <static-init>
 # undefined method `generate_bundler_executable_stubs<defaultArg>1' for class `Bundler::Installer'
 # wrong constant name generate_bundler_executable_stubs<defaultArg>1
 # wrong constant name generate_bundler_executable_stubs
@@ -576,14 +1430,395 @@
 # wrong constant name ambiguous_gems=
 # wrong constant name install<defaultArg>1
 # wrong constant name install
+# wrong constant name status_code
+# wrong constant name <static-init>
+# undefined method `initialize<defaultArg>1' for class `Bundler::LazySpecification'
+# Did you mean?  initialize_dup
+# wrong constant name ==
+# uninitialized constant Bundler::LazySpecification::GENERICS
+# uninitialized constant Bundler::LazySpecification::GENERIC_CACHE
+# wrong constant name <Class:Identifier>
+# wrong constant name __materialize__
+# wrong constant name dependencies
+# wrong constant name full_name
+# wrong constant name git_version
+# wrong constant name identifier
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
+# wrong constant name name
+# wrong constant name platform
+# wrong constant name remote
+# wrong constant name remote=
+# wrong constant name respond_to?
+# wrong constant name satisfies?
+# wrong constant name source
+# wrong constant name source=
+# wrong constant name to_lock
+# wrong constant name version
+# wrong constant name <=>
+# uninitialized constant Bundler::LazySpecification::Identifier::Elem
+# wrong constant name dependencies
+# wrong constant name dependencies=
+# wrong constant name name
+# wrong constant name name=
+# wrong constant name platform
+# wrong constant name platform=
+# wrong constant name platform_string
+# wrong constant name source
+# wrong constant name source=
+# wrong constant name version
+# wrong constant name version=
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
+# wrong constant name <static-init>
+# wrong constant name status_code
+# wrong constant name <static-init>
+# wrong constant name bundler_version
+# wrong constant name dependencies
+# wrong constant name initialize
+# wrong constant name platforms
+# wrong constant name ruby_version
+# wrong constant name sources
+# wrong constant name specs
+# wrong constant name warn_for_outdated_bundler_version
+# undefined singleton method `sections_to_ignore<defaultArg>1' for `Bundler::LockfileParser'
+# wrong constant name <static-init>
+# wrong constant name sections_in_lockfile
+# wrong constant name sections_to_ignore<defaultArg>1
+# wrong constant name sections_to_ignore
+# wrong constant name unknown_sections_in_lockfile
+# wrong constant name <static-init>
+# uninitialized constant Bundler::MatchPlatform::GENERICS
+# uninitialized constant Bundler::MatchPlatform::GENERIC_CACHE
+# wrong constant name match_platform
+# wrong constant name <static-init>
+# wrong constant name platforms_match?
+# wrong constant name <Class:CircularDependencyError>
+# wrong constant name <Class:Compatibility>
+# wrong constant name <Class:Delegates>
+# wrong constant name <Class:DependencyGraph>
+# wrong constant name <Class:DependencyState>
+# wrong constant name <Class:NoSuchDependencyError>
+# wrong constant name <Class:PossibilityState>
+# wrong constant name <Class:ResolutionState>
+# wrong constant name <Class:Resolver>
+# wrong constant name <Class:ResolverError>
+# wrong constant name <Class:SpecificationProvider>
+# wrong constant name <Class:UI>
+# wrong constant name <Class:VersionConflict>
+# wrong constant name dependencies
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name flat_map
+# wrong constant name <Class:ResolutionState>
+# wrong constant name <Class:SpecificationProvider>
+# wrong constant name activated
+# wrong constant name conflicts
+# wrong constant name depth
+# wrong constant name name
+# wrong constant name possibilities
+# wrong constant name requirement
+# wrong constant name requirements
+# wrong constant name unused_unwind_options
+# wrong constant name <static-init>
+# wrong constant name allow_missing?
+# wrong constant name dependencies_for
+# wrong constant name name_for
+# wrong constant name name_for_explicit_dependency_source
+# wrong constant name name_for_locking_dependency_source
+# wrong constant name requirement_satisfied_by?
+# wrong constant name search_for
+# wrong constant name sort_dependencies
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# undefined method `add_vertex<defaultArg>1' for class `Bundler::Molinillo::DependencyGraph'
+# undefined method `to_dot<defaultArg>1' for class `Bundler::Molinillo::DependencyGraph'
+# wrong constant name ==
+# wrong constant name <Class:Action>
+# wrong constant name <Class:AddEdgeNoCircular>
+# wrong constant name <Class:AddVertex>
+# wrong constant name <Class:DeleteEdge>
+# wrong constant name <Class:DetachVertexNamed>
+# wrong constant name <Class:Edge>
 # uninitialized constant Bundler::Molinillo::DependencyGraph::Elem
+# wrong constant name <Class:Log>
+# wrong constant name <Class:SetPayload>
+# wrong constant name <Class:Tag>
+# wrong constant name <Class:Vertex>
+# wrong constant name add_child_vertex
+# wrong constant name add_edge
+# wrong constant name add_vertex<defaultArg>1
+# wrong constant name add_vertex
+# wrong constant name delete_edge
+# wrong constant name detach_vertex_named
+# wrong constant name each
+# wrong constant name log
+# wrong constant name rewind_to
+# wrong constant name root_vertex_named
+# wrong constant name set_payload
+# wrong constant name tag
+# wrong constant name to_dot<defaultArg>1
+# wrong constant name to_dot
+# wrong constant name tsort_each_child
+# wrong constant name vertex_named
+# wrong constant name vertices
+# wrong constant name down
+# wrong constant name next
+# wrong constant name next=
+# wrong constant name previous
+# wrong constant name previous=
+# wrong constant name up
+# wrong constant name <static-init>
+# wrong constant name action_name
+# wrong constant name destination
+# wrong constant name initialize
+# wrong constant name make_edge
+# wrong constant name origin
+# wrong constant name requirement
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name name
+# wrong constant name payload
+# wrong constant name root
+# wrong constant name <static-init>
+# wrong constant name destination_name
+# wrong constant name initialize
+# wrong constant name make_edge
+# wrong constant name origin_name
+# wrong constant name requirement
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name name
+# wrong constant name <static-init>
+# uninitialized constant Bundler::Molinillo::DependencyGraph::Edge::Elem
+# wrong constant name destination
+# wrong constant name destination=
+# wrong constant name origin
+# wrong constant name origin=
+# wrong constant name requirement
+# wrong constant name requirement=
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
+# wrong constant name add_edge_no_circular
+# wrong constant name add_vertex
+# wrong constant name delete_edge
+# wrong constant name detach_vertex_named
+# wrong constant name each
+# wrong constant name pop!
+# wrong constant name reverse_each
+# wrong constant name rewind_to
+# wrong constant name set_payload
+# wrong constant name tag
+# wrong constant name <static-init>
 # uninitialized constant Bundler::Molinillo::DependencyGraph::Log::Elem
+# wrong constant name initialize
+# wrong constant name name
+# wrong constant name payload
+# wrong constant name <static-init>
+# wrong constant name down
+# wrong constant name initialize
+# wrong constant name tag
+# wrong constant name up
+# wrong constant name <static-init>
+# undefined method `_path_to?<defaultArg>1' for class `Bundler::Molinillo::DependencyGraph::Vertex'
 # undefined method `_recursive_predecessors<defaultArg>1' for class `Bundler::Molinillo::DependencyGraph::Vertex'
 # undefined method `_recursive_successors<defaultArg>1' for class `Bundler::Molinillo::DependencyGraph::Vertex'
+# wrong constant name ==
+# wrong constant name _path_to?<defaultArg>1
+# wrong constant name _path_to?
 # wrong constant name _recursive_predecessors<defaultArg>1
 # wrong constant name _recursive_predecessors
 # wrong constant name _recursive_successors<defaultArg>1
 # wrong constant name _recursive_successors
+# wrong constant name ancestor?
+# wrong constant name descendent?
+# wrong constant name eql?
+# wrong constant name explicit_requirements
+# wrong constant name incoming_edges
+# wrong constant name incoming_edges=
+# wrong constant name initialize
+# wrong constant name is_reachable_from?
+# wrong constant name name
+# wrong constant name name=
+# wrong constant name outgoing_edges
+# wrong constant name outgoing_edges=
+# wrong constant name path_to?
+# wrong constant name payload
+# wrong constant name payload=
+# wrong constant name predecessors
+# wrong constant name recursive_predecessors
+# wrong constant name recursive_successors
+# wrong constant name requirements
+# wrong constant name root
+# wrong constant name root=
+# wrong constant name root?
+# wrong constant name shallow_eql?
+# wrong constant name successors
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name tsort
+# uninitialized constant Bundler::Molinillo::DependencyState::Elem
+# wrong constant name pop_possibility_state
+# wrong constant name <static-init>
+# undefined method `initialize<defaultArg>1' for class `Bundler::Molinillo::NoSuchDependencyError'
+# Did you mean?  initialize_dup
+# wrong constant name dependency
+# wrong constant name dependency=
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
+# wrong constant name required_by
+# wrong constant name required_by=
+# wrong constant name <static-init>
+# uninitialized constant Bundler::Molinillo::PossibilityState::Elem
+# wrong constant name <static-init>
+# uninitialized constant Bundler::Molinillo::ResolutionState::Elem
+# wrong constant name activated
+# wrong constant name activated=
+# wrong constant name conflicts
+# wrong constant name conflicts=
+# wrong constant name depth
+# wrong constant name depth=
+# wrong constant name name
+# wrong constant name name=
+# wrong constant name possibilities
+# wrong constant name possibilities=
+# wrong constant name requirement
+# wrong constant name requirement=
+# wrong constant name requirements
+# wrong constant name requirements=
+# wrong constant name unused_unwind_options
+# wrong constant name unused_unwind_options=
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name empty
+# wrong constant name members
+# undefined method `resolve<defaultArg>1' for class `Bundler::Molinillo::Resolver'
+# wrong constant name <Class:Resolution>
+# wrong constant name initialize
+# wrong constant name resolve<defaultArg>1
+# wrong constant name resolve
+# wrong constant name resolver_ui
+# wrong constant name specification_provider
+# wrong constant name <Class:Conflict>
+# wrong constant name <Class:PossibilitySet>
+# wrong constant name <Class:UnwindDetails>
+# wrong constant name base
+# wrong constant name initialize
+# wrong constant name iteration_rate=
+# wrong constant name original_requested
+# wrong constant name resolve
+# wrong constant name resolver_ui
+# wrong constant name specification_provider
+# wrong constant name started_at=
+# wrong constant name states=
+# uninitialized constant Bundler::Molinillo::Resolver::Resolution::Conflict::Elem
+# wrong constant name activated_by_name
+# wrong constant name activated_by_name=
+# wrong constant name existing
+# wrong constant name existing=
+# wrong constant name locked_requirement
+# wrong constant name locked_requirement=
+# wrong constant name possibility
+# wrong constant name possibility_set
+# wrong constant name possibility_set=
+# wrong constant name requirement
+# wrong constant name requirement=
+# wrong constant name requirement_trees
+# wrong constant name requirement_trees=
+# wrong constant name requirements
+# wrong constant name requirements=
+# wrong constant name underlying_error
+# wrong constant name underlying_error=
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
+# uninitialized constant Bundler::Molinillo::Resolver::Resolution::PossibilitySet::Elem
+# wrong constant name dependencies
+# wrong constant name dependencies=
+# wrong constant name latest_version
+# wrong constant name possibilities
+# wrong constant name possibilities=
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
+# wrong constant name <=>
+# uninitialized constant Bundler::Molinillo::Resolver::Resolution::UnwindDetails::Elem
+# wrong constant name all_requirements
+# wrong constant name conflicting_requirements
+# wrong constant name conflicting_requirements=
+# wrong constant name requirement_tree
+# wrong constant name requirement_tree=
+# wrong constant name requirement_trees
+# wrong constant name requirement_trees=
+# wrong constant name requirements_unwound_to_instead
+# wrong constant name requirements_unwound_to_instead=
+# wrong constant name reversed_requirement_tree_index
+# wrong constant name state_index
+# wrong constant name state_index=
+# wrong constant name state_requirement
+# wrong constant name state_requirement=
+# wrong constant name sub_dependencies_to_avoid
+# wrong constant name unwinding_to_primary_requirement?
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name allow_missing?
+# wrong constant name dependencies_for
+# wrong constant name name_for
+# wrong constant name name_for_explicit_dependency_source
+# wrong constant name name_for_locking_dependency_source
+# wrong constant name requirement_satisfied_by?
+# wrong constant name search_for
+# wrong constant name sort_dependencies
+# wrong constant name <static-init>
+# undefined method `debug<defaultArg>1' for module `Bundler::Molinillo::UI'
+# wrong constant name after_resolution
+# wrong constant name before_resolution
+# wrong constant name debug<defaultArg>1
+# wrong constant name debug
+# wrong constant name debug?
+# wrong constant name indicate_progress
+# wrong constant name output
+# wrong constant name progress_rate
+# wrong constant name <static-init>
+# undefined method `message_with_trees<defaultArg>1' for class `Bundler::Molinillo::VersionConflict'
+# wrong constant name conflicts
+# wrong constant name initialize
+# wrong constant name message_with_trees<defaultArg>1
+# wrong constant name message_with_trees
+# wrong constant name specification_provider
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name status_code
+# wrong constant name <static-init>
+# undefined method `initialize<defaultArg>1' for class `Bundler::PermissionError'
+# Did you mean?  initialize_dup
+# wrong constant name action
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
+# wrong constant name status_code
+# wrong constant name <static-init>
+# wrong constant name <Class:API>
+# wrong constant name <Class:DSL>
+# wrong constant name <Class:Events>
+# wrong constant name <Class:Index>
+# wrong constant name <Class:Installer>
+# wrong constant name <Class:MalformattedPlugin>
+# wrong constant name <Class:SourceList>
+# wrong constant name <Class:UndefinedCommandError>
+# wrong constant name <Class:UnknownSourceError>
+# wrong constant name <Class:Source>
+# wrong constant name cache_dir
+# wrong constant name method_missing
+# wrong constant name tmp
 # undefined method `app_cache_path<defaultArg>1' for module `Bundler::Plugin::API::Source'
 # undefined method `cache<defaultArg>1' for module `Bundler::Plugin::API::Source'
 # undefined method `post_install<defaultArg>1' for module `Bundler::Plugin::API::Source'
@@ -623,13 +1858,44 @@
 # wrong constant name uri
 # wrong constant name uri_hash
 # wrong constant name <static-init>
+# undefined singleton method `command<defaultArg>1' for `Bundler::Plugin::API'
+# undefined singleton method `source<defaultArg>1' for `Bundler::Plugin::API'
+# wrong constant name <static-init>
+# wrong constant name command<defaultArg>1
+# wrong constant name command
+# wrong constant name hook
+# wrong constant name source<defaultArg>1
+# wrong constant name source
+# wrong constant name <Class:PluginGemfileError>
+# uninitialized constant Bundler::Plugin::DSL::VALID_KEYS
+# uninitialized constant Bundler::Plugin::DSL::VALID_PLATFORMS
+# wrong constant name _gem
+# wrong constant name inferred_plugins
+# wrong constant name plugin
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name defined_event?
 # wrong constant name <Class:CommandConflict>
 # wrong constant name <Class:SourceConflict>
+# wrong constant name command_plugin
+# wrong constant name commands
+# wrong constant name global_index_file
+# wrong constant name hook_plugins
+# wrong constant name index_file
+# wrong constant name installed?
 # wrong constant name installed_plugins
+# wrong constant name load_paths
+# wrong constant name local_index_file
 # wrong constant name plugin_commands
+# wrong constant name plugin_path
+# wrong constant name register_plugin
+# wrong constant name source?
+# wrong constant name source_plugin
 # wrong constant name initialize
 # wrong constant name <static-init>
 # wrong constant name initialize
+# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <Class:Git>
 # wrong constant name <Class:Rubygems>
@@ -647,11 +1913,98 @@
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# undefined singleton method `gemfile_install<defaultArg>1' for `Bundler::Plugin'
+# wrong constant name <static-init>
+# wrong constant name add_command
+# wrong constant name add_hook
+# wrong constant name add_source
+# wrong constant name cache
+# wrong constant name command?
+# wrong constant name exec_command
+# wrong constant name gemfile_install<defaultArg>1
+# wrong constant name gemfile_install
+# wrong constant name global_root
+# wrong constant name hook
+# wrong constant name index
+# wrong constant name install
+# wrong constant name installed?
 # wrong constant name list
+# wrong constant name local_root
+# wrong constant name reset!
+# wrong constant name root
+# wrong constant name source
+# wrong constant name source?
+# wrong constant name source_from_lock
+# wrong constant name status_code
+# wrong constant name <static-init>
 # undefined singleton method `lock<defaultArg>1' for `Bundler::ProcessLock'
 # wrong constant name <static-init>
 # wrong constant name lock<defaultArg>1
 # wrong constant name lock
+# wrong constant name status_code
+# wrong constant name <static-init>
+# undefined method `respond_to?<defaultArg>1' for class `Bundler::RemoteSpecification'
+# wrong constant name <=>
+# uninitialized constant Bundler::RemoteSpecification::GENERICS
+# uninitialized constant Bundler::RemoteSpecification::GENERIC_CACHE
+# wrong constant name __swap__
+# wrong constant name dependencies
+# wrong constant name dependencies=
+# wrong constant name fetch_platform
+# wrong constant name full_name
+# wrong constant name git_version
+# wrong constant name initialize
+# wrong constant name name
+# wrong constant name platform
+# wrong constant name remote
+# wrong constant name remote=
+# wrong constant name respond_to?<defaultArg>1
+# wrong constant name respond_to?
+# wrong constant name sort_obj
+# wrong constant name source
+# wrong constant name source=
+# wrong constant name version
+# wrong constant name <static-init>
+# wrong constant name <Class:SpecGroup>
+# wrong constant name index_for
+# wrong constant name initialize
+# wrong constant name relevant_sources_for_vertex
+# wrong constant name start
+# wrong constant name ==
+# uninitialized constant Bundler::Resolver::SpecGroup::GENERICS
+# uninitialized constant Bundler::Resolver::SpecGroup::GENERIC_CACHE
+# wrong constant name activate_platform!
+# wrong constant name dependencies_for_activated_platforms
+# wrong constant name eql?
+# wrong constant name for?
+# wrong constant name ignores_bundler_dependencies
+# wrong constant name ignores_bundler_dependencies=
+# wrong constant name initialize
+# wrong constant name name
+# wrong constant name name=
+# wrong constant name source
+# wrong constant name source=
+# wrong constant name to_specs
+# wrong constant name version
+# wrong constant name version=
+# wrong constant name <static-init>
+# undefined singleton method `resolve<defaultArg>1' for `Bundler::Resolver'
+# undefined singleton method `resolve<defaultArg>2' for `Bundler::Resolver'
+# undefined singleton method `resolve<defaultArg>3' for `Bundler::Resolver'
+# undefined singleton method `resolve<defaultArg>4' for `Bundler::Resolver'
+# undefined singleton method `resolve<defaultArg>5' for `Bundler::Resolver'
+# wrong constant name <static-init>
+# wrong constant name platform_sort_key
+# wrong constant name resolve<defaultArg>1
+# wrong constant name resolve<defaultArg>2
+# wrong constant name resolve<defaultArg>3
+# wrong constant name resolve<defaultArg>4
+# wrong constant name resolve<defaultArg>5
+# wrong constant name resolve
+# wrong constant name sort_platforms
 # undefined method `initialize<defaultArg>1' for class `Bundler::Retry'
 # Did you mean?  initialize_dup
 # undefined method `initialize<defaultArg>2' for class `Bundler::Retry'
@@ -671,19 +2024,169 @@
 # wrong constant name attempts
 # wrong constant name default_attempts
 # wrong constant name default_retries
+# wrong constant name ruby
+# wrong constant name <static-init>
 # uninitialized constant Bundler::RubyGemsGemInstaller::ENV_PATHS
 # wrong constant name <static-init>
+# undefined method `to_s<defaultArg>1' for class `Bundler::RubyVersion'
+# wrong constant name ==
+# wrong constant name diff
+# wrong constant name engine
+# wrong constant name engine_gem_version
+# wrong constant name engine_versions
+# wrong constant name exact?
+# wrong constant name gem_version
+# wrong constant name host
+# wrong constant name initialize
+# wrong constant name patchlevel
+# wrong constant name single_version_string
+# wrong constant name to_gem_version_with_patchlevel
+# wrong constant name to_s<defaultArg>1
+# wrong constant name to_s
+# wrong constant name versions
+# wrong constant name versions_string
+# wrong constant name <static-init>
+# wrong constant name from_string
+# wrong constant name system
+# wrong constant name status_code
+# wrong constant name <static-init>
+# undefined method `build<defaultArg>1' for class `Bundler::RubygemsIntegration'
+# undefined method `gem_from_path<defaultArg>1' for class `Bundler::RubygemsIntegration'
+# undefined method `redefine_method<defaultArg>1' for class `Bundler::RubygemsIntegration'
+# undefined method `set_installed_by_version<defaultArg>1' for class `Bundler::RubygemsIntegration'
+# undefined method `spec_from_gem<defaultArg>1' for class `Bundler::RubygemsIntegration'
+# undefined method `spec_missing_extensions?<defaultArg>1' for class `Bundler::RubygemsIntegration'
 # wrong constant name add_to_load_path
 # wrong constant name all_specs
+# wrong constant name backport_base_dir
+# wrong constant name backport_cache_file
 # wrong constant name backport_ext_builder_monitor
+# wrong constant name backport_spec_file
+# wrong constant name bin_path
+# wrong constant name build<defaultArg>1
+# wrong constant name build
+# wrong constant name build_args
+# wrong constant name build_args=
+# wrong constant name build_gem
+# wrong constant name clear_paths
+# wrong constant name configuration
 # wrong constant name correct_for_windows_path
 # wrong constant name default_stubs
+# wrong constant name download_gem
+# wrong constant name ext_lock
+# wrong constant name fetch_all_remote_specs
+# wrong constant name fetch_specs
 # wrong constant name find_name
+# wrong constant name gem_bindir
+# wrong constant name gem_cache
+# wrong constant name gem_dir
+# wrong constant name gem_from_path<defaultArg>1
+# wrong constant name gem_from_path
+# wrong constant name gem_path
 # wrong constant name gem_remote_fetcher
+# wrong constant name inflate
+# wrong constant name install_with_build_args
+# wrong constant name load_plugin_files
+# wrong constant name load_plugins
+# wrong constant name loaded_gem_paths
+# wrong constant name loaded_specs
+# wrong constant name mark_loaded
+# wrong constant name marshal_spec_dir
+# wrong constant name method_visibility
+# wrong constant name path
+# wrong constant name path_separator
 # wrong constant name plain_specs
 # wrong constant name plain_specs=
+# wrong constant name platforms
+# wrong constant name post_reset_hooks
+# wrong constant name preserve_paths
+# wrong constant name provides?
+# wrong constant name read_binary
+# wrong constant name redefine_method<defaultArg>1
+# wrong constant name redefine_method
+# wrong constant name replace_bin_path
+# wrong constant name replace_entrypoints
+# wrong constant name replace_gem
+# wrong constant name repository_subdirectories
+# wrong constant name reset
+# wrong constant name reverse_rubygems_kernel_mixin
+# wrong constant name ruby_engine
+# wrong constant name security_policies
+# wrong constant name security_policy_keys
+# wrong constant name set_installed_by_version<defaultArg>1
+# wrong constant name set_installed_by_version
+# wrong constant name sources
+# wrong constant name sources=
+# wrong constant name spec_cache_dirs
+# wrong constant name spec_default_gem?
+# wrong constant name spec_extension_dir
+# wrong constant name spec_from_gem<defaultArg>1
+# wrong constant name spec_from_gem
+# wrong constant name spec_matches_for_glob
+# wrong constant name spec_missing_extensions?<defaultArg>1
+# wrong constant name spec_missing_extensions?
 # wrong constant name stub_rubygems
+# wrong constant name stub_set_spec
+# wrong constant name suffix_pattern
+# wrong constant name ui=
+# wrong constant name undo_replacements
 # wrong constant name use_gemdeps
+# wrong constant name user_home
+# wrong constant name validate
+# wrong constant name version
+# wrong constant name with_build_args
+# wrong constant name <static-init>
+# wrong constant name provides?
+# wrong constant name version
+# undefined method `cache<defaultArg>1' for class `Bundler::Runtime'
+# undefined method `clean<defaultArg>1' for class `Bundler::Runtime'
+# undefined method `lock<defaultArg>1' for class `Bundler::Runtime'
+# wrong constant name cache<defaultArg>1
+# wrong constant name cache
+# wrong constant name clean<defaultArg>1
+# wrong constant name clean
+# wrong constant name current_dependencies
+# wrong constant name dependencies
+# wrong constant name gems
+# wrong constant name initialize
+# wrong constant name lock<defaultArg>1
+# wrong constant name lock
+# wrong constant name prune_cache
+# wrong constant name requested_specs
+# wrong constant name require
+# wrong constant name requires
+# wrong constant name setup
+# wrong constant name specs
+# wrong constant name <static-init>
+# wrong constant name status_code
+# wrong constant name <static-init>
+# undefined method `initialize<defaultArg>1' for class `Bundler::Settings'
+# Did you mean?  initialize_dup
+# wrong constant name <Class:Mirror>
+# wrong constant name <Class:Mirrors>
+# wrong constant name <Class:Path>
+# wrong constant name <Class:Validator>
+# wrong constant name []
+# wrong constant name all
+# wrong constant name allow_sudo?
+# wrong constant name app_cache_path
+# wrong constant name credentials_for
+# wrong constant name gem_mirrors
+# wrong constant name ignore_config?
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
+# wrong constant name key_for
+# wrong constant name local_overrides
+# wrong constant name locations
+# wrong constant name mirror_for
+# wrong constant name path
+# wrong constant name pretty_values_for
+# wrong constant name set_command_option
+# wrong constant name set_command_option_if_given
+# wrong constant name set_global
+# wrong constant name set_local
+# wrong constant name temporary
+# wrong constant name validate!
 # undefined method `initialize<defaultArg>1' for class `Bundler::Settings::Mirror'
 # Did you mean?  initialize_dup
 # undefined method `initialize<defaultArg>2' for class `Bundler::Settings::Mirror'
@@ -709,6 +2212,21 @@
 # wrong constant name initialize
 # wrong constant name parse
 # wrong constant name <static-init>
+# uninitialized constant Bundler::Settings::Path::Elem
+# wrong constant name base_path
+# wrong constant name base_path_relative_to_pwd
+# wrong constant name default_install_uses_path
+# wrong constant name default_install_uses_path=
+# wrong constant name explicit_path
+# wrong constant name explicit_path=
+# wrong constant name path
+# wrong constant name system_path
+# wrong constant name system_path=
+# wrong constant name use_system_gems?
+# wrong constant name validate!
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
 # wrong constant name <Class:Rule>
 # wrong constant name description
 # wrong constant name fail!
@@ -719,9 +2237,245 @@
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name validate!
+# wrong constant name <static-init>
+# wrong constant name normalize_uri
+# undefined method `filesystem_access<defaultArg>1' for module `Bundler::SharedHelpers'
+# Did you mean?  filesystem_access
+# undefined method `major_deprecation<defaultArg>1' for module `Bundler::SharedHelpers'
+# Did you mean?  major_deprecation
+# undefined method `pretty_dependency<defaultArg>1' for module `Bundler::SharedHelpers'
+# Did you mean?  pretty_dependency
+# undefined method `trap<defaultArg>1' for module `Bundler::SharedHelpers'
+# wrong constant name chdir
+# wrong constant name const_get_safely
+# wrong constant name default_bundle_dir
+# wrong constant name default_gemfile
+# wrong constant name default_lockfile
+# wrong constant name digest
+# wrong constant name ensure_same_dependencies
+# wrong constant name filesystem_access<defaultArg>1
+# wrong constant name filesystem_access
+# wrong constant name in_bundle?
+# wrong constant name major_deprecation<defaultArg>1
+# wrong constant name major_deprecation
+# wrong constant name md5_available?
+# wrong constant name pretty_dependency<defaultArg>1
+# wrong constant name pretty_dependency
+# wrong constant name print_major_deprecations!
+# wrong constant name pwd
+# wrong constant name root
+# wrong constant name set_bundle_environment
+# wrong constant name set_env
+# wrong constant name trap<defaultArg>1
+# wrong constant name trap
+# wrong constant name with_clean_git_env
+# wrong constant name write_to_gemfile
+# wrong constant name <static-init>
+# wrong constant name <Class:Gemspec>
+# wrong constant name <Class:Git>
+# wrong constant name <Class:Metadata>
+# wrong constant name <Class:Path>
+# wrong constant name <Class:Rubygems>
+# wrong constant name can_lock?
+# wrong constant name dependency_names
+# wrong constant name dependency_names=
+# wrong constant name dependency_names_to_double_check
+# wrong constant name double_check_for
+# wrong constant name extension_cache_path
+# wrong constant name include?
+# wrong constant name path?
+# wrong constant name unmet_deps
+# wrong constant name version_message
+# uninitialized constant Bundler::Source::Gemspec::DEFAULT_GLOB
+# wrong constant name as_path_source
+# wrong constant name gemspec
+# wrong constant name <static-init>
 # uninitialized constant Bundler::Source::Git::DEFAULT_GLOB
+# wrong constant name allow_git_ops?
+# wrong constant name branch
+# wrong constant name cache_path
+# wrong constant name extension_dir_name
 # wrong constant name glob
+# wrong constant name install_path
+# wrong constant name local_override!
+# wrong constant name ref
+# wrong constant name revision
+# wrong constant name specs
+# wrong constant name submodules
+# wrong constant name unlock!
+# wrong constant name uri
+# wrong constant name <static-init>
+# undefined method `install<defaultArg>1' for class `Bundler::Source::Metadata'
+# wrong constant name ==
+# wrong constant name cached!
+# wrong constant name eql?
+# wrong constant name install<defaultArg>1
+# wrong constant name install
+# wrong constant name options
+# wrong constant name remote!
+# wrong constant name specs
+# wrong constant name <static-init>
+# undefined method `cache<defaultArg>1' for class `Bundler::Source::Path'
+# undefined method `install<defaultArg>1' for class `Bundler::Source::Path'
+# wrong constant name ==
+# wrong constant name app_cache_dirname
+# wrong constant name cache<defaultArg>1
+# wrong constant name cache
+# wrong constant name cached!
+# wrong constant name eql?
+# wrong constant name expanded_original_path
+# wrong constant name initialize
+# wrong constant name install<defaultArg>1
+# wrong constant name install
+# wrong constant name local_specs
+# wrong constant name name
+# wrong constant name name=
+# wrong constant name options
+# wrong constant name original_path
+# wrong constant name path
+# wrong constant name remote!
+# wrong constant name root
+# wrong constant name root_path
+# wrong constant name specs
+# wrong constant name to_lock
+# wrong constant name version
+# wrong constant name version=
+# wrong constant name <static-init>
+# wrong constant name from_lock
+# undefined method `cache<defaultArg>1' for class `Bundler::Source::Rubygems'
+# undefined method `initialize<defaultArg>1' for class `Bundler::Source::Rubygems'
+# Did you mean?  initialize_dup
+# undefined method `install<defaultArg>1' for class `Bundler::Source::Rubygems'
+# undefined method `replace_remotes<defaultArg>1' for class `Bundler::Source::Rubygems'
+# wrong constant name ==
+# wrong constant name add_remote
+# wrong constant name api_fetchers
+# wrong constant name builtin_gem?
+# wrong constant name cache<defaultArg>1
+# wrong constant name cache
+# wrong constant name cache_path
+# wrong constant name cached!
+# wrong constant name cached_built_in_gem
+# wrong constant name cached_gem
+# wrong constant name cached_path
+# wrong constant name cached_specs
+# wrong constant name caches
+# wrong constant name credless_remotes
+# wrong constant name double_check_for
+# wrong constant name eql?
+# wrong constant name equivalent_remotes?
+# wrong constant name fetch_gem
+# wrong constant name fetch_names
+# wrong constant name fetchers
+# wrong constant name include?
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
+# wrong constant name install<defaultArg>1
+# wrong constant name install
+# wrong constant name installed?
+# wrong constant name installed_specs
+# wrong constant name loaded_from
+# wrong constant name name
+# wrong constant name normalize_uri
+# wrong constant name options
+# wrong constant name remote!
+# wrong constant name remote_specs
+# wrong constant name remotes
+# wrong constant name remotes_for_spec
+# wrong constant name remove_auth
+# wrong constant name replace_remotes<defaultArg>1
+# wrong constant name replace_remotes
+# wrong constant name requires_sudo?
+# wrong constant name rubygems_dir
+# wrong constant name specs
+# wrong constant name suppress_configured_credentials
+# wrong constant name to_lock
+# wrong constant name <static-init>
+# wrong constant name from_lock
+# wrong constant name <static-init>
+# undefined method `add_git_source<defaultArg>1' for class `Bundler::SourceList'
+# undefined method `add_path_source<defaultArg>1' for class `Bundler::SourceList'
+# undefined method `add_plugin_source<defaultArg>1' for class `Bundler::SourceList'
+# undefined method `add_rubygems_source<defaultArg>1' for class `Bundler::SourceList'
+# wrong constant name add_git_source<defaultArg>1
+# wrong constant name add_git_source
+# wrong constant name add_path_source<defaultArg>1
+# wrong constant name add_path_source
+# wrong constant name add_plugin_source<defaultArg>1
+# wrong constant name add_plugin_source
+# wrong constant name add_rubygems_remote
+# wrong constant name add_rubygems_source<defaultArg>1
+# wrong constant name add_rubygems_source
+# wrong constant name all_sources
+# wrong constant name cached!
+# wrong constant name default_source
+# wrong constant name get
+# wrong constant name git_sources
+# wrong constant name global_rubygems_source
+# wrong constant name global_rubygems_source=
+# wrong constant name lock_sources
+# wrong constant name metadata_source
+# wrong constant name path_sources
+# wrong constant name plugin_sources
+# wrong constant name remote!
+# wrong constant name replace_sources!
+# wrong constant name rubygems_primary_remotes
+# wrong constant name rubygems_remotes
+# wrong constant name rubygems_sources
+# wrong constant name <static-init>
+# undefined method `for<defaultArg>1' for class `Bundler::SpecSet'
+# undefined method `for<defaultArg>2' for class `Bundler::SpecSet'
+# undefined method `for<defaultArg>3' for class `Bundler::SpecSet'
+# undefined method `for<defaultArg>4' for class `Bundler::SpecSet'
+# undefined method `materialize<defaultArg>1' for class `Bundler::SpecSet'
+# wrong constant name <<
 # uninitialized constant Bundler::SpecSet::Elem
+# wrong constant name []
+# wrong constant name []=
+# wrong constant name each
+# wrong constant name empty?
+# wrong constant name find_by_name_and_platform
+# wrong constant name for<defaultArg>1
+# wrong constant name for<defaultArg>2
+# wrong constant name for<defaultArg>3
+# wrong constant name for<defaultArg>4
+# wrong constant name for
+# wrong constant name initialize
+# wrong constant name length
+# wrong constant name materialize<defaultArg>1
+# wrong constant name materialize
+# wrong constant name materialized_for_all_platforms
+# wrong constant name merge
+# wrong constant name size
+# wrong constant name sort!
+# wrong constant name to_a
+# wrong constant name to_hash
+# wrong constant name valid_for?
+# wrong constant name what_required
+# wrong constant name <static-init>
+# uninitialized constant Bundler::StubSpecification::GENERICS
+# uninitialized constant Bundler::StubSpecification::GENERIC_CACHE
+# wrong constant name activated
+# wrong constant name activated=
+# wrong constant name default_gem
+# wrong constant name full_gem_path
+# wrong constant name full_require_paths
+# wrong constant name ignored
+# wrong constant name ignored=
+# wrong constant name load_paths
+# wrong constant name loaded_from
+# wrong constant name matches_for_glob
+# wrong constant name missing_extensions?
+# wrong constant name raw_require_paths
+# wrong constant name source=
+# wrong constant name stub
+# wrong constant name stub=
+# wrong constant name to_yaml
+# wrong constant name <static-init>
+# wrong constant name from_stub
+# wrong constant name status_code
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # undefined method `help<defaultArg>1' for class `Bundler::Thor'
 # undefined method `help<defaultArg>2' for class `Bundler::Thor'
 # wrong constant name <Class:Actions>
@@ -743,6 +2497,7 @@
 # wrong constant name <Class:NoKwargSpellChecker>
 # wrong constant name <Class:Option>
 # wrong constant name <Class:Options>
+# wrong constant name <Class:RakeCompat>
 # wrong constant name <Class:RequiredArgumentMissingError>
 # uninitialized constant Bundler::Thor::SHELL_DELEGATED_METHODS
 # wrong constant name <Class:Sandbox>
@@ -1209,6 +2964,19 @@
 # wrong constant name switch_option
 # wrong constant name <static-init>
 # wrong constant name to_switches
+# uninitialized constant Bundler::Thor::RakeCompat::DEFAULT
+# uninitialized constant Bundler::Thor::RakeCompat::LN_SUPPORTED
+# uninitialized constant Bundler::Thor::RakeCompat::LOW_METHODS
+# Did you mean?  Bundler::Thor::RakeCompat::LowMethods
+# uninitialized constant Bundler::Thor::RakeCompat::METHODS
+# Did you mean?  Method
+# uninitialized constant Bundler::Thor::RakeCompat::OPT_TABLE
+# uninitialized constant Bundler::Thor::RakeCompat::RUBY
+# uninitialized constant Bundler::Thor::RakeCompat::VERSION
+# Did you mean?  Bundler::VERSION
+# wrong constant name <static-init>
+# wrong constant name included
+# wrong constant name rake_classes
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # undefined method `initialize<defaultArg>1' for module `Bundler::Thor::Shell'
@@ -1440,6 +3208,14 @@
 # wrong constant name subtask_help
 # wrong constant name subtasks
 # wrong constant name task_help
+# wrong constant name status_code
+# wrong constant name <static-init>
+# wrong constant name <Class:RGProxy>
+# wrong constant name <Class:Shell>
+# wrong constant name <Class:Silent>
+# wrong constant name initialize
+# wrong constant name say
+# wrong constant name <static-init>
 # undefined method `confirm<defaultArg>1' for class `Bundler::UI::Shell'
 # undefined method `debug<defaultArg>1' for class `Bundler::UI::Shell'
 # undefined method `error<defaultArg>1' for class `Bundler::UI::Shell'
@@ -1477,6 +3253,41 @@
 # wrong constant name warn<defaultArg>1
 # wrong constant name warn
 # wrong constant name yes?
+# wrong constant name <static-init>
+# undefined method `confirm<defaultArg>1' for class `Bundler::UI::Silent'
+# undefined method `debug<defaultArg>1' for class `Bundler::UI::Silent'
+# undefined method `error<defaultArg>1' for class `Bundler::UI::Silent'
+# undefined method `info<defaultArg>1' for class `Bundler::UI::Silent'
+# undefined method `level<defaultArg>1' for class `Bundler::UI::Silent'
+# undefined method `trace<defaultArg>1' for class `Bundler::UI::Silent'
+# undefined method `trace<defaultArg>2' for class `Bundler::UI::Silent'
+# undefined method `warn<defaultArg>1' for class `Bundler::UI::Silent'
+# wrong constant name add_color
+# wrong constant name ask
+# wrong constant name confirm<defaultArg>1
+# wrong constant name confirm
+# wrong constant name debug<defaultArg>1
+# wrong constant name debug
+# wrong constant name debug?
+# wrong constant name error<defaultArg>1
+# wrong constant name error
+# wrong constant name info<defaultArg>1
+# wrong constant name info
+# wrong constant name level<defaultArg>1
+# wrong constant name level
+# wrong constant name level=
+# wrong constant name no?
+# wrong constant name quiet?
+# wrong constant name shell=
+# wrong constant name silence
+# wrong constant name trace<defaultArg>1
+# wrong constant name trace<defaultArg>2
+# wrong constant name trace
+# wrong constant name unprinted_warnings
+# wrong constant name warn<defaultArg>1
+# wrong constant name warn
+# wrong constant name yes?
+# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <Class:BadURIError>
 # wrong constant name <Class:Error>
@@ -2180,6 +3991,16 @@
 # wrong constant name regexp
 # wrong constant name scheme_list
 # wrong constant name split
+# wrong constant name <static-init>
+# wrong constant name credential_filtered_string
+# wrong constant name credential_filtered_uri
+# undefined method `initialize<defaultArg>1' for class `Bundler::VersionConflict'
+# Did you mean?  initialize_dup
+# wrong constant name conflicts
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
+# wrong constant name status_code
+# wrong constant name <static-init>
 # wrong constant name <Class:NEq>
 # wrong constant name <Class:ReqR>
 # uninitialized constant Bundler::VersionRanges::NEq::Elem
@@ -2214,11 +4035,86 @@
 # wrong constant name empty?
 # wrong constant name for
 # wrong constant name for_many
+# wrong constant name status_code
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name orig_exception
+# wrong constant name status_code
+# wrong constant name <static-init>
+# undefined singleton method `app_cache<defaultArg>1' for `Bundler'
+# undefined singleton method `definition<defaultArg>1' for `Bundler'
+# undefined singleton method `load_gemspec<defaultArg>1' for `Bundler'
+# undefined singleton method `load_gemspec_uncached<defaultArg>1' for `Bundler'
+# undefined singleton method `mkdir_p<defaultArg>1' for `Bundler'
+# undefined singleton method `tmp<defaultArg>1' for `Bundler'
+# undefined singleton method `user_bundle_path<defaultArg>1' for `Bundler'
+# wrong constant name app_cache<defaultArg>1
+# wrong constant name app_cache
+# wrong constant name app_config_path
+# wrong constant name bin_path
+# wrong constant name bundle_path
+# wrong constant name bundler_major_version
+# wrong constant name clean_env
+# wrong constant name clean_exec
+# wrong constant name clean_system
+# wrong constant name clear_gemspec_cache
+# wrong constant name configure
+# wrong constant name configured_bundle_path
+# wrong constant name current_ruby
+# wrong constant name default_bundle_dir
+# wrong constant name default_gemfile
+# wrong constant name default_lockfile
+# wrong constant name definition<defaultArg>1
+# wrong constant name definition
+# wrong constant name environment
+# wrong constant name feature_flag
+# wrong constant name frozen_bundle?
+# wrong constant name git_present?
+# wrong constant name home
+# wrong constant name install_path
+# wrong constant name load_gemspec<defaultArg>1
+# wrong constant name load_gemspec
+# wrong constant name load_gemspec_uncached<defaultArg>1
+# wrong constant name load_gemspec_uncached
+# wrong constant name load_marshal
+# wrong constant name local_platform
+# wrong constant name locked_gems
+# wrong constant name mkdir_p<defaultArg>1
+# wrong constant name mkdir_p
+# wrong constant name original_env
 # wrong constant name original_exec
 # wrong constant name original_system
+# wrong constant name read_file
+# wrong constant name require
+# wrong constant name require_thor_actions
+# wrong constant name requires_sudo?
+# wrong constant name reset!
+# wrong constant name reset_paths!
+# wrong constant name reset_rubygems!
+# wrong constant name rm_rf
+# wrong constant name root
+# wrong constant name ruby_scope
+# wrong constant name rubygems
+# wrong constant name settings
+# wrong constant name setup
+# wrong constant name specs_path
+# wrong constant name sudo
+# wrong constant name system_bindir
+# wrong constant name tmp<defaultArg>1
+# wrong constant name tmp
+# wrong constant name ui
+# wrong constant name ui=
 # wrong constant name unbundled_env
 # wrong constant name unbundled_exec
 # wrong constant name unbundled_system
+# wrong constant name use_system_gems?
+# wrong constant name user_bundle_path<defaultArg>1
+# wrong constant name user_bundle_path
+# wrong constant name user_cache
+# wrong constant name user_home
+# wrong constant name which
+# wrong constant name with_clean_env
+# wrong constant name with_original_env
 # wrong constant name with_unbundled_env
 # undefined method `a<defaultArg>1' for module `CGI::HtmlExtension'
 # undefined method `base<defaultArg>1' for module `CGI::HtmlExtension'
@@ -3159,10 +5055,26 @@
 # wrong constant name exists?
 # wrong constant name lutime
 # wrong constant name mkfifo
+# wrong constant name ruby
+# wrong constant name safe_ln
+# wrong constant name sh
+# wrong constant name split_all
+# uninitialized constant FileUtils::DryRun::LN_SUPPORTED
+# Did you mean?  FileUtils::LN_SUPPORTED
+# uninitialized constant FileUtils::DryRun::RUBY
+# Did you mean?  FileUtils::RUBY
 # uninitialized constant FileUtils::DryRun::VERSION
 # Did you mean?  FileUtils::VERSION
+# uninitialized constant FileUtils::NoWrite::LN_SUPPORTED
+# Did you mean?  FileUtils::LN_SUPPORTED
+# uninitialized constant FileUtils::NoWrite::RUBY
+# Did you mean?  FileUtils::RUBY
 # uninitialized constant FileUtils::NoWrite::VERSION
 # Did you mean?  FileUtils::VERSION
+# uninitialized constant FileUtils::Verbose::LN_SUPPORTED
+# Did you mean?  FileUtils::LN_SUPPORTED
+# uninitialized constant FileUtils::Verbose::RUBY
+# Did you mean?  FileUtils::RUBY
 # uninitialized constant FileUtils::Verbose::VERSION
 # Did you mean?  FileUtils::VERSION
 # undefined singleton method `find<defaultArg>1' for `Find'
@@ -3199,7 +5111,42 @@
 # wrong constant name server_settings
 # wrong constant name server_settings=
 # wrong constant name server_settings?
+# wrong constant name <Class:ExistingResourceError>
+# wrong constant name add_asset_pipeline
+# wrong constant name add_redirect
+# wrong constant name add_to_manifest
+# wrong constant name app
+# wrong constant name asset_pipelines
+# wrong constant name asset_pipelines=
+# wrong constant name assets_manifest
+# wrong constant name current_page
+# wrong constant name current_page=
+# wrong constant name current_tree
+# wrong constant name current_tree=
+# wrong constant name data_dirs
+# wrong constant name get_redirect
+# wrong constant name initialize
+# wrong constant name layouts
+# wrong constant name method_missing
+# wrong constant name redirects
+# wrong constant name refresh_data_files
+# wrong constant name refresh_data_files=
+# wrong constant name register_data_dirs
+# wrong constant name register_helpers
+# wrong constant name register_layout
+# wrong constant name run
+# wrong constant name sitemap_tree
+# wrong constant name view_data
+# wrong constant name view_data=
+# wrong constant name <static-init>
+# wrong constant name create
+# wrong constant name <static-init>
 # wrong constant name instance
+# wrong constant name <static-init>
+# wrong constant name bootstrap_app
+# wrong constant name bootstrapped?
+# wrong constant name find_helpers_in
+# wrong constant name resources_from_dir
 # uninitialized constant Frontman::CLI::Correctable
 # uninitialized constant Frontman::CLI::HELP_MAPPINGS
 # uninitialized constant Frontman::CLI::SHELL_DELEGATED_METHODS
@@ -6379,10 +8326,10 @@
 # Did you mean?  Kramdown::Parser::Html::HTML_COMMENT_RE
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_BLOCK
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
@@ -6392,8 +8339,8 @@
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL
@@ -6478,10 +8425,10 @@
 # Did you mean?  Kramdown::Parser::Html::HTML_COMMENT_RE
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_BLOCK
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
@@ -6491,8 +8438,8 @@
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL
@@ -6722,8 +8669,8 @@
 # uninitialized constant Kramdown::Parser::Markdown::HTML_BLOCK_ELEMENTS
 # Did you mean?  Kramdown::Parser::Markdown::HTML_SPAN_ELEMENTS
 # uninitialized constant Kramdown::Parser::Markdown::HTML_BLOCK_START
-# Did you mean?  Kramdown::Parser::Markdown::EXT_BLOCK_START
-#                Kramdown::Parser::Markdown::IAL_BLOCK_START
+# Did you mean?  Kramdown::Parser::Markdown::IAL_BLOCK_START
+#                Kramdown::Parser::Markdown::EXT_BLOCK_START
 # uninitialized constant Kramdown::Parser::Markdown::HTML_COMMENT_RE
 # uninitialized constant Kramdown::Parser::Markdown::HTML_CONTENT_MODEL
 # Did you mean?  Kramdown::Parser::Markdown::HTML_CONTENT_MODEL_RAW
@@ -7110,6 +9057,8 @@
 # wrong constant name example_group
 # wrong constant name fcontext
 # wrong constant name fdescribe
+# wrong constant name rake_extension
+# wrong constant name rake_original_const_missing
 # wrong constant name shared_context
 # wrong constant name shared_examples
 # wrong constant name shared_examples_for
@@ -10432,7 +12381,7 @@
 # wrong constant name puts
 # wrong constant name summarize
 # wrong constant name <static-init>
-# uninitialized constant #<Class:0x00007ff803a36dc8>::Elem
+# uninitialized constant #<Class:0x00007ff3c837f2f8>::Elem
 # wrong constant name initialize
 # wrong constant name too_many_warnings_message
 # wrong constant name type
@@ -10450,7 +12399,7 @@
 # wrong constant name puts
 # wrong constant name summarize
 # wrong constant name <static-init>
-# uninitialized constant #<Class:0x00007ff803a33998>::Elem
+# uninitialized constant #<Class:0x00007ff3c83752f8>::Elem
 # wrong constant name initialize
 # wrong constant name too_many_warnings_message
 # wrong constant name type
@@ -10973,7 +12922,7 @@
 # wrong constant name <static-init>
 # wrong constant name wrap
 # wrong constant name <static-init>
-# uninitialized constant #<Class:0x00007ff803a7d0e8>::Elem
+# uninitialized constant #<Class:0x00007ff3c824c8e0>::Elem
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Core::Notifications::PendingExampleFixedNotification::Elem
 # wrong constant name <static-init>
@@ -11885,7 +13834,7 @@
 # wrong constant name <static-init>
 # wrong constant name worse_than?
 # wrong constant name +
-# uninitialized constant #<Class:0x00007ff809296590>::Elem
+# uninitialized constant #<Class:0x00007ff3cda3c230>::Elem
 # wrong constant name candidate?
 # wrong constant name ideal?
 # wrong constant name indeterminate_actual_indexes
@@ -14136,8 +16085,8 @@
 # wrong constant name <static-init>
 # undefined method `host_with_port<defaultArg>1' for module `Rack::Request::Helpers'
 # uninitialized constant Rack::Request::Helpers::GET
-# Did you mean?  Set
-#                Net
+# Did you mean?  Net
+#                Set
 #                Gem
 #                Rack::GET
 # uninitialized constant Rack::Request::Helpers::POST
@@ -14540,6 +16489,494 @@
 # wrong constant name method_missing
 # wrong constant name uncolor
 # wrong constant name new
+# wrong constant name <Class:AltSystem>
+# wrong constant name <Class:Application>
+# wrong constant name <Class:Backtrace>
+# wrong constant name <Class:Cloneable>
+# wrong constant name <Class:CommandLineOptionError>
+# wrong constant name <Class:DSL>
+# wrong constant name <Class:DefaultLoader>
+# wrong constant name <Class:DeprecatedObjectDSL>
+# wrong constant name <Class:EarlyTime>
+# wrong constant name <Class:FileCreationTask>
+# wrong constant name <Class:FileList>
+# wrong constant name <Class:FileTask>
+# wrong constant name <Class:FileUtilsExt>
+# wrong constant name <Class:InvocationChain>
+# wrong constant name <Class:InvocationExceptionMixin>
+# wrong constant name <Class:MultiTask>
+# wrong constant name <Class:NameSpace>
+# wrong constant name <Class:PrivateReader>
+# wrong constant name <Class:Promise>
+# wrong constant name <Class:PseudoStatus>
+# wrong constant name <Class:RuleRecursionOverflowError>
+# wrong constant name <Class:Task>
+# wrong constant name <Class:TaskArgumentError>
+# wrong constant name <Class:TaskArguments>
+# wrong constant name <Class:TaskManager>
+# wrong constant name <Class:ThreadHistoryDisplay>
+# wrong constant name <Class:ThreadPool>
+# wrong constant name <Class:TraceOutput>
+# wrong constant name <Class:Version>
+# wrong constant name <Class:Win32>
+# wrong constant name <static-init>
+# wrong constant name backticks
+# wrong constant name define_module_function
+# undefined method `init<defaultArg>1' for class `Rake::Application'
+# undefined method `rake_require<defaultArg>1' for class `Rake::Application'
+# undefined method `rake_require<defaultArg>2' for class `Rake::Application'
+# undefined method `rakefile_location<defaultArg>1' for class `Rake::Application'
+# wrong constant name add_import
+# wrong constant name add_loader
+# wrong constant name collect_tasks
+# wrong constant name const_warning
+# wrong constant name deprecate
+# wrong constant name display_error_message
+# wrong constant name display_prerequisites
+# wrong constant name display_tasks_and_comments
+# wrong constant name dynamic_width
+# wrong constant name dynamic_width_stty
+# wrong constant name dynamic_width_tput
+# wrong constant name find_rakefile_location
+# wrong constant name handle_options
+# wrong constant name have_rakefile
+# wrong constant name init<defaultArg>1
+# wrong constant name init
+# wrong constant name invoke_task
+# wrong constant name load_imports
+# wrong constant name load_rakefile
+# wrong constant name name
+# wrong constant name options
+# wrong constant name original_dir
+# wrong constant name parse_task_string
+# wrong constant name print_rakefile_directory
+# wrong constant name rake_require<defaultArg>1
+# wrong constant name rake_require<defaultArg>2
+# wrong constant name rake_require
+# wrong constant name rakefile
+# wrong constant name rakefile_location<defaultArg>1
+# wrong constant name rakefile_location
+# wrong constant name raw_load_rakefile
+# wrong constant name run
+# wrong constant name run_with_threads
+# wrong constant name standard_exception_handling
+# wrong constant name standard_rake_options
+# wrong constant name system_dir
+# wrong constant name terminal_columns
+# wrong constant name terminal_columns=
+# wrong constant name terminal_width
+# wrong constant name thread_pool
+# wrong constant name top_level
+# wrong constant name top_level_tasks
+# wrong constant name trace
+# wrong constant name truncate
+# wrong constant name truncate_output?
+# wrong constant name tty_output=
+# wrong constant name tty_output?
+# wrong constant name unix?
+# wrong constant name windows?
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name collapse
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant Rake::DSL::DEFAULT
+# uninitialized constant Rake::DSL::LN_SUPPORTED
+# uninitialized constant Rake::DSL::LOW_METHODS
+# Did you mean?  Rake::DSL::LowMethods
+# uninitialized constant Rake::DSL::METHODS
+# Did you mean?  Method
+# uninitialized constant Rake::DSL::OPT_TABLE
+# uninitialized constant Rake::DSL::RUBY
+# uninitialized constant Rake::DSL::VERSION
+# Did you mean?  Rake::Version
+#                Rake::VERSION
+# wrong constant name <static-init>
+# wrong constant name load
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <=>
+# wrong constant name <static-init>
+# wrong constant name instance
+# wrong constant name <static-init>
+# undefined method `ext<defaultArg>1' for class `Rake::FileList'
+# undefined method `pathmap<defaultArg>1' for class `Rake::FileList'
+# wrong constant name &
+# wrong constant name *
+# wrong constant name +
+# wrong constant name -
+# wrong constant name <<
+# wrong constant name <=>
+# wrong constant name ==
+# wrong constant name []
+# wrong constant name []=
+# wrong constant name add
+# wrong constant name all?
+# wrong constant name any?
+# wrong constant name append
+# wrong constant name assoc
+# wrong constant name at
+# wrong constant name bsearch
+# wrong constant name bsearch_index
+# wrong constant name chain
+# wrong constant name chunk
+# wrong constant name chunk_while
+# wrong constant name clear
+# wrong constant name clear_exclude
+# wrong constant name collect
+# wrong constant name collect!
+# wrong constant name collect_concat
+# wrong constant name combination
+# wrong constant name compact
+# wrong constant name compact!
+# wrong constant name concat
+# wrong constant name count
+# wrong constant name cycle
+# wrong constant name delete
+# wrong constant name delete_at
+# wrong constant name delete_if
+# wrong constant name detect
+# wrong constant name difference
+# wrong constant name dig
+# wrong constant name drop
+# wrong constant name drop_while
+# wrong constant name each
+# wrong constant name each_cons
+# wrong constant name each_entry
+# wrong constant name each_index
+# wrong constant name each_slice
+# wrong constant name each_with_index
+# wrong constant name each_with_object
+# wrong constant name egrep
+# wrong constant name empty?
+# wrong constant name entries
+# wrong constant name exclude
+# wrong constant name exclude?
+# wrong constant name existing
+# wrong constant name existing!
+# wrong constant name ext<defaultArg>1
+# wrong constant name ext
+# wrong constant name fetch
+# wrong constant name fill
+# wrong constant name filter
+# wrong constant name filter!
+# wrong constant name find
+# wrong constant name find_all
+# wrong constant name find_index
+# wrong constant name first
+# wrong constant name flat_map
+# wrong constant name flatten
+# wrong constant name flatten!
+# wrong constant name grep
+# wrong constant name grep_v
+# wrong constant name group_by
+# wrong constant name gsub
+# wrong constant name gsub!
+# wrong constant name import
+# wrong constant name include
+# wrong constant name include?
+# wrong constant name index
+# wrong constant name initialize
+# wrong constant name inject
+# wrong constant name insert
+# wrong constant name inspect
+# wrong constant name is_a?
+# wrong constant name join
+# wrong constant name keep_if
+# wrong constant name kind_of?
+# wrong constant name last
+# wrong constant name lazy
+# wrong constant name length
+# wrong constant name map
+# wrong constant name map!
+# wrong constant name max
+# wrong constant name max_by
+# wrong constant name member?
+# wrong constant name min
+# wrong constant name min_by
+# wrong constant name minmax
+# wrong constant name minmax_by
+# wrong constant name none?
+# wrong constant name one?
+# wrong constant name pack
+# wrong constant name partition
+# wrong constant name pathmap<defaultArg>1
+# wrong constant name pathmap
+# wrong constant name permutation
+# wrong constant name pop
+# wrong constant name prepend
+# wrong constant name product
+# wrong constant name push
+# wrong constant name rassoc
+# wrong constant name reduce
+# wrong constant name reject
+# wrong constant name reject!
+# wrong constant name repeated_combination
+# wrong constant name repeated_permutation
+# wrong constant name replace
+# wrong constant name resolve
+# wrong constant name reverse
+# wrong constant name reverse!
+# wrong constant name reverse_each
+# wrong constant name rindex
+# wrong constant name rotate
+# wrong constant name rotate!
+# wrong constant name sample
+# wrong constant name select
+# wrong constant name select!
+# wrong constant name shelljoin
+# wrong constant name shift
+# wrong constant name shuffle
+# wrong constant name shuffle!
+# wrong constant name size
+# wrong constant name slice
+# wrong constant name slice!
+# wrong constant name slice_after
+# wrong constant name slice_before
+# wrong constant name slice_when
+# wrong constant name sort
+# wrong constant name sort!
+# wrong constant name sort_by
+# wrong constant name sort_by!
+# wrong constant name sub
+# wrong constant name sub!
+# wrong constant name sum
+# wrong constant name take
+# wrong constant name take_while
+# wrong constant name to_a
+# wrong constant name to_ary
+# wrong constant name to_h
+# wrong constant name to_set
+# wrong constant name transpose
+# wrong constant name union
+# wrong constant name uniq
+# wrong constant name uniq!
+# wrong constant name unshift
+# wrong constant name values_at
+# wrong constant name zip
+# wrong constant name |
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name glob
+# wrong constant name <static-init>
+# undefined method `nowrite<defaultArg>1' for module `Rake::FileUtilsExt'
+# Did you mean?  nowrite_flag
+# undefined method `verbose<defaultArg>1' for module `Rake::FileUtilsExt'
+# Did you mean?  verbose_flag
+# undefined method `when_writing<defaultArg>1' for module `Rake::FileUtilsExt'
+# uninitialized constant Rake::FileUtilsExt::LN_SUPPORTED
+# uninitialized constant Rake::FileUtilsExt::LOW_METHODS
+# Did you mean?  Rake::FileUtilsExt::LowMethods
+# uninitialized constant Rake::FileUtilsExt::METHODS
+# Did you mean?  Method
+# uninitialized constant Rake::FileUtilsExt::OPT_TABLE
+# uninitialized constant Rake::FileUtilsExt::RUBY
+# uninitialized constant Rake::FileUtilsExt::VERSION
+# Did you mean?  Rake::Version
+#                Rake::VERSION
+# wrong constant name cd
+# wrong constant name chdir
+# wrong constant name chmod
+# wrong constant name chmod_R
+# wrong constant name chown
+# wrong constant name chown_R
+# wrong constant name copy
+# wrong constant name cp
+# wrong constant name cp_lr
+# wrong constant name cp_r
+# wrong constant name install
+# wrong constant name link
+# wrong constant name ln
+# wrong constant name ln_s
+# wrong constant name ln_sf
+# wrong constant name makedirs
+# wrong constant name mkdir
+# wrong constant name mkdir_p
+# wrong constant name mkpath
+# wrong constant name move
+# wrong constant name mv
+# wrong constant name nowrite<defaultArg>1
+# wrong constant name nowrite
+# wrong constant name rake_check_options
+# wrong constant name rake_merge_option
+# wrong constant name rake_output_message
+# wrong constant name remove
+# wrong constant name rm
+# wrong constant name rm_f
+# wrong constant name rm_r
+# wrong constant name rm_rf
+# wrong constant name rmdir
+# wrong constant name rmtree
+# wrong constant name ruby
+# wrong constant name safe_unlink
+# wrong constant name sh
+# wrong constant name symlink
+# wrong constant name touch
+# wrong constant name verbose<defaultArg>1
+# wrong constant name verbose
+# wrong constant name when_writing<defaultArg>1
+# wrong constant name when_writing
+# wrong constant name <static-init>
+# wrong constant name nowrite_flag
+# wrong constant name nowrite_flag=
+# wrong constant name verbose_flag
+# wrong constant name verbose_flag=
+# wrong constant name <Class:EmptyInvocationChain>
+# wrong constant name append
+# wrong constant name initialize
+# wrong constant name member?
+# wrong constant name append
+# wrong constant name member?
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name append
+# wrong constant name chain
+# wrong constant name chain=
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name initialize
+# wrong constant name tasks
+# wrong constant name <static-init>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name private_reader
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name included
+# wrong constant name initialize
+# wrong constant name recorder
+# wrong constant name recorder=
+# wrong constant name value
+# wrong constant name work
+# wrong constant name <static-init>
+# undefined method `initialize<defaultArg>1' for class `Rake::PseudoStatus'
+# Did you mean?  initialize_dup
+# wrong constant name >>
+# wrong constant name exited?
+# wrong constant name exitstatus
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
+# wrong constant name stopped?
+# wrong constant name to_i
+# wrong constant name <static-init>
+# wrong constant name add_target
+# wrong constant name initialize
+# wrong constant name <static-init>
+# undefined method `enhance<defaultArg>1' for class `Rake::Task'
+# undefined method `execute<defaultArg>1' for class `Rake::Task'
+# wrong constant name actions
+# wrong constant name add_description
+# wrong constant name application
+# wrong constant name application=
+# wrong constant name arg_description
+# wrong constant name arg_names
+# wrong constant name clear
+# wrong constant name clear_actions
+# wrong constant name clear_comments
+# wrong constant name clear_prerequisites
+# wrong constant name comment
+# wrong constant name comment=
+# wrong constant name enhance<defaultArg>1
+# wrong constant name enhance
+# wrong constant name execute<defaultArg>1
+# wrong constant name execute
+# wrong constant name full_comment
+# wrong constant name initialize
+# wrong constant name investigation
+# wrong constant name invoke
+# wrong constant name invoke_prerequisites
+# wrong constant name invoke_prerequisites_concurrently
+# wrong constant name invoke_with_call_chain
+# wrong constant name locations
+# wrong constant name name
+# wrong constant name name_with_args
+# wrong constant name needed?
+# wrong constant name prerequisite_tasks
+# wrong constant name prerequisites
+# wrong constant name reenable
+# wrong constant name scope
+# wrong constant name set_arg_names
+# wrong constant name source
+# wrong constant name sources
+# wrong constant name sources=
+# wrong constant name timestamp
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name clear
+# wrong constant name create_rule
+# wrong constant name define_task
+# wrong constant name scope_name
+# wrong constant name task_defined?
+# wrong constant name tasks
+# wrong constant name <static-init>
+# undefined method `initialize<defaultArg>1' for class `Rake::TaskArguments'
+# Did you mean?  initialize_dup
+# uninitialized constant Rake::TaskArguments::Elem
+# wrong constant name []
+# wrong constant name each
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
+# wrong constant name lookup
+# wrong constant name method_missing
+# wrong constant name names
+# wrong constant name new_scope
+# wrong constant name to_hash
+# wrong constant name values_at
+# wrong constant name with_defaults
+# wrong constant name <static-init>
+# undefined method `[]<defaultArg>1' for module `Rake::TaskManager'
+# undefined method `enhance_with_matching_rule<defaultArg>1' for module `Rake::TaskManager'
+# undefined method `lookup<defaultArg>1' for module `Rake::TaskManager'
+# wrong constant name []<defaultArg>1
+# wrong constant name []
+# wrong constant name clear
+# wrong constant name create_rule
+# wrong constant name current_scope
+# wrong constant name define_task
+# wrong constant name enhance_with_matching_rule<defaultArg>1
+# wrong constant name enhance_with_matching_rule
+# wrong constant name in_namespace
+# wrong constant name initialize
+# wrong constant name intern
+# wrong constant name last_comment
+# wrong constant name last_description
+# wrong constant name last_description=
+# wrong constant name lookup<defaultArg>1
+# wrong constant name lookup
+# wrong constant name resolve_args
+# wrong constant name synthesize_file_task
+# wrong constant name tasks
+# wrong constant name tasks_in_scope
+# wrong constant name <static-init>
+# wrong constant name record_task_metadata
+# wrong constant name record_task_metadata=
+# wrong constant name initialize
+# wrong constant name show
+# wrong constant name <static-init>
+# wrong constant name future
+# wrong constant name gather_history
+# wrong constant name history
+# wrong constant name initialize
+# wrong constant name join
+# wrong constant name statistics
+# wrong constant name <static-init>
+# wrong constant name trace_on
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:Win32HomeError>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name normalize
+# wrong constant name rake_system
+# wrong constant name win32_system_dir
+# wrong constant name windows?
+# wrong constant name <static-init>
+# wrong constant name add_rakelib
+# wrong constant name application
+# wrong constant name application=
+# wrong constant name each_dir_parent
+# wrong constant name load_rakefile
+# wrong constant name original_dir
 # undefined method `alphanumeric<defaultArg>1' for module `Random::Formatter'
 # undefined method `random_bytes<defaultArg>1' for module `Random::Formatter'
 # undefined method `urlsafe_base64<defaultArg>1' for module `Random::Formatter'
@@ -14602,17 +17039,55 @@
 # wrong constant name special_prefixes=
 # wrong constant name vi_editing_mode
 # wrong constant name vi_editing_mode?
+# undefined method `initialize<defaultArg>1' for class `Resolv'
+# Did you mean?  initialize_dup
+# wrong constant name <Class:DNS>
+# wrong constant name <Class:Hosts>
+# wrong constant name <Class:IPv4>
+# wrong constant name <Class:IPv6>
+# wrong constant name <Class:LOC>
+# wrong constant name <Class:MDNS>
+# wrong constant name <Class:ResolvError>
+# wrong constant name <Class:ResolvTimeout>
+# wrong constant name each_address
+# wrong constant name each_name
+# wrong constant name getaddress
+# wrong constant name getaddresses
+# wrong constant name getname
+# wrong constant name getnames
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
+# undefined method `initialize<defaultArg>1' for class `Resolv::DNS'
+# Did you mean?  initialize_dup
 # wrong constant name <Class:Config>
+# wrong constant name <Class:DecodeError>
+# wrong constant name <Class:EncodeError>
 # wrong constant name <Class:Label>
 # wrong constant name <Class:Message>
+# wrong constant name <Class:Name>
 # wrong constant name <Class:OpCode>
+# wrong constant name <Class:Query>
 # wrong constant name <Class:RCode>
 # wrong constant name <Class:Requester>
+# wrong constant name <Class:Resource>
+# wrong constant name close
+# wrong constant name each_address
+# wrong constant name each_name
+# wrong constant name each_resource
 # wrong constant name extract_resources
 # wrong constant name fetch_resource
+# wrong constant name getaddress
+# wrong constant name getaddresses
+# wrong constant name getname
+# wrong constant name getnames
+# wrong constant name getresource
+# wrong constant name getresources
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
 # wrong constant name lazy_initialize
 # wrong constant name make_tcp_requester
 # wrong constant name make_udp_requester
+# wrong constant name timeouts=
 # undefined method `initialize<defaultArg>1' for class `Resolv::DNS::Config'
 # Did you mean?  initialize_dup
 # wrong constant name <Class:NXDomain>
@@ -14633,6 +17108,8 @@
 # wrong constant name default_config_hash<defaultArg>1
 # wrong constant name default_config_hash
 # wrong constant name parse_resolv_conf
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # wrong constant name <Class:Str>
 # wrong constant name ==
 # wrong constant name downcase
@@ -14704,13 +17181,22 @@
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name decode
+# undefined method `initialize<defaultArg>1' for class `Resolv::DNS::Name'
+# Did you mean?  initialize_dup
 # wrong constant name ==
 # wrong constant name []
+# wrong constant name absolute?
 # wrong constant name eql?
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
 # wrong constant name length
+# wrong constant name subdomain_of?
 # wrong constant name to_a
 # wrong constant name <static-init>
+# wrong constant name create
+# wrong constant name <static-init>
 # wrong constant name encode_rdata
+# wrong constant name <static-init>
 # wrong constant name decode_rdata
 # wrong constant name <static-init>
 # wrong constant name <Class:ConnectedUDP>
@@ -14771,13 +17257,47 @@
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name ==
+# wrong constant name <Class:ANY>
+# wrong constant name <Class:CNAME>
+# wrong constant name <Class:DomainName>
+# wrong constant name <Class:Generic>
+# wrong constant name <Class:HINFO>
+# wrong constant name <Class:IN>
+# wrong constant name <Class:LOC>
+# wrong constant name <Class:MINFO>
+# wrong constant name <Class:MX>
+# wrong constant name <Class:NS>
+# wrong constant name <Class:PTR>
+# wrong constant name <Class:SOA>
+# wrong constant name <Class:TXT>
 # wrong constant name eql?
+# wrong constant name ttl
+# wrong constant name <static-init>
 # uninitialized constant Resolv::DNS::Resource::CNAME::ClassHash
 # Did you mean?  Resolv::DNS::Resource::ClassHash
 # uninitialized constant Resolv::DNS::Resource::CNAME::ClassInsensitiveTypes
 # Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
 # uninitialized constant Resolv::DNS::Resource::CNAME::ClassValue
 # Did you mean?  Resolv::DNS::Resource::ClassValue
+# wrong constant name <static-init>
+# uninitialized constant Resolv::DNS::Resource::DomainName::ClassHash
+# Did you mean?  Resolv::DNS::Resource::ClassHash
+# uninitialized constant Resolv::DNS::Resource::DomainName::ClassInsensitiveTypes
+# Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
+# uninitialized constant Resolv::DNS::Resource::DomainName::ClassValue
+# Did you mean?  Resolv::DNS::Resource::ClassValue
+# wrong constant name initialize
+# wrong constant name name
+# wrong constant name <static-init>
+# uninitialized constant Resolv::DNS::Resource::Generic::ClassHash
+# Did you mean?  Resolv::DNS::Resource::ClassHash
+# uninitialized constant Resolv::DNS::Resource::Generic::ClassInsensitiveTypes
+# Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
+# uninitialized constant Resolv::DNS::Resource::Generic::ClassValue
+# Did you mean?  Resolv::DNS::Resource::ClassValue
+# wrong constant name data
+# wrong constant name initialize
+# wrong constant name <static-init>
 # wrong constant name create
 # uninitialized constant Resolv::DNS::Resource::HINFO::ClassHash
 # Did you mean?  Resolv::DNS::Resource::ClassHash
@@ -14785,6 +17305,12 @@
 # Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
 # uninitialized constant Resolv::DNS::Resource::HINFO::ClassValue
 # Did you mean?  Resolv::DNS::Resource::ClassValue
+# wrong constant name cpu
+# wrong constant name initialize
+# wrong constant name os
+# wrong constant name <static-init>
+# wrong constant name <Class:A>
+# wrong constant name <Class:AAAA>
 # wrong constant name <Class:ANY>
 # wrong constant name <Class:CNAME>
 # wrong constant name <Class:HINFO>
@@ -14794,15 +17320,23 @@
 # wrong constant name <Class:NS>
 # wrong constant name <Class:PTR>
 # wrong constant name <Class:SOA>
+# wrong constant name <Class:SRV>
 # wrong constant name <Class:TXT>
+# wrong constant name <Class:WKS>
 # uninitialized constant Resolv::DNS::Resource::IN::A::ClassHash
 # Did you mean?  Resolv::DNS::Resource::ClassHash
 # uninitialized constant Resolv::DNS::Resource::IN::A::ClassInsensitiveTypes
 # Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
+# wrong constant name address
+# wrong constant name initialize
+# wrong constant name <static-init>
 # uninitialized constant Resolv::DNS::Resource::IN::AAAA::ClassHash
 # Did you mean?  Resolv::DNS::Resource::ClassHash
 # uninitialized constant Resolv::DNS::Resource::IN::AAAA::ClassInsensitiveTypes
 # Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
+# wrong constant name address
+# wrong constant name initialize
+# wrong constant name <static-init>
 # wrong constant name <static-init>
 # uninitialized constant Resolv::DNS::Resource::IN::CNAME::ClassHash
 # Did you mean?  Resolv::DNS::Resource::ClassHash
@@ -14848,6 +17382,12 @@
 # Did you mean?  Resolv::DNS::Resource::ClassHash
 # uninitialized constant Resolv::DNS::Resource::IN::SRV::ClassInsensitiveTypes
 # Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
+# wrong constant name initialize
+# wrong constant name port
+# wrong constant name priority
+# wrong constant name target
+# wrong constant name weight
+# wrong constant name <static-init>
 # uninitialized constant Resolv::DNS::Resource::IN::TXT::ClassHash
 # Did you mean?  Resolv::DNS::Resource::ClassHash
 # uninitialized constant Resolv::DNS::Resource::IN::TXT::ClassInsensitiveTypes
@@ -14857,66 +17397,159 @@
 # Did you mean?  Resolv::DNS::Resource::ClassHash
 # uninitialized constant Resolv::DNS::Resource::IN::WKS::ClassInsensitiveTypes
 # Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
+# wrong constant name address
+# wrong constant name bitmap
+# wrong constant name initialize
+# wrong constant name protocol
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # uninitialized constant Resolv::DNS::Resource::LOC::ClassHash
 # Did you mean?  Resolv::DNS::Resource::ClassHash
 # uninitialized constant Resolv::DNS::Resource::LOC::ClassInsensitiveTypes
 # Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
 # uninitialized constant Resolv::DNS::Resource::LOC::ClassValue
 # Did you mean?  Resolv::DNS::Resource::ClassValue
+# wrong constant name altitude
+# wrong constant name hprecision
+# wrong constant name initialize
+# wrong constant name latitude
+# wrong constant name longitude
+# wrong constant name ssize
+# wrong constant name version
+# wrong constant name vprecision
+# wrong constant name <static-init>
 # uninitialized constant Resolv::DNS::Resource::MINFO::ClassHash
 # Did you mean?  Resolv::DNS::Resource::ClassHash
 # uninitialized constant Resolv::DNS::Resource::MINFO::ClassInsensitiveTypes
 # Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
 # uninitialized constant Resolv::DNS::Resource::MINFO::ClassValue
 # Did you mean?  Resolv::DNS::Resource::ClassValue
+# wrong constant name emailbx
+# wrong constant name initialize
+# wrong constant name rmailbx
+# wrong constant name <static-init>
 # uninitialized constant Resolv::DNS::Resource::MX::ClassHash
 # Did you mean?  Resolv::DNS::Resource::ClassHash
 # uninitialized constant Resolv::DNS::Resource::MX::ClassInsensitiveTypes
 # Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
 # uninitialized constant Resolv::DNS::Resource::MX::ClassValue
 # Did you mean?  Resolv::DNS::Resource::ClassValue
+# wrong constant name exchange
+# wrong constant name initialize
+# wrong constant name preference
+# wrong constant name <static-init>
 # uninitialized constant Resolv::DNS::Resource::NS::ClassHash
 # Did you mean?  Resolv::DNS::Resource::ClassHash
 # uninitialized constant Resolv::DNS::Resource::NS::ClassInsensitiveTypes
 # Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
 # uninitialized constant Resolv::DNS::Resource::NS::ClassValue
 # Did you mean?  Resolv::DNS::Resource::ClassValue
+# wrong constant name <static-init>
 # uninitialized constant Resolv::DNS::Resource::PTR::ClassHash
 # Did you mean?  Resolv::DNS::Resource::ClassHash
 # uninitialized constant Resolv::DNS::Resource::PTR::ClassInsensitiveTypes
 # Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
 # uninitialized constant Resolv::DNS::Resource::PTR::ClassValue
 # Did you mean?  Resolv::DNS::Resource::ClassValue
+# wrong constant name <static-init>
 # uninitialized constant Resolv::DNS::Resource::SOA::ClassHash
 # Did you mean?  Resolv::DNS::Resource::ClassHash
 # uninitialized constant Resolv::DNS::Resource::SOA::ClassInsensitiveTypes
 # Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
 # uninitialized constant Resolv::DNS::Resource::SOA::ClassValue
 # Did you mean?  Resolv::DNS::Resource::ClassValue
+# wrong constant name expire
+# wrong constant name initialize
+# wrong constant name minimum
+# wrong constant name mname
+# wrong constant name refresh
+# wrong constant name retry
+# wrong constant name rname
+# wrong constant name serial
+# wrong constant name <static-init>
 # uninitialized constant Resolv::DNS::Resource::TXT::ClassHash
 # Did you mean?  Resolv::DNS::Resource::ClassHash
 # uninitialized constant Resolv::DNS::Resource::TXT::ClassInsensitiveTypes
 # Did you mean?  Resolv::DNS::Resource::ClassInsensitiveTypes
 # uninitialized constant Resolv::DNS::Resource::TXT::ClassValue
 # Did you mean?  Resolv::DNS::Resource::ClassValue
+# wrong constant name data
+# wrong constant name initialize
+# wrong constant name strings
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # wrong constant name get_class
 # undefined singleton method `bind_random_port<defaultArg>1' for `Resolv::DNS'
+# wrong constant name <static-init>
 # wrong constant name allocate_request_id
 # wrong constant name bind_random_port<defaultArg>1
 # wrong constant name bind_random_port
 # wrong constant name free_request_id
+# wrong constant name open
 # wrong constant name random
+# undefined method `initialize<defaultArg>1' for class `Resolv::Hosts'
+# Did you mean?  initialize_dup
+# wrong constant name each_address
+# wrong constant name each_name
+# wrong constant name getaddress
+# wrong constant name getaddresses
+# wrong constant name getname
+# wrong constant name getnames
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
 # wrong constant name lazy_initialize
+# wrong constant name <static-init>
+# wrong constant name ==
+# wrong constant name address
+# wrong constant name eql?
+# wrong constant name initialize
+# wrong constant name to_name
+# wrong constant name <static-init>
+# wrong constant name create
+# wrong constant name ==
+# wrong constant name address
+# wrong constant name eql?
+# wrong constant name initialize
+# wrong constant name to_name
+# wrong constant name <static-init>
+# wrong constant name create
+# wrong constant name <Class:Alt>
+# wrong constant name <Class:Coord>
+# wrong constant name <Class:Size>
+# wrong constant name ==
+# wrong constant name altitude
+# wrong constant name eql?
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name create
+# wrong constant name ==
+# wrong constant name coordinates
+# wrong constant name eql?
+# wrong constant name initialize
+# wrong constant name orientation
+# wrong constant name <static-init>
+# wrong constant name create
 # wrong constant name ==
 # wrong constant name eql?
-# wrong constant name ==
-# wrong constant name eql?
-# wrong constant name ==
-# wrong constant name eql?
-# wrong constant name ==
-# wrong constant name eql?
-# wrong constant name ==
-# wrong constant name eql?
+# wrong constant name initialize
+# wrong constant name scalar
+# wrong constant name <static-init>
+# wrong constant name create
+# wrong constant name <static-init>
+# uninitialized constant Resolv::MDNS::RequestID
+# Did you mean?  Resolv::MDNS::Requester
+# uninitialized constant Resolv::MDNS::RequestIDMutex
+# uninitialized constant Resolv::MDNS::UDPSize
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name each_address
+# wrong constant name each_name
+# wrong constant name getaddress
+# wrong constant name getaddresses
+# wrong constant name getname
+# wrong constant name getnames
 # wrong constant name <Class:Filter>
 # wrong constant name <Class:Lexer>
 # wrong constant name <Class:SexpBuilder>
@@ -14951,69 +17584,69 @@
 # uninitialized constant Ripper::Lexer::EVENTS
 # Did you mean?  Ripper::EVENTS
 # uninitialized constant Ripper::Lexer::EXPR_ARG
-# Did you mean?  Ripper::EXPR_BEG
-#                Ripper::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
+#                Ripper::EXPR_BEG
 #                Ripper::Lexer::EXPR_BEG
 # uninitialized constant Ripper::Lexer::EXPR_ARG_ANY
-# Did you mean?  Ripper::Lexer::EXPR_BEG_ANY
-#                Ripper::EXPR_END_ANY
+# Did you mean?  Ripper::Lexer::EXPR_END_ANY
 #                Ripper::EXPR_BEG_ANY
-#                Ripper::Lexer::EXPR_END_ANY
+#                Ripper::EXPR_END_ANY
 #                Ripper::EXPR_ARG_ANY
+#                Ripper::Lexer::EXPR_BEG_ANY
 # uninitialized constant Ripper::Lexer::EXPR_BEG
-# Did you mean?  Ripper::Lexer::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
+#                Ripper::Lexer::EXPR_ARG
 #                Ripper::EXPR_BEG
-#                Ripper::EXPR_ARG
 # uninitialized constant Ripper::Lexer::EXPR_BEG_ANY
-# Did you mean?  Ripper::EXPR_BEG_ANY
+# Did you mean?  Ripper::EXPR_ARG_ANY
 #                Ripper::Lexer::EXPR_END_ANY
 #                Ripper::Lexer::EXPR_ARG_ANY
-#                Ripper::EXPR_ARG_ANY
+#                Ripper::EXPR_BEG_ANY
 #                Ripper::EXPR_END_ANY
 # uninitialized constant Ripper::Lexer::EXPR_CLASS
 # Did you mean?  Ripper::EXPR_CLASS
 # uninitialized constant Ripper::Lexer::EXPR_CMDARG
 # Did you mean?  Ripper::Lexer::EXPR_ARG
 #                Ripper::EXPR_ARG
-#                Ripper::EXPR_CMDARG
-#                Ripper::Lexer::EXPR_ENDARG
 #                Ripper::EXPR_ENDARG
+#                Ripper::Lexer::EXPR_ENDARG
+#                Ripper::EXPR_CMDARG
 # uninitialized constant Ripper::Lexer::EXPR_DOT
 # Did you mean?  Ripper::EXPR_DOT
 # uninitialized constant Ripper::Lexer::EXPR_END
-# Did you mean?  Ripper::Lexer::EXPR_MID
+# Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_MID
-#                Ripper::EXPR_END
+#                Ripper::Lexer::EXPR_MID
 #                Ripper::Lexer::EXPR_ENDFN
 #                Ripper::EXPR_ENDFN
 # uninitialized constant Ripper::Lexer::EXPR_ENDARG
-# Did you mean?  Ripper::Lexer::EXPR_ARG
+# Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_ARG
-#                Ripper::EXPR_END
-#                Ripper::EXPR_ENDFN
+#                Ripper::Lexer::EXPR_ARG
 #                Ripper::Lexer::EXPR_ENDFN
-#                Ripper::Lexer::EXPR_CMDARG
-#                Ripper::EXPR_CMDARG
+#                Ripper::EXPR_ENDFN
 #                Ripper::EXPR_ENDARG
+#                Ripper::EXPR_CMDARG
+#                Ripper::Lexer::EXPR_CMDARG
 #                Ripper::Lexer::EXPR_END_ANY
 #                Ripper::EXPR_END_ANY
 # uninitialized constant Ripper::Lexer::EXPR_ENDFN
 # Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_ENDFN
-#                Ripper::EXPR_ENDARG
 #                Ripper::Lexer::EXPR_ENDARG
-#                Ripper::Lexer::EXPR_END_ANY
+#                Ripper::EXPR_ENDARG
 #                Ripper::EXPR_END_ANY
+#                Ripper::Lexer::EXPR_END_ANY
 # uninitialized constant Ripper::Lexer::EXPR_END_ANY
-# Did you mean?  Ripper::EXPR_END_ANY
+# Did you mean?  Ripper::EXPR_ARG_ANY
 #                Ripper::Lexer::EXPR_ARG_ANY
 #                Ripper::Lexer::EXPR_BEG_ANY
-#                Ripper::EXPR_ARG_ANY
+#                Ripper::EXPR_END_ANY
 #                Ripper::EXPR_BEG_ANY
 #                Ripper::Lexer::EXPR_ENDFN
 #                Ripper::EXPR_ENDFN
-#                Ripper::Lexer::EXPR_ENDARG
 #                Ripper::EXPR_ENDARG
+#                Ripper::Lexer::EXPR_ENDARG
 # uninitialized constant Ripper::Lexer::EXPR_FITEM
 # Did you mean?  Ripper::EXPR_FITEM
 # uninitialized constant Ripper::Lexer::EXPR_FNAME
@@ -15024,8 +17657,8 @@
 # Did you mean?  Ripper::EXPR_BEG
 #                Ripper::Lexer::EXPR_BEG
 #                Ripper::EXPR_LABEL
-#                Ripper::Lexer::EXPR_LABELED
 #                Ripper::EXPR_LABELED
+#                Ripper::Lexer::EXPR_LABELED
 # uninitialized constant Ripper::Lexer::EXPR_LABELED
 # Did you mean?  Ripper::EXPR_LABEL
 #                Ripper::EXPR_LABELED
@@ -15034,10 +17667,10 @@
 #                Ripper::EXPR_MID
 #                Ripper::EXPR_END
 # uninitialized constant Ripper::Lexer::EXPR_NONE
-# Did you mean?  Ripper::Lexer::EXPR_DOT
-#                Ripper::Lexer::EXPR_END
+# Did you mean?  Ripper::EXPR_END
+#                Ripper::Lexer::EXPR_DOT
 #                Ripper::EXPR_DOT
-#                Ripper::EXPR_END
+#                Ripper::Lexer::EXPR_END
 #                Ripper::EXPR_NONE
 #                Ripper::Lexer::EXPR_FNAME
 #                Ripper::EXPR_FNAME
@@ -15090,69 +17723,69 @@
 # uninitialized constant Ripper::SexpBuilder::EVENTS
 # Did you mean?  Ripper::EVENTS
 # uninitialized constant Ripper::SexpBuilder::EXPR_ARG
-# Did you mean?  Ripper::EXPR_BEG
-#                Ripper::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
+#                Ripper::EXPR_BEG
 #                Ripper::SexpBuilder::EXPR_BEG
 # uninitialized constant Ripper::SexpBuilder::EXPR_ARG_ANY
-# Did you mean?  Ripper::SexpBuilder::EXPR_BEG_ANY
-#                Ripper::EXPR_END_ANY
+# Did you mean?  Ripper::SexpBuilder::EXPR_END_ANY
 #                Ripper::EXPR_BEG_ANY
-#                Ripper::SexpBuilder::EXPR_END_ANY
+#                Ripper::EXPR_END_ANY
 #                Ripper::EXPR_ARG_ANY
+#                Ripper::SexpBuilder::EXPR_BEG_ANY
 # uninitialized constant Ripper::SexpBuilder::EXPR_BEG
-# Did you mean?  Ripper::SexpBuilder::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
+#                Ripper::SexpBuilder::EXPR_ARG
 #                Ripper::EXPR_BEG
-#                Ripper::EXPR_ARG
 # uninitialized constant Ripper::SexpBuilder::EXPR_BEG_ANY
-# Did you mean?  Ripper::EXPR_BEG_ANY
+# Did you mean?  Ripper::EXPR_ARG_ANY
 #                Ripper::SexpBuilder::EXPR_END_ANY
 #                Ripper::SexpBuilder::EXPR_ARG_ANY
-#                Ripper::EXPR_ARG_ANY
+#                Ripper::EXPR_BEG_ANY
 #                Ripper::EXPR_END_ANY
 # uninitialized constant Ripper::SexpBuilder::EXPR_CLASS
 # Did you mean?  Ripper::EXPR_CLASS
 # uninitialized constant Ripper::SexpBuilder::EXPR_CMDARG
 # Did you mean?  Ripper::SexpBuilder::EXPR_ARG
 #                Ripper::EXPR_ARG
-#                Ripper::EXPR_CMDARG
-#                Ripper::SexpBuilder::EXPR_ENDARG
 #                Ripper::EXPR_ENDARG
+#                Ripper::SexpBuilder::EXPR_ENDARG
+#                Ripper::EXPR_CMDARG
 # uninitialized constant Ripper::SexpBuilder::EXPR_DOT
 # Did you mean?  Ripper::EXPR_DOT
 # uninitialized constant Ripper::SexpBuilder::EXPR_END
-# Did you mean?  Ripper::SexpBuilder::EXPR_MID
+# Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_MID
-#                Ripper::EXPR_END
+#                Ripper::SexpBuilder::EXPR_MID
 #                Ripper::SexpBuilder::EXPR_ENDFN
 #                Ripper::EXPR_ENDFN
 # uninitialized constant Ripper::SexpBuilder::EXPR_ENDARG
-# Did you mean?  Ripper::SexpBuilder::EXPR_ARG
+# Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_ARG
-#                Ripper::EXPR_END
-#                Ripper::EXPR_ENDFN
+#                Ripper::SexpBuilder::EXPR_ARG
 #                Ripper::SexpBuilder::EXPR_ENDFN
-#                Ripper::SexpBuilder::EXPR_CMDARG
-#                Ripper::EXPR_CMDARG
+#                Ripper::EXPR_ENDFN
 #                Ripper::EXPR_ENDARG
+#                Ripper::EXPR_CMDARG
+#                Ripper::SexpBuilder::EXPR_CMDARG
 #                Ripper::SexpBuilder::EXPR_END_ANY
 #                Ripper::EXPR_END_ANY
 # uninitialized constant Ripper::SexpBuilder::EXPR_ENDFN
 # Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_ENDFN
-#                Ripper::EXPR_ENDARG
 #                Ripper::SexpBuilder::EXPR_ENDARG
-#                Ripper::SexpBuilder::EXPR_END_ANY
+#                Ripper::EXPR_ENDARG
 #                Ripper::EXPR_END_ANY
+#                Ripper::SexpBuilder::EXPR_END_ANY
 # uninitialized constant Ripper::SexpBuilder::EXPR_END_ANY
-# Did you mean?  Ripper::EXPR_END_ANY
+# Did you mean?  Ripper::EXPR_ARG_ANY
 #                Ripper::SexpBuilder::EXPR_ARG_ANY
 #                Ripper::SexpBuilder::EXPR_BEG_ANY
-#                Ripper::EXPR_ARG_ANY
+#                Ripper::EXPR_END_ANY
 #                Ripper::EXPR_BEG_ANY
 #                Ripper::SexpBuilder::EXPR_ENDFN
 #                Ripper::EXPR_ENDFN
-#                Ripper::SexpBuilder::EXPR_ENDARG
 #                Ripper::EXPR_ENDARG
+#                Ripper::SexpBuilder::EXPR_ENDARG
 # uninitialized constant Ripper::SexpBuilder::EXPR_FITEM
 # Did you mean?  Ripper::EXPR_FITEM
 # uninitialized constant Ripper::SexpBuilder::EXPR_FNAME
@@ -15163,8 +17796,8 @@
 # Did you mean?  Ripper::EXPR_BEG
 #                Ripper::SexpBuilder::EXPR_BEG
 #                Ripper::EXPR_LABEL
-#                Ripper::SexpBuilder::EXPR_LABELED
 #                Ripper::EXPR_LABELED
+#                Ripper::SexpBuilder::EXPR_LABELED
 # uninitialized constant Ripper::SexpBuilder::EXPR_LABELED
 # Did you mean?  Ripper::EXPR_LABEL
 #                Ripper::EXPR_LABELED
@@ -15173,10 +17806,10 @@
 #                Ripper::EXPR_MID
 #                Ripper::EXPR_END
 # uninitialized constant Ripper::SexpBuilder::EXPR_NONE
-# Did you mean?  Ripper::SexpBuilder::EXPR_DOT
-#                Ripper::SexpBuilder::EXPR_END
+# Did you mean?  Ripper::EXPR_END
+#                Ripper::SexpBuilder::EXPR_DOT
 #                Ripper::EXPR_DOT
-#                Ripper::EXPR_END
+#                Ripper::SexpBuilder::EXPR_END
 #                Ripper::EXPR_NONE
 #                Ripper::SexpBuilder::EXPR_FNAME
 #                Ripper::EXPR_FNAME
@@ -15379,69 +18012,69 @@
 # uninitialized constant Ripper::SexpBuilderPP::EVENTS
 # Did you mean?  Ripper::EVENTS
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_ARG
-# Did you mean?  Ripper::EXPR_BEG
-#                Ripper::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
+#                Ripper::EXPR_BEG
 #                Ripper::SexpBuilderPP::EXPR_BEG
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_ARG_ANY
-# Did you mean?  Ripper::SexpBuilderPP::EXPR_BEG_ANY
-#                Ripper::EXPR_END_ANY
+# Did you mean?  Ripper::SexpBuilderPP::EXPR_END_ANY
 #                Ripper::EXPR_BEG_ANY
-#                Ripper::SexpBuilderPP::EXPR_END_ANY
+#                Ripper::EXPR_END_ANY
 #                Ripper::EXPR_ARG_ANY
+#                Ripper::SexpBuilderPP::EXPR_BEG_ANY
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_BEG
-# Did you mean?  Ripper::SexpBuilderPP::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
+#                Ripper::SexpBuilderPP::EXPR_ARG
 #                Ripper::EXPR_BEG
-#                Ripper::EXPR_ARG
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_BEG_ANY
-# Did you mean?  Ripper::EXPR_BEG_ANY
+# Did you mean?  Ripper::EXPR_ARG_ANY
 #                Ripper::SexpBuilderPP::EXPR_END_ANY
 #                Ripper::SexpBuilderPP::EXPR_ARG_ANY
-#                Ripper::EXPR_ARG_ANY
+#                Ripper::EXPR_BEG_ANY
 #                Ripper::EXPR_END_ANY
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_CLASS
 # Did you mean?  Ripper::EXPR_CLASS
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_CMDARG
 # Did you mean?  Ripper::SexpBuilderPP::EXPR_ARG
 #                Ripper::EXPR_ARG
-#                Ripper::EXPR_CMDARG
-#                Ripper::SexpBuilderPP::EXPR_ENDARG
 #                Ripper::EXPR_ENDARG
+#                Ripper::SexpBuilderPP::EXPR_ENDARG
+#                Ripper::EXPR_CMDARG
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_DOT
 # Did you mean?  Ripper::EXPR_DOT
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_END
-# Did you mean?  Ripper::SexpBuilderPP::EXPR_MID
+# Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_MID
-#                Ripper::EXPR_END
+#                Ripper::SexpBuilderPP::EXPR_MID
 #                Ripper::SexpBuilderPP::EXPR_ENDFN
 #                Ripper::EXPR_ENDFN
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_ENDARG
-# Did you mean?  Ripper::SexpBuilderPP::EXPR_ARG
+# Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_ARG
-#                Ripper::EXPR_END
-#                Ripper::EXPR_ENDFN
+#                Ripper::SexpBuilderPP::EXPR_ARG
 #                Ripper::SexpBuilderPP::EXPR_ENDFN
-#                Ripper::SexpBuilderPP::EXPR_CMDARG
-#                Ripper::EXPR_CMDARG
+#                Ripper::EXPR_ENDFN
 #                Ripper::EXPR_ENDARG
+#                Ripper::EXPR_CMDARG
+#                Ripper::SexpBuilderPP::EXPR_CMDARG
 #                Ripper::SexpBuilderPP::EXPR_END_ANY
 #                Ripper::EXPR_END_ANY
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_ENDFN
 # Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_ENDFN
-#                Ripper::EXPR_ENDARG
 #                Ripper::SexpBuilderPP::EXPR_ENDARG
-#                Ripper::SexpBuilderPP::EXPR_END_ANY
+#                Ripper::EXPR_ENDARG
 #                Ripper::EXPR_END_ANY
+#                Ripper::SexpBuilderPP::EXPR_END_ANY
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_END_ANY
-# Did you mean?  Ripper::EXPR_END_ANY
+# Did you mean?  Ripper::EXPR_ARG_ANY
 #                Ripper::SexpBuilderPP::EXPR_ARG_ANY
 #                Ripper::SexpBuilderPP::EXPR_BEG_ANY
-#                Ripper::EXPR_ARG_ANY
+#                Ripper::EXPR_END_ANY
 #                Ripper::EXPR_BEG_ANY
 #                Ripper::SexpBuilderPP::EXPR_ENDFN
 #                Ripper::EXPR_ENDFN
-#                Ripper::SexpBuilderPP::EXPR_ENDARG
 #                Ripper::EXPR_ENDARG
+#                Ripper::SexpBuilderPP::EXPR_ENDARG
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_FITEM
 # Did you mean?  Ripper::EXPR_FITEM
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_FNAME
@@ -15452,8 +18085,8 @@
 # Did you mean?  Ripper::EXPR_BEG
 #                Ripper::SexpBuilderPP::EXPR_BEG
 #                Ripper::EXPR_LABEL
-#                Ripper::SexpBuilderPP::EXPR_LABELED
 #                Ripper::EXPR_LABELED
+#                Ripper::SexpBuilderPP::EXPR_LABELED
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_LABELED
 # Did you mean?  Ripper::EXPR_LABEL
 #                Ripper::EXPR_LABELED
@@ -15462,10 +18095,10 @@
 #                Ripper::EXPR_MID
 #                Ripper::EXPR_END
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_NONE
-# Did you mean?  Ripper::SexpBuilderPP::EXPR_DOT
-#                Ripper::SexpBuilderPP::EXPR_END
+# Did you mean?  Ripper::EXPR_END
+#                Ripper::SexpBuilderPP::EXPR_DOT
 #                Ripper::EXPR_DOT
-#                Ripper::EXPR_END
+#                Ripper::SexpBuilderPP::EXPR_END
 #                Ripper::EXPR_NONE
 #                Ripper::SexpBuilderPP::EXPR_FNAME
 #                Ripper::EXPR_FNAME
@@ -19206,7 +21839,7 @@
 # wrong constant name on_send
 # wrong constant name redundant_merge_candidate<defaultArg>1
 # wrong constant name redundant_merge_candidate
-# undefined method `each_with_object_node<defaultArg>1' for class `#<Class:0x00007ff8045f4ef8>'
+# undefined method `each_with_object_node<defaultArg>1' for class `#<Class:0x00007ff3cd9ddbb8>'
 # wrong constant name each_with_object_node<defaultArg>1
 # wrong constant name each_with_object_node
 # wrong constant name initialize
@@ -23138,13 +25771,22 @@
 # wrong constant name initialize
 # wrong constant name setup
 # wrong constant name result
+# undefined method `ext<defaultArg>1' for class `String'
+# undefined method `pathmap<defaultArg>1' for class `String'
 # wrong constant name []=
 # wrong constant name blank?
 # wrong constant name casecmp?
 # wrong constant name each_grapheme_cluster
 # wrong constant name encode!
+# wrong constant name ext<defaultArg>1
+# wrong constant name ext
 # wrong constant name grapheme_clusters
 # wrong constant name parse_csv
+# wrong constant name pathmap<defaultArg>1
+# wrong constant name pathmap
+# wrong constant name pathmap_explode
+# wrong constant name pathmap_partial
+# wrong constant name pathmap_replace
 # wrong constant name reverse!
 # wrong constant name shellescape
 # wrong constant name shellsplit
@@ -23311,8 +25953,8 @@
 # uninitialized constant Temple::Filters::StringSplitter::SyntaxChecker::EXPR_ARG
 # Did you mean?  Temple::Filters::StringSplitter::SyntaxChecker::EXPR_BEG
 # uninitialized constant Temple::Filters::StringSplitter::SyntaxChecker::EXPR_ARG_ANY
-# Did you mean?  Temple::Filters::StringSplitter::SyntaxChecker::EXPR_END_ANY
-#                Temple::Filters::StringSplitter::SyntaxChecker::EXPR_BEG_ANY
+# Did you mean?  Temple::Filters::StringSplitter::SyntaxChecker::EXPR_BEG_ANY
+#                Temple::Filters::StringSplitter::SyntaxChecker::EXPR_END_ANY
 # uninitialized constant Temple::Filters::StringSplitter::SyntaxChecker::EXPR_BEG
 # Did you mean?  Temple::Filters::StringSplitter::SyntaxChecker::EXPR_ARG
 # uninitialized constant Temple::Filters::StringSplitter::SyntaxChecker::EXPR_BEG_ANY
@@ -23553,8 +26195,8 @@
 # uninitialized constant Temple::StaticAnalyzer::SyntaxChecker::EXPR_ARG
 # Did you mean?  Temple::StaticAnalyzer::SyntaxChecker::EXPR_BEG
 # uninitialized constant Temple::StaticAnalyzer::SyntaxChecker::EXPR_ARG_ANY
-# Did you mean?  Temple::StaticAnalyzer::SyntaxChecker::EXPR_END_ANY
-#                Temple::StaticAnalyzer::SyntaxChecker::EXPR_BEG_ANY
+# Did you mean?  Temple::StaticAnalyzer::SyntaxChecker::EXPR_BEG_ANY
+#                Temple::StaticAnalyzer::SyntaxChecker::EXPR_END_ANY
 # uninitialized constant Temple::StaticAnalyzer::SyntaxChecker::EXPR_BEG
 # Did you mean?  Temple::StaticAnalyzer::SyntaxChecker::EXPR_ARG
 # uninitialized constant Temple::StaticAnalyzer::SyntaxChecker::EXPR_BEG_ANY
@@ -23655,6 +26297,7 @@
 # wrong constant name <Class:MalformattedArgumentError>
 # wrong constant name <Class:Option>
 # wrong constant name <Class:Options>
+# wrong constant name <Class:RakeCompat>
 # wrong constant name <Class:RequiredArgumentMissingError>
 # uninitialized constant Thor::SHELL_DELEGATED_METHODS
 # wrong constant name <Class:Sandbox>
@@ -24030,6 +26673,18 @@
 # wrong constant name switch_option
 # wrong constant name <static-init>
 # wrong constant name to_switches
+# uninitialized constant Thor::RakeCompat::DEFAULT
+# uninitialized constant Thor::RakeCompat::LN_SUPPORTED
+# uninitialized constant Thor::RakeCompat::LOW_METHODS
+# Did you mean?  Thor::RakeCompat::LowMethods
+# uninitialized constant Thor::RakeCompat::METHODS
+# Did you mean?  Method
+# uninitialized constant Thor::RakeCompat::OPT_TABLE
+# uninitialized constant Thor::RakeCompat::RUBY
+# uninitialized constant Thor::RakeCompat::VERSION
+# wrong constant name <static-init>
+# wrong constant name included
+# wrong constant name rake_classes
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # undefined method `initialize<defaultArg>1' for module `Thor::Shell'
@@ -24197,7 +26852,6 @@
 # wrong constant name <Class:NokogiriTemplate>
 # wrong constant name <Class:PlainTemplate>
 # wrong constant name <Class:RDocTemplate>
-# wrong constant name <Class:SassTemplate>
 # wrong constant name <Class:SigilTemplate>
 # wrong constant name <Class:StringTemplate>
 # wrong constant name <Class:Template>
@@ -24251,7 +26905,6 @@
 # wrong constant name <static-init>
 # wrong constant name allows_script?
 # wrong constant name markup
-# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name allows_script?
 # wrong constant name <static-init>
@@ -24310,6 +26963,7 @@
 # wrong constant name registered?
 # wrong constant name template_for
 # wrong constant name templates_for
+# wrong constant name rake_original_time_compare
 # undefined method `enable<defaultArg>1' for class `TracePoint'
 # undefined method `enable<defaultArg>2' for class `TracePoint'
 # wrong constant name __enable
