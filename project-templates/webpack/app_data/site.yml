@@ -1,1 +1,4 @@
-title: My first website in Frontman!
+title: MySite
+links:
+  Source code: https://github.com/algolia/frontman
+  Documentation: https://github.com/algolia/frontman/wiki
