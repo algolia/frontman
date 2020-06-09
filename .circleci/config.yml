@@ -17,7 +17,7 @@ jobs:
         name: Install dependencies
         command: |
           gem install bundler
-          bundle check || bundle install --jobs=4 --retry=3
+          bundle check || bundle install --jobs=4 --retry=3 --path vendor/bundle
 
     - run:
         name: Lint code
@@ -27,7 +27,7 @@ jobs:
     - run:
         name: Check types
         command: |
-          bundle exec srb tc .
+          bundle exec srb tc . --ignore=/vendor
 
     - run:
         name: Run tests
