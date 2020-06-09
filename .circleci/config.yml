@@ -1,0 +1,43 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+    - image: circleci/ruby:2.6
+
+    steps:
+    - checkout
+
+    - restore_cache:
+        keys:
+        - deps-{{ checksum "Gemfile.lock" }}-{{ .Environment.CIRCLE_PREVIOUS_BUILD_NUM }}
+
+    - run:
+        name: Install dependencies
+        command: |
+          bundle check || bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+    - run:
+        name: Lint code
+        command: |
+          bundle exec rubocop
+
+    - run:
+        name: Check types
+        command: |
+          bundle exec srb t
+
+    - run:
+        name: Run tests
+        command: |
+          rake spec
+
+    - save_cache:
+        paths:
+        - vendor/bundle
+        key: deps-{{ checksum "Gemfile.lock" }}-{{ .Environment.CIRCLE_BUILD_NUM }}
+
+workflows:
+  version: 2
+  build:
+    jobs:
+    - build
