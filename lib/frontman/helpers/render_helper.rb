@@ -1,6 +1,5 @@
+# typed: true
 # frozen_string_literal: true
-
-# typed: false
 
 require 'frontman/config'
 require 'frontman/context'

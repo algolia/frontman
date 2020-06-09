@@ -29,12 +29,12 @@ jobs:
     - run:
         name: Check types
         command: |
-          bundle exec srb tc . --ignore=/vendor -q
+          bundle exec srb tc . --ignore=/vendor
 
     - run:
         name: Run tests
         command: |
-          rake spec
+          bundle exec rspec
 
     - save_cache:
         paths:
