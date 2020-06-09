@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'better_errors', '~> 2.6.0'
   s.add_runtime_dependency 'binding_of_caller', '0.8.0'
-  s.add_runtime_dependency 'bundler'
+  s.add_runtime_dependency 'bundler', '~> 2.0'
   s.add_runtime_dependency 'dotenv', '~> 2.7.5'
   s.add_runtime_dependency 'erubis', '~> 2.7.0'
   s.add_runtime_dependency 'haml', '5.0.4'
