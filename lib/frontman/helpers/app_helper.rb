@@ -15,5 +15,4 @@ module AppHelper
   def serve?
     !build?
   end
-
 end

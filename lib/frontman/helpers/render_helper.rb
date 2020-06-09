@@ -20,7 +20,9 @@ module RenderHelper
     partial_dir = Frontman::Config.get(
       :partial_dir, fallback: 'views/partials'
     )
-    r = Frontman::Resource.from_path(File.join(partial_dir, template), nil, false)
+    r = Frontman::Resource.from_path(
+      File.join(partial_dir, template), nil, false
+    )
     r.render(nil, data)
   end
 
@@ -38,7 +40,6 @@ module RenderHelper
     # of the resource
     page.render(nil, options)
   end
-
 
   sig do
     params(options: T.any(Hash, CustomStruct)).returns(String)
