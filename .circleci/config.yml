@@ -29,7 +29,7 @@ jobs:
     - run:
         name: Check types
         command: |
-          bundle exec srb tc . --ignore=/vendor
+          bundle exec srb tc . --ignore=/vendor -q
 
     - run:
         name: Run tests
