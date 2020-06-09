@@ -2,9 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-    - image: circleci/ruby:2.6.3
-      environment:
-        BUNDLER_VERSION: 2.1.4
+    - image: algolia/docs-docker-image:v3
 
     working_directory: ~/repo
 
