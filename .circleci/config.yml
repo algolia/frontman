@@ -1,20 +1,9 @@
 version: 2.1
-jobs:
-  build:
-    docker:
-    - image: circleci/ruby:2.6.3
-      environment:
-        BUNDLER_VERSION: 2.1.4
 
-    working_directory: ~/repo
-
-    steps:
+shared: &shared
+  working_directory: ~/repo
+  steps:
     - checkout
-
-    - restore_cache:
-        keys:
-        - deps-{{ checksum "Gemfile.lock" }}-{{ .Environment.CIRCLE_PREVIOUS_BUILD_NUM }}
-
     - run:
         name: Install dependencies
         command: |
@@ -36,13 +25,25 @@ jobs:
         command: |
           bundle exec rspec
 
-    - save_cache:
-        paths:
-        - vendor/bundle
-        key: deps-{{ checksum "Gemfile.lock" }}-{{ .Environment.CIRCLE_BUILD_NUM }}
+
+jobs:
+  "ruby-2_6":
+    <<: *shared
+    docker:
+      - image: circleci/ruby:2.6
+        environment:
+          BUNDLER_VERSION: 2.1.4
+  "ruby-2_7":
+    <<: *shared
+    docker:
+      - image: circleci/ruby:2.7
+        environment:
+          BUNDLER_VERSION: 2.1.4
+
 
 workflows:
   version: 2
   build:
     jobs:
-    - build
+      - "ruby-2_6"
+      - "ruby-2_7"
