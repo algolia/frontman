@@ -47,6 +47,7 @@ module RenderHelper
     render_page(Frontman::App.instance.current_page, options)
   end
 
+  sig { params(content: String).returns(String) }
   def render_markdown(content)
     compiled = Frontman::MarkdownRenderer.instance.compile(content)
     Frontman::MarkdownRenderer.instance.render(
@@ -54,9 +55,13 @@ module RenderHelper
     )
   end
 
-  def render_erb(str, template_data = nil)
-    return '' if str.nil?
-
+  sig do
+    params(
+      content: String,
+      template_data: T.nilable(Hash)
+    ).returns(String)
+  end
+  def render_erb(content, template_data = nil)
     context = Frontman::Context.new
 
     if !template_data.nil? && template_data
@@ -65,7 +70,7 @@ module RenderHelper
       end
     end
 
-    compiled = Frontman::ErbRenderer.instance.compile(str)
+    compiled = Frontman::ErbRenderer.instance.compile(content)
     Frontman::ErbRenderer.instance.render(compiled, nil, context, {})
   end
 end

@@ -19,30 +19,6 @@ describe Frontman::Context do
     expect(subject.respond_to?('testing')).to eq true
   end
 
-  context 'partial' do
-    it 'should throw an error for a non existing partial' do
-      expect { subject.partial('fake_partial') }.to raise_error RuntimeError
-    end
-
-    it 'should render an existing partial' do
-      Frontman::Config.set(:partial_dir, 'spec/frontman/mocks/partials')
-
-      expect(subject.partial('paragraph.haml', text: 'Testing'))
-        .to eq("<p>\nThe passed text: Testing\n</p>\n")
-    end
-  end
-
-  context 'render page' do
-    it 'should render the current page' do
-      Frontman::App.instance.current_page = resource
-      expect(subject.render_current_page).to eq resource.render(nil, layout: nil, ignore_page: nil)
-    end
-
-    it 'should render a page' do
-      expect(subject.render_page(resource)).to eq resource.render(nil, layout: nil, ignore_page: nil)
-    end
-  end
-
   context 'content' do
     it 'should return nil for unknown content' do
       expect(subject.yield_content('unknown content')).to eq nil
