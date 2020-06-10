@@ -13,7 +13,6 @@ module Frontman
       sig { params(path: String, status: T.any(String, Symbol)).void }
       def initialize(path, status)
         unless valid_status?(status)
-          # TODO: custom error
           raise "#{status} is not a valid file status!"
         end
 

@@ -21,9 +21,9 @@ describe RenderHelper do
     end
 
     it 'should render ERB' do
-      erb = '<h1><%= "Hello" %> <%= "wor" + "ld" %>!</h1>'
+      erb = '<h1><%= "Hello" %> <%= talk_to %>!</h1>'
       html = '<h1>Hello world!</h1>'
-      expect(subject.render_erb(erb)).to eq html
+      expect(subject.render_erb(erb, talk_to: 'world')).to eq html
     end
   end
 
