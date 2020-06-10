@@ -52,7 +52,4 @@ describe RenderHelper do
       expect(subject.render_page(resource)).to eq resource.render(nil, layout: nil, ignore_page: nil)
     end
   end
-
-
-
 end

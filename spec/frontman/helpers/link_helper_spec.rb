@@ -34,5 +34,4 @@ describe LinkHelper do
     subject.reset_ids_generation
     expect(subject.generate_id('Hello world')).to eq 'hello-world'
   end
-
 end

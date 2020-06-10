@@ -11,13 +11,11 @@ describe UrlHelper do
     end.new
   end
 
-
   it 'should properly format a URL' do
-    improperly_formatted = %w(hello-world/index.html /hello-world/index.html /hello-world hello-world/)
+    improperly_formatted = %w[hello-world/index.html /hello-world/index.html /hello-world hello-world/]
 
     improperly_formatted.each do |url|
       expect(subject.format_url(url)).to eq '/hello-world/'
     end
   end
-
 end

@@ -21,5 +21,4 @@ describe AppHelper do
     Frontman::Config.set(:mode, nil)
     expect(subject.serve?).to eq true
   end
-
 end
