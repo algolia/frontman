@@ -1,49 +1,42 @@
 version: 2.1
 
-shared: &shared
-  working_directory: ~/repo
-  steps:
-    - checkout
-    - run:
-        name: Install dependencies
-        command: |
-          gem install bundler
-          bundle check || bundle install --jobs=4 --retry=3 --path vendor/bundle
-
-    - run:
-        name: Lint code
-        command: |
-          bundle exec rubocop
-
-    - run:
-        name: Check types
-        command: |
-          bundle exec srb tc . --ignore=/vendor
-
-    - run:
-        name: Run tests
-        command: |
-          bundle exec rspec
-
-
 jobs:
-  "ruby-2_6":
-    <<: *shared
-    docker:
-      - image: circleci/ruby:2.6
-        environment:
-          BUNDLER_VERSION: 2.1.4
-  "ruby-2_7":
-    <<: *shared
-    docker:
-      - image: circleci/ruby:2.7
-        environment:
-          BUNDLER_VERSION: 2.1.4
+  build:
+    parameters:
+      ruby_version:
+        type: string
 
+    working_directory: ~/repo
+    docker:
+      - image: circleci/ruby:<< parameters.ruby_version >>
+
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: |
+            gem install bundler
+            bundle check || bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+      - run:
+          name: Lint code
+          command: |
+            bundle exec rubocop
+
+      - run:
+          name: Check types
+          command: |
+            bundle exec srb tc . --ignore=/vendor
+
+      - run:
+          name: Run tests
+          command: |
+            bundle exec rspec
 
 workflows:
-  version: 2
-  build:
+  workflow:
     jobs:
-      - "ruby-2_6"
-      - "ruby-2_7"
+      - build:
+          matrix:
+            parameters:
+              ruby_version: ["2.6", "2.7"]
