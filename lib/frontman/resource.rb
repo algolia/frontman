@@ -36,7 +36,7 @@ module Frontman
         file_path = file_path.gsub(%r{^/}, '')
         destination_path = destination_path.gsub(%r{^/}, '')
                                            .gsub(%r{/[0-9]+?-}, '/')
-                                           .sub(/^source\//, '')
+                                           .sub(%r{^source/}, '')
 
         # We cache the newly created resource so we avoid loosing the cache
         # if from_path is called again with the same file

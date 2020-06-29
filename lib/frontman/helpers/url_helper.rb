@@ -3,7 +3,7 @@
 module UrlHelper
   def format_url(url)
     formatted = url.gsub('index.html', '')
-                   .sub(/^\//, '')
+                   .sub(%r{^/}, '')
                    .chomp('/')
 
     "/#{formatted}/".gsub('//', '/')
