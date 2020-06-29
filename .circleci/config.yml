@@ -3,6 +3,9 @@ version: 2.1
 jobs:
   build:
     working_directory: ~/repo
+    docker:
+      - image: circleci/ruby:<< matrix.version >>
+        
     steps:
       - checkout
       - run:
@@ -36,5 +39,3 @@ workflows:
           parameters:
             #            version: ["2.2", "2.3", "2.4", "2.5", "2.6", "2.7"]
             version: ["2.2", "2.7"]
-            docker:
-              - image: circleci/ruby:<< matrix.version >>
