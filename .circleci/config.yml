@@ -2,9 +2,13 @@ version: 2.1
 
 jobs:
   build:
+    parameters:
+      ruby_version:
+        type: string
+
     working_directory: ~/repo
     docker:
-      - image: circleci/ruby:<< pipeline.parameters.ruby_version >>
+      - image: circleci/ruby:<< parameters.ruby_version >>
 
     steps:
       - checkout
