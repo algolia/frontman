@@ -49,7 +49,7 @@ module Frontman
         files.reject! { |f| File.directory?(f) || File.fnmatch('**.yml', f) }
         files.sort! { |a, b| a <=> b || 0 }
         files.map do |path|
-          Frontman::Resource.from_path(path, path.delete_prefix(content_root))
+          Frontman::Resource.from_path(path, path.sub(/^#{content_root}/, ''))
         end
       end
 

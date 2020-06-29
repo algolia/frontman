@@ -28,7 +28,7 @@ describe CustomStruct do
     end
 
     it 'should disallow keys named like hash methods' do
-      expect(subject.merge).not_to eq 'merge'
+      expect(subject.merge({})).not_to eq 'merge'
     end
 
     it 'should forward hash methods' do

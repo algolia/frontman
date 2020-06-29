@@ -36,7 +36,7 @@ module Frontman
         file_path = file_path.gsub(%r{^/}, '')
         destination_path = destination_path.gsub(%r{^/}, '')
                                            .gsub(%r{/[0-9]+?-}, '/')
-                                           .delete_prefix('source/')
+                                           .sub(%r{^source/}, '')
 
         # We cache the newly created resource so we avoid loosing the cache
         # if from_path is called again with the same file
@@ -53,7 +53,7 @@ module Frontman
       split = path.split('/')
       without_extension = T.must(split.last).split('.')[0]
       path_without_extensions = split.first(split.length - 1)
-                                     .append(T.must(without_extension))
+                                     .push(T.must(without_extension))
                                      .join('/')
       extensions = T.must(split.last).split('.')[1..-1]
       [path_without_extensions, extensions]
@@ -77,7 +77,7 @@ module Frontman
       else
         @destination_path = destination_without_extension + '.' + @extension
       end
-      @path = "/#{@destination_path.delete_suffix('index.html')}"
+      @path = "/#{@destination_path.chomp('index.html')}"
               .gsub('//', '/')
     end
 

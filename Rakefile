@@ -41,7 +41,7 @@ namespace :frontman do
     changes = changelog.each_line
                        .map { |line| exceptions_regexp === line ? nil : "* #{line.capitalize}" }
                        .unshift(title)
-                       .append("\n\n")
+                       .push("\n\n")
                        .join
 
     puts changes

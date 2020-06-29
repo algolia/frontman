@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.executables           = ['frontman']
 
   # Min Ruby version
-  s.required_ruby_version = '~> 2', '>= 2.6.0'
+  s.required_ruby_version = '~> 2', '>= 2.3.0'
 
   # Development tools
   s.add_development_dependency 'rake', '~> 12.3'
@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   # Frontman dependencies
   s.add_runtime_dependency 'better_errors', '~> 2.6'
   s.add_runtime_dependency 'binding_of_caller', '~> 0.8'
-  s.add_runtime_dependency 'bundler', '~> 2.0'
+  s.add_runtime_dependency 'bundler'
   s.add_runtime_dependency 'dotenv', '~> 2.7'
   s.add_runtime_dependency 'erubis', '~> 2.7'
   s.add_runtime_dependency 'haml', '~> 5.0'
