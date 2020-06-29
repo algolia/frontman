@@ -53,7 +53,7 @@ module Frontman
       split = path.split('/')
       without_extension = T.must(split.last).split('.')[0]
       path_without_extensions = split.first(split.length - 1)
-                                     .append(T.must(without_extension))
+                                     .push(T.must(without_extension))
                                      .join('/')
       extensions = T.must(split.last).split('.')[1..-1]
       [path_without_extensions, extensions]
