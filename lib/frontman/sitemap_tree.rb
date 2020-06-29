@@ -20,7 +20,7 @@ module Frontman
       end
 
       def format_url(url)
-        url.delete_suffix('index.html').gsub('.html', '')
+        url.chomp('index.html').gsub('.html', '')
       end
     end
 
@@ -71,7 +71,7 @@ module Frontman
     end
 
     def format_url(url)
-      url.delete_suffix('index.html').gsub('.html', '')
+      url.chomp('index.html').gsub('.html', '')
     end
 
     def final_url
