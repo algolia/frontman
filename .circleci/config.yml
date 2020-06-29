@@ -1,16 +1,5 @@
 version: 2.1
 
-workflows:
-  workflow:
-    jobs:
-      - build:
-          parameters:
-#            version: ["2.2", "2.3", "2.4", "2.5", "2.6", "2.7"]
-            version: ["2.2", "2.7"]
-            docker:
-              - image: circleci/ruby:<< matrix.version >>
-
-
 jobs:
   build:
     working_directory: ~/repo
@@ -38,3 +27,14 @@ jobs:
             bundle exec rspec
 
 
+
+
+workflows:
+  workflow:
+    jobs:
+      - build:
+          parameters:
+            #            version: ["2.2", "2.3", "2.4", "2.5", "2.6", "2.7"]
+            version: ["2.2", "2.7"]
+            docker:
+              - image: circleci/ruby:<< matrix.version >>
