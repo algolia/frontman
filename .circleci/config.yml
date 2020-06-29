@@ -4,7 +4,7 @@ jobs:
   build:
     working_directory: ~/repo
     docker:
-      - image: circleci/ruby:<< matrix.ruby_version >>
+      - image: circleci/ruby:<< pipeline.parameters.ruby_version >>
 
     steps:
       - checkout
@@ -28,6 +28,7 @@ jobs:
           name: Run tests
           command: |
             bundle exec rspec
+
 
 
 
