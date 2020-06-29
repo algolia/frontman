@@ -33,10 +33,6 @@ jobs:
           command: |
             bundle exec rspec
 
-
-
-
-
 workflows:
   workflow:
     jobs:
