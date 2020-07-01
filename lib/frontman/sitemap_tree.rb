@@ -114,6 +114,7 @@ module Frontman
 
     def get_all_pages(options = {})
       resources = []
+      resources.push(self) if @resource
 
       @children.each do |child|
         resources.push(child) unless child.resource.nil?

@@ -42,8 +42,12 @@ module Frontman
           begin
             if resource_path.start_with?(helpers_dir)
               helper_name = File.basename(resource_path).gsub('.rb', '')
+              load("./#{resource_path}")
               app.register_helpers(
-                [{ path: File.join(Dir.pwd, resource_path), name: helper_name }]
+                [{
+                  path: File.join(Dir.pwd, resource_path),
+                  name: helper_name.split('_').collect(&:capitalize).join
+                }]
               )
             elsif resource_path.start_with?(*listen_to_dirs)
               r = Frontman::Resource.from_path(resource_path)
@@ -96,9 +100,13 @@ class FrontManServer < Sinatra::Base
 
     tree = app.sitemap_tree.from_url(path)
     if tree&.resource
+      extension = File.extname(tree.resource.destination_path)
+      headers['Content-Type'] = Rack::Mime.mime_type(extension)
       tree.resource.render
     else
       halt 404
     end
   end
 end
+
+

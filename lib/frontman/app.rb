@@ -43,10 +43,10 @@ module Frontman
       instance_eval config
     end
 
-    sig { params(glob: String, layout_name: String).void }
+    sig { params(glob: String, layout_name: T.nilable(String)).void }
     def register_layout(glob, layout_name)
       layout_dir = Frontman::Config.get(:layout_dir, fallback: 'views/layouts')
-      layout = glob, File.join(layout_dir, layout_name)
+      layout = glob, layout_name.nil? ? nil : File.join(layout_dir, layout_name)
 
       @layouts.push(layout)
     end
@@ -60,6 +60,16 @@ module Frontman
           Object.const_get(T.must(helper[:name]).to_sym)
         )
       end
+    end
+
+    sig { params(dir: String).void }
+    def register_helper_dir(dir)
+      Frontman::Config.set(:helpers_dir, dir)
+      register_helpers(
+        Frontman::Bootstrapper.find_helpers_in(
+          File.join('.', dir)
+        )
+      )
     end
 
     sig { params(from: String, to: String).returns(String) }

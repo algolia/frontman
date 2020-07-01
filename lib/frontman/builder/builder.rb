@@ -79,8 +79,7 @@ module Frontman
           .returns(Frontman::Builder::File)
       end
       def build_from_asset(path, manifest_path)
-        path_with_digest = add_asset_to_manifest(manifest_path, path)
-        target_path = create_target_path(path_with_digest)
+        target_path = create_target_path(manifest_path)
 
         build_from_content(target_path, ::File.read(path))
       end
@@ -90,8 +89,7 @@ module Frontman
           .returns(Frontman::Builder::File)
       end
       def build_from_erb(path, manifest_path)
-        path_with_digest = add_asset_to_manifest(manifest_path, path)
-        build_resource(Resource.from_path(path, path_with_digest))
+        build_resource(Resource.from_path(path, manifest_path))
       end
 
       sig { returns(T::Array[String]) }
@@ -191,18 +189,6 @@ module Frontman
         ::Digest::SHA1.file(path).hexdigest[0..7]
       end
 
-      sig do
-        params(manifest_path: String, file_path: String)
-          .returns(String)
-      end
-      def add_asset_to_manifest(manifest_path, file_path)
-        path_with_digest = manifest_path.sub(/\.(\w+)$/) do |ext|
-          "-#{digest(file_path)}#{ext}"
-        end
-
-        Frontman::App.instance.add_to_manifest(manifest_path, path_with_digest)
-        path_with_digest
-      end
     end
   end
 end
