@@ -188,7 +188,6 @@ module Frontman
       def digest(path)
         ::Digest::SHA1.file(path).hexdigest[0..7]
       end
-
     end
   end
 end

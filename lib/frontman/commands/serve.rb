@@ -108,5 +108,3 @@ class FrontManServer < Sinatra::Base
     end
   end
 end
-
-
