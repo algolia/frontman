@@ -8,10 +8,11 @@
     "url": "git://github.com/algolia/frontman.git"
   },
   "scripts": {
-    "prestart": "npm install",
+    "prestart": "concurrently \"npm install\" \"npm run copy-images\"",
     "start": "webpack --watch --config ./webpack/dev.config.js",
-    "prebuild": "npm install",
-    "build": "webpack --config ./webpack/prod.config.js"
+    "prebuild": "concurrently \"npm install\" \"npm run copy-images\"",
+    "build": "webpack --config ./webpack/prod.config.js",
+    "copy-images": "mkdir -p .tmp/assets/images && cp -r ./assets/images/* ./.tmp/assets/images/"
   },
   "license": "MIT",
   "author": "Algolia",
