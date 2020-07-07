@@ -114,6 +114,7 @@ module Frontman
 
     def get_all_pages(options = {})
       resources = []
+      resources.push(self) if @resource
 
       @children.each do |child|
         resources.push(child) unless child.resource.nil?
@@ -121,7 +122,7 @@ module Frontman
         resources += child.get_all_pages(options)
       end
 
-      resources
+      resources.uniq
     end
 
     def add_parts(parts, used_parts, resource)

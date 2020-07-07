@@ -1,0 +1,27 @@
+body {
+    background-color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 1rem;
+}
+
+svg {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+    right: 0
+}

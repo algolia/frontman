@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title><%= page_title(current_page) %></title>
+  <link href="/main.css" rel="stylesheet"></link>
+  <script src="/main.js"></script>
+</head>
+<body>
+<header>
+  <%= partial('menu.erb') %>
+</header>
+
+<%= yield %>
+
+<footer>
+  &copy; Copyright <%= "#{Time.new.year} - #{data.site.title}" %>
+</footer>
+</body>
+</html>

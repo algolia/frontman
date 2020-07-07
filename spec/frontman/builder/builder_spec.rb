@@ -38,21 +38,17 @@ describe Frontman::Builder::Builder do
 
       expect(File.exist?(path)).to eq true
       expect(File.read(path).include?('testing erb')).to eq true # This text will be rendered by ERB
-      expect(Frontman::App.instance.assets_manifest['spec/frontman/mocks/html_file.html.md.erb']).to_not eq nil
     end
 
     it 'should build from an asset' do
       subject.build_from_asset('spec/frontman/mocks/asset.css', 'spec/frontman/mocks/asset.css')
       path = subject.build_directory + '/spec/frontman/mocks/asset.css'
 
-      # Only a file with digest should be saved
-      expect(File.exist?(path)).to_not eq true
-      # Retrieve the file with digest
-      expect(File.exist?(subject.build_directory + Frontman::App.instance.assets_manifest['spec/frontman/mocks/asset.css'])).to eq true
+      expect(File.exist?(path)).to eq true
     end
 
     it 'should not rebuild an existing file' do
-      file_path = subject.build_directory + Frontman::App.instance.assets_manifest['spec/frontman/mocks/asset.css']
+      file_path = subject.build_directory + 'spec/frontman/mocks/asset.css'
       current_mtime = File.mtime(file_path)
       subject.current_build_files = Dir.glob(Dir.pwd + '/spec/frontman/build/**/*').reject { |f| File.directory? f }
       subject.build_from_asset('spec/frontman/mocks/asset.css', 'spec/frontman/mocks/asset.css')
