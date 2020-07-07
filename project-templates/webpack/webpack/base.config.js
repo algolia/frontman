@@ -9,6 +9,7 @@ module.exports = {
   entry: {
     index: path.resolve(__dirname, '../assets/js/index.js'),
     style: path.resolve(__dirname, '../assets/css/style.css'),
+    code: path.resolve(__dirname, '../assets/css/code.css'),
   },
   output: {
     path: path.resolve(__dirname, '../.tmp'),
