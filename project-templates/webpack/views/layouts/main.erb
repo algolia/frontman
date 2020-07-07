@@ -1,9 +1,8 @@
 <html>
 <head>
   <title><%= page_title(current_page) %></title>
-  <link href="/main.css" rel="stylesheet"></link>
-  <link href="/code.css" rel="stylesheet"></link>
-  <script src="/main.js"></script>
+  <link href="/assets/css/style.css" rel="stylesheet" />
+  <link href="/assets/css/code.css" rel="stylesheet" />
 </head>
 <body>
 <header>
@@ -15,5 +14,7 @@
 <footer>
   &copy; Copyright <%= "#{Time.new.year} - #{data.site.title}" %>
 </footer>
+
+<%= partial 'script_with_vendors.haml', locals: { file: 'index' } %>
 </body>
 </html>

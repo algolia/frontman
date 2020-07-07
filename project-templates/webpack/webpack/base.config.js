@@ -1,17 +1,19 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const dist = 'assets'
 
 module.exports = {
   entry: {
-    index: path.resolve(__dirname, '../assets/index.js'),
-    style: path.resolve(__dirname, '../assets/style.css'),
+    index: path.resolve(__dirname, '../assets/js/index.js'),
+    style: path.resolve(__dirname, '../assets/css/style.css'),
+    code: path.resolve(__dirname, '../assets/css/code.css'),
   },
   output: {
     path: path.resolve(__dirname, '../.tmp'),
-    filename: `${dist}/[name].js`
+    filename: `${dist}/js/[name].js`
   },
   module: {
     rules: [
@@ -34,8 +36,16 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: `${dist}/[name].css`,
-      chunkFilename: `${dist}/[name].css`
+      filename: `${dist}/css/[name].css`,
+      chunkFilename: `${dist}/css/[name].css`
+    }),
+    new CopyPlugin({
+      patterns: [
+          {
+            from: path.resolve(__dirname, '../assets/images/'),
+            to: 'assets/images'
+          }
+      ],
     }),
   ],
 };

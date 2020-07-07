@@ -1,25 +1,14 @@
 %html
   %head
-    %link{ rel: 'stylesheet', href: asset_url('assets/style.css') }
     %title
-      = (current_page.data.title ? "#{current_page.data.title} - " : '') + app_data.site.title
+      = page_title(current_page)
+    %link{ rel: 'stylesheet', href: '/assets/css/style.css'}
+    %link{ rel: 'stylesheet', href: '/assets/css/code.css'}
 
   %body
-    :css
-      body { background-color: #fff; text-align: center; font-family: Arial, sans-serif }
-      ul { padding: 0;}
-      li { list-style-type: none; display: inline-block; padding: 1rem;}
-      svg { padding-top: 5rem; padding-bottom: 3rem; }
-      footer {position: fixed; bottom: 1rem;left: 0; right: 0}
-
     %header
-      %ul
-        - app_data.site.links.each do |name, link|
-          %li
-            %a{href: link, target: '_blank'}
-              = name
+      = partial('menu.erb')
+
     = yield
     %footer
-      = "&copy; Copyright #{Time.new.year} #{app_data.site.title}"
-
-= partial 'script_with_vendors.haml', locals: { file: 'index' }
+      = "&copy; Copyright #{Time.new.year} #{data.site.title}"

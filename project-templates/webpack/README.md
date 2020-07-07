@@ -35,14 +35,10 @@ module.exports = {
 
 ## Importing assets
 
-### Fingerprinting
-
-When building production assets, Webpack fingerprints files based on their content. For example, `style.css` may become `style-e66563eb.css`. It means you need to take it into account when importing files so that the built website correctly calls the fingerprinted assets.
-
-To do so, you can import assets with the `asset_url` helper method.
-
+### URL
+Assets in your `assets/` directory are available on the `/assets` URL. For example, the `assets/css/style.js` file is available through `/assets/css/style.js`.
 ```haml
-%link{ rel: 'stylesheet', href: asset_url('assets/style.css') }
+%link{ rel: 'stylesheet', href: '/assets/css/style.css' }
 ```
 
 ### Code splitting

@@ -1,24 +1,21 @@
 # frozen_string_literal: true
 
-register_data_dirs(['app_data'])
-register_helpers(Frontman::Bootstrapper.find_helpers_in('./helpers/'))
-register_layout '*', 'main.haml'
+register_data_dirs(['data'])
+register_helper_dir('helpers')
+
+register_layout 'sitemap.xml', nil
+register_layout '*', 'main.erb'
+# Or use 'main.haml' if you prefer using HAML:
+# register_layout '*', 'main.haml'
 
 add_asset_pipeline(
-  name: 'Webpack server',
-  command: 'npm run start',
-  timing: :before,
-  mode: :serve
-)
-
-add_asset_pipeline(
-  name: 'Webpack build',
-  command: 'npm run build',
-  timing: :before,
-  mode: :build
+  name: 'Webpack pipeline',
+  command: build? ? 'npm run build' : 'npm run start',
+  timing: :before
 )
 
 Frontman::Config.set :public_dir, '.tmp/'
+Frontman::Config.set :domain, 'https://example.com'
 
 Frontman::Bootstrapper.resources_from_dir(
   'source/'

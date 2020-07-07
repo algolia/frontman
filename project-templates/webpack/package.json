@@ -8,21 +8,22 @@
     "url": "git://github.com/algolia/frontman.git"
   },
   "scripts": {
-    "prestart": "concurrently \"npm install\" \"npm run copy-images\"",
+    "prestart": "npm install",
     "start": "webpack --watch --config ./webpack/dev.config.js",
-    "prebuild": "concurrently \"npm install\" \"npm run copy-images\"",
+    "prebuild": "npm install",
     "build": "webpack --config ./webpack/prod.config.js",
-    "copy-images": "mkdir -p .tmp/assets/images && cp -r ./assets/images/* ./.tmp/assets/images/"
+    "copy-images": "echo 'hey'"
   },
   "license": "MIT",
   "author": "Algolia",
-  "main": "assets/index.js",
+  "main": "assets/js/index.js",
   "devDependencies": {
     "@babel/core": "7.10.2",
     "@babel/preset-env": "7.10.2",
     "babel-loader": "8.1.0",
     "clean-webpack-plugin": "3.0.0",
     "concurrently": "5.2.0",
+    "copy-webpack-plugin": "^6.0.3",
     "css-loader": "3.5.3",
     "mini-css-extract-plugin": "0.9.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
