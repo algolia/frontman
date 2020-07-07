@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title><%= page_title(current_page) %></title>
+  <link href="/assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+<header>
+  <%= partial('menu.erb') %>
+</header>
+
+<%= yield %>
+
+<footer>
+  &copy; Copyright <%= "#{Time.new.year} - #{data.site.title}" %>
+</footer>
+
+<%= partial 'script_with_vendors.haml', locals: { file: 'index' } %>
+</body>
+</html>
