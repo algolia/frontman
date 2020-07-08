@@ -21,15 +21,9 @@ However, once our projects reached a certain size, we realized that Middleman wa
 
 If you want to dive deeper into why and how we made Frontman faster than other tools, please watch the presentation we gave on [scaling the Algolia documentation][doc_talk].
 
-## Getting Started
+## Installing Frontman
 
-### Requirements
-
-Frontman requires Ruby version 2.3 or up. 
-
-### Installation
-
-First, you have to install the Frontman gem on your machine
+First, make sure you're using Ruby version 2.3 or up. Then, install the Frontman gem on your machine:
 
 ```sh
 gem install frontman-ssg
@@ -43,14 +37,13 @@ You can use the `frontman init` command to initialize a new project in the direc
 frontman init my-project
 ```
 
-This command will create a new directory, `my-project`, and initialize the default Frontman starter template in it.
-To initialize a new Frontman project in the current directory, you can run:
+Then, move into the newly created directory:
 
 ```sh
-frontman init .
+cd my-project
 ```
 
-### Developing your site
+## Developing your site
 
 To start a development server with a preview of your website, run the following command:
 
@@ -58,13 +51,16 @@ To start a development server with a preview of your website, run the following 
 frontman serve
 ```
 
-### Building your site
+## Building your site
 
 After you are happy with your changes, you can generate the HTML for all your pages by using the following command:
 
 ```sh
 frontman build
 ```
+
+## Going further
+You can read the [Frontman documentation][wiki] to learn about all the features and possibilities of Frontman.
 
 ## Contributing
 
