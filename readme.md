@@ -7,7 +7,7 @@
 [![CircleCI](https://circleci.com/gh/algolia/frontman/tree/master.svg?style=shield&circle-token=ea3dfd1f27a86d050cbc806d3cbd27c1742746ac)](https://circleci.com/gh/algolia/frontman/tree/master)
 [![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)][license]
 [![Gem Version](http://img.shields.io/gem/v/frontman-ssg.svg?style=flat)][gem]
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/algolia/frontman/issues)
 
 <img src="frontman.svg" alt="Frontman" height="200"/>
 
