@@ -1,3 +1,5 @@
+⚠️  **Frontman is currently in an alpha-release**, so breaking changes can be introduced. However, we try to keep backwards compatibility, and changes will be documented in our [changelog][changelog]
+
 # Frontman
 
 [![CircleCI](https://circleci.com/gh/algolia/frontman/tree/master.svg?style=shield&circle-token=ea3dfd1f27a86d050cbc806d3cbd27c1742746ac)](https://circleci.com/gh/algolia/frontman/tree/master)
@@ -9,16 +11,20 @@
 
 Frontman is a static site generator written in Ruby, optimized for speed. It helps you convert your content to static HTML files, so you can focus on your content instead of maintaining servers.
 
+
+**Check out our [wiki][wiki] for detailed documentation.**
+
 ## About Frontman
-Frontman has been built to satisfy our own needs: we want to iterate fast to continually improve. Existing tools did not provide us the freedom we need to do this, because these tools are optimized for flexibility over speed.
-Frustrated with the increasing build times of otherwise great tools, we decided to create a custom static site generator that is built with one thing in mind: speed. No matter the size or complexity of your project, Frontman generates the HTML faster than any other Ruby-based static site generator out there.
+Frontman is heavily inspired by [Middleman][middleman], a great static site generator with a big community and feature set. We've been using it internally for a long time, with great success.
+However, once our projects reached a certain size, we realized that Middleman was becoming a bottleneck for us to iterate fast. After unsuccesfully trying to improve our build times, we had to move away from Middleman. Instead of migrating to another tool, we decided to keep our current codebase, and create our own static site generator. Frontman was born, and we created it with one thing in mind: speed.
+
 If you want to dive deeper into why and how we made Frontman faster than other tools, please watch the presentation we gave on [scaling the Algolia documentation][doc_talk].
 
 ## Getting Started
 
 ### Requirements
 
-Frontman requires Ruby version 2.6 or up. 
+Frontman requires Ruby version 2.3 or up. 
 
 ### Installation
 
@@ -64,6 +70,9 @@ frontman build
 We encourage you to contribute to Frontman if you have ideas for improvements to the project. 
 Before you contribute, please make sure to read our [code of conduct](.github/CODE_OF_CONDUCT.md) and [contributing guidelines](CONTRIBUTING.md).
 
+[changelog]: https://github.com/algolia/frontman/blob/master/CHANGELOG.md
+[doc_talk]: https://www.youtube.com/watch?v=6feV1DrCBdE
 [gem]: https://rubygems.org/gems/frontman-ssg
 [license]: https://github.com/algolia/frontman/blob/master/LICENSE.md
-[doc_talk]: https://www.youtube.com/watch?v=6feV1DrCBdE
+[middleman]: https://middlemanapp.com/
+[wiki]: https://github.com/algolia/frontman/wiki
