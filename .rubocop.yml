@@ -71,6 +71,7 @@ Metrics/BlockLength:
 
 Metrics/LineLength:
   Exclude:
+    - 'frontman-ssg.gemspec'
     - 'spec/**/*'
 
 Naming/FileName:

@@ -6,13 +6,11 @@ Gem::Specification.new do |s|
   s.name                  = 'frontman-ssg'
   s.version               = Frontman::VERSION
   s.date                  = '2019-06-06'
-  s.summary               = 'A static site generator built for speed'
-  s.description           = 'A flexible static site generator built for speed'
-  s.authors               = [
-    'Maxime Locqueville', 'Sarah Dayan', 'Devin Beeuwkes'
-  ]
+  s.summary               = 'A Middleman-inspired static site generator built for speed.'
+  s.description           = 'A Middleman-inspired static site generator built for speed.'
+  s.authors               = ['Devin Beeuwkes']
   s.email                 = 'devin@algolia.com'
-  s.homepage              = 'https://rubygems.org/gems/frontman-ssg'
+  s.homepage              = 'https://github.com/algolia/frontman/wiki'
   s.license               = 'MIT'
   s.files                 = `git ls-files`.split("\n")
   s.require_path          = 'lib'
