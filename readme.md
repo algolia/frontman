@@ -1,4 +1,4 @@
-⚠️  **Frontman is currently in an alpha-release**, so breaking changes can be introduced. However, we try to keep backwards compatibility, and changes will be documented in our [changelog][changelog]
+⚠️  **Frontman is currently in an alpha release**, which can involve breaking changes. However, we try to preserve backwards compatibility as much as possible, and we document all changes in the [changelog][changelog].
 
 # Frontman
 
@@ -16,8 +16,12 @@ Frontman is a static site generator written in Ruby, optimized for speed. It hel
 **Check out our [wiki][wiki] for detailed documentation.**
 
 ## About Frontman
-Frontman is heavily inspired by [Middleman][middleman], a great static site generator with a big community and feature set. We've been using it internally for a long time, with great success.
-However, once our projects reached a certain size, we realized that Middleman was becoming a bottleneck for us to iterate fast. After unsuccesfully trying to improve our build times, we had to move away from Middleman. Instead of migrating to another tool, we decided to keep our current codebase, and create our own static site generator. Frontman was born, and we created it with one thing in mind: speed.
+Frontman is heavily inspired by [Middleman][middleman], a fantastic static site generator with a large community and feature set. We've used it for a long time, with great success.
+However, once our project reached a certain size, we realized that Middleman had a few shortcomings when it comes to performance. It was becoming a serious bottleneck for us to iterate fast. After unsuccessfully trying to improve build time, we had to move away from it. Instead of undertaking a huge, lengthy migration to another tool and language, we decided to preserve our current codebase, and create our own, Middleman-inspired static site generator.
+
+That's how Frontman was born 🚀
+
+We created Frontman with a strong focus on speed, but also as a quick and easy replacement for Middleman. Our goal was to be able to switch from the Middleman gem to the Frontman gem in your project, and for the migration to take less than a day.
 
 If you want to dive deeper into why and how we made Frontman faster than other tools, please watch the presentation we gave on [scaling the Algolia documentation][doc_talk].
 
@@ -37,7 +41,7 @@ You can use the `frontman init` command to initialize a new project in the direc
 frontman init my-project
 ```
 
-Then, move into the newly created directory:
+Then, navigate to the newly created directory:
 
 ```sh
 cd my-project
@@ -60,7 +64,8 @@ frontman build
 ```
 
 ## Going further
-You can read the [Frontman documentation][wiki] to learn about all the features and possibilities of Frontman.
+
+You can read the [Frontman documentation][wiki] to learn about all the features and possibilities.
 
 ## Contributing
 
