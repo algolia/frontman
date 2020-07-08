@@ -1,5 +1,7 @@
 ⚠️  **Frontman is currently in an alpha release**, which can involve breaking changes. However, we try to preserve backwards compatibility as much as possible, and we document all changes in the [changelog][changelog].
 
+<div align="center">
+
 # Frontman
 
 [![CircleCI](https://circleci.com/gh/algolia/frontman/tree/master.svg?style=shield&circle-token=ea3dfd1f27a86d050cbc806d3cbd27c1742746ac)](https://circleci.com/gh/algolia/frontman/tree/master)
@@ -7,15 +9,13 @@
 [![Gem Version](http://img.shields.io/gem/v/frontman-ssg.svg?style=flat)][gem]
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
-
-<div align="center">
 <img src="frontman.svg" alt="Frontman" height="200"/>
-</div>
 
 Frontman is a static site generator written in Ruby, optimized for speed. It helps you convert your content to static HTML files, so you can focus on your content instead of maintaining servers.
 
-
 **Check out our [wiki][wiki] for detailed documentation.**
+
+</div>
 
 ## About Frontman
 Frontman is heavily inspired by [Middleman][middleman], a fantastic static site generator with a large community and feature set. We've used it for a long time, with great success.
