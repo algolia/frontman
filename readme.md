@@ -8,7 +8,9 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
 
-![Frontman](frontman.svg)
+<div align="center">
+<img src="frontman.svg" alt="Frontman" height="200"/>
+</div>
 
 Frontman is a static site generator written in Ruby, optimized for speed. It helps you convert your content to static HTML files, so you can focus on your content instead of maintaining servers.
 
