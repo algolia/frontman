@@ -6,8 +6,6 @@ require 'parallel'
 module Frontman
   class Iterator
     class << self
-      extend T::Sig
-
       def map(collection, *options, &block)
         forward(:map, collection, *options, &block)
       end
