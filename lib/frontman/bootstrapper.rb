@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # typed: ignore
 
 require 'dotenv'
@@ -29,11 +30,8 @@ module Frontman
           Dotenv.load
           register_default_helpers(app)
 
-          config_path = Frontman::Config.get(
-            :config_path,
-            fallback: './config.rb'
-          )
-          app.run(File.read(config_path)) if File.exist?(config_path)
+          config = Frontman::Config.get(:config_path, fallback: './config.rb')
+          app.run(File.read(config)) if File.exist?(config)
 
           @@bootstrapped = true
         end
