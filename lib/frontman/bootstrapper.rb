@@ -1,7 +1,7 @@
 # frozen_string_literal: true
-
 # typed: ignore
 
+require 'dotenv'
 require 'sorbet-runtime'
 require 'frontman/app'
 require 'frontman/resource'
@@ -26,6 +26,7 @@ module Frontman
       sig { params(app: Frontman::App).returns(Frontman::App) }
       def bootstrap_app(app)
         unless bootstrapped?
+          Dotenv.load
           register_default_helpers(app)
 
           config_path = Frontman::Config.get(
