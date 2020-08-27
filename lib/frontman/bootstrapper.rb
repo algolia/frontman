@@ -2,6 +2,7 @@
 
 # typed: ignore
 
+require 'dotenv'
 require 'sorbet-runtime'
 require 'frontman/app'
 require 'frontman/resource'
@@ -26,13 +27,11 @@ module Frontman
       sig { params(app: Frontman::App).returns(Frontman::App) }
       def bootstrap_app(app)
         unless bootstrapped?
+          Dotenv.load
           register_default_helpers(app)
 
-          config_path = Frontman::Config.get(
-            :config_path,
-            fallback: './config.rb'
-          )
-          app.run(File.read(config_path)) if File.exist?(config_path)
+          config = Frontman::Config.get(:config_path, fallback: './config.rb')
+          app.run(File.read(config)) if File.exist?(config)
 
           @@bootstrapped = true
         end
