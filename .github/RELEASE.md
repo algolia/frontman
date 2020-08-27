@@ -24,7 +24,7 @@
  * Push the newly built gem to [RubyGems][rubygems]: `gem push frontman-ssg-X.Y.Z.gem`.
  * Delete the locally built gem: `rm frontman-ssg-X.Y.Z.gem`.
  
- [changelog]: ../CHANGELOG.md
+[changelog]: ../CHANGELOG.md
 [frontman]: https://rubygems.org/gems/frontman-ssg
 [rubygems]: https://www.rubygems.org/
 [semver]: https://semver.org/
