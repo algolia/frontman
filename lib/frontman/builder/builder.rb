@@ -96,7 +96,9 @@ module Frontman
           .returns(String)
       end
       def add_asset_to_manifest(manifest_path, file_path)
-        path_with_digest = manifest_path.sub(/\.(\w+)$/) { |ext| "-#{digest(file_path)}#{ext}" }
+        path_with_digest = manifest_path.sub(/\.(\w+)$/) do |ext|
+          "-#{digest(file_path)}#{ext}"
+        end
 
         Frontman::App.instance.add_to_manifest(manifest_path, path_with_digest)
         path_with_digest
