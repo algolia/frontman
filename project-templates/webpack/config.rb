@@ -16,6 +16,7 @@ add_asset_pipeline(
 
 Frontman::Config.set :public_dir, '.tmp/'
 Frontman::Config.set :domain, 'https://example.com'
+Frontman::Config.set :fingerprint_assets, true
 
 Frontman::Bootstrapper.resources_from_dir(
   'source/'
