@@ -56,5 +56,10 @@ module Frontman
     def to_s
       "<DataStoreFile #{@data.keys.join(', ')} >"
     end
+
+    sig { returns(Frontman::DataStoreFile) }
+    def to_ostruct
+      self
+    end
   end
 end
