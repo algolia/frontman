@@ -79,9 +79,29 @@ module Frontman
           .returns(Frontman::Builder::File)
       end
       def build_from_asset(path, manifest_path)
-        target_path = create_target_path(manifest_path)
+        target = manifest_path
+
+        if Frontman::Config.get(:fingerprint_assets, fallback: false)
+          path_with_digest = add_asset_to_manifest(manifest_path, path)
+          target = path_with_digest
+        end
+
+        target_path = create_target_path(target)
 
         build_from_content(target_path, ::File.read(path))
+      end
+
+      sig do
+        params(manifest_path: String, file_path: String)
+          .returns(String)
+      end
+      def add_asset_to_manifest(manifest_path, file_path)
+        path_with_digest = manifest_path.sub(/\.(\w+)$/) do |ext|
+          "-#{digest(file_path)}#{ext}"
+        end
+
+        Frontman::App.instance.add_to_manifest(manifest_path, path_with_digest)
+        path_with_digest
       end
 
       sig do
