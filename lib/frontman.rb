@@ -11,7 +11,4 @@ require 'frontman/errors'
 require 'frontman/sitemap_tree'
 require 'frontman/resource'
 
-require 'frontman/renderers/renderer'
-require 'frontman/renderers/erb_renderer'
-require 'frontman/renderers/haml_renderer'
-require 'frontman/renderers/markdown_renderer'
+require 'frontman/renderers/renderer_resolver'

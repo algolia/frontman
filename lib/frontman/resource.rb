@@ -106,7 +106,7 @@ module Frontman
       @content = File.read(@file_path)
       @data = {}.to_ostruct
 
-      if %w[erb html haml md txt].include?(@extension)
+      if VALID_EXTENSIONS.include?(@extension)
         @data, @content = YAML::FrontMatter.extract(@content).to_ostruct
       end
 
@@ -274,6 +274,12 @@ module Frontman
       @renderers = rendering_extensions.map do |ext|
         Frontman::RendererResolver.instance.get_renderer(ext)
       end.compact
+    end
+
+    VALID_EXTENSIONS = %w[erb html haml md txt]
+
+    if defined?(Slim) && !VALID_EXTENSIONS.include?('slim')
+      VALID_EXTENSIONS << 'slim'
     end
   end
 end
