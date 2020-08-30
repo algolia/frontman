@@ -7,6 +7,14 @@ require 'frontman/renderers/markdown_renderer'
 require 'singleton'
 require 'sorbet-runtime'
 
+begin
+  require "slim"
+  require 'frontman/renderers/slim_renderer'
+rescue
+  raise "asd"
+  # Do nothing
+end
+
 module Frontman
   class RendererResolver
     extend T::Sig
@@ -17,8 +25,12 @@ module Frontman
       renderers = {
         'erb': Frontman::ErbRenderer.instance,
         'md': Frontman::MarkdownRenderer.instance,
-        'haml': Frontman::HamlRenderer.instance
+        'haml': Frontman::HamlRenderer.instance,
       }
+
+      if defined?(Slim)
+        renderers['slim'] = Frontman::SlimRenderer.instance
+      end
 
       renderers[extension.to_sym]
     end

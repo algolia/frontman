@@ -82,6 +82,7 @@ module Frontman
     end
 
     private
+        #generator: ::Temple::Generators::RailsOutputBuffer,
 
     sig { void }
     def save_buffer
@@ -91,13 +92,24 @@ module Frontman
         # save buffer
         @buffer = haml_locals[:_hamlout].buffer
         # empty the buffer so we can capture everything from the new render
-        haml_locals[:_hamlout].buffer = ''
-      else
-        # save buffer
-        @buffer = instance_variable_get(:@_erbout)
-        # empty the buffer so we can capture everything from the new render
-        instance_variable_set(:@_erbout, '')
+        return haml_locals[:_hamlout].buffer = ''
       end
+
+      slim_buffer = instance_variable_get(:@_slim_buffer)
+
+      if slim_buffer
+        # save buffer
+        @buffer = slim_buffer
+        # empty the buffer so we can capture everything from the new render
+        return instance_variable_set(:@_slim_buffer, '')
+      end
+
+      erbout = instance_variable_get(:@_erbout)
+
+      # save buffer
+      @buffer = erbout
+      # empty the buffer so we can capture everything from the new render
+      return instance_variable_set(:@_erbout, '')
     end
 
     sig { void }
@@ -105,10 +117,16 @@ module Frontman
       haml_locals = instance_variable_get(:@_haml_locals)
 
       if haml_locals
-        haml_locals[:_hamlout].buffer = @buffer
-      else
-        instance_variable_set(:@_erbout, @buffer)
+        return haml_locals[:_hamlout].buffer = @buffer
       end
+
+      slim_buffer = instance_variable_get(:@_slim_buffer)
+
+      if slim_buffer
+        return instance_variable_set(:@_slim_buffer, @buffer)
+      end
+
+      return instance_variable_set(:@_erbout, @buffer)
     end
 
     sig { returns(T.untyped) }
@@ -116,10 +134,16 @@ module Frontman
       haml_locals = instance_variable_get(:@_haml_locals)
 
       if haml_locals
-        haml_locals[:_hamlout].buffer
-      else
-        instance_variable_get(:@_erbout)
+        return haml_locals[:_hamlout].buffer
       end
+
+      slim_buffer = instance_variable_get(:@_slim_buffer)
+
+      if slim_buffer
+        return slim_buffer
+      end
+
+      return instance_variable_get(:@_erbout)
     end
   end
 end
