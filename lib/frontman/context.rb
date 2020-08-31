@@ -11,55 +11,51 @@ module Frontman
     extend T::Sig
     include Frontman::ForwardCallsToApp
 
-    sig { params(layout: String).returns(String) }
-    def wrap_layout(layout)
+    sig { params(layout: String, block: T.proc.void).returns(String) }
+    def wrap_layout(layout, &block)
       layout_dir = Frontman::Config.get(:layout_dir, fallback: 'views/layouts')
       layout_path = File.join(layout_dir, layout)
 
-      # Haml is not designed to do handle wrap_layout properly
-      # so we need to hack the buffer of haml that is set
-      # inside the context by haml
-      save_buffer
-
-      # We don't save the content of the yield, it will be saved in the buffer
-      yield
-
-      # The buffer now contains the content of the yield
-      content = load_buffer
-
-      # Restore the buffer so the rendering of the file can continue
-      restore_buffer
+      content = get_content_buffer(nil, &block)
 
       Resource.from_path(layout_path, nil, false).render(content)
     end
 
     sig do
-      params(key: T.any(String, Symbol), content: T.untyped)
+      params(key: T.any(String, Symbol), content: T.untyped, block: T.nilable(T.proc.void))
         .returns(T.untyped)
     end
-    def content_for(key, content = nil)
-      # Haml is not designed to do handle content_for properly
-      # so we need to hack the buffer of haml that is set
-      # inside the context by haml
-      save_buffer
-
-      content ||= ''
-
-      if block_given?
-        # We don't save the content of the yield, it will be saved in the buffer
-        yield
-
-        # The buffer now contains the content of the yield
-        content = load_buffer
-      end
-
-      # Restore the buffer so the rendering of the file can continue
-      restore_buffer
+    def content_for(key, content = nil, &block)
+      content = get_content_buffer(content, &(block if block_given?))
 
       # We store the the content block inside the current page
       # because we don't know which renderer/layout/template will need it
       current_page = Frontman::App.instance.current_page
       current_page.content_blocks[key.to_sym] = content unless current_page.nil?
+    end
+
+    sig do
+      params(key: T.any(String, Symbol), content: T.untyped, block: T.nilable(T.proc.void))
+        .returns(T.untyped)
+    end
+    def append_content(key, content = nil, &block)
+      content = get_content_buffer(content, &(block if block_given?))
+
+      # We store the the content block inside the current page
+      # because we don't know which renderer/layout/template will need it
+      current_page = Frontman::App.instance.current_page
+
+      unless current_page.nil?
+        key = key.to_sym
+
+        if current_page.content_blocks[key]&.frozen?
+          current_page.content_blocks[key] = current_page.content_blocks[key].dup
+        else
+          current_page.content_blocks[key] ||= ''
+        end
+          
+        current_page.content_blocks[key].concat(content)
+      end
     end
 
     sig { params(key: T.any(String, Symbol)).returns(T::Boolean) }
@@ -120,6 +116,28 @@ module Frontman
       else
         instance_variable_get(:@_erbout)
       end
+    end
+
+    sig { params(content: T.untyped).returns(String) }
+    def get_content_buffer(content)
+      # Haml is not designed to do handle wrap_layout properly so we need to
+      # hack the buffer of haml that is set inside the context by haml
+      save_buffer
+
+      content ||= ''
+
+      if block_given?
+        # We don't save the content of the yield, it will be saved in the buffer
+        yield
+
+        # The buffer now contains the content of the yield
+        content = load_buffer
+      end
+
+      # Restore the buffer so the rendering of the file can continue
+      restore_buffer
+
+      content
     end
   end
 end
