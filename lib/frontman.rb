@@ -10,5 +10,3 @@ require 'frontman/data_store_file'
 require 'frontman/errors'
 require 'frontman/sitemap_tree'
 require 'frontman/resource'
-
-require 'frontman/renderers/renderer_resolver'

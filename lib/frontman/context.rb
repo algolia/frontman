@@ -82,7 +82,6 @@ module Frontman
     end
 
     private
-        #generator: ::Temple::Generators::RailsOutputBuffer,
 
     sig { void }
     def save_buffer
