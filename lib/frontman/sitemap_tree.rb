@@ -195,17 +195,4 @@ module Frontman
     end
   end
 
-  class DuplicateResourceError < StandardError
-    def self.create(resource, url, existing_resource)
-      new("Unable to add #{resource.file_path} as #{url}.
-           Resource #{existing_resource.file_path} already exists on this URL.")
-    end
-  end
-
-  class ExistingRedirectError < StandardError
-    def self.create(resource, url)
-      new("Unable to add #{resource.file_path} as #{url}.
-           A redirect already exists for this URL.")
-    end
-  end
 end

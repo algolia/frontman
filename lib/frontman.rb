@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'frontman/errors'
 require 'frontman/app'
 require 'frontman/context'
 require 'frontman/config'
