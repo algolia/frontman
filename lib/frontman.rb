@@ -8,5 +8,3 @@ require 'frontman/data_store'
 require 'frontman/data_store_file'
 require 'frontman/sitemap_tree'
 require 'frontman/resource'
-
-require 'frontman/renderers/renderer_resolver'
