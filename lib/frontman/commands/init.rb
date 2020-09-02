@@ -16,7 +16,7 @@ module Frontman
 
       target_dir = File.join(Dir.pwd, path == '.' ? '' : path)
 
-      unless allowed_to_modify_dir?(target_dir) || options[:force].present?
+      unless !options[:force].nil? || allowed_to_modify_dir?(target_dir)
         say 'Not bootstrapping new Frontman project'
         return
       end
