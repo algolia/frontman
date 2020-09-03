@@ -94,11 +94,15 @@ module Frontman
       @assets_manifest[key] = '/' + value.sub(%r{^/}, '')
     end
 
-    sig { params(dirs: Array).void }
+    sig { params(dirs: T.any(Array, Hash)).void }
     def register_data_dirs(dirs)
-      dirs.each do |dir|
-        define_singleton_method dir.to_sym do
-          @data_dirs[dir] ||= DataStore.new(File.join(Dir.pwd, dir))
+      if dirs.is_a?(Array)
+        dirs = dirs.map { |dir| [dir.split('/').last, dir] }.to_h
+      end
+
+      dirs.each do |name, dir|
+        define_singleton_method name do
+          @data_dirs[name] ||= DataStore.new(File.join(Dir.pwd, dir))
         end
       end
     end

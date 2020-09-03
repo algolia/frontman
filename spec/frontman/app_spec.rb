@@ -45,4 +45,22 @@ describe Frontman::App do
   it 'should return itself when calling app' do
     expect(subject.app).to eq subject
   end
+
+  it 'should register variables named after keys if hash passed' do
+    subject.register_data_dirs(my_data: 'spec/frontman/mocks')
+    subject.my_data
+    subject.my_data.info
+    subject.my_data.nested.data
+    subject.my_data.nested.more_data
+    expect { subject.mocks }.to raise_error NoMethodError
+  end
+
+  it 'should register variables named after data directory names if array passed' do
+    subject.register_data_dirs(['spec/frontman/mocks'])
+    subject.mocks
+    subject.mocks.info
+    subject.mocks.nested.data
+    subject.mocks.nested.more_data
+    expect { subject.data }.to raise_error NoMethodError
+  end
 end
