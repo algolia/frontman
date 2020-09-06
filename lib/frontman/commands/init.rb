@@ -6,7 +6,7 @@ require 'thor'
 module Frontman
   class CLI < Thor
     option :template
-    option :force
+    option :force, type: :boolean
     desc 'init', 'Bootstrap a new Frontman project'
     def init(path)
       template = options[:template] || 'default'
