@@ -16,7 +16,7 @@ module Frontman
 
       target_dir = File.join(Dir.pwd, path == '.' ? '' : path)
 
-      unless options[:force] || allowed_to_modify_dir?(target_dir)
+      unless allowed_to_modify_dir?(target_dir)
         say 'Not bootstrapping new Frontman project'
         return
       end
@@ -39,6 +39,7 @@ module Frontman
     end
 
     def allowed_to_modify_dir?(dir)
+      return true if options[:force]
       return true if !Dir.exist?(dir) || Dir.empty?(dir)
 
       say 'This folder already contains files. '
