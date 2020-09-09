@@ -127,6 +127,15 @@ module Frontman
       )
     end
 
+    sig { params(file_path: String).void }
+    def import_config(file_path)
+      if !file_path.end_with?('.rb') && !File.exist?(file_path)
+        return import_config("#{file_path}.rb")
+      end
+
+      run File.read(file_path)
+    end
+
     def method_missing(method_id, *_)
       from_view_data = get_from_view_data(method_id)
       return from_view_data unless from_view_data.nil?
