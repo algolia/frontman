@@ -6,6 +6,7 @@ require 'thor'
 module Frontman
   class CLI < Thor
     option :template
+    option :force, type: :boolean
     desc 'init', 'Bootstrap a new Frontman project'
     def init(path)
       template = options[:template] || 'default'
@@ -15,7 +16,7 @@ module Frontman
 
       target_dir = File.join(Dir.pwd, path == '.' ? '' : path)
 
-      unless allowed_to_modify_dir?(target_dir)
+      unless options[:force] || allowed_to_modify_dir?(target_dir)
         say 'Not bootstrapping new Frontman project'
         return
       end
