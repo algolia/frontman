@@ -41,6 +41,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'nokogiri', '~> 1.10'
   s.add_runtime_dependency 'parallel', '~> 1.17'
   s.add_runtime_dependency 'rouge', '~> 3.16'
+  s.add_runtime_dependency 'slim', '~> 4.1'
   s.add_runtime_dependency 'sinatra', '~> 2.0'
   s.add_runtime_dependency 'sorbet-runtime', '~> 0.5'
   s.add_runtime_dependency 'thor', '~> 0.20'
