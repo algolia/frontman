@@ -4,6 +4,9 @@ AllCops:
     - '**/Rakefile'
     - 'vendor/**/*'
 
+Style/Lambda:
+  Enabled: false
+
 Gemspec/RequiredRubyVersion:
   Exclude:
     - 'frontman-ssg.gemspec'

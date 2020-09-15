@@ -52,7 +52,7 @@ module Frontman
       builder.build_directory = build_directory
       builder.current_build_files = current_build_files
 
-      builder.on('created, updated, deleted, unchanged', lambda { |build_file|
+      builder.on('created, updated, deleted, unchanged', ->(build_file) {
         mapping.add_from_build_file(build_file)
       })
 

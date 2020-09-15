@@ -164,6 +164,5 @@ module Frontman
       local_data = @view_data.last[:locals]
       local_data[key] unless local_data.nil?
     end
-
   end
 end

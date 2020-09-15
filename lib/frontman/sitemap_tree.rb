@@ -194,5 +194,4 @@ module Frontman
       "SitemapTree: #{@resource ? @resource.destination_path : @url_part}"
     end
   end
-
 end

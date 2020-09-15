@@ -1,5 +1,6 @@
+# frozen_string_literal: true
+
 module Frontman
-  
   class Error < StandardError; end
 
   class DuplicateResourceError < StandardError
@@ -25,8 +26,8 @@ module Frontman
 
   class ServerPortError < StandardError
     def initialize
-      super("Server failed to attach to port. Please shutdown some processes or increase the :port_retries configuration variable.")
+      super('Server failed to attach to port. Please shutdown some processes
+             or increase the :port_retries configuration variable.')
     end
   end
-
 end
