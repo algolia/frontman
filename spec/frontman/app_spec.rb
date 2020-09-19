@@ -63,4 +63,8 @@ describe Frontman::App do
     subject.mocks.nested.more_data
     expect { subject.data }.to raise_error NoMethodError
   end
+
+  it 'should work with import_config' do
+    expect(subject.import_config('spec/frontman/mocks/import_config'))
+  end
 end
