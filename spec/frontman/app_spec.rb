@@ -45,4 +45,8 @@ describe Frontman::App do
   it 'should return itself when calling app' do
     expect(subject.app).to eq subject
   end
+
+  it 'should work with import_config' do
+    expect(subject.import_config('spec/frontman/mocks/import_config'))
+  end
 end
