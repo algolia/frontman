@@ -29,6 +29,7 @@ Metrics/MethodLength:
 
 Metrics/AbcSize:
   Exclude:
+    - 'lib/frontman/context.rb'
     - 'lib/frontman/sitemap_tree.rb'
     - 'lib/frontman/data_store.rb'
     - 'lib/frontman/builder/statistics_collector.rb'
