@@ -9,6 +9,7 @@ require 'frontman/app'
 require 'frontman/bootstrapper'
 require 'frontman/builder/asset_pipeline'
 require 'frontman/config'
+require 'frontman/errors'
 require 'frontman/resource'
 
 module Frontman

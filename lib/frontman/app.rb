@@ -3,6 +3,7 @@
 
 require 'frontman/sitemap_tree'
 require 'frontman/data_store'
+require 'frontman/errors'
 require 'singleton'
 require 'sorbet-runtime'
 

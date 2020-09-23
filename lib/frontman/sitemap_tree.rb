@@ -1,6 +1,8 @@
 # typed: false
 # frozen_string_literal: true
 
+require 'frontman/errors'
+
 module Frontman
   class SitemapTree
     attr_reader :path, :children, :url_part
