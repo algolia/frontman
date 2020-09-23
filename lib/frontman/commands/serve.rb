@@ -1,5 +1,6 @@
 # frozen_string_literal: false
 
+require 'socket'
 require 'thor'
 require 'sinatra/base'
 require 'better_errors'
@@ -70,11 +71,11 @@ module Frontman
 
       listener.start
 
-      FrontManServer.set :public_folder, Frontman::Config.get(
+      FrontmanServer.set :public_folder, Frontman::Config.get(
         :public_dir, fallback: 'public'
       )
-      FrontManServer.run! do
-        host = "http://localhost:#{FrontManServer.settings.port}"
+      FrontmanServer.run! do
+        host = "http://localhost:#{FrontmanServer.settings.port}"
         print "== View your site at \"#{host}/\"\n"
         processes += assets_pipeline.run_in_background!(:after)
         at_exit { processes.each { |pid| Process.kill(0, pid) } }
@@ -83,8 +84,34 @@ module Frontman
   end
 end
 
-class FrontManServer < Sinatra::Base
-  set :port, 4568
+class FrontmanServer < Sinatra::Base
+  port = Frontman::Config.get(:port, fallback: 4568)
+  num_retries = Frontman::Config.get(:port_retries, fallback: 3)
+
+  retry_strategy = Frontman::Config.get(:port_retry_strategy, fallback: ->(p) {
+    port_in_use = false
+
+    (1 + num_retries).times do
+      begin
+        port_in_use = Socket.tcp('localhost', p, connect_timeout: 3) { true }
+      rescue StandardError
+        port_in_use = false
+      end
+
+      break unless port_in_use
+
+      p += 1
+    end
+
+    raise Frontman::ServerPortError if port_in_use
+
+    p
+  })
+
+  port = retry_strategy.call(port)
+
+  set :port, port
+
   set :server_settings,
       # Avoid having webrick displaying logs for every requests to the serve
       AccessLog: [],
