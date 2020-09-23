@@ -22,8 +22,11 @@ module Frontman
     end
 
     sig do
-      params(key: T.any(String, Symbol), content: T.untyped, block: T.nilable(T.proc.void))
-        .returns(T.untyped)
+      params(
+        key: T.any(String, Symbol),
+        content: T.untyped,
+        block: T.nilable(T.proc.void)
+      ).returns(T.untyped)
     end
     def content_for(key, content = nil, &block)
       content = get_content_buffer(content, &(block if block_given?))
@@ -35,8 +38,11 @@ module Frontman
     end
 
     sig do
-      params(key: T.any(String, Symbol), content: T.untyped, block: T.nilable(T.proc.void))
-        .returns(T.untyped)
+      params(
+        key: T.any(String, Symbol),
+        content: T.untyped,
+        block: T.nilable(T.proc.void)
+      ).returns(T.untyped)
     end
     def append_content(key, content = nil, &block)
       content = get_content_buffer(content, &(block if block_given?))
@@ -45,17 +51,15 @@ module Frontman
       # because we don't know which renderer/layout/template will need it
       current_page = Frontman::App.instance.current_page
 
-      unless current_page.nil?
-        key = key.to_sym
+      return if current_page.nil?
 
-        if current_page.content_blocks[key]&.frozen?
-          current_page.content_blocks[key] = current_page.content_blocks[key].dup
-        else
-          current_page.content_blocks[key] ||= ''
-        end
-          
-        current_page.content_blocks[key].concat(content)
+      key = key.to_sym
+      current_page.content_blocks[key] ||= ''
+      if current_page.content_blocks[key].frozen?
+        current_page.content_blocks[key] = current_page.content_blocks[key].dup
       end
+
+      current_page.content_blocks[key].concat(content)
     end
 
     sig { params(key: T.any(String, Symbol)).returns(T::Boolean) }
