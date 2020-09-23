@@ -83,66 +83,32 @@ module Frontman
 
     private
 
+    def renderers
+      @renderers ||= RendererResolver.instance.all_renderers
+    end
+
     sig { void }
     def save_buffer
-      haml_locals = instance_variable_get(:@_haml_locals)
-
-      if haml_locals
-        # save buffer
-        @buffer = haml_locals[:_hamlout].buffer
-        # empty the buffer so we can capture everything from the new render
-        return haml_locals[:_hamlout].buffer = ''
+      renderers.each do |_, renderer|
+        renderer.save_buffer(self) if renderer.respond_to?(:save_buffer)
       end
-
-      slim_buffer = instance_variable_get(:@_slim_buffer)
-
-      if slim_buffer
-        # save buffer
-        @buffer = slim_buffer
-        # empty the buffer so we can capture everything from the new render
-        return instance_variable_set(:@_slim_buffer, '')
-      end
-
-      erbout = instance_variable_get(:@_erbout)
-
-      # save buffer
-      @buffer = erbout
-      # empty the buffer so we can capture everything from the new render
-      return instance_variable_set(:@_erbout, '')
     end
 
     sig { void }
     def restore_buffer
-      haml_locals = instance_variable_get(:@_haml_locals)
-
-      if haml_locals
-        return haml_locals[:_hamlout].buffer = @buffer
+      renderers.each do |_, renderer|
+        renderer.restore_buffer(self) if renderer.respond_to?(:restore_buffer)
       end
-
-      slim_buffer = instance_variable_get(:@_slim_buffer)
-
-      if slim_buffer
-        return instance_variable_set(:@_slim_buffer, @buffer)
-      end
-
-      return instance_variable_set(:@_erbout, @buffer)
     end
 
     sig { returns(T.untyped) }
     def load_buffer
-      haml_locals = instance_variable_get(:@_haml_locals)
-
-      if haml_locals
-        return haml_locals[:_hamlout].buffer
+      renderers.each do |_, renderer|
+        content = renderer.load_buffer(self) if renderer.respond_to?(:load_buffer)
+        return content if content
       end
 
-      slim_buffer = instance_variable_get(:@_slim_buffer)
-
-      if slim_buffer
-        return slim_buffer
-      end
-
-      return instance_variable_get(:@_erbout)
+      nil
     end
   end
 end
