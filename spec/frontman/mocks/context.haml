@@ -1,0 +1,18 @@
+- content_for :foo, "1"
+
+- content_for :bar do
+  456
+
+- append_content :foo, "2"
+
+- append_content :foo do
+  3
+
+- if content_for?(:invalid)
+  %h1= yield_content(:invalid)
+
+- if content_for?(:foo)
+  %h1= yield_content(:foo)
+
+- if content_for?(:bar)
+  %p= yield_content(:bar)
