@@ -4,6 +4,7 @@ require 'bundler/gem_tasks'
 require 'frontman/version'
 require 'rake'
 require 'rspec/core/rake_task'
+require 'rubocop/rake_task'
 
 begin
   Bundler.setup(:default, :development)
@@ -15,7 +16,7 @@ end
 
 RSpec::Core::RakeTask.new(:spec)
 
-task default: :spec
+task default: [:spec, :rubocop]
 
 namespace :frontman do
   GEM_VERSION_FILE = File.join(Dir.pwd, 'lib/frontman/version.rb')
