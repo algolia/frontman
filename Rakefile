@@ -16,6 +16,8 @@ end
 
 RSpec::Core::RakeTask.new(:spec)
 
+RuboCop::RakeTask.new(:rubocop)
+
 task default: [:spec, :rubocop]
 
 namespace :frontman do
