@@ -75,8 +75,15 @@ module Frontman
       FrontmanServer.set :public_folder, Frontman::Config.get(
         :public_dir, fallback: 'public'
       )
+
+      FrontmanServer.set(
+        :bind,
+        Frontman::Config.get(:host, fallback: 'localhost')
+      )
+
       FrontmanServer.run! do
-        host = "http://localhost:#{FrontmanServer.settings.port}"
+        hostname = FrontmanServer.settings.bind
+        host = "http://#{hostname}:#{FrontmanServer.settings.port}"
         print "== View your site at \"#{host}/\"\n"
         processes += assets_pipeline.run_in_background!(:after)
         at_exit { processes.each { |pid| Process.kill(0, pid) } }
