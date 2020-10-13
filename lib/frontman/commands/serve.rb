@@ -79,28 +79,25 @@ module Frontman
       port = Frontman::Config.get(:port, fallback: 4568)
       num_retries = Frontman::Config.get(:port_retries, fallback: 3)
 
-      port_retry_strategy = Frontman::Config.get(
-        :port_retry_strategy,
-        fallback: ->(p) {
-          port_in_use = false
+      port_retry_strategy = Frontman::Config.get(:port_retry_strategy, fallback: ->(p) {
+        port_in_use = false
 
-          (1 + num_retries).times do
-            begin
-              port_in_use = Socket.tcp('localhost', p, connect_timeout: 3) { true }
-            rescue StandardError
-              port_in_use = false
-            end
-
-            break unless port_in_use
-
-            p += 1
+        (1 + num_retries).times do
+          begin
+            port_in_use = Socket.tcp('localhost', p, connect_timeout: 3) { true }
+          rescue StandardError
+            port_in_use = false
           end
 
-          raise Frontman::ServerPortError if port_in_use
+          break unless port_in_use
 
-          p
-        }
-      )
+          p += 1
+        end
+
+        raise Frontman::ServerPortError if port_in_use
+
+        p
+      })
 
       FrontmanServer.set(:port, port_retry_strategy.call(port))
 
