@@ -99,15 +99,8 @@ module Frontman
         p
       })
 
-      FrontmanServer.set(
-        :port,
-        port_retry_strategy.call(port)
-      )
-
-      FrontmanServer.set(
-        :bind,
-        Frontman::Config.get(:host, fallback: 'localhost')
-      )
+      FrontmanServer.set(:port, port_retry_strategy.call(port))
+      FrontmanServer.set(:bind, Frontman::Config.get(:host, fallback: 'localhost'))
 
       FrontmanServer.run! do
         hostname = FrontmanServer.settings.bind
