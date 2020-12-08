@@ -22,10 +22,10 @@ module Frontman
       save_buffer
 
       # We don't save the content of the yield, it will be saved in the buffer
-      yield
+      rendered_content = yield
 
-      # The buffer now contains the content of the yield
-      content = load_buffer
+      # The buffer now contains the content of the yield when rendering HAML
+      content = load_buffer || rendered_content
 
       # Restore the buffer so the rendering of the file can continue
       restore_buffer
