@@ -4,6 +4,7 @@
 require 'frontman/renderers/renderer'
 require 'frontman/renderers/erb_renderer'
 require 'frontman/renderers/haml_renderer'
+require 'frontman/renderers/null_renderer'
 require 'frontman/renderers/slim_renderer'
 require 'frontman/renderers/markdown_renderer'
 require 'singleton'
@@ -25,7 +26,9 @@ module Frontman
         erb: Frontman::ErbRenderer.instance,
         md: Frontman::MarkdownRenderer.instance,
         haml: Frontman::HamlRenderer.instance,
-        slim: Frontman::SlimRenderer.instance
+        slim: Frontman::SlimRenderer.instance,
+        html: Frontman::NullRenderer.instance,
+        txt: Frontman::NullRenderer.instance
       }
     end
 
