@@ -31,9 +31,9 @@ module Frontman
 
     sig { params(extension: String).returns(T::Boolean) }
     def valid_extension?(extension)
-      # We have to append html and txt manually here instead of having renderers for them
+      # We have to append html and txt manually here
+      # so we can extract front matter data from them
       all_renderers.keys.append(:html, :txt).include?(extension.to_sym)
     end
-
   end
 end

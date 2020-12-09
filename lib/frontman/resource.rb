@@ -275,6 +275,5 @@ module Frontman
         Frontman::RendererResolver.instance.get_renderer(ext)
       end.compact
     end
-
   end
 end

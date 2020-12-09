@@ -35,6 +35,5 @@ module Frontman
     def load_buffer(context)
       context.instance_variable_get(:@_erbout)
     end
-
   end
 end
