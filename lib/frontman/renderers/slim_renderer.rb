@@ -1,5 +1,5 @@
 # typed: false
-# frozen_string_literal: true
+# frozen_string_literal: false
 
 require 'slim'
 require 'frontman/renderers/renderer'
@@ -9,16 +9,16 @@ module Frontman
     def initialize
       Slim::Engine.set_options(
         pretty: true,
-        buffer: '@_slim_buffer',
+        buffer: :@_slim_buffer,
         sort_attrs: false,
-        disable_escape: true,
+        disable_escape: true
       )
 
       super
     end
 
     def compile(layout)
-      Slim::Template.new do
+      Slim::Template.new(nil) do
         layout
       end
     end

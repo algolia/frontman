@@ -16,17 +16,24 @@ module Frontman
 
     sig { params(extension: String).returns(T.nilable(Frontman::Renderer)) }
     def get_renderer(extension)
-      renderers = {
-        :erb => Frontman::ErbRenderer.instance,
-        :md => Frontman::MarkdownRenderer.instance,
-        :haml => Frontman::HamlRenderer.instance,
-        :slim =>Frontman::SlimRenderer.instance,
-      }
-
-      renderers[extension.to_sym]
+      all_renderers[extension.to_sym]
     end
 
-    VALID_EXTENSIONS = %w[erb html haml slim md txt]
+    sig { returns(T::Hash[Symbol, Frontman::Renderer]) }
+    def all_renderers
+      @all_renderers ||= {
+        erb: Frontman::ErbRenderer.instance,
+        md: Frontman::MarkdownRenderer.instance,
+        haml: Frontman::HamlRenderer.instance,
+        slim: Frontman::SlimRenderer.instance
+      }
+    end
+
+    sig { params(extension: String).returns(T::Boolean) }
+    def valid_extension?(extension)
+      # We have to append html and txt manually here instead of having renderers for them
+      all_renderers.keys.append(:html, :txt).include?(extension.to_sym)
+    end
 
   end
 end

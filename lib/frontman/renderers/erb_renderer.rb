@@ -1,5 +1,5 @@
 # typed: false
-# frozen_string_literal: true
+# frozen_string_literal: false
 
 require 'erubis'
 require 'frontman/renderers/renderer'
@@ -17,5 +17,24 @@ module Frontman
 
       compiled.result(scope.get_binding { content })
     end
+
+    def save_buffer(context)
+      buffer = context.instance_variable_get(:@_erbout)
+
+      return unless buffer
+
+      @buffer = buffer
+      context.instance_variable_set(:@_erbout, '')
+    end
+
+    def restore_buffer(context)
+      context.instance_variable_set(:@_erbout, @buffer) if @buffer
+      @buffer = nil
+    end
+
+    def load_buffer(context)
+      context.instance_variable_get(:@_erbout)
+    end
+
   end
 end

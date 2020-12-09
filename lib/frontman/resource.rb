@@ -106,7 +106,7 @@ module Frontman
       @content = File.read(@file_path)
       @data = {}.to_ostruct
 
-      if Frontman::RendererResolver::VALID_EXTENSIONS.include?(@extension)
+      if Frontman::RendererResolver.instance.valid_extension?(@extension)
         @data, @content = YAML::FrontMatter.extract(@content).to_ostruct
       end
 
