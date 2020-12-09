@@ -65,18 +65,16 @@ module Frontman
         @destination_path
       )
 
-      if destination_without_extension == 'index'
-        destination_without_extension = ''
-      end
+      destination_without_extension = '' if destination_without_extension == 'index'
 
       is_index_page = destination_without_extension.end_with?('/index')
       @extension = dest_file_extensions.first
 
-      if (@extension == 'html' || extension.nil?) && !is_index_page
-        @destination_path = destination_without_extension + '/index.html'
-      else
-        @destination_path = destination_without_extension + '.' + @extension
-      end
+      @destination_path = if (@extension == 'html' || extension.nil?) && !is_index_page
+                            destination_without_extension + '/index.html'
+                          else
+                            destination_without_extension + '.' + @extension
+                          end
       @path = "/#{@destination_path.chomp('index.html')}"
               .gsub('//', '/')
     end
@@ -168,9 +166,7 @@ module Frontman
 
       # If we have no layout to render and already cache the rendered content
       # we can return it directly
-      if layout_from_extra_data.nil? && !@rendered_content.nil?
-        return @rendered_content
-      end
+      return @rendered_content if layout_from_extra_data.nil? && !@rendered_content.nil?
 
       content = @content
 

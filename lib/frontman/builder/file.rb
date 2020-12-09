@@ -12,9 +12,7 @@ module Frontman
 
       sig { params(path: String, status: T.any(String, Symbol)).void }
       def initialize(path, status)
-        unless valid_status?(status)
-          raise "#{status} is not a valid file status!"
-        end
+        raise "#{status} is not a valid file status!" unless valid_status?(status)
 
         @path = path
         @status = status.to_sym

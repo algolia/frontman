@@ -8,9 +8,7 @@ module AssetsHelper
   end
 
   def vendor_scripts_by_chunk(chunk, scripts)
-    if chunk == 'vendors'
-      raise ChunkNameError, '"vendors" is an invalid chunk name'
-    end
+    raise ChunkNameError, '"vendors" is an invalid chunk name' if chunk == 'vendors'
 
     pattern = /.*~#{chunk}.*|.*#{chunk}~.*$/
 

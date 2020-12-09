@@ -40,9 +40,7 @@ module Frontman
         raise DuplicateResourceError.create(resource, url, existing_resource)
       end
 
-      if Frontman::App.instance.get_redirect(url)
-        raise ExistingRedirectError.create(resource, url)
-      end
+      raise ExistingRedirectError.create(resource, url) if Frontman::App.instance.get_redirect(url)
 
       SitemapTree.resources.push(resource)
       parts = url.split('/')

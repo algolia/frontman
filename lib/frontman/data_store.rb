@@ -60,9 +60,7 @@ module Frontman
       end
 
       # Make sure we forward the access to the data
-      if @cache.respond_to?(method_name)
-        return @cache.public_send(method_name, &block)
-      end
+      return @cache.public_send(method_name, &block) if @cache.respond_to?(method_name)
 
       nil
     end

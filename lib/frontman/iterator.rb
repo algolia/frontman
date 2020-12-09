@@ -35,9 +35,7 @@ module Frontman
       end
 
       def forward(method, collection, *options, &block)
-        if parallel?
-          return ::Parallel.public_send(method, collection, *options, &block)
-        end
+        return ::Parallel.public_send(method, collection, *options, &block) if parallel?
 
         collection.public_send(method, &block)
       end
