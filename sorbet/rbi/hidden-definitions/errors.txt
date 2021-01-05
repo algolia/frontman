@@ -20,12 +20,12 @@
 # wrong constant name <RESERVED_6>
 # wrong constant name <TypeAlias>
 # wrong constant name <TypeAlias>
-# wrong constant name <any>
-# wrong constant name <any>
 # wrong constant name <root>
 # wrong constant name <Class:<root>>
 # wrong constant name <todo sym>
 # wrong constant name <todo sym>
+# wrong constant name <top>
+# wrong constant name <top>
 # uninitialized constant Abbrev
 # uninitialized constant Abbrev
 # wrong constant name connect_internal
@@ -2009,8 +2009,6 @@
 # wrong constant name bootstrapped?
 # wrong constant name find_helpers_in
 # wrong constant name resources_from_dir
-# wrong constant name instance
-# wrong constant name instance
 # wrong constant name server_settings
 # wrong constant name server_settings=
 # wrong constant name server_settings?
@@ -2399,7 +2397,6 @@
 # wrong constant name ial_for_element
 # wrong constant name inner
 # wrong constant name parse_title
-# wrong constant name <static-init>
 # uninitialized constant Kramdown::Converter::Latex::SMART_QUOTE_INDICES
 # wrong constant name attribute_list
 # wrong constant name convert
@@ -2634,10 +2631,10 @@
 # Did you mean?  Kramdown::Parser::Html::HTML_COMMENT_RE
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_BLOCK
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
@@ -2649,12 +2646,12 @@
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
-#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
+#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
-# Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
+# Did you mean?  Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
@@ -2687,10 +2684,10 @@
 # Did you mean?  Kramdown::Parser::Html::HTML_COMMENT_RE
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_BLOCK
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
@@ -2702,12 +2699,12 @@
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
-#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
+#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
-# Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
+# Did you mean?  Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
@@ -3025,8 +3022,6 @@
 # uninitialized constant Net::NTLM
 # wrong constant name initialize
 # wrong constant name io
-# uninitialized constant Net::SFTP
-# uninitialized constant Net::SFTP
 # uninitialized constant Net::SMTP
 # uninitialized constant Net::SMTP
 # uninitialized constant Net::SMTPAuthenticationError
@@ -3051,8 +3046,6 @@
 # uninitialized constant Net::SMTPUnknownError
 # uninitialized constant Net::SMTPUnsupportedCommand
 # uninitialized constant Net::SMTPUnsupportedCommand
-# uninitialized constant Net::SSH
-# uninitialized constant Net::SSH
 # wrong constant name initialize
 # wrong constant name io
 # uninitialized constant Newton
@@ -3065,8 +3058,8 @@
 #                Nokogiri::CSS::Parser::Racc_Runtime_Core_Revision_R
 #                Nokogiri::CSS::Parser::Racc_Runtime_Revision
 #                Nokogiri::CSS::Parser::Racc_Runtime_Core_Version
-#                Nokogiri::CSS::Parser::Racc_Runtime_Core_Version_R
 #                Nokogiri::CSS::Parser::Racc_Runtime_Core_Version_C
+#                Nokogiri::CSS::Parser::Racc_Runtime_Core_Version_R
 #                Nokogiri::CSS::Parser::Racc_Runtime_Version
 #                Nokogiri::CSS::Parser::Racc_Runtime_Core_Id_C
 # uninitialized constant Nokogiri::CSS::Parser::Racc_Runtime_Core_Revision_C
@@ -3116,117 +3109,6 @@
 # Did you mean?  Nokogiri::CSS::Parser::Racc_Runtime_Revision
 #                Nokogiri::CSS::Parser::Racc_Runtime_Core_Version
 # uninitialized constant Nokogiri::CSS::Parser::Racc_YY_Parse_Method
-# wrong constant name <Class:Element>
-# uninitialized constant Nokogiri::XML::Document::ATTRIBUTE_DECL
-# Did you mean?  Nokogiri::XML::AttributeDecl
-#                Nokogiri::XML::Document::ATTRIBUTE_NODE
-# uninitialized constant Nokogiri::XML::Document::ATTRIBUTE_NODE
-# Did you mean?  Nokogiri::XML::Document::ATTRIBUTE_DECL
-# uninitialized constant Nokogiri::XML::Document::CDATA_SECTION_NODE
-# uninitialized constant Nokogiri::XML::Document::COMMENT_NODE
-# Did you mean?  Nokogiri::XML::Document::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Document::DOCB_DOCUMENT_NODE
-# Did you mean?  Nokogiri::XML::Document::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Document::DOCUMENT_FRAG_NODE
-# Did you mean?  Nokogiri::XML::Document::DOCUMENT_TYPE_NODE
-#                Nokogiri::XML::Document::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Document::DOCUMENT_NODE
-# Did you mean?  Nokogiri::XML::Document::COMMENT_NODE
-# uninitialized constant Nokogiri::XML::Document::DOCUMENT_TYPE_NODE
-# Did you mean?  Nokogiri::XML::Document::DOCUMENT_FRAG_NODE
-#                Nokogiri::XML::Document::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Document::DTD_NODE
-# uninitialized constant Nokogiri::XML::Document::ELEMENT_DECL
-# Did you mean?  Nokogiri::XML::ElementDecl
-# uninitialized constant Nokogiri::XML::Document::ELEMENT_NODE
-# uninitialized constant Nokogiri::XML::Document::ENTITY_DECL
-# Did you mean?  Nokogiri::XML::EntityDecl
-# uninitialized constant Nokogiri::XML::Document::ENTITY_NODE
-# uninitialized constant Nokogiri::XML::Document::ENTITY_REF_NODE
-# Did you mean?  Nokogiri::XML::Document::ENTITY_NODE
-# uninitialized constant Nokogiri::XML::Document::HTML_DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Document::LOOKS_LIKE_XPATH
-# uninitialized constant Nokogiri::XML::Document::NAMESPACE_DECL
-# uninitialized constant Nokogiri::XML::Document::NOTATION_NODE
-# uninitialized constant Nokogiri::XML::Document::PI_NODE
-# uninitialized constant Nokogiri::XML::Document::TEXT_NODE
-# uninitialized constant Nokogiri::XML::Document::XINCLUDE_END
-# uninitialized constant Nokogiri::XML::Document::XINCLUDE_START
-# uninitialized constant Nokogiri::XML::Element::ATTRIBUTE_DECL
-# Did you mean?  Nokogiri::XML::AttributeDecl
-#                Nokogiri::XML::Element::ATTRIBUTE_NODE
-# uninitialized constant Nokogiri::XML::Element::ATTRIBUTE_NODE
-# Did you mean?  Nokogiri::XML::Element::ATTRIBUTE_DECL
-# uninitialized constant Nokogiri::XML::Element::CDATA_SECTION_NODE
-# uninitialized constant Nokogiri::XML::Element::COMMENT_NODE
-# Did you mean?  Nokogiri::XML::Element::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Element::DOCB_DOCUMENT_NODE
-# Did you mean?  Nokogiri::XML::Element::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Element::DOCUMENT_FRAG_NODE
-# Did you mean?  Nokogiri::XML::Element::DOCUMENT_TYPE_NODE
-#                Nokogiri::XML::Element::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Element::DOCUMENT_NODE
-# Did you mean?  Nokogiri::XML::Element::COMMENT_NODE
-# uninitialized constant Nokogiri::XML::Element::DOCUMENT_TYPE_NODE
-# Did you mean?  Nokogiri::XML::Element::DOCUMENT_FRAG_NODE
-#                Nokogiri::XML::Element::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Element::DTD_NODE
-# uninitialized constant Nokogiri::XML::Element::ELEMENT_DECL
-# Did you mean?  Nokogiri::XML::ElementDecl
-# uninitialized constant Nokogiri::XML::Element::ELEMENT_NODE
-# uninitialized constant Nokogiri::XML::Element::ENTITY_DECL
-# Did you mean?  Nokogiri::XML::EntityDecl
-# uninitialized constant Nokogiri::XML::Element::ENTITY_NODE
-# uninitialized constant Nokogiri::XML::Element::ENTITY_REF_NODE
-# Did you mean?  Nokogiri::XML::Element::ENTITY_NODE
-# uninitialized constant Nokogiri::XML::Element::Elem
-# uninitialized constant Nokogiri::XML::Element::HTML_DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Element::IMPLIED_XPATH_CONTEXTS
-# uninitialized constant Nokogiri::XML::Element::LOOKS_LIKE_XPATH
-# uninitialized constant Nokogiri::XML::Element::NAMESPACE_DECL
-# uninitialized constant Nokogiri::XML::Element::NOTATION_NODE
-# uninitialized constant Nokogiri::XML::Element::PI_NODE
-# uninitialized constant Nokogiri::XML::Element::TEXT_NODE
-# uninitialized constant Nokogiri::XML::Element::XINCLUDE_END
-# uninitialized constant Nokogiri::XML::Element::XINCLUDE_START
-# wrong constant name <static-init>
-# uninitialized constant Nokogiri::XML::EntityDecl::ATTRIBUTE_DECL
-# Did you mean?  Nokogiri::XML::AttributeDecl
-#                Nokogiri::XML::EntityDecl::ATTRIBUTE_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::ATTRIBUTE_NODE
-# Did you mean?  Nokogiri::XML::EntityDecl::ATTRIBUTE_DECL
-# uninitialized constant Nokogiri::XML::EntityDecl::CDATA_SECTION_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::COMMENT_NODE
-# Did you mean?  Nokogiri::XML::EntityDecl::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::DOCB_DOCUMENT_NODE
-# Did you mean?  Nokogiri::XML::EntityDecl::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::DOCUMENT_FRAG_NODE
-# Did you mean?  Nokogiri::XML::EntityDecl::DOCUMENT_TYPE_NODE
-#                Nokogiri::XML::EntityDecl::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::DOCUMENT_NODE
-# Did you mean?  Nokogiri::XML::EntityDecl::COMMENT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::DOCUMENT_TYPE_NODE
-# Did you mean?  Nokogiri::XML::EntityDecl::DOCUMENT_FRAG_NODE
-#                Nokogiri::XML::EntityDecl::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::DTD_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::ELEMENT_DECL
-# Did you mean?  Nokogiri::XML::ElementDecl
-# uninitialized constant Nokogiri::XML::EntityDecl::ELEMENT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::ENTITY_DECL
-# uninitialized constant Nokogiri::XML::EntityDecl::ENTITY_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::ENTITY_REF_NODE
-# Did you mean?  Nokogiri::XML::EntityDecl::ENTITY_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::HTML_DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::IMPLIED_XPATH_CONTEXTS
-# uninitialized constant Nokogiri::XML::EntityDecl::LOOKS_LIKE_XPATH
-# uninitialized constant Nokogiri::XML::EntityDecl::NAMESPACE_DECL
-# uninitialized constant Nokogiri::XML::EntityDecl::NOTATION_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::PI_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::TEXT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::XINCLUDE_END
-# uninitialized constant Nokogiri::XML::EntityDecl::XINCLUDE_START
-# uninitialized constant Nokogiri::XML::Node::LOOKS_LIKE_XPATH
-# uninitialized constant Nokogiri::XML::NodeSet::LOOKS_LIKE_XPATH
 # uninitialized constant RUBYGEMS_ACTIVATION_MONITOR
 # wrong constant name to_yaml
 # wrong constant name yaml_tag
@@ -3320,8 +3202,8 @@
 #                Parser::Ruby24::Racc_Runtime_Core_Revision_R
 #                Parser::Ruby24::Racc_Runtime_Revision
 #                Parser::Ruby24::Racc_Runtime_Core_Version
-#                Parser::Ruby24::Racc_Runtime_Core_Version_R
 #                Parser::Ruby24::Racc_Runtime_Core_Version_C
+#                Parser::Ruby24::Racc_Runtime_Core_Version_R
 #                Parser::Ruby24::Racc_Runtime_Version
 #                Parser::Ruby24::Racc_Runtime_Core_Id_C
 # uninitialized constant Parser::Ruby24::Racc_Runtime_Core_Revision_C
@@ -4041,37 +3923,37 @@
 # uninitialized constant Rack::Request::FORM_DATA_MEDIA_TYPES
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_FOR
 # Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_PORT
+#                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_HOST
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
-#                Rack::Request::HTTP_X_FORWARDED_SSL
+# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
+#                Rack::Request::HTTP_X_FORWARDED_FOR
 #                Rack::Request::HTTP_X_FORWARDED_PORT
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 #                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_PORT
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
-#                Rack::Request::HTTP_X_FORWARDED_SSL
+# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
+#                Rack::Request::HTTP_X_FORWARDED_FOR
 #                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 #                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
-#                Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_HOST
+# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
+#                Rack::Request::HTTP_X_FORWARDED_FOR
 #                Rack::Request::HTTP_X_FORWARDED_PORT
+#                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
-#                Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_HOST
+# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
+#                Rack::Request::HTTP_X_FORWARDED_FOR
 #                Rack::Request::HTTP_X_FORWARDED_PORT
+#                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_SSL
 # Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
-#                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_PORT
+#                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 #                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::PARSEABLE_DATA_MEDIA_TYPES
@@ -4162,7 +4044,6 @@
 # wrong constant name ruby
 # wrong constant name completion_quote_character
 # wrong constant name extract_resources
-# wrong constant name getname
 # wrong constant name initialize
 # wrong constant name initialize
 # wrong constant name initialize
@@ -5567,19 +5448,7 @@
 # uninitialized constant RuboCop::MagicComment::VimComment::TOKEN
 # Did you mean?  RuboCop::Token
 #                RuboCop::MagicComment::TOKEN
-# wrong constant name <Class:Node>
-# wrong constant name children
-# wrong constant name first_column
-# wrong constant name first_lineno
-# wrong constant name last_column
-# wrong constant name last_lineno
 # wrong constant name pretty_print_children
-# wrong constant name type
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name of
-# wrong constant name parse
-# wrong constant name parse_file
 # wrong constant name <static-init>
 # wrong constant name enabled?
 # wrong constant name pause
@@ -5618,37 +5487,37 @@
 # uninitialized constant Sinatra::Request::FORM_DATA_MEDIA_TYPES
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_FOR
 # Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_PORT
+#                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_HOST
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
-#                Sinatra::Request::HTTP_X_FORWARDED_SSL
+# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
+#                Sinatra::Request::HTTP_X_FORWARDED_FOR
 #                Sinatra::Request::HTTP_X_FORWARDED_PORT
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 #                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_PORT
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
-#                Sinatra::Request::HTTP_X_FORWARDED_SSL
+# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
+#                Sinatra::Request::HTTP_X_FORWARDED_FOR
 #                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 #                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
-#                Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_HOST
+# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
+#                Sinatra::Request::HTTP_X_FORWARDED_FOR
 #                Sinatra::Request::HTTP_X_FORWARDED_PORT
+#                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
-#                Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_HOST
+# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
+#                Sinatra::Request::HTTP_X_FORWARDED_FOR
 #                Sinatra::Request::HTTP_X_FORWARDED_PORT
+#                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_SSL
 # Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
-#                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_PORT
+#                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 #                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::PARSEABLE_DATA_MEDIA_TYPES
@@ -5917,14 +5786,6 @@
 # wrong constant name default_mime_type=
 # wrong constant name <static-init>
 # wrong constant name method_missing
-# wrong constant name <Class:RakeCompat>
-# uninitialized constant Thor::SHELL_DELEGATED_METHODS
-# wrong constant name help
-# uninitialized constant Thor::Group::SHELL_DELEGATED_METHODS
-# Did you mean?  Thor::SHELL_DELEGATED_METHODS
-# wrong constant name _invoke_for_class_method
-# uninitialized constant Thor::Options::NUMERIC
-# Did you mean?  Numeric
 # uninitialized constant Thor::RakeCompat::DEFAULT
 # uninitialized constant Thor::RakeCompat::LN_SUPPORTED
 # uninitialized constant Thor::RakeCompat::LOW_METHODS
@@ -5934,9 +5795,6 @@
 # uninitialized constant Thor::RakeCompat::OPT_TABLE
 # uninitialized constant Thor::RakeCompat::RUBY
 # uninitialized constant Thor::RakeCompat::VERSION
-# wrong constant name <static-init>
-# wrong constant name included
-# wrong constant name rake_classes
 # uninitialized constant ThreadsWait
 # uninitialized constant ThreadsWait
 # wrong constant name <Class:CSVTemplate>
