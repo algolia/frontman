@@ -2399,7 +2399,6 @@
 # wrong constant name ial_for_element
 # wrong constant name inner
 # wrong constant name parse_title
-# wrong constant name <static-init>
 # uninitialized constant Kramdown::Converter::Latex::SMART_QUOTE_INDICES
 # wrong constant name attribute_list
 # wrong constant name convert
@@ -3116,117 +3115,6 @@
 # Did you mean?  Nokogiri::CSS::Parser::Racc_Runtime_Revision
 #                Nokogiri::CSS::Parser::Racc_Runtime_Core_Version
 # uninitialized constant Nokogiri::CSS::Parser::Racc_YY_Parse_Method
-# wrong constant name <Class:Element>
-# uninitialized constant Nokogiri::XML::Document::ATTRIBUTE_DECL
-# Did you mean?  Nokogiri::XML::AttributeDecl
-#                Nokogiri::XML::Document::ATTRIBUTE_NODE
-# uninitialized constant Nokogiri::XML::Document::ATTRIBUTE_NODE
-# Did you mean?  Nokogiri::XML::Document::ATTRIBUTE_DECL
-# uninitialized constant Nokogiri::XML::Document::CDATA_SECTION_NODE
-# uninitialized constant Nokogiri::XML::Document::COMMENT_NODE
-# Did you mean?  Nokogiri::XML::Document::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Document::DOCB_DOCUMENT_NODE
-# Did you mean?  Nokogiri::XML::Document::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Document::DOCUMENT_FRAG_NODE
-# Did you mean?  Nokogiri::XML::Document::DOCUMENT_TYPE_NODE
-#                Nokogiri::XML::Document::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Document::DOCUMENT_NODE
-# Did you mean?  Nokogiri::XML::Document::COMMENT_NODE
-# uninitialized constant Nokogiri::XML::Document::DOCUMENT_TYPE_NODE
-# Did you mean?  Nokogiri::XML::Document::DOCUMENT_FRAG_NODE
-#                Nokogiri::XML::Document::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Document::DTD_NODE
-# uninitialized constant Nokogiri::XML::Document::ELEMENT_DECL
-# Did you mean?  Nokogiri::XML::ElementDecl
-# uninitialized constant Nokogiri::XML::Document::ELEMENT_NODE
-# uninitialized constant Nokogiri::XML::Document::ENTITY_DECL
-# Did you mean?  Nokogiri::XML::EntityDecl
-# uninitialized constant Nokogiri::XML::Document::ENTITY_NODE
-# uninitialized constant Nokogiri::XML::Document::ENTITY_REF_NODE
-# Did you mean?  Nokogiri::XML::Document::ENTITY_NODE
-# uninitialized constant Nokogiri::XML::Document::HTML_DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Document::LOOKS_LIKE_XPATH
-# uninitialized constant Nokogiri::XML::Document::NAMESPACE_DECL
-# uninitialized constant Nokogiri::XML::Document::NOTATION_NODE
-# uninitialized constant Nokogiri::XML::Document::PI_NODE
-# uninitialized constant Nokogiri::XML::Document::TEXT_NODE
-# uninitialized constant Nokogiri::XML::Document::XINCLUDE_END
-# uninitialized constant Nokogiri::XML::Document::XINCLUDE_START
-# uninitialized constant Nokogiri::XML::Element::ATTRIBUTE_DECL
-# Did you mean?  Nokogiri::XML::AttributeDecl
-#                Nokogiri::XML::Element::ATTRIBUTE_NODE
-# uninitialized constant Nokogiri::XML::Element::ATTRIBUTE_NODE
-# Did you mean?  Nokogiri::XML::Element::ATTRIBUTE_DECL
-# uninitialized constant Nokogiri::XML::Element::CDATA_SECTION_NODE
-# uninitialized constant Nokogiri::XML::Element::COMMENT_NODE
-# Did you mean?  Nokogiri::XML::Element::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Element::DOCB_DOCUMENT_NODE
-# Did you mean?  Nokogiri::XML::Element::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Element::DOCUMENT_FRAG_NODE
-# Did you mean?  Nokogiri::XML::Element::DOCUMENT_TYPE_NODE
-#                Nokogiri::XML::Element::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Element::DOCUMENT_NODE
-# Did you mean?  Nokogiri::XML::Element::COMMENT_NODE
-# uninitialized constant Nokogiri::XML::Element::DOCUMENT_TYPE_NODE
-# Did you mean?  Nokogiri::XML::Element::DOCUMENT_FRAG_NODE
-#                Nokogiri::XML::Element::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Element::DTD_NODE
-# uninitialized constant Nokogiri::XML::Element::ELEMENT_DECL
-# Did you mean?  Nokogiri::XML::ElementDecl
-# uninitialized constant Nokogiri::XML::Element::ELEMENT_NODE
-# uninitialized constant Nokogiri::XML::Element::ENTITY_DECL
-# Did you mean?  Nokogiri::XML::EntityDecl
-# uninitialized constant Nokogiri::XML::Element::ENTITY_NODE
-# uninitialized constant Nokogiri::XML::Element::ENTITY_REF_NODE
-# Did you mean?  Nokogiri::XML::Element::ENTITY_NODE
-# uninitialized constant Nokogiri::XML::Element::Elem
-# uninitialized constant Nokogiri::XML::Element::HTML_DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::Element::IMPLIED_XPATH_CONTEXTS
-# uninitialized constant Nokogiri::XML::Element::LOOKS_LIKE_XPATH
-# uninitialized constant Nokogiri::XML::Element::NAMESPACE_DECL
-# uninitialized constant Nokogiri::XML::Element::NOTATION_NODE
-# uninitialized constant Nokogiri::XML::Element::PI_NODE
-# uninitialized constant Nokogiri::XML::Element::TEXT_NODE
-# uninitialized constant Nokogiri::XML::Element::XINCLUDE_END
-# uninitialized constant Nokogiri::XML::Element::XINCLUDE_START
-# wrong constant name <static-init>
-# uninitialized constant Nokogiri::XML::EntityDecl::ATTRIBUTE_DECL
-# Did you mean?  Nokogiri::XML::AttributeDecl
-#                Nokogiri::XML::EntityDecl::ATTRIBUTE_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::ATTRIBUTE_NODE
-# Did you mean?  Nokogiri::XML::EntityDecl::ATTRIBUTE_DECL
-# uninitialized constant Nokogiri::XML::EntityDecl::CDATA_SECTION_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::COMMENT_NODE
-# Did you mean?  Nokogiri::XML::EntityDecl::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::DOCB_DOCUMENT_NODE
-# Did you mean?  Nokogiri::XML::EntityDecl::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::DOCUMENT_FRAG_NODE
-# Did you mean?  Nokogiri::XML::EntityDecl::DOCUMENT_TYPE_NODE
-#                Nokogiri::XML::EntityDecl::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::DOCUMENT_NODE
-# Did you mean?  Nokogiri::XML::EntityDecl::COMMENT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::DOCUMENT_TYPE_NODE
-# Did you mean?  Nokogiri::XML::EntityDecl::DOCUMENT_FRAG_NODE
-#                Nokogiri::XML::EntityDecl::DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::DTD_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::ELEMENT_DECL
-# Did you mean?  Nokogiri::XML::ElementDecl
-# uninitialized constant Nokogiri::XML::EntityDecl::ELEMENT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::ENTITY_DECL
-# uninitialized constant Nokogiri::XML::EntityDecl::ENTITY_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::ENTITY_REF_NODE
-# Did you mean?  Nokogiri::XML::EntityDecl::ENTITY_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::HTML_DOCUMENT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::IMPLIED_XPATH_CONTEXTS
-# uninitialized constant Nokogiri::XML::EntityDecl::LOOKS_LIKE_XPATH
-# uninitialized constant Nokogiri::XML::EntityDecl::NAMESPACE_DECL
-# uninitialized constant Nokogiri::XML::EntityDecl::NOTATION_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::PI_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::TEXT_NODE
-# uninitialized constant Nokogiri::XML::EntityDecl::XINCLUDE_END
-# uninitialized constant Nokogiri::XML::EntityDecl::XINCLUDE_START
-# uninitialized constant Nokogiri::XML::Node::LOOKS_LIKE_XPATH
-# uninitialized constant Nokogiri::XML::NodeSet::LOOKS_LIKE_XPATH
 # uninitialized constant RUBYGEMS_ACTIVATION_MONITOR
 # wrong constant name to_yaml
 # wrong constant name yaml_tag
@@ -5853,14 +5741,6 @@
 # wrong constant name call
 # wrong constant name supports_streaming?
 # wrong constant name <static-init>
-# wrong constant name <Class:RakeCompat>
-# uninitialized constant Thor::SHELL_DELEGATED_METHODS
-# wrong constant name help
-# uninitialized constant Thor::Group::SHELL_DELEGATED_METHODS
-# Did you mean?  Thor::SHELL_DELEGATED_METHODS
-# wrong constant name _invoke_for_class_method
-# uninitialized constant Thor::Options::NUMERIC
-# Did you mean?  Numeric
 # uninitialized constant Thor::RakeCompat::DEFAULT
 # uninitialized constant Thor::RakeCompat::LN_SUPPORTED
 # uninitialized constant Thor::RakeCompat::LOW_METHODS
@@ -5870,9 +5750,6 @@
 # uninitialized constant Thor::RakeCompat::OPT_TABLE
 # uninitialized constant Thor::RakeCompat::RUBY
 # uninitialized constant Thor::RakeCompat::VERSION
-# wrong constant name <static-init>
-# wrong constant name included
-# wrong constant name rake_classes
 # uninitialized constant ThreadsWait
 # uninitialized constant ThreadsWait
 # wrong constant name <Class:CSVTemplate>
