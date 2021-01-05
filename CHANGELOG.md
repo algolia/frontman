@@ -5,9 +5,20 @@ We document all notable changes to the project in the file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [semantic versioning](http://semver.org/).
 
 # Release Notes
-## [Unreleased](https://github.com/algolia/frontman/compare/0.0.4...master)
+## [Unreleased](https://github.com/algolia/frontman/compare/0.1.0...master)
 
-## [0.0.4](https://github.com/algolia/frontman/tree/0.0.3) - 2020-08-28
+## [0.1.0](https://github.com/algolia/frontman/tree/0.1.0) - 2021-01-05
+
+### Added
+* Support for Slim templates ([`#41`](https://github.com/algolia/frontman/pull/41)) by [@westonganger](https://github.com/westonganger)
+* `append_content` method to push content to a block ([`#25`](https://github.com/algolia/frontman/pull/25)) by [@westonganger](https://github.com/westonganger)
+* Setting to change the local server host ([`#36`](https://github.com/algolia/frontman/pull/36)) by [@westonganger](https://github.com/westonganger)
+* Execute Rubocop in the default Rake task ([`#37`](https://github.com/algolia/frontman/pull/37)) by [@westonganger](https://github.com/westonganger)
+
+### Fixed
+* Issue with setting for local server ports ([`#42`](https://github.com/algolia/frontman/pull/42)) by [@westonganger](https://github.com/westonganger)
+
+## [0.0.4](https://github.com/algolia/frontman/tree/0.0.4) - 2020-08-28
 
 ### Added
 * Retry strategy to allow for multiple running Frontman processes ([`#24`](https://github.com/algolia/frontman/pull/24)) by [@westonganger](https://github.com/westonganger)
