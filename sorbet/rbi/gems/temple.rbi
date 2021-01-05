@@ -166,3 +166,116 @@ end
 class Temple::Filters::StaticMerger < Temple::Filter
   def on_multi(*exps); end
 end
+class Temple::Parser
+  extend Temple::Mixins::ClassOptions
+  extend Temple::Mixins::ThreadOptions
+  include Temple::Mixins::Options
+  include Temple::Utils
+end
+module Temple::HTML::Dispatcher
+  def on_html_attr(name, content); end
+  def on_html_attrs(*attrs); end
+  def on_html_comment(content); end
+  def on_html_condcomment(condition, content); end
+  def on_html_js(content); end
+  def on_html_tag(name, attrs, content = nil); end
+end
+class Temple::HTML::Filter < Temple::Filter
+  def contains_nonempty_static?(exp); end
+  include Temple::HTML::Dispatcher
+end
+class Temple::Generator
+  def buffer; end
+  def call(exp); end
+  def capture_generator; end
+  def concat(str); end
+  def create_buffer; end
+  def on(*exp); end
+  def on_capture(name, exp); end
+  def on_code(code); end
+  def on_dynamic(code); end
+  def on_multi(*exp); end
+  def on_newline; end
+  def on_static(text); end
+  def postamble; end
+  def preamble; end
+  def restore_buffer; end
+  def return_buffer; end
+  def save_buffer; end
+  extend Temple::Mixins::ClassOptions
+  extend Temple::Mixins::ThreadOptions
+  include Temple::Mixins::CompiledDispatcher
+  include Temple::Mixins::Options
+  include Temple::Utils
+end
+class Temple::Generators::Array < Temple::Generator
+  def create_buffer; end
+  def return_buffer; end
+end
+class Temple::Generators::ArrayBuffer < Temple::Generators::Array
+  def call(exp); end
+  def return_buffer; end
+end
+class Temple::Generators::StringBuffer < Temple::Generators::ArrayBuffer
+  def create_buffer; end
+  def on_dynamic(code); end
+  def return_buffer; end
+end
+class Temple::Filters::Encoding < Temple::Parser
+  def call(s); end
+end
+class Temple::Filters::RemoveBOM < Temple::Parser
+  def call(s); end
+end
+class Temple::HTML::AttributeSorter < Temple::HTML::Filter
+  def call(exp); end
+  def on_html_attrs(*attrs); end
+end
+class Temple::HTML::AttributeMerger < Temple::HTML::Filter
+  def on_html_attrs(*attrs); end
+end
+class Temple::HTML::Fast < Temple::HTML::Filter
+  def initialize(opts = nil); end
+  def on_html_attr(name, value); end
+  def on_html_attrs(*attrs); end
+  def on_html_comment(content); end
+  def on_html_condcomment(condition, content); end
+  def on_html_doctype(type); end
+  def on_html_js(content); end
+  def on_html_tag(name, attrs, content = nil); end
+end
+class Temple::HTML::Pretty < Temple::HTML::Fast
+  def call(exp); end
+  def indent; end
+  def initialize(opts = nil); end
+  def on_dynamic(code); end
+  def on_html_comment(content); end
+  def on_html_doctype(type); end
+  def on_html_tag(name, attrs, content = nil); end
+  def on_static(content); end
+  def preamble; end
+  def tag_indent(name); end
+end
+class Temple::Filters::Escapable < Temple::Filter
+  def initialize(opts = nil); end
+  def on_dynamic(value); end
+  def on_escape(flag, exp); end
+  def on_static(value); end
+end
+module Temple::Templates
+  def self.method_missing(name, engine, options = nil); end
+end
+module Temple::Mixins::Template
+  def compile(code, options); end
+  def create(engine, options); end
+  def register_as(*names); end
+  include Temple::Mixins::ClassOptions
+end
+class Temple::Templates::Tilt < Tilt::Template
+  def precompiled_template(locals = nil); end
+  def prepare; end
+  def self.default_mime_type; end
+  def self.default_mime_type=(mime_type); end
+  def self.register_as(*names); end
+  extend Temple::Mixins::Template
+end

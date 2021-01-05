@@ -1,4 +1,4 @@
-# typed: true
+# typed: false
 # frozen_string_literal: true
 
 require 'frontman/renderers/renderer_resolver'
@@ -104,7 +104,7 @@ module Frontman
       @content = File.read(@file_path)
       @data = {}.to_ostruct
 
-      if %w[erb html haml md txt].include?(@extension)
+      if Frontman::RendererResolver.instance.valid_extension?(@extension)
         @data, @content = YAML::FrontMatter.extract(@content).to_ostruct
       end
 

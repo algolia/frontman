@@ -10648,6 +10648,28 @@ module Singleton
   def self.__init__(klass); end
 end
 
+module Slim
+  VERSION = ::T.let(nil, ::T.untyped)
+end
+
+class Slim::Controls
+  IF_RE = ::T.let(nil, ::T.untyped)
+end
+
+class Slim::DoInserter
+  BLOCK_REGEX = ::T.let(nil, ::T.untyped)
+end
+
+class Slim::EndInserter
+  ELSE_RE = ::T.let(nil, ::T.untyped)
+  END_RE = ::T.let(nil, ::T.untyped)
+  IF_RE = ::T.let(nil, ::T.untyped)
+end
+
+class Slim::Splat::Builder
+  INVALID_ATTRIBUTE_NAME_REGEX = ::T.let(nil, ::T.untyped)
+end
+
 class Socket
   AF_CCITT = ::T.let(nil, ::T.untyped)
   AF_CHAOS = ::T.let(nil, ::T.untyped)
@@ -10932,34 +10954,11 @@ end
 class Temple::Filters::DynamicInliner
 end
 
-class Temple::Filters::Encoding
-  def call(s); end
-end
-
-class Temple::Filters::Encoding
-end
-
 class Temple::Filters::Eraser
   def do?(list, exp); end
 end
 
 class Temple::Filters::Eraser
-end
-
-class Temple::Filters::Escapable
-  def on_dynamic(value); end
-
-  def on_static(value); end
-end
-
-class Temple::Filters::Escapable
-end
-
-class Temple::Filters::RemoveBOM
-  def call(s); end
-end
-
-class Temple::Filters::RemoveBOM
 end
 
 class Temple::Filters::StaticAnalyzer
@@ -10996,60 +10995,6 @@ end
 class Temple::Filters::Validator
 end
 
-class Temple::Generator
-  include ::Temple::Utils
-  include ::Temple::Mixins::CompiledDispatcher
-  include ::Temple::Mixins::Options
-  def buffer(); end
-
-  def capture_generator(); end
-
-  def concat(str); end
-
-  def create_buffer(); end
-
-  def on(*exp); end
-
-  def on_capture(name, exp); end
-
-  def on_code(code); end
-
-  def on_dynamic(code); end
-
-  def on_multi(*exp); end
-
-  def on_newline(); end
-
-  def on_static(text); end
-
-  def postamble(); end
-
-  def preamble(); end
-
-  def restore_buffer(); end
-
-  def return_buffer(); end
-
-  def save_buffer(); end
-end
-
-class Temple::Generator
-  extend ::Temple::Mixins::ClassOptions
-  extend ::Temple::Mixins::ThreadOptions
-end
-
-class Temple::Generators::Array
-end
-
-class Temple::Generators::Array
-end
-
-class Temple::Generators::ArrayBuffer
-end
-
-class Temple::Generators::ArrayBuffer
-end
-
 class Temple::Generators::ERB
 end
 
@@ -11060,12 +11005,6 @@ class Temple::Generators::RailsOutputBuffer
 end
 
 class Temple::Generators::RailsOutputBuffer
-end
-
-class Temple::Generators::StringBuffer
-end
-
-class Temple::Generators::StringBuffer
 end
 
 module Temple::Grammar
@@ -11082,74 +11021,16 @@ module Temple::Grammar
   extend ::Temple::Mixins::GrammarDSL
 end
 
-class Temple::HTML::AttributeMerger
-end
-
-class Temple::HTML::AttributeMerger
-end
-
 class Temple::HTML::AttributeRemover
   def on_html_attr(name, value); end
 end
 
 class Temple::HTML::AttributeRemover
-end
-
-class Temple::HTML::AttributeSorter
-end
-
-class Temple::HTML::AttributeSorter
-end
-
-module Temple::HTML::Dispatcher
-  def on_html_attr(name, content); end
-
-  def on_html_attrs(*attrs); end
-
-  def on_html_comment(content); end
-
-  def on_html_condcomment(condition, content); end
-
-  def on_html_js(content); end
-
-  def on_html_tag(name, attrs, content=T.unsafe(nil)); end
-end
-
-module Temple::HTML::Dispatcher
 end
 
 class Temple::HTML::Fast
-  def on_html_attr(name, value); end
-
-  def on_html_doctype(type); end
   DOCTYPES = ::T.let(nil, ::T.untyped)
   HTML_VOID_ELEMENTS = ::T.let(nil, ::T.untyped)
-end
-
-class Temple::HTML::Fast
-end
-
-class Temple::HTML::Filter
-  include ::Temple::HTML::Dispatcher
-  def contains_nonempty_static?(exp); end
-end
-
-class Temple::HTML::Filter
-end
-
-class Temple::HTML::Pretty
-  def indent(); end
-
-  def on_dynamic(code); end
-
-  def on_static(content); end
-
-  def preamble(); end
-
-  def tag_indent(name); end
-end
-
-class Temple::HTML::Pretty
 end
 
 class Temple::InvalidExpression
@@ -11234,36 +11115,11 @@ end
 module Temple::Mixins::GrammarDSL
 end
 
-module Temple::Mixins::Template
-  include ::Temple::Mixins::ClassOptions
-  def compile(code, options); end
-
-  def create(engine, options); end
-
-  def register_as(*names); end
-end
-
-module Temple::Mixins::Template
-end
-
-class Temple::Parser
-  include ::Temple::Utils
-  include ::Temple::Mixins::Options
-end
-
-class Temple::Parser
-  extend ::Temple::Mixins::ClassOptions
-  extend ::Temple::Mixins::ThreadOptions
-end
-
 module Temple::StaticAnalyzer
   DYNAMIC_TOKENS = ::T.let(nil, ::T.untyped)
   STATIC_KEYWORDS = ::T.let(nil, ::T.untyped)
   STATIC_OPERATORS = ::T.let(nil, ::T.untyped)
   STATIC_TOKENS = ::T.let(nil, ::T.untyped)
-end
-
-module Temple::Templates
 end
 
 class Temple::Templates::Rails
@@ -11275,20 +11131,6 @@ end
 class Temple::Templates::Rails
   extend ::Temple::Mixins::Template
   extend ::Temple::Mixins::ClassOptions
-end
-
-class Temple::Templates::Tilt
-  def precompiled_template(locals=T.unsafe(nil)); end
-end
-
-class Temple::Templates::Tilt
-  extend ::Temple::Mixins::Template
-  extend ::Temple::Mixins::ClassOptions
-  def self.default_mime_type=(mime_type); end
-end
-
-module Temple::Templates
-  def self.method_missing(name, engine, options=T.unsafe(nil)); end
 end
 
 module Thor::RakeCompat
