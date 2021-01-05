@@ -76,10 +76,31 @@ module Frontman
         :public_dir, fallback: 'public'
       )
 
-      FrontmanServer.set(
-        :bind,
-        Frontman::Config.get(:host, fallback: 'localhost')
-      )
+      port = Frontman::Config.get(:port, fallback: 4568)
+      num_retries = Frontman::Config.get(:port_retries, fallback: 3)
+
+      port_retry_strategy = Frontman::Config.get(:port_retry_strategy, fallback: ->(p) {
+        port_in_use = false
+
+        (1 + num_retries).times do
+          begin
+            port_in_use = Socket.tcp('localhost', p, connect_timeout: 3) { true }
+          rescue StandardError
+            port_in_use = false
+          end
+
+          break unless port_in_use
+
+          p += 1
+        end
+
+        raise Frontman::ServerPortError if port_in_use
+
+        p
+      })
+
+      FrontmanServer.set(:port, port_retry_strategy.call(port))
+      FrontmanServer.set(:bind, Frontman::Config.get(:host, fallback: 'localhost'))
 
       FrontmanServer.run! do
         hostname = FrontmanServer.settings.bind
@@ -93,33 +114,6 @@ module Frontman
 end
 
 class FrontmanServer < Sinatra::Base
-  port = Frontman::Config.get(:port, fallback: 4568)
-  num_retries = Frontman::Config.get(:port_retries, fallback: 3)
-
-  retry_strategy = Frontman::Config.get(:port_retry_strategy, fallback: ->(p) {
-    port_in_use = false
-
-    (1 + num_retries).times do
-      begin
-        port_in_use = Socket.tcp('localhost', p, connect_timeout: 3) { true }
-      rescue StandardError
-        port_in_use = false
-      end
-
-      break unless port_in_use
-
-      p += 1
-    end
-
-    raise Frontman::ServerPortError if port_in_use
-
-    p
-  })
-
-  port = retry_strategy.call(port)
-
-  set :port, port
-
   set :server_settings,
       # Avoid having webrick displaying logs for every requests to the serve
       AccessLog: [],

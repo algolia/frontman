@@ -10,9 +10,8 @@ module Frontman
     desc 'init', 'Bootstrap a new Frontman project'
     def init(path)
       template = options[:template] || 'default'
-      unless template_exists?(template)
-        raise "Template #{template} does not exist!"
-      end
+
+      raise "Template #{template} does not exist!" unless template_exists?(template)
 
       target_dir = File.join(Dir.pwd, path == '.' ? '' : path)
 
