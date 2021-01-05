@@ -20,12 +20,12 @@
 # wrong constant name <RESERVED_6>
 # wrong constant name <TypeAlias>
 # wrong constant name <TypeAlias>
-# wrong constant name <any>
-# wrong constant name <any>
 # wrong constant name <root>
 # wrong constant name <Class:<root>>
 # wrong constant name <todo sym>
 # wrong constant name <todo sym>
+# wrong constant name <top>
+# wrong constant name <top>
 # uninitialized constant Abbrev
 # uninitialized constant Abbrev
 # wrong constant name connect_internal
@@ -2009,8 +2009,6 @@
 # wrong constant name bootstrapped?
 # wrong constant name find_helpers_in
 # wrong constant name resources_from_dir
-# wrong constant name instance
-# wrong constant name instance
 # wrong constant name server_settings
 # wrong constant name server_settings=
 # wrong constant name server_settings?
@@ -2633,10 +2631,10 @@
 # Did you mean?  Kramdown::Parser::Html::HTML_COMMENT_RE
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_BLOCK
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
@@ -2648,12 +2646,12 @@
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
-#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
+#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
-# Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
+# Did you mean?  Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
@@ -2686,10 +2684,10 @@
 # Did you mean?  Kramdown::Parser::Html::HTML_COMMENT_RE
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_BLOCK
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
@@ -2701,12 +2699,12 @@
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
-#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
+#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
-# Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
+# Did you mean?  Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
@@ -3024,8 +3022,6 @@
 # uninitialized constant Net::NTLM
 # wrong constant name initialize
 # wrong constant name io
-# uninitialized constant Net::SFTP
-# uninitialized constant Net::SFTP
 # uninitialized constant Net::SMTP
 # uninitialized constant Net::SMTP
 # uninitialized constant Net::SMTPAuthenticationError
@@ -3050,8 +3046,6 @@
 # uninitialized constant Net::SMTPUnknownError
 # uninitialized constant Net::SMTPUnsupportedCommand
 # uninitialized constant Net::SMTPUnsupportedCommand
-# uninitialized constant Net::SSH
-# uninitialized constant Net::SSH
 # wrong constant name initialize
 # wrong constant name io
 # uninitialized constant Newton
@@ -3064,8 +3058,8 @@
 #                Nokogiri::CSS::Parser::Racc_Runtime_Core_Revision_R
 #                Nokogiri::CSS::Parser::Racc_Runtime_Revision
 #                Nokogiri::CSS::Parser::Racc_Runtime_Core_Version
-#                Nokogiri::CSS::Parser::Racc_Runtime_Core_Version_R
 #                Nokogiri::CSS::Parser::Racc_Runtime_Core_Version_C
+#                Nokogiri::CSS::Parser::Racc_Runtime_Core_Version_R
 #                Nokogiri::CSS::Parser::Racc_Runtime_Version
 #                Nokogiri::CSS::Parser::Racc_Runtime_Core_Id_C
 # uninitialized constant Nokogiri::CSS::Parser::Racc_Runtime_Core_Revision_C
@@ -3208,8 +3202,8 @@
 #                Parser::Ruby24::Racc_Runtime_Core_Revision_R
 #                Parser::Ruby24::Racc_Runtime_Revision
 #                Parser::Ruby24::Racc_Runtime_Core_Version
-#                Parser::Ruby24::Racc_Runtime_Core_Version_R
 #                Parser::Ruby24::Racc_Runtime_Core_Version_C
+#                Parser::Ruby24::Racc_Runtime_Core_Version_R
 #                Parser::Ruby24::Racc_Runtime_Version
 #                Parser::Ruby24::Racc_Runtime_Core_Id_C
 # uninitialized constant Parser::Ruby24::Racc_Runtime_Core_Revision_C
@@ -3929,37 +3923,37 @@
 # uninitialized constant Rack::Request::FORM_DATA_MEDIA_TYPES
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_FOR
 # Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_PORT
+#                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_HOST
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
-#                Rack::Request::HTTP_X_FORWARDED_SSL
+# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
+#                Rack::Request::HTTP_X_FORWARDED_FOR
 #                Rack::Request::HTTP_X_FORWARDED_PORT
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 #                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_PORT
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
-#                Rack::Request::HTTP_X_FORWARDED_SSL
+# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
+#                Rack::Request::HTTP_X_FORWARDED_FOR
 #                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 #                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
-#                Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_HOST
+# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
+#                Rack::Request::HTTP_X_FORWARDED_FOR
 #                Rack::Request::HTTP_X_FORWARDED_PORT
+#                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
-#                Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_HOST
+# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
+#                Rack::Request::HTTP_X_FORWARDED_FOR
 #                Rack::Request::HTTP_X_FORWARDED_PORT
+#                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_SSL
 # Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
-#                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_PORT
+#                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 #                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::PARSEABLE_DATA_MEDIA_TYPES
@@ -4050,7 +4044,6 @@
 # wrong constant name ruby
 # wrong constant name completion_quote_character
 # wrong constant name extract_resources
-# wrong constant name getname
 # wrong constant name initialize
 # wrong constant name initialize
 # wrong constant name initialize
@@ -5455,19 +5448,7 @@
 # uninitialized constant RuboCop::MagicComment::VimComment::TOKEN
 # Did you mean?  RuboCop::Token
 #                RuboCop::MagicComment::TOKEN
-# wrong constant name <Class:Node>
-# wrong constant name children
-# wrong constant name first_column
-# wrong constant name first_lineno
-# wrong constant name last_column
-# wrong constant name last_lineno
 # wrong constant name pretty_print_children
-# wrong constant name type
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name of
-# wrong constant name parse
-# wrong constant name parse_file
 # wrong constant name <static-init>
 # wrong constant name enabled?
 # wrong constant name pause
@@ -5506,37 +5487,37 @@
 # uninitialized constant Sinatra::Request::FORM_DATA_MEDIA_TYPES
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_FOR
 # Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_PORT
+#                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_HOST
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
-#                Sinatra::Request::HTTP_X_FORWARDED_SSL
+# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
+#                Sinatra::Request::HTTP_X_FORWARDED_FOR
 #                Sinatra::Request::HTTP_X_FORWARDED_PORT
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 #                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_PORT
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
-#                Sinatra::Request::HTTP_X_FORWARDED_SSL
+# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
+#                Sinatra::Request::HTTP_X_FORWARDED_FOR
 #                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 #                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
-#                Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_HOST
+# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
+#                Sinatra::Request::HTTP_X_FORWARDED_FOR
 #                Sinatra::Request::HTTP_X_FORWARDED_PORT
+#                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
-#                Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_HOST
+# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
+#                Sinatra::Request::HTTP_X_FORWARDED_FOR
 #                Sinatra::Request::HTTP_X_FORWARDED_PORT
+#                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_SSL
 # Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
-#                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_PORT
+#                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 #                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::PARSEABLE_DATA_MEDIA_TYPES
