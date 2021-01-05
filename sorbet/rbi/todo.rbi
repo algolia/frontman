@@ -2,5 +2,11 @@
 #   srb rbi todo
 
 # typed: strong
+module ::Anonymous_Delegator_1; end
+module ::Anonymous_Delegator_8; end
+module ::Anonymous_Delegator_9; end
+module Kramdown::Converter::Kramdown::Utils::Configurable; end
+module T::CompatibilityPatches::RSpecCompatibility::MethodDoubleExtensions; end
+module T::CompatibilityPatches::RSpecCompatibility::RecorderExtensions; end
 module T::Private::Methods::MethodHooks; end
 module T::Private::Methods::SingletonMethodHooks; end

@@ -83,43 +83,32 @@ module Frontman
 
     private
 
+    def renderers
+      @renderers ||= RendererResolver.instance.all_renderers
+    end
+
     sig { void }
     def save_buffer
-      haml_locals = instance_variable_get(:@_haml_locals)
-
-      if haml_locals
-        # save buffer
-        @buffer = haml_locals[:_hamlout].buffer
-        # empty the buffer so we can capture everything from the new render
-        haml_locals[:_hamlout].buffer = ''
-      else
-        # save buffer
-        @buffer = instance_variable_get(:@_erbout)
-        # empty the buffer so we can capture everything from the new render
-        instance_variable_set(:@_erbout, '')
+      renderers.each do |_, renderer|
+        renderer.save_buffer(self) if renderer.respond_to?(:save_buffer)
       end
     end
 
     sig { void }
     def restore_buffer
-      haml_locals = instance_variable_get(:@_haml_locals)
-
-      if haml_locals
-        haml_locals[:_hamlout].buffer = @buffer
-      else
-        instance_variable_set(:@_erbout, @buffer)
+      renderers.each do |_, renderer|
+        renderer.restore_buffer(self) if renderer.respond_to?(:restore_buffer)
       end
     end
 
     sig { returns(T.untyped) }
     def load_buffer
-      haml_locals = instance_variable_get(:@_haml_locals)
-
-      if haml_locals
-        haml_locals[:_hamlout].buffer
-      else
-        instance_variable_get(:@_erbout)
+      renderers.each do |_, renderer|
+        content = renderer.load_buffer(self) if renderer.respond_to?(:load_buffer)
+        return content if content
       end
+
+      nil
     end
 
     sig { params(content: T.untyped).returns(String) }
@@ -132,10 +121,10 @@ module Frontman
 
       if block_given?
         # We don't save the content of the yield, it will be saved in the buffer
-        yield
+        rendered_content = yield
 
-        # The buffer now contains the content of the yield
-        content = load_buffer
+        # The buffer now contains the content of the yield when rendering HAML
+        content = load_buffer || rendered_content
       end
 
       # Restore the buffer so the rendering of the file can continue

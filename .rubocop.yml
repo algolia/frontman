@@ -77,6 +77,7 @@ Metrics/LineLength:
   Exclude:
     - 'frontman-ssg.gemspec'
     - 'spec/**/*'
+    - 'lib/frontman/context.rb'
 
 Naming/FileName:
   Exclude:
