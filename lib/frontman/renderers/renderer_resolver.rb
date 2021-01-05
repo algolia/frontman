@@ -33,7 +33,7 @@ module Frontman
     def valid_extension?(extension)
       # We have to append html and txt manually here
       # so we can extract front matter data from them
-      all_renderers.keys.append(:html, :txt).include?(extension.to_sym)
+      all_renderers.keys.push(:html, :txt).include?(extension.to_sym)
     end
   end
 end
