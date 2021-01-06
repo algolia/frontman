@@ -29,6 +29,8 @@ Metrics/MethodLength:
     - 'lib/frontman/builder/builder.rb'
     - 'lib/frontman/commands/**/*'
     - 'lib/frontman/resource.rb'
+    - 'lib/frontman/context.rb'
+    - 'lib/frontman/helpers/render_helper.rb'
 
 Metrics/AbcSize:
   Exclude:
