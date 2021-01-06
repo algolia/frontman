@@ -38,6 +38,13 @@ describe RenderHelper do
       expect(subject.partial('paragraph.haml', text: 'Testing'))
         .to eq("<p>\nThe passed text: Testing\n</p>\n")
     end
+
+    it 'should handle content_for in partials' do
+      Frontman::Config.set(:partial_dir, 'spec/frontman/mocks/partials')
+
+      expect(subject.partial('content_for.haml'))
+        .to eq("<ul>\n<li>\nNested `content_for` block\n\n</li>\n\n<li>\nThis is a test!\n</li>\n</ul>\n")
+    end
   end
 
   context 'render page' do

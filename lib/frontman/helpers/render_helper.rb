@@ -22,7 +22,17 @@ module RenderHelper
     r = Frontman::Resource.from_path(
       File.join(partial_dir, template), nil, false
     )
-    r.render(nil, data)
+
+    # While rendering, if there's no current page we set it to to the resource
+    # This allows using `content_for` directives in partials
+    current_page = Frontman::App.instance.current_page
+    Frontman::App.instance.current_page = r if current_page.nil?
+
+    content = r.render(nil, data)
+
+    Frontman::App.instance.current_page = current_page
+
+    content
   end
 
   sig do

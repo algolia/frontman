@@ -6,6 +6,11 @@ require 'frontman/renderers/renderer'
 
 module Frontman
   class ErbRenderer < Frontman::Renderer
+    def initialize
+      @buffer = {}
+      super
+    end
+
     def compile(layout)
       Erubis::Eruby.new(layout, bufvar: '@_erbout')
     end
@@ -23,13 +28,15 @@ module Frontman
 
       return unless buffer
 
-      @buffer = buffer
+      @buffer[context.buffer_hash] = buffer
       context.instance_variable_set(:@_erbout, '')
     end
 
     def restore_buffer(context)
-      context.instance_variable_set(:@_erbout, @buffer) if @buffer
-      @buffer = nil
+      return unless @buffer[context.buffer_hash]
+
+      context.instance_variable_set(:@_erbout, @buffer[context.buffer_hash])
+      @buffer.delete(context.buffer_hash)
     end
 
     def load_buffer(context)

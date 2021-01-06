@@ -1,0 +1,10 @@
+- content_for :test_data do
+  - content_for :item_text do
+    Nested `content_for` block
+  %li
+    = yield_content :item_text
+
+%ul
+  = yield_content :test_data
+  %li
+    This is a test!
