@@ -5,7 +5,11 @@ We document all notable changes to the project in the file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [semantic versioning](http://semver.org/).
 
 # Release Notes
-## [Unreleased](https://github.com/algolia/frontman/compare/0.1.0...master)
+## [Unreleased](https://github.com/algolia/frontman/compare/0.1.1...master)
+
+## [0.1.1](https://github.com/algolia/frontman/tree/0.1.1) - 2021-01-05
+### Fixed
+* Empty buffer bug when using a nested `content_for` block in HAML templates ([`#43`](https://github.com/algolia/frontman/pull/43))
 
 ## [0.1.0](https://github.com/algolia/frontman/tree/0.1.0) - 2021-01-05
 
