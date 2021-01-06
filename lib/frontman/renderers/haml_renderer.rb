@@ -8,6 +8,7 @@ module Frontman
   class HamlRenderer < Renderer
     def initialize
       Haml::Options.defaults[:format] = :html5
+      @buffer = {}
       super
     end
 
@@ -26,12 +27,11 @@ module Frontman
     end
 
     def save_buffer(context)
-      @buffer = nil
       haml_locals = context.instance_variable_get(:@_haml_locals)
 
       return unless haml_locals
 
-      @buffer = haml_locals[:_hamlout].buffer
+      @buffer[context.buffer_hash] = haml_locals[:_hamlout].buffer
       # empty the buffer so we can capture everything from the new render
       haml_locals[:_hamlout].buffer = ''
       context.instance_variable_set(:@_haml_locals, haml_locals)
@@ -42,9 +42,9 @@ module Frontman
 
       return unless haml_locals
 
-      haml_locals[:_hamlout].buffer = @buffer
+      haml_locals[:_hamlout].buffer = @buffer[context.buffer_hash]
       context.instance_variable_set(:@_haml_locals, haml_locals)
-      @buffer = nil
+      @buffer.delete(context.buffer_hash)
     end
   end
 end

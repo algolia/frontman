@@ -4,12 +4,15 @@
 require 'frontman/app'
 require 'frontman/concerns/forward_calls_to_app'
 require 'frontman/config'
+require 'securerandom'
 require 'sorbet-runtime'
 
 module Frontman
   class Context
     extend T::Sig
     include Frontman::ForwardCallsToApp
+
+    attr_reader :buffer_hash
 
     sig { params(layout: String, block: T.proc.void).returns(String) }
     def wrap_layout(layout, &block)
@@ -113,6 +116,9 @@ module Frontman
 
     sig { params(content: T.untyped).returns(String) }
     def get_content_buffer(content)
+      @parent_hash = @buffer_hash || nil
+      @buffer_hash = SecureRandom.hex
+
       # Haml is not designed to do handle wrap_layout properly so we need to
       # hack the buffer of haml that is set inside the context by haml
       save_buffer
@@ -129,6 +135,8 @@ module Frontman
 
       # Restore the buffer so the rendering of the file can continue
       restore_buffer
+
+      @buffer_hash = @parent_hash
 
       content
     end
