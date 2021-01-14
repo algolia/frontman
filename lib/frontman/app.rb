@@ -55,7 +55,7 @@ module Frontman
     sig { params(helpers: T::Array[T::Hash[Symbol, String]]).void }
     def register_helpers(helpers)
       helpers.each do |helper|
-        require T.must(helper[:path])
+        Kernel.require T.must(helper[:path])
         singleton_class.send(
           :include,
           Object.const_get(T.must(helper[:name]).to_sym)
@@ -131,12 +131,18 @@ module Frontman
     end
 
     sig { params(file_path: String).void }
-    def import_config(file_path)
+    def require(file_path)
       if !file_path.end_with?('.rb') && !File.exist?(file_path)
-        return import_config("#{file_path}.rb")
+        return self.require("#{file_path}.rb")
       end
 
-      run File.read(file_path)
+      instance_eval File.read(file_path)
+    end
+    alias import_config require
+
+    sig { params(file_path: String).void }
+    def global_require(file_path)
+      Kernel.require(file_path)
     end
 
     def method_missing(method_id, *_)
