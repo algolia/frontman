@@ -25,10 +25,8 @@ module Frontman
 
           cmd_output = `#{pipeline[:command]}`
           puts cmd_output
-          unless $CHILD_STATUS.success?
-            p "Asset pipeline failed with status #{$CHILD_STATUS.exitstatus}: #{pipeline[:command]}"
-            exit 1
-          end
+
+          exit 1 unless $CHILD_STATUS.success?
 
           sleep(pipeline[:delay]) if pipeline[:delay]
 
