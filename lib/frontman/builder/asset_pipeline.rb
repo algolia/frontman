@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 require 'sorbet-runtime'
+require 'English'
 
 module Frontman
   module Builder
@@ -22,7 +23,11 @@ module Frontman
         pipelines.each do |pipeline|
           p "Running external asset pipeline: #{pipeline[:name]}"
 
-          `#{pipeline[:command]}`
+          cmd_output = `#{pipeline[:command]}`
+          puts cmd_output
+
+          exit 1 unless $CHILD_STATUS.success?
+
           sleep(pipeline[:delay]) if pipeline[:delay]
 
           p "Finished: #{pipeline[:name]}"

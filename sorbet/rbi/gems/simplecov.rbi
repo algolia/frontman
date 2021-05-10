@@ -7,14 +7,14 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/simplecov/all/simplecov.rbi
 #
-# simplecov-0.19.0
+# simplecov-0.21.1
 
 module SimpleCov
   def self.adapt_coverage_result; end
   def self.add_not_loaded_files(result); end
   def self.at_exit_behavior; end
   def self.clear_result; end
-  def self.collate(result_filenames, profile = nil, &block); end
+  def self.collate(result_filenames, profile = nil, ignore_timeout: nil, &block); end
   def self.exit_and_report_previous_error(exit_status); end
   def self.exit_status_from_exception; end
   def self.external_at_exit; end
@@ -53,6 +53,7 @@ module SimpleCov
   extend SimpleCov::Configuration
 end
 module SimpleCov::Formatter
+  def self.from_env(env); end
 end
 class SimpleCov::Formatter::MultiFormatter
   def self.[](*args); end
@@ -96,13 +97,15 @@ module SimpleCov::Configuration
   def minimum_possible_coverage_exceeded(coverage_option); end
   def nocov_token(nocov_token = nil); end
   def parse_filter(filter_argument = nil, &filter_proc); end
+  def primary_coverage(criterion = nil); end
   def print_error_status; end
   def print_error_status=(arg0); end
   def profiles; end
   def project_name(new_name = nil); end
   def raise_if_criterion_disabled(criterion); end
   def raise_if_criterion_unsupported(criterion); end
-  def refuse_coverage_drop; end
+  def raise_on_invalid_coverage(coverage, coverage_setting); end
+  def refuse_coverage_drop(*criteria); end
   def root(root = nil); end
   def skip_token(nocov_token = nil); end
   def track_files(glob); end
@@ -129,22 +132,24 @@ module SimpleCov::ExitCodes::ExitCodeHandling
   def self.coverage_checks(result, coverage_limits); end
 end
 class SimpleCov::ExitCodes::MaximumCoverageDropCheck
-  def coverage_diff; end
-  def covered_percent; end
+  def compute_coverage_drop_data; end
+  def coverage_drop_violations; end
   def exit_code; end
   def failing?; end
   def initialize(result, maximum_coverage_drop); end
+  def last_coverage(criterion); end
   def last_run; end
   def maximum_coverage_drop; end
   def report; end
   def result; end
 end
 class SimpleCov::ExitCodes::MinimumCoverageByFileCheck
-  def covered_percentages; end
+  def compute_minimum_coverage_data; end
   def exit_code; end
   def failing?; end
   def initialize(result, minimum_coverage_by_file); end
   def minimum_coverage_by_file; end
+  def minimum_violations; end
   def report; end
   def result; end
 end
@@ -245,8 +250,10 @@ end
 class SimpleCov::FileList
   def branch_covered_percent; end
   def compute_coverage_statistics; end
+  def compute_coverage_statistics_by_file; end
   def count(*args, &block); end
   def coverage_statistics; end
+  def coverage_statistics_by_file; end
   def covered_branches; end
   def covered_lines; end
   def covered_percent; end
@@ -271,12 +278,11 @@ class SimpleCov::FileList
   include Enumerable
 end
 class SimpleCov::Result
-  def adapt_pre_simplecov_0_18_result(result); end
-  def adapt_result(result); end
   def command_name; end
   def command_name=(arg0); end
   def coverage; end
   def coverage_statistics(*args, &block); end
+  def coverage_statistics_by_file(*args, &block); end
   def covered_branches(*args, &block); end
   def covered_lines(*args, &block); end
   def covered_percent(*args, &block); end
@@ -294,10 +300,8 @@ class SimpleCov::Result
   def missed_branches(*args, &block); end
   def missed_lines(*args, &block); end
   def original_result; end
-  def pre_simplecov_0_18_result?(result); end
   def self.from_hash(hash); end
   def source_files; end
-  def time_since_creation; end
   def to_hash; end
   def total_branches(*args, &block); end
   def total_lines(*args, &block); end
@@ -339,17 +343,26 @@ class SimpleCov::LinesClassifier
   def self.whitespace_line?(line); end
 end
 module SimpleCov::ResultMerger
-  def self.clear_resultset; end
-  def self.merge_and_store(*results); end
-  def self.merge_results(*results); end
+  def self.adapt_pre_simplecov_0_18_result(result); end
+  def self.adapt_result(result); end
+  def self.create_result(command_names, coverage); end
+  def self.merge_and_store(*file_paths, ignore_timeout: nil); end
+  def self.merge_coverage(*results); end
+  def self.merge_results(*file_paths, ignore_timeout: nil); end
+  def self.merge_valid_results(results, ignore_timeout: nil); end
   def self.merged_result; end
-  def self.results; end
-  def self.resultset; end
+  def self.parse_file(path); end
+  def self.parse_json(content); end
+  def self.pre_simplecov_0_18_result?(result); end
+  def self.read_file(path); end
+  def self.read_resultset; end
   def self.resultset_path; end
   def self.resultset_writelock; end
   def self.store_result(result); end
-  def self.stored_data; end
   def self.synchronize_resultset; end
+  def self.time_since_result_creation(data); end
+  def self.valid_results(file_path, ignore_timeout: nil); end
+  def self.within_merge_timeout?(data); end
 end
 module SimpleCov::CommandGuesser
   def self.from_command_line_options; end
