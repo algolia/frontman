@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/listen/all/listen.rbi
 #
-# listen-3.3.3
+# listen-3.4.0
 
 module Listen
   def self.default_logger; end
@@ -27,7 +27,6 @@ class Listen::Record
   def _fast_try_file(entry); end
   def _fast_unset_path(dirname, basename); end
   def _fast_update_file(dirname, basename, data); end
-  def _sub_tree(rel_path); end
   def add_dir(rel_path); end
   def build; end
   def dir_entries(rel_path); end
@@ -216,6 +215,9 @@ class Listen::FSM::State
   def transitions; end
   def valid_transition?(new_state); end
 end
+module Listen::MonotonicTime
+  def self.now; end
+end
 module Listen::Event
 end
 class Listen::Event::Processor
@@ -226,7 +228,6 @@ class Listen::Event::Processor
   def _remember_time_of_first_unprocessed_event; end
   def _reset_no_unprocessed_events; end
   def _sleep(seconds); end
-  def _timestamp; end
   def _wait_until_events; end
   def _wait_until_events_calm_down; end
   def _wait_until_no_longer_paused; end
@@ -275,7 +276,6 @@ class Listen::Event::Config
   def min_delay_between_events; end
   def optimize_changes(changes); end
   def sleep(seconds); end
-  def timestamp; end
 end
 class Listen::Listener
   def ignore!(regexps); end

@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/parallel/all/parallel.rbi
 #
-# parallel-1.19.2
+# parallel-1.20.1
 
 module Parallel
   def self.add_progress_bar!(job_factory, options); end
@@ -19,7 +19,6 @@ module Parallel
   def self.each_with_index(array, options = nil, &block); end
   def self.extract_count_from_options(options); end
   def self.flat_map(*args, &block); end
-  def self.handle_exception(exception, results); end
   def self.in_processes(options = nil, &block); end
   def self.in_threads(options = nil); end
   def self.map(source, options = nil, &block); end
@@ -42,8 +41,10 @@ end
 class Parallel::DeadWorker < StandardError
 end
 class Parallel::Break < StandardError
+  def initialize(value = nil); end
+  def value; end
 end
-class Parallel::Kill < StandardError
+class Parallel::Kill < Parallel::Break
 end
 class Parallel::UndumpableException < StandardError
   def backtrace; end

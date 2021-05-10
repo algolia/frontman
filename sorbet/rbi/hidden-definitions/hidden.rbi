@@ -3069,6 +3069,10 @@ module Docile
   VERSION = ::T.let(nil, ::T.untyped)
 end
 
+module Docile::BacktraceFilter
+  FILTER_PATTERN = ::T.let(nil, ::T.untyped)
+end
+
 class Docile::FallbackContextProxy
   NON_FALLBACK_METHODS = ::T.let(nil, ::T.untyped)
   NON_PROXIED_INSTANCE_VARIABLES = ::T.let(nil, ::T.untyped)
@@ -5022,8 +5026,6 @@ end
 class Net::HTTPAlreadyReported
 end
 
-Net::HTTPClientError::EXCEPTION_TYPE = Net::HTTPServerException
-
 Net::HTTPClientErrorCode = Net::HTTPClientError
 
 class Net::HTTPEarlyHints
@@ -5093,13 +5095,17 @@ Net::HTTPResponceReceiver = Net::HTTPResponse
 
 Net::HTTPRetriableCode = Net::HTTPRedirection
 
-Net::HTTPServerError::EXCEPTION_TYPE = Net::HTTPFatalError
-
 Net::HTTPServerErrorCode = Net::HTTPServerError
 
 Net::HTTPSession = Net::HTTP
 
-Net::HTTPSuccessCode = Net::HTTPSuccess
+class Net::HTTPSuccess
+end
+
+Net::HTTPSuccessCode::EXCEPTION_TYPE = Net::HTTPError
+
+class Net::HTTPSuccess
+end
 
 class Net::HTTPURITooLong
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -5139,8 +5145,275 @@ class NilClass
   include ::JSON::Ext::Generator::GeneratorMethods::NilClass
 end
 
+module Nokogiri
+  LIBXML2_PATCHES = ::T.let(nil, ::T.untyped)
+  LIBXML_COMPILED_VERSION = ::T.let(nil, ::T.untyped)
+  LIBXML_ICONV_ENABLED = ::T.let(nil, ::T.untyped)
+  LIBXML_LOADED_VERSION = ::T.let(nil, ::T.untyped)
+  LIBXSLT_COMPILED_VERSION = ::T.let(nil, ::T.untyped)
+  LIBXSLT_LOADED_VERSION = ::T.let(nil, ::T.untyped)
+  LIBXSLT_PATCHES = ::T.let(nil, ::T.untyped)
+  OTHER_LIBRARY_VERSIONS = ::T.let(nil, ::T.untyped)
+  PACKAGED_LIBRARIES = ::T.let(nil, ::T.untyped)
+  PRECOMPILED_LIBRARIES = ::T.let(nil, ::T.untyped)
+  VERSION = ::T.let(nil, ::T.untyped)
+  VERSION_INFO = ::T.let(nil, ::T.untyped)
+end
+
+class Nokogiri::CSS::Node
+  ALLOW_COMBINATOR_ON_SELF = ::T.let(nil, ::T.untyped)
+end
+
 class Nokogiri::CSS::Parser
+  CACHE_SWITCH_NAME = ::T.let(nil, ::T.untyped)
+  Racc_arg = ::T.let(nil, ::T.untyped)
   Racc_debug_parser = ::T.let(nil, ::T.untyped)
+  Racc_token_to_s_table = ::T.let(nil, ::T.untyped)
+end
+
+module Nokogiri::Decorators::Slop
+  XPATH_PREFIX = ::T.let(nil, ::T.untyped)
+end
+
+module Nokogiri::HTML
+  NamedCharacters = ::T.let(nil, ::T.untyped)
+end
+
+class Nokogiri::HTML::ElementDescription
+  ACTION_ATTR = ::T.let(nil, ::T.untyped)
+  ALIGN_ATTR = ::T.let(nil, ::T.untyped)
+  ALT_ATTR = ::T.let(nil, ::T.untyped)
+  APPLET_ATTRS = ::T.let(nil, ::T.untyped)
+  AREA_ATTRS = ::T.let(nil, ::T.untyped)
+  ATTRS = ::T.let(nil, ::T.untyped)
+  A_ATTRS = ::T.let(nil, ::T.untyped)
+  BASEFONT_ATTRS = ::T.let(nil, ::T.untyped)
+  BGCOLOR_ATTR = ::T.let(nil, ::T.untyped)
+  BLOCK = ::T.let(nil, ::T.untyped)
+  BLOCKLI_ELT = ::T.let(nil, ::T.untyped)
+  BODY_ATTRS = ::T.let(nil, ::T.untyped)
+  BODY_CONTENTS = ::T.let(nil, ::T.untyped)
+  BODY_DEPR = ::T.let(nil, ::T.untyped)
+  BUTTON_ATTRS = ::T.let(nil, ::T.untyped)
+  CELLHALIGN = ::T.let(nil, ::T.untyped)
+  CELLVALIGN = ::T.let(nil, ::T.untyped)
+  CLEAR_ATTRS = ::T.let(nil, ::T.untyped)
+  COL_ATTRS = ::T.let(nil, ::T.untyped)
+  COL_ELT = ::T.let(nil, ::T.untyped)
+  COMPACT_ATTR = ::T.let(nil, ::T.untyped)
+  COMPACT_ATTRS = ::T.let(nil, ::T.untyped)
+  CONTENT_ATTR = ::T.let(nil, ::T.untyped)
+  COREATTRS = ::T.let(nil, ::T.untyped)
+  CORE_ATTRS = ::T.let(nil, ::T.untyped)
+  CORE_I18N_ATTRS = ::T.let(nil, ::T.untyped)
+  DIR_ATTR = ::T.let(nil, ::T.untyped)
+  DL_CONTENTS = ::T.let(nil, ::T.untyped)
+  DefaultDescriptions = ::T.let(nil, ::T.untyped)
+  EDIT_ATTRS = ::T.let(nil, ::T.untyped)
+  EMBED_ATTRS = ::T.let(nil, ::T.untyped)
+  EMPTY = ::T.let(nil, ::T.untyped)
+  EVENTS = ::T.let(nil, ::T.untyped)
+  FIELDSET_CONTENTS = ::T.let(nil, ::T.untyped)
+  FLOW = ::T.let(nil, ::T.untyped)
+  FLOW_PARAM = ::T.let(nil, ::T.untyped)
+  FONTSTYLE = ::T.let(nil, ::T.untyped)
+  FONT_ATTRS = ::T.let(nil, ::T.untyped)
+  FORMCTRL = ::T.let(nil, ::T.untyped)
+  FORM_ATTRS = ::T.let(nil, ::T.untyped)
+  FORM_CONTENTS = ::T.let(nil, ::T.untyped)
+  FRAMESET_ATTRS = ::T.let(nil, ::T.untyped)
+  FRAMESET_CONTENTS = ::T.let(nil, ::T.untyped)
+  FRAME_ATTRS = ::T.let(nil, ::T.untyped)
+  HEADING = ::T.let(nil, ::T.untyped)
+  HEAD_ATTRS = ::T.let(nil, ::T.untyped)
+  HEAD_CONTENTS = ::T.let(nil, ::T.untyped)
+  HREF_ATTRS = ::T.let(nil, ::T.untyped)
+  HR_DEPR = ::T.let(nil, ::T.untyped)
+  HTML_ATTRS = ::T.let(nil, ::T.untyped)
+  HTML_CDATA = ::T.let(nil, ::T.untyped)
+  HTML_CONTENT = ::T.let(nil, ::T.untyped)
+  HTML_FLOW = ::T.let(nil, ::T.untyped)
+  HTML_INLINE = ::T.let(nil, ::T.untyped)
+  HTML_PCDATA = ::T.let(nil, ::T.untyped)
+  I18N = ::T.let(nil, ::T.untyped)
+  I18N_ATTRS = ::T.let(nil, ::T.untyped)
+  IFRAME_ATTRS = ::T.let(nil, ::T.untyped)
+  IMG_ATTRS = ::T.let(nil, ::T.untyped)
+  INLINE = ::T.let(nil, ::T.untyped)
+  INLINE_P = ::T.let(nil, ::T.untyped)
+  INPUT_ATTRS = ::T.let(nil, ::T.untyped)
+  LABEL_ATTR = ::T.let(nil, ::T.untyped)
+  LABEL_ATTRS = ::T.let(nil, ::T.untyped)
+  LANGUAGE_ATTR = ::T.let(nil, ::T.untyped)
+  LEGEND_ATTRS = ::T.let(nil, ::T.untyped)
+  LINK_ATTRS = ::T.let(nil, ::T.untyped)
+  LIST = ::T.let(nil, ::T.untyped)
+  LI_ELT = ::T.let(nil, ::T.untyped)
+  MAP_CONTENTS = ::T.let(nil, ::T.untyped)
+  META_ATTRS = ::T.let(nil, ::T.untyped)
+  MODIFIER = ::T.let(nil, ::T.untyped)
+  NAME_ATTR = ::T.let(nil, ::T.untyped)
+  NOFRAMES_CONTENT = ::T.let(nil, ::T.untyped)
+  OBJECT_ATTRS = ::T.let(nil, ::T.untyped)
+  OBJECT_CONTENTS = ::T.let(nil, ::T.untyped)
+  OBJECT_DEPR = ::T.let(nil, ::T.untyped)
+  OL_ATTRS = ::T.let(nil, ::T.untyped)
+  OPTGROUP_ATTRS = ::T.let(nil, ::T.untyped)
+  OPTION_ATTRS = ::T.let(nil, ::T.untyped)
+  OPTION_ELT = ::T.let(nil, ::T.untyped)
+  PARAM_ATTRS = ::T.let(nil, ::T.untyped)
+  PCDATA = ::T.let(nil, ::T.untyped)
+  PHRASE = ::T.let(nil, ::T.untyped)
+  PRE_CONTENT = ::T.let(nil, ::T.untyped)
+  PROMPT_ATTRS = ::T.let(nil, ::T.untyped)
+  QUOTE_ATTRS = ::T.let(nil, ::T.untyped)
+  ROWS_COLS_ATTR = ::T.let(nil, ::T.untyped)
+  SCRIPT_ATTRS = ::T.let(nil, ::T.untyped)
+  SELECT_ATTRS = ::T.let(nil, ::T.untyped)
+  SELECT_CONTENT = ::T.let(nil, ::T.untyped)
+  SPECIAL = ::T.let(nil, ::T.untyped)
+  SRC_ALT_ATTRS = ::T.let(nil, ::T.untyped)
+  STYLE_ATTRS = ::T.let(nil, ::T.untyped)
+  TABLE_ATTRS = ::T.let(nil, ::T.untyped)
+  TABLE_CONTENTS = ::T.let(nil, ::T.untyped)
+  TABLE_DEPR = ::T.let(nil, ::T.untyped)
+  TALIGN_ATTRS = ::T.let(nil, ::T.untyped)
+  TARGET_ATTR = ::T.let(nil, ::T.untyped)
+  TEXTAREA_ATTRS = ::T.let(nil, ::T.untyped)
+  TH_TD_ATTR = ::T.let(nil, ::T.untyped)
+  TH_TD_DEPR = ::T.let(nil, ::T.untyped)
+  TR_CONTENTS = ::T.let(nil, ::T.untyped)
+  TR_ELT = ::T.let(nil, ::T.untyped)
+  TYPE_ATTR = ::T.let(nil, ::T.untyped)
+  UL_DEPR = ::T.let(nil, ::T.untyped)
+  VERSION_ATTR = ::T.let(nil, ::T.untyped)
+  WIDTH_ATTR = ::T.let(nil, ::T.untyped)
+end
+
+Nokogiri::HTML::ElementDescription::Desc = Struct::HTMLElementDescription
+
+module Nokogiri::XML
+  XML_C14N_1_0 = ::T.let(nil, ::T.untyped)
+  XML_C14N_1_1 = ::T.let(nil, ::T.untyped)
+  XML_C14N_EXCLUSIVE_1_0 = ::T.let(nil, ::T.untyped)
+end
+
+class Nokogiri::XML::Document
+  IMPLIED_XPATH_CONTEXTS = ::T.let(nil, ::T.untyped)
+  NCNAME_CHAR = ::T.let(nil, ::T.untyped)
+  NCNAME_RE = ::T.let(nil, ::T.untyped)
+  NCNAME_START_CHAR = ::T.let(nil, ::T.untyped)
+end
+
+class Nokogiri::XML::Element
+end
+
+class Nokogiri::XML::Element
+end
+
+class Nokogiri::XML::ElementContent
+  ELEMENT = ::T.let(nil, ::T.untyped)
+  MULT = ::T.let(nil, ::T.untyped)
+  ONCE = ::T.let(nil, ::T.untyped)
+  OPT = ::T.let(nil, ::T.untyped)
+  OR = ::T.let(nil, ::T.untyped)
+  PCDATA = ::T.let(nil, ::T.untyped)
+  PLUS = ::T.let(nil, ::T.untyped)
+  SEQ = ::T.let(nil, ::T.untyped)
+end
+
+class Nokogiri::XML::EntityDecl
+  EXTERNAL_GENERAL_PARSED = ::T.let(nil, ::T.untyped)
+  EXTERNAL_GENERAL_UNPARSED = ::T.let(nil, ::T.untyped)
+  EXTERNAL_PARAMETER = ::T.let(nil, ::T.untyped)
+  INTERNAL_GENERAL = ::T.let(nil, ::T.untyped)
+  INTERNAL_PARAMETER = ::T.let(nil, ::T.untyped)
+  INTERNAL_PREDEFINED = ::T.let(nil, ::T.untyped)
+end
+
+class Nokogiri::XML::Node
+  ATTRIBUTE_DECL = ::T.let(nil, ::T.untyped)
+  ATTRIBUTE_NODE = ::T.let(nil, ::T.untyped)
+  CDATA_SECTION_NODE = ::T.let(nil, ::T.untyped)
+  COMMENT_NODE = ::T.let(nil, ::T.untyped)
+  DOCB_DOCUMENT_NODE = ::T.let(nil, ::T.untyped)
+  DOCUMENT_FRAG_NODE = ::T.let(nil, ::T.untyped)
+  DOCUMENT_NODE = ::T.let(nil, ::T.untyped)
+  DOCUMENT_TYPE_NODE = ::T.let(nil, ::T.untyped)
+  DTD_NODE = ::T.let(nil, ::T.untyped)
+  ELEMENT_DECL = ::T.let(nil, ::T.untyped)
+  ELEMENT_NODE = ::T.let(nil, ::T.untyped)
+  ENTITY_DECL = ::T.let(nil, ::T.untyped)
+  ENTITY_NODE = ::T.let(nil, ::T.untyped)
+  ENTITY_REF_NODE = ::T.let(nil, ::T.untyped)
+  HTML_DOCUMENT_NODE = ::T.let(nil, ::T.untyped)
+  IMPLIED_XPATH_CONTEXTS = ::T.let(nil, ::T.untyped)
+  NAMESPACE_DECL = ::T.let(nil, ::T.untyped)
+  NOTATION_NODE = ::T.let(nil, ::T.untyped)
+  PI_NODE = ::T.let(nil, ::T.untyped)
+  TEXT_NODE = ::T.let(nil, ::T.untyped)
+  XINCLUDE_END = ::T.let(nil, ::T.untyped)
+  XINCLUDE_START = ::T.let(nil, ::T.untyped)
+end
+
+class Nokogiri::XML::NodeSet
+  IMPLIED_XPATH_CONTEXTS = ::T.let(nil, ::T.untyped)
+end
+
+class Nokogiri::XML::ParseOptions
+  COMPACT = ::T.let(nil, ::T.untyped)
+  DEFAULT_HTML = ::T.let(nil, ::T.untyped)
+  DEFAULT_SCHEMA = ::T.let(nil, ::T.untyped)
+  DEFAULT_XML = ::T.let(nil, ::T.untyped)
+  DTDATTR = ::T.let(nil, ::T.untyped)
+  DTDLOAD = ::T.let(nil, ::T.untyped)
+  DTDVALID = ::T.let(nil, ::T.untyped)
+  HUGE = ::T.let(nil, ::T.untyped)
+  NOBASEFIX = ::T.let(nil, ::T.untyped)
+  NOBLANKS = ::T.let(nil, ::T.untyped)
+  NOCDATA = ::T.let(nil, ::T.untyped)
+  NODICT = ::T.let(nil, ::T.untyped)
+  NOENT = ::T.let(nil, ::T.untyped)
+  NOERROR = ::T.let(nil, ::T.untyped)
+  NONET = ::T.let(nil, ::T.untyped)
+  NOWARNING = ::T.let(nil, ::T.untyped)
+  NOXINCNODE = ::T.let(nil, ::T.untyped)
+  NSCLEAN = ::T.let(nil, ::T.untyped)
+  OLD10 = ::T.let(nil, ::T.untyped)
+  PEDANTIC = ::T.let(nil, ::T.untyped)
+  RECOVER = ::T.let(nil, ::T.untyped)
+  SAX1 = ::T.let(nil, ::T.untyped)
+  STRICT = ::T.let(nil, ::T.untyped)
+  XINCLUDE = ::T.let(nil, ::T.untyped)
+end
+
+class Nokogiri::XML::Reader
+  TYPE_ATTRIBUTE = ::T.let(nil, ::T.untyped)
+  TYPE_CDATA = ::T.let(nil, ::T.untyped)
+  TYPE_COMMENT = ::T.let(nil, ::T.untyped)
+  TYPE_DOCUMENT = ::T.let(nil, ::T.untyped)
+  TYPE_DOCUMENT_FRAGMENT = ::T.let(nil, ::T.untyped)
+  TYPE_DOCUMENT_TYPE = ::T.let(nil, ::T.untyped)
+  TYPE_ELEMENT = ::T.let(nil, ::T.untyped)
+  TYPE_END_ELEMENT = ::T.let(nil, ::T.untyped)
+  TYPE_END_ENTITY = ::T.let(nil, ::T.untyped)
+  TYPE_ENTITY = ::T.let(nil, ::T.untyped)
+  TYPE_ENTITY_REFERENCE = ::T.let(nil, ::T.untyped)
+  TYPE_NONE = ::T.let(nil, ::T.untyped)
+  TYPE_NOTATION = ::T.let(nil, ::T.untyped)
+  TYPE_PROCESSING_INSTRUCTION = ::T.let(nil, ::T.untyped)
+  TYPE_SIGNIFICANT_WHITESPACE = ::T.let(nil, ::T.untyped)
+  TYPE_TEXT = ::T.let(nil, ::T.untyped)
+  TYPE_WHITESPACE = ::T.let(nil, ::T.untyped)
+  TYPE_XML_DECLARATION = ::T.let(nil, ::T.untyped)
+end
+
+class Nokogiri::XML::SAX::Parser
+  ENCODINGS = ::T.let(nil, ::T.untyped)
+end
+
+module Nokogiri::XML::Searchable
+  LOOKS_LIKE_XPATH = ::T.let(nil, ::T.untyped)
 end
 
 class Object
@@ -5386,6 +5659,10 @@ class Parser::Lexer::Literal
   TYPES = ::T.let(nil, ::T.untyped)
 end
 
+class Parser::MaxNumparamStack
+  ORDINARY_PARAMS = ::T.let(nil, ::T.untyped)
+end
+
 module Parser::Meta
   NODE_TYPES = ::T.let(nil, ::T.untyped)
 end
@@ -5451,6 +5728,7 @@ class ProgressBar::Components::Time
   NO_TIME_ELAPSED_TEXT = ::T.let(nil, ::T.untyped)
   OOB_FRIENDLY_TIME_TEXT = ::T.let(nil, ::T.untyped)
   OOB_LIMIT_IN_HOURS = ::T.let(nil, ::T.untyped)
+  OOB_TEXT_TO_FORMAT = ::T.let(nil, ::T.untyped)
   OOB_TIME_FORMATS = ::T.let(nil, ::T.untyped)
   OOB_UNKNOWN_TIME_TEXT = ::T.let(nil, ::T.untyped)
   TIME_FORMAT = ::T.let(nil, ::T.untyped)
@@ -5674,8 +5952,20 @@ class RSpec::Matchers::BuiltIn::BaseMatcher
   UNDEFINED = ::T.let(nil, ::T.untyped)
 end
 
+class RSpec::Matchers::BuiltIn::BePredicate
+  REGEX = ::T.let(nil, ::T.untyped)
+end
+
 class RSpec::Matchers::BuiltIn::Equal
   LITERAL_SINGLETONS = ::T.let(nil, ::T.untyped)
+end
+
+class RSpec::Matchers::BuiltIn::Has
+  REGEX = ::T.let(nil, ::T.untyped)
+end
+
+class RSpec::Matchers::BuiltIn::RaiseError
+  UndefinedValue = ::T.let(nil, ::T.untyped)
 end
 
 RSpec::Matchers::BuiltIn::SpecificValuesChange::MATCH_ANYTHING = BasicObject
@@ -5804,7 +6094,10 @@ module RSpec::Version
 end
 
 module Racc
+  Copyright = ::T.let(nil, ::T.untyped)
   Racc_No_Extensions = ::T.let(nil, ::T.untyped)
+  VERSION = ::T.let(nil, ::T.untyped)
+  Version = ::T.let(nil, ::T.untyped)
 end
 
 class Racc::CparseParams
@@ -5816,13 +6109,9 @@ end
 class Racc::Parser
   Racc_Main_Parsing_Routine = ::T.let(nil, ::T.untyped)
   Racc_Runtime_Core_Id_C = ::T.let(nil, ::T.untyped)
-  Racc_Runtime_Core_Revision = ::T.let(nil, ::T.untyped)
-  Racc_Runtime_Core_Revision_C = ::T.let(nil, ::T.untyped)
-  Racc_Runtime_Core_Revision_R = ::T.let(nil, ::T.untyped)
   Racc_Runtime_Core_Version = ::T.let(nil, ::T.untyped)
   Racc_Runtime_Core_Version_C = ::T.let(nil, ::T.untyped)
   Racc_Runtime_Core_Version_R = ::T.let(nil, ::T.untyped)
-  Racc_Runtime_Revision = ::T.let(nil, ::T.untyped)
   Racc_Runtime_Type = ::T.let(nil, ::T.untyped)
   Racc_Runtime_Version = ::T.let(nil, ::T.untyped)
   Racc_YY_Parse_Method = ::T.let(nil, ::T.untyped)
@@ -10532,6 +10821,10 @@ class RubyVM::AbstractSyntaxTree::Node
   def pretty_print_children(q, names=T.unsafe(nil)); end
 end
 
+class RubyVM::DebugInspector
+  VERSION = ::T.let(nil, ::T.untyped)
+end
+
 module RubyVM::MJIT
 end
 
@@ -10603,6 +10896,10 @@ end
 class SimpleCov::SourceFile
   RUBY_FILE_ENCODING_MAGIC_COMMENT_REGEX = ::T.let(nil, ::T.untyped)
   SHEBANG_REGEX = ::T.let(nil, ::T.untyped)
+end
+
+class SimpleCovJSONFormatter::ResultExporter
+  FILENAME = ::T.let(nil, ::T.untyped)
 end
 
 module Sinatra

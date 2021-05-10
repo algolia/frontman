@@ -250,6 +250,7 @@ class RuboCop::AST::Node < Parser::AST::Node
   def ivasgn_type?; end
   def keyword?; end
   def kwarg_type?; end
+  def kwargs_type?; end
   def kwbegin_type?; end
   def kwnilarg_type?; end
   def kwoptarg_type?; end
@@ -268,6 +269,8 @@ class RuboCop::AST::Node < Parser::AST::Node
   def match_as_type?; end
   def match_current_line_type?; end
   def match_nil_pattern_type?; end
+  def match_pattern_p_type?; end
+  def match_pattern_type?; end
   def match_rest_type?; end
   def match_var_type?; end
   def match_with_lvasgn_type?; end
