@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.executables           = ['frontman']
 
   # Min Ruby version
-  s.required_ruby_version = '>= 2.3.0', '<= 4'
+  s.required_ruby_version = '>= 2.4.0', '<= 4'
 
   # Development tools
   s.add_development_dependency 'rake', '~> 12.3'
