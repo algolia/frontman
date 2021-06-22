@@ -5,7 +5,7 @@ require 'ostruct'
 
 class CustomStruct < OpenStruct
   def respond_to_missing?(method_id, *_arguments)
-    to_h.respond_to?(method_id) || super
+    to_h.respond_to?(method_id) || super(method_id)
   end
 
   def key?(key)

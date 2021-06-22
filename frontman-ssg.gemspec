@@ -17,12 +17,13 @@ Gem::Specification.new do |s|
   s.executables           = ['frontman']
 
   # Min Ruby version
-  s.required_ruby_version = '>= 2.4.0', '<= 4'
+  s.required_ruby_version = '~> 2', '>= 2.3.0'
 
   # Development tools
   s.add_development_dependency 'rake', '~> 12.3'
   s.add_development_dependency 'rspec', '~> 3.8'
-  s.add_development_dependency 'rubocop', '~> 0.93.1'
+  s.add_development_dependency 'rubocop', '~> 0.71.0'
+  s.add_development_dependency 'rubocop-performance', '~> 1.3.0'
   s.add_development_dependency 'simplecov', '~> 0.16'
   s.add_development_dependency 'sorbet', '0.5.6198'
 
