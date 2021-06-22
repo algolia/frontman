@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rubocop', '~> 0.71.0'
   s.add_development_dependency 'rubocop-performance', '~> 1.3.0'
   s.add_development_dependency 'simplecov', '~> 0.16'
-  s.add_development_dependency 'sorbet', '0.5.6198'
+  s.add_development_dependency 'sorbet', (RUBY_VERSION > '2.6' ? '~> 0.5' : '0.5.6198')
 
   # Frontman dependencies
   s.add_runtime_dependency 'better_errors', '~> 2.6'
@@ -43,7 +43,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rouge', '~> 3.16'
   s.add_runtime_dependency 'sinatra', '~> 2.0'
   s.add_runtime_dependency 'slim', '~> 4.1'
-  s.add_runtime_dependency 'sorbet-runtime', '~> 0.5'
+  s.add_runtime_dependency 'sorbet-runtime', (RUBY_VERSION > '2.6' ? '~> 0.5' : '0.5.6198')
   s.add_runtime_dependency 'thor', '~> 0.20'
   s.add_runtime_dependency 'yaml-front-matter', '0.0.1'
 end
