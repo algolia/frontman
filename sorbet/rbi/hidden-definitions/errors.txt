@@ -40,20 +40,17 @@
 # wrong constant name new
 # wrong constant name clone
 # wrong constant name irb
-# uninitialized constant Bundler::Dependency::TYPES
-# wrong constant name branch
-# wrong constant name expanded_platforms
-# wrong constant name git
 # wrong constant name <static-init>
 # wrong constant name environment
 # wrong constant name report
 # wrong constant name write
+# wrong constant name github_https?
+# wrong constant name global_path_appends_ruby_scope?
 # wrong constant name <Class:Base>
 # wrong constant name <Class:CompactIndex>
 # wrong constant name <Class:Dependency>
 # wrong constant name <Class:Downloader>
 # wrong constant name <Class:Index>
-# wrong constant name <Class:TooManyRequestsError>
 # wrong constant name fetch_spec
 # wrong constant name fetchers
 # wrong constant name http_proxy
@@ -107,7 +104,6 @@
 # wrong constant name specs
 # wrong constant name <static-init>
 # wrong constant name initialize
-# wrong constant name <static-init>
 # wrong constant name api_timeout
 # wrong constant name api_timeout=
 # wrong constant name disable_endpoint
@@ -116,9 +112,6 @@
 # wrong constant name max_retries=
 # wrong constant name redirect_limit
 # wrong constant name redirect_limit=
-# wrong constant name link
-# wrong constant name cp_lr
-# wrong constant name link_entry
 # uninitialized constant Bundler::GemHelper::DEFAULT
 # uninitialized constant Bundler::GemHelper::LN_SUPPORTED
 # uninitialized constant Bundler::GemHelper::LOW_METHODS
@@ -136,7 +129,6 @@
 # wrong constant name built_gem_path
 # wrong constant name clean?
 # wrong constant name committed?
-# wrong constant name gem_command
 # wrong constant name gem_key
 # wrong constant name gem_push?
 # wrong constant name gem_push_host
@@ -150,8 +142,7 @@
 # wrong constant name perform_git_push
 # wrong constant name rubygem_push
 # wrong constant name sh
-# wrong constant name sh_with_input
-# wrong constant name sh_with_status
+# wrong constant name sh_with_code
 # wrong constant name spec_path
 # wrong constant name tag_version
 # wrong constant name version
@@ -161,6 +152,7 @@
 # wrong constant name install_tasks
 # wrong constant name instance
 # wrong constant name instance=
+# wrong constant name <static-init>
 # wrong constant name initialize
 # wrong constant name level
 # wrong constant name level=
@@ -203,8 +195,6 @@
 # wrong constant name ambiguous_gems
 # wrong constant name ambiguous_gems=
 # wrong constant name install
-# wrong constant name _recursive_predecessors
-# wrong constant name _recursive_successors
 # wrong constant name ==
 # wrong constant name app_cache_dirname
 # wrong constant name app_cache_path
@@ -238,10 +228,6 @@
 # wrong constant name uri
 # wrong constant name uri_hash
 # wrong constant name <static-init>
-# wrong constant name <Class:CommandConflict>
-# wrong constant name <Class:SourceConflict>
-# wrong constant name installed_plugins
-# wrong constant name plugin_commands
 # wrong constant name initialize
 # wrong constant name <static-init>
 # wrong constant name initialize
@@ -260,7 +246,6 @@
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
-# wrong constant name list
 # wrong constant name <static-init>
 # wrong constant name lock
 # wrong constant name attempt
@@ -277,36 +262,11 @@
 # wrong constant name default_attempts
 # wrong constant name default_retries
 # uninitialized constant Bundler::RubyGemsGemInstaller::ENV_PATHS
+# wrong constant name initialize
 # wrong constant name <static-init>
-# wrong constant name add_to_load_path
-# wrong constant name all_specs
+# uninitialized constant Bundler::RubygemsIntegration::MoreFuture::EXT_LOCK
+# Did you mean?  Bundler::RubygemsIntegration::EXT_LOCK
 # wrong constant name backport_ext_builder_monitor
-# wrong constant name correct_for_windows_path
-# wrong constant name default_stubs
-# wrong constant name find_name
-# wrong constant name gem_remote_fetcher
-# wrong constant name plain_specs
-# wrong constant name plain_specs=
-# wrong constant name stub_rubygems
-# wrong constant name use_gemdeps
-# uninitialized constant Bundler::RubygemsIntegration::AlmostModern
-# uninitialized constant Bundler::RubygemsIntegration::AlmostModern
-# uninitialized constant Bundler::RubygemsIntegration::Ancient
-# uninitialized constant Bundler::RubygemsIntegration::Ancient
-# uninitialized constant Bundler::RubygemsIntegration::Future
-# uninitialized constant Bundler::RubygemsIntegration::Future
-# uninitialized constant Bundler::RubygemsIntegration::Legacy
-# uninitialized constant Bundler::RubygemsIntegration::Legacy
-# uninitialized constant Bundler::RubygemsIntegration::Modern
-# Did you mean?  Module
-# uninitialized constant Bundler::RubygemsIntegration::Modern
-# Did you mean?  Module
-# uninitialized constant Bundler::RubygemsIntegration::MoreFuture
-# uninitialized constant Bundler::RubygemsIntegration::MoreFuture
-# uninitialized constant Bundler::RubygemsIntegration::MoreModern
-# uninitialized constant Bundler::RubygemsIntegration::MoreModern
-# uninitialized constant Bundler::RubygemsIntegration::Transitional
-# uninitialized constant Bundler::RubygemsIntegration::Transitional
 # wrong constant name ==
 # wrong constant name fallback_timeout
 # wrong constant name fallback_timeout=
@@ -331,523 +291,6 @@
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name validate!
-# uninitialized constant Bundler::Source::Git::DEFAULT_GLOB
-# wrong constant name glob
-# wrong constant name <Class:Actions>
-# wrong constant name <Class:AmbiguousCommandError>
-# wrong constant name <Class:Argument>
-# wrong constant name <Class:Arguments>
-# wrong constant name <Class:Base>
-# wrong constant name <Class:Command>
-# wrong constant name <Class:CoreExt>
-# wrong constant name <Class:DynamicCommand>
-# wrong constant name <Class:Error>
-# wrong constant name <Class:Group>
-# wrong constant name <Class:HiddenCommand>
-# wrong constant name <Class:Invocation>
-# wrong constant name <Class:InvocationError>
-# wrong constant name <Class:LineEditor>
-# wrong constant name <Class:MalformattedArgumentError>
-# wrong constant name <Class:NestedContext>
-# wrong constant name <Class:NoKwargSpellChecker>
-# wrong constant name <Class:Option>
-# wrong constant name <Class:Options>
-# wrong constant name <Class:RakeCompat>
-# wrong constant name <Class:RequiredArgumentMissingError>
-# uninitialized constant Bundler::Thor::SHELL_DELEGATED_METHODS
-# wrong constant name <Class:Sandbox>
-# wrong constant name <Class:Shell>
-# wrong constant name <Class:UndefinedCommandError>
-# wrong constant name <Class:UnknownArgumentError>
-# wrong constant name <Class:Util>
-# wrong constant name help
-# wrong constant name <Class:CapturableERB>
-# wrong constant name <Class:ClassMethods>
-# wrong constant name <Class:CreateFile>
-# wrong constant name <Class:CreateLink>
-# wrong constant name <Class:Directory>
-# wrong constant name <Class:EmptyDirectory>
-# wrong constant name <Class:InjectIntoFile>
-# wrong constant name _cleanup_options_and_set
-# wrong constant name _shared_configuration
-# wrong constant name action
-# wrong constant name add_file
-# wrong constant name add_link
-# wrong constant name append_file
-# wrong constant name append_to_file
-# wrong constant name apply
-# wrong constant name behavior
-# wrong constant name behavior=
-# wrong constant name chmod
-# wrong constant name comment_lines
-# wrong constant name copy_file
-# wrong constant name create_file
-# wrong constant name create_link
-# wrong constant name destination_root
-# wrong constant name destination_root=
-# wrong constant name directory
-# wrong constant name empty_directory
-# wrong constant name find_in_source_paths
-# wrong constant name get
-# wrong constant name gsub_file
-# wrong constant name in_root
-# wrong constant name initialize
-# wrong constant name inject_into_class
-# wrong constant name inject_into_file
-# wrong constant name inject_into_module
-# wrong constant name insert_into_file
-# wrong constant name inside
-# wrong constant name link_file
-# wrong constant name prepend_file
-# wrong constant name prepend_to_file
-# wrong constant name relative_to_original_destination_root
-# wrong constant name remove_dir
-# wrong constant name remove_file
-# wrong constant name run
-# wrong constant name run_ruby_script
-# wrong constant name source_paths
-# wrong constant name template
-# wrong constant name thor
-# wrong constant name uncomment_lines
-# uninitialized constant Bundler::Thor::Actions::CapturableERB::Revision
-# wrong constant name <static-init>
-# wrong constant name add_runtime_options!
-# wrong constant name source_paths
-# wrong constant name source_paths_for_search
-# wrong constant name source_root
-# wrong constant name <static-init>
-# wrong constant name data
-# wrong constant name force_on_collision?
-# wrong constant name force_or_skip_or_conflict
-# wrong constant name identical?
-# wrong constant name initialize
-# wrong constant name on_conflict_behavior
-# wrong constant name render
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name execute!
-# wrong constant name file_level_lookup
-# wrong constant name files
-# wrong constant name initialize
-# wrong constant name source
-# wrong constant name <static-init>
-# wrong constant name base
-# wrong constant name config
-# wrong constant name convert_encoded_instructions
-# wrong constant name destination
-# wrong constant name destination=
-# wrong constant name exists?
-# wrong constant name given_destination
-# wrong constant name initialize
-# wrong constant name invoke!
-# wrong constant name invoke_with_conflict_check
-# wrong constant name on_conflict_behavior
-# wrong constant name on_file_clash_behavior
-# wrong constant name pretend?
-# wrong constant name relative_destination
-# wrong constant name revoke!
-# wrong constant name say_status
-# wrong constant name <static-init>
-# wrong constant name behavior
-# wrong constant name flag
-# wrong constant name initialize
-# wrong constant name replace!
-# wrong constant name replacement
-# wrong constant name say_status
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name included
-# wrong constant name <static-init>
-# wrong constant name banner
-# wrong constant name default
-# wrong constant name default_banner
-# wrong constant name description
-# wrong constant name enum
-# wrong constant name human_name
-# wrong constant name initialize
-# wrong constant name name
-# wrong constant name required
-# wrong constant name required?
-# wrong constant name show_default?
-# wrong constant name type
-# wrong constant name usage
-# wrong constant name valid_type?
-# wrong constant name validate!
-# wrong constant name <static-init>
-# wrong constant name initialize
-# wrong constant name parse
-# wrong constant name remaining
-# wrong constant name <static-init>
-# wrong constant name parse
-# wrong constant name split
-# wrong constant name <Class:ClassMethods>
-# wrong constant name args
-# wrong constant name args=
-# wrong constant name initialize
-# wrong constant name options
-# wrong constant name options=
-# wrong constant name parent_options
-# wrong constant name parent_options=
-# wrong constant name all_commands
-# wrong constant name all_tasks
-# wrong constant name allow_incompatible_default_type!
-# wrong constant name argument
-# wrong constant name arguments
-# wrong constant name attr_accessor
-# wrong constant name attr_reader
-# wrong constant name attr_writer
-# wrong constant name baseclass
-# wrong constant name basename
-# wrong constant name build_option
-# wrong constant name build_options
-# wrong constant name check_default_type
-# wrong constant name check_default_type!
-# wrong constant name check_unknown_options
-# wrong constant name check_unknown_options!
-# wrong constant name check_unknown_options?
-# wrong constant name class_option
-# wrong constant name class_options
-# wrong constant name class_options_help
-# wrong constant name commands
-# wrong constant name create_command
-# wrong constant name create_task
-# wrong constant name disable_required_check?
-# wrong constant name dispatch
-# wrong constant name exit_on_failure?
-# wrong constant name find_and_refresh_command
-# wrong constant name find_and_refresh_task
-# wrong constant name from_superclass
-# wrong constant name group
-# wrong constant name handle_argument_error
-# wrong constant name handle_no_command_error
-# wrong constant name handle_no_task_error
-# wrong constant name inherited
-# wrong constant name initialize_added
-# wrong constant name is_thor_reserved_word?
-# wrong constant name method_added
-# wrong constant name namespace
-# wrong constant name no_commands
-# wrong constant name no_commands?
-# wrong constant name no_commands_context
-# wrong constant name no_tasks
-# wrong constant name print_options
-# wrong constant name public_command
-# wrong constant name public_task
-# wrong constant name remove_argument
-# wrong constant name remove_class_option
-# wrong constant name remove_command
-# wrong constant name remove_task
-# wrong constant name start
-# wrong constant name stop_on_unknown_option?
-# wrong constant name strict_args_position
-# wrong constant name strict_args_position!
-# wrong constant name strict_args_position?
-# wrong constant name tasks
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name included
-# wrong constant name register_klass_file
-# wrong constant name shell
-# wrong constant name shell=
-# wrong constant name subclass_files
-# wrong constant name subclasses
-# wrong constant name formatted_usage
-# wrong constant name handle_argument_error?
-# wrong constant name handle_no_method_error?
-# wrong constant name hidden?
-# wrong constant name initialize
-# wrong constant name local_method?
-# wrong constant name not_debugging?
-# wrong constant name private_method?
-# wrong constant name public_method?
-# wrong constant name required_arguments_for
-# wrong constant name required_options
-# wrong constant name run
-# wrong constant name sans_backtrace
-# wrong constant name <static-init>
-# wrong constant name <Class:HashWithIndifferentAccess>
-# uninitialized constant Bundler::Thor::CoreExt::HashWithIndifferentAccess::Elem
-# uninitialized constant Bundler::Thor::CoreExt::HashWithIndifferentAccess::K
-# uninitialized constant Bundler::Thor::CoreExt::HashWithIndifferentAccess::V
-# wrong constant name []
-# wrong constant name []=
-# wrong constant name convert_key
-# wrong constant name delete
-# wrong constant name fetch
-# wrong constant name initialize
-# wrong constant name key?
-# wrong constant name merge
-# wrong constant name merge!
-# wrong constant name method_missing
-# wrong constant name replace
-# wrong constant name reverse_merge
-# wrong constant name reverse_merge!
-# wrong constant name values_at
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# uninitialized constant Bundler::Thor::DynamicCommand::FILE_REGEXP
-# wrong constant name initialize
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# uninitialized constant Bundler::Thor::Group::SHELL_DELEGATED_METHODS
-# Did you mean?  Bundler::Thor::SHELL_DELEGATED_METHODS
-# wrong constant name _invoke_for_class_method
-# wrong constant name <static-init>
-# wrong constant name banner
-# wrong constant name desc
-# wrong constant name get_options_from_invocations
-# wrong constant name handle_argument_error
-# wrong constant name help
-# wrong constant name invocation_blocks
-# wrong constant name invocations
-# wrong constant name invoke
-# wrong constant name invoke_from_option
-# wrong constant name printable_commands
-# wrong constant name printable_tasks
-# wrong constant name remove_invocation
-# wrong constant name self_command
-# wrong constant name self_task
-# uninitialized constant Bundler::Thor::HiddenCommand::FILE_REGEXP
-# wrong constant name <static-init>
-# wrong constant name <Class:ClassMethods>
-# wrong constant name _parse_initialization_options
-# wrong constant name _retrieve_class_and_command
-# wrong constant name _retrieve_class_and_task
-# wrong constant name _shared_configuration
-# wrong constant name current_command_chain
-# wrong constant name initialize
-# wrong constant name invoke
-# wrong constant name invoke_all
-# wrong constant name invoke_command
-# wrong constant name invoke_task
-# wrong constant name invoke_with_padding
-# wrong constant name prepare_for_invocation
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name included
-# wrong constant name <static-init>
-# wrong constant name <Class:Basic>
-# wrong constant name <Class:Readline>
-# wrong constant name initialize
-# wrong constant name options
-# wrong constant name prompt
-# wrong constant name readline
-# wrong constant name <static-init>
-# wrong constant name available?
-# wrong constant name <Class:PathCompletion>
-# wrong constant name initialize
-# wrong constant name matches
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name best_available
-# wrong constant name readline
-# wrong constant name <static-init>
-# wrong constant name enter
-# wrong constant name entered?
-# wrong constant name <static-init>
-# wrong constant name initialize
-# wrong constant name <static-init>
-# wrong constant name aliases
-# wrong constant name array?
-# wrong constant name boolean?
-# wrong constant name dasherize
-# wrong constant name dasherized?
-# wrong constant name group
-# wrong constant name hash?
-# wrong constant name hide
-# wrong constant name lazy_default
-# wrong constant name numeric?
-# wrong constant name repeatable
-# wrong constant name string?
-# wrong constant name switch_name
-# wrong constant name undasherize
-# wrong constant name usage
-# wrong constant name validate_default_type!
-# wrong constant name <static-init>
-# wrong constant name parse
-# uninitialized constant Bundler::Thor::Options::NUMERIC
-# Did you mean?  Numeric
-# wrong constant name assign_result!
-# wrong constant name check_unknown!
-# wrong constant name current_is_switch?
-# wrong constant name current_is_switch_formatted?
-# wrong constant name initialize
-# wrong constant name normalize_switch
-# wrong constant name parse_boolean
-# wrong constant name parse_peek
-# wrong constant name parsing_options?
-# wrong constant name switch?
-# wrong constant name switch_option
-# wrong constant name <static-init>
-# wrong constant name to_switches
-# uninitialized constant Bundler::Thor::RakeCompat::DEFAULT
-# uninitialized constant Bundler::Thor::RakeCompat::LN_SUPPORTED
-# uninitialized constant Bundler::Thor::RakeCompat::LOW_METHODS
-# Did you mean?  Bundler::Thor::RakeCompat::LowMethods
-# uninitialized constant Bundler::Thor::RakeCompat::METHODS
-# Did you mean?  Method
-# uninitialized constant Bundler::Thor::RakeCompat::OPT_TABLE
-# uninitialized constant Bundler::Thor::RakeCompat::RUBY
-# uninitialized constant Bundler::Thor::RakeCompat::VERSION
-# Did you mean?  Bundler::VERSION
-# wrong constant name <static-init>
-# wrong constant name included
-# wrong constant name rake_classes
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <Class:Basic>
-# wrong constant name <Class:Color>
-# wrong constant name <Class:HTML>
-# wrong constant name _shared_configuration
-# wrong constant name ask
-# wrong constant name error
-# wrong constant name file_collision
-# wrong constant name initialize
-# wrong constant name no?
-# wrong constant name print_in_columns
-# wrong constant name print_table
-# wrong constant name print_wrapped
-# wrong constant name say
-# wrong constant name say_status
-# wrong constant name set_color
-# wrong constant name shell
-# wrong constant name shell=
-# wrong constant name terminal_width
-# wrong constant name with_padding
-# wrong constant name yes?
-# wrong constant name answer_match
-# wrong constant name as_unicode
-# wrong constant name ask
-# wrong constant name ask_filtered
-# wrong constant name ask_simply
-# wrong constant name base
-# wrong constant name base=
-# wrong constant name can_display_colors?
-# wrong constant name dynamic_width
-# wrong constant name dynamic_width_stty
-# wrong constant name dynamic_width_tput
-# wrong constant name error
-# wrong constant name file_collision
-# wrong constant name file_collision_help
-# wrong constant name git_merge_tool
-# wrong constant name indent
-# wrong constant name is?
-# wrong constant name lookup_color
-# wrong constant name merge
-# wrong constant name merge_tool
-# wrong constant name mute
-# wrong constant name mute?
-# wrong constant name no?
-# wrong constant name padding
-# wrong constant name padding=
-# wrong constant name prepare_message
-# wrong constant name print_in_columns
-# wrong constant name print_table
-# wrong constant name print_wrapped
-# wrong constant name quiet?
-# wrong constant name say
-# wrong constant name say_status
-# wrong constant name set_color
-# wrong constant name show_diff
-# wrong constant name stderr
-# wrong constant name stdout
-# wrong constant name terminal_width
-# wrong constant name truncate
-# wrong constant name unix?
-# wrong constant name yes?
-# wrong constant name <static-init>
-# uninitialized constant Bundler::Thor::Shell::Color::DEFAULT_TERMINAL_WIDTH
-# wrong constant name are_colors_disabled?
-# wrong constant name diff_lcs_loaded?
-# wrong constant name output_diff_line
-# wrong constant name set_color
-# wrong constant name <static-init>
-# uninitialized constant Bundler::Thor::Shell::HTML::DEFAULT_TERMINAL_WIDTH
-# wrong constant name ask
-# wrong constant name diff_lcs_loaded?
-# wrong constant name output_diff_line
-# wrong constant name set_color
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <Class:SpellChecker>
-# wrong constant name all_commands
-# wrong constant name command
-# wrong constant name initialize
-# wrong constant name corrections
-# wrong constant name error
-# wrong constant name initialize
-# wrong constant name spell_checker
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <Class:SpellChecker>
-# wrong constant name initialize
-# wrong constant name switches
-# wrong constant name unknown
-# wrong constant name corrections
-# wrong constant name error
-# wrong constant name initialize
-# wrong constant name spell_checker
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name camel_case
-# wrong constant name escape_globs
-# wrong constant name escape_html
-# wrong constant name find_by_namespace
-# wrong constant name find_class_and_command_by_namespace
-# wrong constant name find_class_and_task_by_namespace
-# wrong constant name globs_for
-# wrong constant name load_thorfile
-# wrong constant name namespace_from_thor_class
-# wrong constant name namespaces_in_content
-# wrong constant name ruby_command
-# wrong constant name snake_case
-# wrong constant name thor_classes_in
-# wrong constant name thor_root
-# wrong constant name thor_root_glob
-# wrong constant name user_home
-# wrong constant name <static-init>
-# wrong constant name banner
-# wrong constant name check_unknown_options!
-# wrong constant name command_help
-# wrong constant name default_command
-# wrong constant name default_task
-# wrong constant name deprecation_warning
-# wrong constant name desc
-# wrong constant name disable_required_check
-# wrong constant name disable_required_check!
-# wrong constant name disable_required_check?
-# wrong constant name dispatch
-# wrong constant name dynamic_command_class
-# wrong constant name find_command_possibilities
-# wrong constant name find_task_possibilities
-# wrong constant name help
-# wrong constant name long_desc
-# wrong constant name map
-# wrong constant name method_option
-# wrong constant name method_options
-# wrong constant name normalize_command_name
-# wrong constant name normalize_task_name
-# wrong constant name option
-# wrong constant name options
-# wrong constant name package_name
-# wrong constant name printable_commands
-# wrong constant name printable_tasks
-# wrong constant name register
-# wrong constant name retrieve_command_name
-# wrong constant name retrieve_task_name
-# wrong constant name stop_on_unknown_option
-# wrong constant name stop_on_unknown_option!
-# wrong constant name stop_on_unknown_option?
-# wrong constant name subcommand
-# wrong constant name subcommand_classes
-# wrong constant name subcommand_help
-# wrong constant name subcommands
-# wrong constant name subtask
-# wrong constant name subtask_help
-# wrong constant name subtasks
-# wrong constant name task_help
 # wrong constant name add_color
 # wrong constant name ask
 # wrong constant name confirm
@@ -867,665 +310,6 @@
 # wrong constant name warn
 # wrong constant name yes?
 # wrong constant name <static-init>
-# wrong constant name <Class:BadURIError>
-# wrong constant name <Class:Error>
-# wrong constant name <Class:Escape>
-# wrong constant name <Class:FTP>
-# wrong constant name <Class:File>
-# wrong constant name <Class:Generic>
-# wrong constant name <Class:HTTP>
-# wrong constant name <Class:HTTPS>
-# wrong constant name <Class:InvalidComponentError>
-# wrong constant name <Class:InvalidURIError>
-# wrong constant name <Class:LDAP>
-# wrong constant name <Class:LDAPS>
-# wrong constant name <Class:MailTo>
-# wrong constant name <Class:RFC2396_Parser>
-# wrong constant name <Class:RFC2396_REGEXP>
-# wrong constant name <Class:RFC3986_Parser>
-# wrong constant name <Class:Util>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name decode
-# wrong constant name encode
-# wrong constant name escape
-# wrong constant name unescape
-# wrong constant name <static-init>
-# uninitialized constant Bundler::URI::FTP::ABS_PATH
-# Did you mean?  Bundler::URI::ABS_PATH
-# uninitialized constant Bundler::URI::FTP::ABS_URI
-# Did you mean?  Bundler::URI::ABS_URI
-# uninitialized constant Bundler::URI::FTP::ABS_URI_REF
-# Did you mean?  Bundler::URI::ABS_URI_REF
-# uninitialized constant Bundler::URI::FTP::DEFAULT_PARSER
-# Did you mean?  Bundler::URI::FTP::DEFAULT_PORT
-#                Bundler::URI::DEFAULT_PARSER
-# uninitialized constant Bundler::URI::FTP::ESCAPED
-# Did you mean?  Bundler::URI::FTP::Escape
-#                Bundler::URI::Escape
-#                Bundler::URI::ESCAPED
-# uninitialized constant Bundler::URI::FTP::FRAGMENT
-# Did you mean?  Bundler::URI::FRAGMENT
-# uninitialized constant Bundler::URI::FTP::HOST
-# Did you mean?  Bundler::URI::HOST
-# uninitialized constant Bundler::URI::FTP::OPAQUE
-# Did you mean?  Bundler::URI::OPAQUE
-# uninitialized constant Bundler::URI::FTP::PORT
-# Did you mean?  Bundler::URI::PORT
-# uninitialized constant Bundler::URI::FTP::QUERY
-# Did you mean?  Bundler::URI::QUERY
-# uninitialized constant Bundler::URI::FTP::REGISTRY
-# Did you mean?  Bundler::URI::REGISTRY
-# uninitialized constant Bundler::URI::FTP::REL_PATH
-# Did you mean?  Bundler::URI::REL_PATH
-# uninitialized constant Bundler::URI::FTP::REL_URI
-# Did you mean?  Bundler::URI::REL_URI
-# uninitialized constant Bundler::URI::FTP::REL_URI_REF
-# Did you mean?  Bundler::URI::REL_URI_REF
-# uninitialized constant Bundler::URI::FTP::RFC3986_PARSER
-# Did you mean?  Bundler::URI::FTP::RFC3986_Parser
-#                Bundler::URI::RFC3986_Parser
-#                Bundler::URI::RFC2396_Parser
-#                Bundler::URI::FTP::RFC2396_Parser
-#                Bundler::URI::RFC3986_PARSER
-# uninitialized constant Bundler::URI::FTP::SCHEME
-# Did you mean?  Bundler::URI::SCHEME
-# uninitialized constant Bundler::URI::FTP::TBLDECWWWCOMP_
-# Did you mean?  Bundler::URI::FTP::TBLENCWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::FTP::TBLENCWWWCOMP_
-# Did you mean?  Bundler::URI::FTP::TBLDECWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::FTP::UNSAFE
-# Did you mean?  Bundler::URI::UNSAFE
-# uninitialized constant Bundler::URI::FTP::URI_REF
-# Did you mean?  Bundler::URI::URI_REF
-# uninitialized constant Bundler::URI::FTP::USERINFO
-# Did you mean?  Bundler::URI::USERINFO
-# uninitialized constant Bundler::URI::FTP::USE_REGISTRY
-# uninitialized constant Bundler::URI::FTP::VERSION
-# Did you mean?  Bundler::URI::VERSION
-#                Bundler::VERSION
-# uninitialized constant Bundler::URI::FTP::VERSION_CODE
-# Did you mean?  Bundler::URI::VERSION_CODE
-# uninitialized constant Bundler::URI::FTP::WEB_ENCODINGS_
-# Did you mean?  Bundler::URI::WEB_ENCODINGS_
-# wrong constant name set_typecode
-# wrong constant name typecode
-# wrong constant name typecode=
-# wrong constant name <static-init>
-# wrong constant name new2
-# uninitialized constant Bundler::URI::File::ABS_PATH
-# Did you mean?  Bundler::URI::ABS_PATH
-# uninitialized constant Bundler::URI::File::ABS_URI
-# Did you mean?  Bundler::URI::ABS_URI
-# uninitialized constant Bundler::URI::File::ABS_URI_REF
-# Did you mean?  Bundler::URI::ABS_URI_REF
-# uninitialized constant Bundler::URI::File::DEFAULT_PARSER
-# Did you mean?  Bundler::URI::File::DEFAULT_PORT
-#                Bundler::URI::DEFAULT_PARSER
-# uninitialized constant Bundler::URI::File::ESCAPED
-# Did you mean?  Bundler::URI::File::Escape
-#                Bundler::URI::Escape
-#                Bundler::URI::ESCAPED
-# uninitialized constant Bundler::URI::File::FRAGMENT
-# Did you mean?  Bundler::URI::FRAGMENT
-# uninitialized constant Bundler::URI::File::HOST
-# Did you mean?  Bundler::URI::HOST
-# uninitialized constant Bundler::URI::File::OPAQUE
-# Did you mean?  Bundler::URI::OPAQUE
-# uninitialized constant Bundler::URI::File::PORT
-# Did you mean?  Bundler::URI::PORT
-# uninitialized constant Bundler::URI::File::QUERY
-# Did you mean?  Bundler::URI::QUERY
-# uninitialized constant Bundler::URI::File::REGISTRY
-# Did you mean?  Bundler::URI::REGISTRY
-# uninitialized constant Bundler::URI::File::REL_PATH
-# Did you mean?  Bundler::URI::REL_PATH
-# uninitialized constant Bundler::URI::File::REL_URI
-# Did you mean?  Bundler::URI::REL_URI
-# uninitialized constant Bundler::URI::File::REL_URI_REF
-# Did you mean?  Bundler::URI::REL_URI_REF
-# uninitialized constant Bundler::URI::File::RFC3986_PARSER
-# Did you mean?  Bundler::URI::File::RFC3986_Parser
-#                Bundler::URI::RFC3986_Parser
-#                Bundler::URI::RFC2396_Parser
-#                Bundler::URI::File::RFC2396_Parser
-#                Bundler::URI::RFC3986_PARSER
-# uninitialized constant Bundler::URI::File::SCHEME
-# Did you mean?  Bundler::URI::SCHEME
-# uninitialized constant Bundler::URI::File::TBLDECWWWCOMP_
-# Did you mean?  Bundler::URI::File::TBLENCWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::File::TBLENCWWWCOMP_
-# Did you mean?  Bundler::URI::File::TBLDECWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::File::UNSAFE
-# Did you mean?  Bundler::URI::UNSAFE
-# uninitialized constant Bundler::URI::File::URI_REF
-# Did you mean?  Bundler::URI::URI_REF
-# uninitialized constant Bundler::URI::File::USERINFO
-# Did you mean?  Bundler::URI::USERINFO
-# uninitialized constant Bundler::URI::File::USE_REGISTRY
-# uninitialized constant Bundler::URI::File::VERSION
-# Did you mean?  Bundler::URI::VERSION
-#                Bundler::VERSION
-# uninitialized constant Bundler::URI::File::VERSION_CODE
-# Did you mean?  Bundler::URI::VERSION_CODE
-# uninitialized constant Bundler::URI::File::WEB_ENCODINGS_
-# Did you mean?  Bundler::URI::WEB_ENCODINGS_
-# wrong constant name check_password
-# wrong constant name check_user
-# wrong constant name check_userinfo
-# wrong constant name set_userinfo
-# wrong constant name <static-init>
-# wrong constant name +
-# wrong constant name -
-# wrong constant name ==
-# uninitialized constant Bundler::URI::Generic::ABS_PATH
-# Did you mean?  Bundler::URI::ABS_PATH
-# uninitialized constant Bundler::URI::Generic::ABS_URI
-# Did you mean?  Bundler::URI::ABS_URI
-# uninitialized constant Bundler::URI::Generic::ABS_URI_REF
-# Did you mean?  Bundler::URI::ABS_URI_REF
-# uninitialized constant Bundler::URI::Generic::DEFAULT_PARSER
-# Did you mean?  Bundler::URI::Generic::DEFAULT_PORT
-#                Bundler::URI::DEFAULT_PARSER
-# uninitialized constant Bundler::URI::Generic::ESCAPED
-# Did you mean?  Bundler::URI::Generic::Escape
-#                Bundler::URI::Escape
-#                Bundler::URI::ESCAPED
-# uninitialized constant Bundler::URI::Generic::FRAGMENT
-# Did you mean?  Bundler::URI::FRAGMENT
-# uninitialized constant Bundler::URI::Generic::HOST
-# Did you mean?  Bundler::URI::HOST
-# uninitialized constant Bundler::URI::Generic::OPAQUE
-# Did you mean?  Bundler::URI::OPAQUE
-# uninitialized constant Bundler::URI::Generic::PORT
-# Did you mean?  Bundler::URI::PORT
-# uninitialized constant Bundler::URI::Generic::QUERY
-# Did you mean?  Bundler::URI::QUERY
-# uninitialized constant Bundler::URI::Generic::REGISTRY
-# Did you mean?  Bundler::URI::REGISTRY
-# uninitialized constant Bundler::URI::Generic::REL_PATH
-# Did you mean?  Bundler::URI::REL_PATH
-# uninitialized constant Bundler::URI::Generic::REL_URI
-# Did you mean?  Bundler::URI::REL_URI
-# uninitialized constant Bundler::URI::Generic::REL_URI_REF
-# Did you mean?  Bundler::URI::REL_URI_REF
-# uninitialized constant Bundler::URI::Generic::RFC3986_PARSER
-# Did you mean?  Bundler::URI::Generic::RFC3986_Parser
-#                Bundler::URI::RFC3986_Parser
-#                Bundler::URI::RFC2396_Parser
-#                Bundler::URI::Generic::RFC2396_Parser
-#                Bundler::URI::RFC3986_PARSER
-# uninitialized constant Bundler::URI::Generic::SCHEME
-# Did you mean?  Bundler::URI::SCHEME
-# uninitialized constant Bundler::URI::Generic::TBLDECWWWCOMP_
-# Did you mean?  Bundler::URI::Generic::TBLENCWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::Generic::TBLENCWWWCOMP_
-# Did you mean?  Bundler::URI::Generic::TBLDECWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::Generic::UNSAFE
-# Did you mean?  Bundler::URI::UNSAFE
-# uninitialized constant Bundler::URI::Generic::URI_REF
-# Did you mean?  Bundler::URI::URI_REF
-# uninitialized constant Bundler::URI::Generic::USERINFO
-# Did you mean?  Bundler::URI::USERINFO
-# uninitialized constant Bundler::URI::Generic::VERSION
-# Did you mean?  Bundler::URI::VERSION
-#                Bundler::VERSION
-# uninitialized constant Bundler::URI::Generic::VERSION_CODE
-# Did you mean?  Bundler::URI::VERSION_CODE
-# uninitialized constant Bundler::URI::Generic::WEB_ENCODINGS_
-# Did you mean?  Bundler::URI::WEB_ENCODINGS_
-# wrong constant name absolute
-# wrong constant name absolute?
-# wrong constant name coerce
-# wrong constant name component
-# wrong constant name component_ary
-# wrong constant name default_port
-# wrong constant name eql?
-# wrong constant name find_proxy
-# wrong constant name fragment
-# wrong constant name fragment=
-# wrong constant name hierarchical?
-# wrong constant name host
-# wrong constant name host=
-# wrong constant name hostname
-# wrong constant name hostname=
-# wrong constant name initialize
-# wrong constant name merge
-# wrong constant name merge!
-# wrong constant name normalize
-# wrong constant name normalize!
-# wrong constant name opaque
-# wrong constant name opaque=
-# wrong constant name parser
-# wrong constant name password
-# wrong constant name password=
-# wrong constant name path
-# wrong constant name path=
-# wrong constant name port
-# wrong constant name port=
-# wrong constant name query
-# wrong constant name query=
-# wrong constant name registry
-# wrong constant name registry=
-# wrong constant name relative?
-# wrong constant name route_from
-# wrong constant name route_to
-# wrong constant name scheme
-# wrong constant name scheme=
-# wrong constant name select
-# wrong constant name set_host
-# wrong constant name set_opaque
-# wrong constant name set_password
-# wrong constant name set_path
-# wrong constant name set_port
-# wrong constant name set_registry
-# wrong constant name set_scheme
-# wrong constant name set_user
-# wrong constant name set_userinfo
-# wrong constant name user
-# wrong constant name user=
-# wrong constant name userinfo
-# wrong constant name userinfo=
-# wrong constant name <static-init>
-# wrong constant name build
-# wrong constant name build2
-# wrong constant name component
-# wrong constant name default_port
-# wrong constant name use_proxy?
-# wrong constant name use_registry
-# uninitialized constant Bundler::URI::HTTP::ABS_PATH
-# Did you mean?  Bundler::URI::ABS_PATH
-# uninitialized constant Bundler::URI::HTTP::ABS_URI
-# Did you mean?  Bundler::URI::ABS_URI
-# uninitialized constant Bundler::URI::HTTP::ABS_URI_REF
-# Did you mean?  Bundler::URI::ABS_URI_REF
-# uninitialized constant Bundler::URI::HTTP::DEFAULT_PARSER
-# Did you mean?  Bundler::URI::HTTP::DEFAULT_PORT
-#                Bundler::URI::DEFAULT_PARSER
-# uninitialized constant Bundler::URI::HTTP::ESCAPED
-# Did you mean?  Bundler::URI::HTTP::Escape
-#                Bundler::URI::Escape
-#                Bundler::URI::ESCAPED
-# uninitialized constant Bundler::URI::HTTP::FRAGMENT
-# Did you mean?  Bundler::URI::FRAGMENT
-# uninitialized constant Bundler::URI::HTTP::HOST
-# Did you mean?  Bundler::URI::HOST
-# uninitialized constant Bundler::URI::HTTP::OPAQUE
-# Did you mean?  Bundler::URI::OPAQUE
-# uninitialized constant Bundler::URI::HTTP::PORT
-# Did you mean?  Bundler::URI::PORT
-# uninitialized constant Bundler::URI::HTTP::QUERY
-# Did you mean?  Bundler::URI::QUERY
-# uninitialized constant Bundler::URI::HTTP::REGISTRY
-# Did you mean?  Bundler::URI::REGISTRY
-# uninitialized constant Bundler::URI::HTTP::REL_PATH
-# Did you mean?  Bundler::URI::REL_PATH
-# uninitialized constant Bundler::URI::HTTP::REL_URI
-# Did you mean?  Bundler::URI::REL_URI
-# uninitialized constant Bundler::URI::HTTP::REL_URI_REF
-# Did you mean?  Bundler::URI::REL_URI_REF
-# uninitialized constant Bundler::URI::HTTP::RFC3986_PARSER
-# Did you mean?  Bundler::URI::HTTP::RFC3986_Parser
-#                Bundler::URI::RFC3986_Parser
-#                Bundler::URI::RFC2396_Parser
-#                Bundler::URI::HTTP::RFC2396_Parser
-#                Bundler::URI::RFC3986_PARSER
-# uninitialized constant Bundler::URI::HTTP::SCHEME
-# Did you mean?  Bundler::URI::SCHEME
-# uninitialized constant Bundler::URI::HTTP::TBLDECWWWCOMP_
-# Did you mean?  Bundler::URI::HTTP::TBLENCWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::HTTP::TBLENCWWWCOMP_
-# Did you mean?  Bundler::URI::HTTP::TBLDECWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::HTTP::UNSAFE
-# Did you mean?  Bundler::URI::UNSAFE
-# uninitialized constant Bundler::URI::HTTP::URI_REF
-# Did you mean?  Bundler::URI::URI_REF
-# uninitialized constant Bundler::URI::HTTP::USERINFO
-# Did you mean?  Bundler::URI::USERINFO
-# uninitialized constant Bundler::URI::HTTP::USE_REGISTRY
-# uninitialized constant Bundler::URI::HTTP::VERSION
-# Did you mean?  Bundler::URI::VERSION
-#                Bundler::VERSION
-# uninitialized constant Bundler::URI::HTTP::VERSION_CODE
-# Did you mean?  Bundler::URI::VERSION_CODE
-# uninitialized constant Bundler::URI::HTTP::WEB_ENCODINGS_
-# Did you mean?  Bundler::URI::WEB_ENCODINGS_
-# wrong constant name request_uri
-# wrong constant name <static-init>
-# uninitialized constant Bundler::URI::HTTPS::ABS_PATH
-# Did you mean?  Bundler::URI::ABS_PATH
-# uninitialized constant Bundler::URI::HTTPS::ABS_URI
-# Did you mean?  Bundler::URI::ABS_URI
-# uninitialized constant Bundler::URI::HTTPS::ABS_URI_REF
-# Did you mean?  Bundler::URI::ABS_URI_REF
-# uninitialized constant Bundler::URI::HTTPS::COMPONENT
-# uninitialized constant Bundler::URI::HTTPS::DEFAULT_PARSER
-# Did you mean?  Bundler::URI::HTTPS::DEFAULT_PORT
-#                Bundler::URI::DEFAULT_PARSER
-# uninitialized constant Bundler::URI::HTTPS::ESCAPED
-# Did you mean?  Bundler::URI::HTTPS::Escape
-#                Bundler::URI::Escape
-#                Bundler::URI::ESCAPED
-# uninitialized constant Bundler::URI::HTTPS::FRAGMENT
-# Did you mean?  Bundler::URI::FRAGMENT
-# uninitialized constant Bundler::URI::HTTPS::HOST
-# Did you mean?  Bundler::URI::HOST
-# uninitialized constant Bundler::URI::HTTPS::OPAQUE
-# Did you mean?  Bundler::URI::OPAQUE
-# uninitialized constant Bundler::URI::HTTPS::PORT
-# Did you mean?  Bundler::URI::PORT
-# uninitialized constant Bundler::URI::HTTPS::QUERY
-# Did you mean?  Bundler::URI::QUERY
-# uninitialized constant Bundler::URI::HTTPS::REGISTRY
-# Did you mean?  Bundler::URI::REGISTRY
-# uninitialized constant Bundler::URI::HTTPS::REL_PATH
-# Did you mean?  Bundler::URI::REL_PATH
-# uninitialized constant Bundler::URI::HTTPS::REL_URI
-# Did you mean?  Bundler::URI::REL_URI
-# uninitialized constant Bundler::URI::HTTPS::REL_URI_REF
-# Did you mean?  Bundler::URI::REL_URI_REF
-# uninitialized constant Bundler::URI::HTTPS::RFC3986_PARSER
-# Did you mean?  Bundler::URI::HTTPS::RFC3986_Parser
-#                Bundler::URI::RFC3986_Parser
-#                Bundler::URI::RFC2396_Parser
-#                Bundler::URI::HTTPS::RFC2396_Parser
-#                Bundler::URI::RFC3986_PARSER
-# uninitialized constant Bundler::URI::HTTPS::SCHEME
-# Did you mean?  Bundler::URI::SCHEME
-# uninitialized constant Bundler::URI::HTTPS::TBLDECWWWCOMP_
-# Did you mean?  Bundler::URI::HTTPS::TBLENCWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::HTTPS::TBLENCWWWCOMP_
-# Did you mean?  Bundler::URI::HTTPS::TBLDECWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::HTTPS::UNSAFE
-# Did you mean?  Bundler::URI::UNSAFE
-# uninitialized constant Bundler::URI::HTTPS::URI_REF
-# Did you mean?  Bundler::URI::URI_REF
-# uninitialized constant Bundler::URI::HTTPS::USERINFO
-# Did you mean?  Bundler::URI::USERINFO
-# uninitialized constant Bundler::URI::HTTPS::USE_REGISTRY
-# uninitialized constant Bundler::URI::HTTPS::VERSION
-# Did you mean?  Bundler::URI::VERSION
-#                Bundler::VERSION
-# uninitialized constant Bundler::URI::HTTPS::VERSION_CODE
-# Did you mean?  Bundler::URI::VERSION_CODE
-# uninitialized constant Bundler::URI::HTTPS::WEB_ENCODINGS_
-# Did you mean?  Bundler::URI::WEB_ENCODINGS_
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# uninitialized constant Bundler::URI::LDAP::ABS_PATH
-# Did you mean?  Bundler::URI::ABS_PATH
-# uninitialized constant Bundler::URI::LDAP::ABS_URI
-# Did you mean?  Bundler::URI::ABS_URI
-# uninitialized constant Bundler::URI::LDAP::ABS_URI_REF
-# Did you mean?  Bundler::URI::ABS_URI_REF
-# uninitialized constant Bundler::URI::LDAP::DEFAULT_PARSER
-# Did you mean?  Bundler::URI::LDAP::DEFAULT_PORT
-#                Bundler::URI::DEFAULT_PARSER
-# uninitialized constant Bundler::URI::LDAP::ESCAPED
-# Did you mean?  Bundler::URI::LDAP::Escape
-#                Bundler::URI::Escape
-#                Bundler::URI::ESCAPED
-# uninitialized constant Bundler::URI::LDAP::FRAGMENT
-# Did you mean?  Bundler::URI::FRAGMENT
-# uninitialized constant Bundler::URI::LDAP::HOST
-# Did you mean?  Bundler::URI::HOST
-# uninitialized constant Bundler::URI::LDAP::OPAQUE
-# Did you mean?  Bundler::URI::OPAQUE
-# uninitialized constant Bundler::URI::LDAP::PORT
-# Did you mean?  Bundler::URI::PORT
-# uninitialized constant Bundler::URI::LDAP::QUERY
-# Did you mean?  Bundler::URI::QUERY
-# uninitialized constant Bundler::URI::LDAP::REGISTRY
-# Did you mean?  Bundler::URI::REGISTRY
-# uninitialized constant Bundler::URI::LDAP::REL_PATH
-# Did you mean?  Bundler::URI::REL_PATH
-# uninitialized constant Bundler::URI::LDAP::REL_URI
-# Did you mean?  Bundler::URI::REL_URI
-# uninitialized constant Bundler::URI::LDAP::REL_URI_REF
-# Did you mean?  Bundler::URI::REL_URI_REF
-# uninitialized constant Bundler::URI::LDAP::RFC3986_PARSER
-# Did you mean?  Bundler::URI::LDAP::RFC3986_Parser
-#                Bundler::URI::RFC3986_Parser
-#                Bundler::URI::RFC2396_Parser
-#                Bundler::URI::LDAP::RFC2396_Parser
-#                Bundler::URI::RFC3986_PARSER
-# uninitialized constant Bundler::URI::LDAP::SCHEME
-# Did you mean?  Bundler::URI::SCHEME
-# uninitialized constant Bundler::URI::LDAP::TBLDECWWWCOMP_
-# Did you mean?  Bundler::URI::LDAP::TBLENCWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::LDAP::TBLENCWWWCOMP_
-# Did you mean?  Bundler::URI::LDAP::TBLDECWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::LDAP::UNSAFE
-# Did you mean?  Bundler::URI::UNSAFE
-# uninitialized constant Bundler::URI::LDAP::URI_REF
-# Did you mean?  Bundler::URI::URI_REF
-# uninitialized constant Bundler::URI::LDAP::USERINFO
-# Did you mean?  Bundler::URI::USERINFO
-# uninitialized constant Bundler::URI::LDAP::USE_REGISTRY
-# uninitialized constant Bundler::URI::LDAP::VERSION
-# Did you mean?  Bundler::URI::VERSION
-#                Bundler::VERSION
-# uninitialized constant Bundler::URI::LDAP::VERSION_CODE
-# Did you mean?  Bundler::URI::VERSION_CODE
-# uninitialized constant Bundler::URI::LDAP::WEB_ENCODINGS_
-# Did you mean?  Bundler::URI::WEB_ENCODINGS_
-# wrong constant name attributes
-# wrong constant name attributes=
-# wrong constant name dn
-# wrong constant name dn=
-# wrong constant name extensions
-# wrong constant name extensions=
-# wrong constant name filter
-# wrong constant name filter=
-# wrong constant name initialize
-# wrong constant name scope
-# wrong constant name scope=
-# wrong constant name set_attributes
-# wrong constant name set_dn
-# wrong constant name set_extensions
-# wrong constant name set_filter
-# wrong constant name set_scope
-# wrong constant name <static-init>
-# uninitialized constant Bundler::URI::LDAPS::ABS_PATH
-# Did you mean?  Bundler::URI::ABS_PATH
-# uninitialized constant Bundler::URI::LDAPS::ABS_URI
-# Did you mean?  Bundler::URI::ABS_URI
-# uninitialized constant Bundler::URI::LDAPS::ABS_URI_REF
-# Did you mean?  Bundler::URI::ABS_URI_REF
-# uninitialized constant Bundler::URI::LDAPS::COMPONENT
-# uninitialized constant Bundler::URI::LDAPS::DEFAULT_PARSER
-# Did you mean?  Bundler::URI::LDAPS::DEFAULT_PORT
-#                Bundler::URI::DEFAULT_PARSER
-# uninitialized constant Bundler::URI::LDAPS::ESCAPED
-# Did you mean?  Bundler::URI::LDAPS::Escape
-#                Bundler::URI::Escape
-#                Bundler::URI::ESCAPED
-# uninitialized constant Bundler::URI::LDAPS::FRAGMENT
-# Did you mean?  Bundler::URI::FRAGMENT
-# uninitialized constant Bundler::URI::LDAPS::HOST
-# Did you mean?  Bundler::URI::HOST
-# uninitialized constant Bundler::URI::LDAPS::OPAQUE
-# Did you mean?  Bundler::URI::OPAQUE
-# uninitialized constant Bundler::URI::LDAPS::PORT
-# Did you mean?  Bundler::URI::PORT
-# uninitialized constant Bundler::URI::LDAPS::QUERY
-# Did you mean?  Bundler::URI::QUERY
-# uninitialized constant Bundler::URI::LDAPS::REGISTRY
-# Did you mean?  Bundler::URI::REGISTRY
-# uninitialized constant Bundler::URI::LDAPS::REL_PATH
-# Did you mean?  Bundler::URI::REL_PATH
-# uninitialized constant Bundler::URI::LDAPS::REL_URI
-# Did you mean?  Bundler::URI::REL_URI
-# uninitialized constant Bundler::URI::LDAPS::REL_URI_REF
-# Did you mean?  Bundler::URI::REL_URI_REF
-# uninitialized constant Bundler::URI::LDAPS::RFC3986_PARSER
-# Did you mean?  Bundler::URI::LDAPS::RFC3986_Parser
-#                Bundler::URI::RFC3986_Parser
-#                Bundler::URI::RFC2396_Parser
-#                Bundler::URI::LDAPS::RFC2396_Parser
-#                Bundler::URI::RFC3986_PARSER
-# uninitialized constant Bundler::URI::LDAPS::SCHEME
-# Did you mean?  Bundler::URI::SCHEME
-# uninitialized constant Bundler::URI::LDAPS::SCOPE
-# uninitialized constant Bundler::URI::LDAPS::SCOPE_BASE
-# Did you mean?  Bundler::URI::LDAPS::SCOPE_ONE
-# uninitialized constant Bundler::URI::LDAPS::SCOPE_ONE
-# Did you mean?  Bundler::URI::LDAPS::SCOPE_SUB
-#                Bundler::URI::LDAPS::SCOPE_BASE
-# uninitialized constant Bundler::URI::LDAPS::SCOPE_SUB
-# Did you mean?  Bundler::URI::LDAPS::SCOPE_ONE
-# uninitialized constant Bundler::URI::LDAPS::TBLDECWWWCOMP_
-# Did you mean?  Bundler::URI::LDAPS::TBLENCWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::LDAPS::TBLENCWWWCOMP_
-# Did you mean?  Bundler::URI::LDAPS::TBLDECWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::LDAPS::UNSAFE
-# Did you mean?  Bundler::URI::UNSAFE
-# uninitialized constant Bundler::URI::LDAPS::URI_REF
-# Did you mean?  Bundler::URI::URI_REF
-# uninitialized constant Bundler::URI::LDAPS::USERINFO
-# Did you mean?  Bundler::URI::USERINFO
-# uninitialized constant Bundler::URI::LDAPS::USE_REGISTRY
-# uninitialized constant Bundler::URI::LDAPS::VERSION
-# Did you mean?  Bundler::URI::VERSION
-#                Bundler::VERSION
-# uninitialized constant Bundler::URI::LDAPS::VERSION_CODE
-# Did you mean?  Bundler::URI::VERSION_CODE
-# uninitialized constant Bundler::URI::LDAPS::WEB_ENCODINGS_
-# Did you mean?  Bundler::URI::WEB_ENCODINGS_
-# wrong constant name <static-init>
-# uninitialized constant Bundler::URI::MailTo::ABS_PATH
-# Did you mean?  Bundler::URI::ABS_PATH
-# uninitialized constant Bundler::URI::MailTo::ABS_URI
-# Did you mean?  Bundler::URI::ABS_URI
-# uninitialized constant Bundler::URI::MailTo::ABS_URI_REF
-# Did you mean?  Bundler::URI::ABS_URI_REF
-# uninitialized constant Bundler::URI::MailTo::DEFAULT_PARSER
-# Did you mean?  Bundler::URI::MailTo::DEFAULT_PORT
-#                Bundler::URI::DEFAULT_PARSER
-# uninitialized constant Bundler::URI::MailTo::ESCAPED
-# Did you mean?  Bundler::URI::MailTo::Escape
-#                Bundler::URI::Escape
-#                Bundler::URI::ESCAPED
-# uninitialized constant Bundler::URI::MailTo::FRAGMENT
-# Did you mean?  Bundler::URI::FRAGMENT
-# uninitialized constant Bundler::URI::MailTo::HOST
-# Did you mean?  Bundler::URI::HOST
-# uninitialized constant Bundler::URI::MailTo::OPAQUE
-# Did you mean?  Bundler::URI::OPAQUE
-# uninitialized constant Bundler::URI::MailTo::PORT
-# Did you mean?  Bundler::URI::PORT
-# uninitialized constant Bundler::URI::MailTo::QUERY
-# Did you mean?  Bundler::URI::QUERY
-# uninitialized constant Bundler::URI::MailTo::REGISTRY
-# Did you mean?  Bundler::URI::REGISTRY
-# uninitialized constant Bundler::URI::MailTo::REL_PATH
-# Did you mean?  Bundler::URI::REL_PATH
-# uninitialized constant Bundler::URI::MailTo::REL_URI
-# Did you mean?  Bundler::URI::REL_URI
-# uninitialized constant Bundler::URI::MailTo::REL_URI_REF
-# Did you mean?  Bundler::URI::REL_URI_REF
-# uninitialized constant Bundler::URI::MailTo::RFC3986_PARSER
-# Did you mean?  Bundler::URI::MailTo::RFC3986_Parser
-#                Bundler::URI::RFC3986_Parser
-#                Bundler::URI::RFC2396_Parser
-#                Bundler::URI::MailTo::RFC2396_Parser
-#                Bundler::URI::RFC3986_PARSER
-# uninitialized constant Bundler::URI::MailTo::SCHEME
-# Did you mean?  Bundler::URI::SCHEME
-# uninitialized constant Bundler::URI::MailTo::TBLDECWWWCOMP_
-# Did you mean?  Bundler::URI::MailTo::TBLENCWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::MailTo::TBLENCWWWCOMP_
-# Did you mean?  Bundler::URI::MailTo::TBLDECWWWCOMP_
-#                Bundler::URI::TBLDECWWWCOMP_
-#                Bundler::URI::TBLENCWWWCOMP_
-# uninitialized constant Bundler::URI::MailTo::UNSAFE
-# Did you mean?  Bundler::URI::UNSAFE
-# uninitialized constant Bundler::URI::MailTo::URI_REF
-# Did you mean?  Bundler::URI::URI_REF
-# uninitialized constant Bundler::URI::MailTo::USERINFO
-# Did you mean?  Bundler::URI::USERINFO
-# uninitialized constant Bundler::URI::MailTo::USE_REGISTRY
-# uninitialized constant Bundler::URI::MailTo::VERSION
-# Did you mean?  Bundler::URI::VERSION
-#                Bundler::VERSION
-# uninitialized constant Bundler::URI::MailTo::VERSION_CODE
-# Did you mean?  Bundler::URI::VERSION_CODE
-# uninitialized constant Bundler::URI::MailTo::WEB_ENCODINGS_
-# Did you mean?  Bundler::URI::WEB_ENCODINGS_
-# wrong constant name headers
-# wrong constant name headers=
-# wrong constant name initialize
-# wrong constant name set_headers
-# wrong constant name set_to
-# wrong constant name to
-# wrong constant name to=
-# wrong constant name to_mailtext
-# wrong constant name to_rfc822text
-# wrong constant name <static-init>
-# wrong constant name escape
-# wrong constant name extract
-# wrong constant name initialize
-# wrong constant name join
-# wrong constant name make_regexp
-# wrong constant name parse
-# wrong constant name pattern
-# wrong constant name regexp
-# wrong constant name split
-# wrong constant name unescape
-# wrong constant name <static-init>
-# wrong constant name <Class:PATTERN>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name join
-# wrong constant name parse
-# wrong constant name regexp
-# wrong constant name split
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name make_components_hash
-# wrong constant name <static-init>
-# wrong constant name decode_www_form
-# wrong constant name decode_www_form_component
-# wrong constant name encode_www_form
-# wrong constant name encode_www_form_component
-# wrong constant name extract
-# wrong constant name get_encoding
-# wrong constant name join
-# wrong constant name parse
-# wrong constant name regexp
-# wrong constant name scheme_list
-# wrong constant name split
 # wrong constant name <Class:NEq>
 # wrong constant name <Class:ReqR>
 # uninitialized constant Bundler::VersionRanges::NEq::Elem
@@ -1534,7 +318,6 @@
 # wrong constant name <static-init>
 # wrong constant name []
 # wrong constant name members
-# wrong constant name <=>
 # uninitialized constant Bundler::VersionRanges::ReqR::Elem
 # wrong constant name <Class:Endpoint>
 # wrong constant name cover?
@@ -1544,7 +327,6 @@
 # wrong constant name right
 # wrong constant name right=
 # wrong constant name single?
-# wrong constant name <=>
 # uninitialized constant Bundler::VersionRanges::ReqR::Endpoint::Elem
 # wrong constant name inclusive
 # wrong constant name inclusive=
@@ -1560,12 +342,6 @@
 # wrong constant name empty?
 # wrong constant name for
 # wrong constant name for_many
-# wrong constant name original_exec
-# wrong constant name original_system
-# wrong constant name unbundled_env
-# wrong constant name unbundled_exec
-# wrong constant name unbundled_system
-# wrong constant name with_unbundled_env
 # wrong constant name a
 # wrong constant name base
 # wrong constant name blockquote
@@ -2111,11 +887,6 @@
 # wrong constant name initialize
 # wrong constant name path
 # wrong constant name spec_cache_dir
-# wrong constant name initialize
-# wrong constant name uri
-# wrong constant name uri=
-# wrong constant name <static-init>
-# wrong constant name <static-init>
 # wrong constant name others_possible?
 # wrong constant name <static-init>
 # wrong constant name <static-init>
@@ -2295,10 +1066,6 @@
 # wrong constant name initialize
 # uninitialized constant Jacobian
 # uninitialized constant Jacobian
-# wrong constant name <Class:Error>
-# wrong constant name <Class:InvalidWeightError>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
 # uninitialized constant Kconv
 # uninitialized constant Kconv
 # wrong constant name itself
@@ -2539,8 +1306,8 @@
 # uninitialized constant Kramdown::Parser::GFM::HTML_SPAN_ELEMENTS
 # Did you mean?  Kramdown::Parser::GFM::HTML_BLOCK_ELEMENTS
 # uninitialized constant Kramdown::Parser::GFM::HTML_SPAN_START
-# Did you mean?  Kramdown::Parser::GFM::EXT_SPAN_START
-#                Kramdown::Parser::GFM::HTML_RAW_START
+# Did you mean?  Kramdown::Parser::GFM::HTML_RAW_START
+#                Kramdown::Parser::GFM::EXT_SPAN_START
 # uninitialized constant Kramdown::Parser::GFM::HTML_TAG_CLOSE_RE
 # uninitialized constant Kramdown::Parser::GFM::HTML_TAG_RE
 # uninitialized constant Kramdown::Parser::GFM::IAL_BLOCK
@@ -2631,27 +1398,27 @@
 # Did you mean?  Kramdown::Parser::Html::HTML_COMMENT_RE
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL
-#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_BLOCK
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
+#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_BLOCK
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_SPAN
-# Did you mean?  Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
+# Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
+#                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::ElementConverter::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
@@ -2668,8 +1435,8 @@
 # Did you mean?  Kramdown::Parser::Html::HTML_INSTRUCTION_RE
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_SPAN_ELEMENTS
 # Did you mean?  Kramdown::Parser::Html::HTML_SPAN_ELEMENTS
-#                Kramdown::Parser::Html::HTML_BLOCK_ELEMENTS
 #                Kramdown::Parser::Html::ElementConverter::HTML_BLOCK_ELEMENTS
+#                Kramdown::Parser::Html::HTML_BLOCK_ELEMENTS
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_TAG_CLOSE_RE
 # Did you mean?  Kramdown::Parser::Html::HTML_TAG_CLOSE_RE
 # uninitialized constant Kramdown::Parser::Html::ElementConverter::HTML_TAG_RE
@@ -2684,27 +1451,27 @@
 # Did you mean?  Kramdown::Parser::Html::HTML_COMMENT_RE
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL
-#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_BLOCK
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
 # Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
+#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_BLOCK
+#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_SPAN
-# Did you mean?  Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
-#                Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
+# Did you mean?  Kramdown::Parser::Html::HTML_CONTENT_MODEL_RAW
+#                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_RAW
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_SPAN
 #                Kramdown::Parser::Html::Parser::HTML_CONTENT_MODEL_BLOCK
 #                Kramdown::Parser::Html::HTML_CONTENT_MODEL_BLOCK
@@ -2721,8 +1488,8 @@
 # Did you mean?  Kramdown::Parser::Html::HTML_INSTRUCTION_RE
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_SPAN_ELEMENTS
 # Did you mean?  Kramdown::Parser::Html::HTML_SPAN_ELEMENTS
-#                Kramdown::Parser::Html::HTML_BLOCK_ELEMENTS
 #                Kramdown::Parser::Html::Parser::HTML_BLOCK_ELEMENTS
+#                Kramdown::Parser::Html::HTML_BLOCK_ELEMENTS
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_TAG_CLOSE_RE
 # Did you mean?  Kramdown::Parser::Html::HTML_TAG_CLOSE_RE
 # uninitialized constant Kramdown::Parser::Html::Parser::HTML_TAG_RE
@@ -2843,8 +1610,8 @@
 # uninitialized constant Kramdown::Parser::Markdown::HTML_SPAN_ELEMENTS
 # Did you mean?  Kramdown::Parser::Markdown::HTML_BLOCK_ELEMENTS
 # uninitialized constant Kramdown::Parser::Markdown::HTML_SPAN_START
-# Did you mean?  Kramdown::Parser::Markdown::EXT_SPAN_START
-#                Kramdown::Parser::Markdown::HTML_RAW_START
+# Did you mean?  Kramdown::Parser::Markdown::HTML_RAW_START
+#                Kramdown::Parser::Markdown::EXT_SPAN_START
 # uninitialized constant Kramdown::Parser::Markdown::HTML_TAG_CLOSE_RE
 # uninitialized constant Kramdown::Parser::Markdown::HTML_TAG_RE
 # uninitialized constant Kramdown::Parser::Markdown::IAL_BLOCK
@@ -3339,86 +2106,45 @@
 # uninitialized constant RDoc::Markup::Special
 # uninitialized constant RDoc::RipperStateLex
 # uninitialized constant RDoc::RipperStateLex
-# uninitialized constant REXML::AttlistDecl
-# uninitialized constant REXML::AttlistDecl
-# uninitialized constant REXML::Attribute
-# uninitialized constant REXML::Attribute
-# uninitialized constant REXML::Attributes
-# uninitialized constant REXML::Attributes
-# uninitialized constant REXML::CData
-# uninitialized constant REXML::CData
-# uninitialized constant REXML::Child
-# uninitialized constant REXML::Child
-# uninitialized constant REXML::Comment
-# uninitialized constant REXML::Comment
-# uninitialized constant REXML::Declaration
-# uninitialized constant REXML::Declaration
-# uninitialized constant REXML::DocType
-# uninitialized constant REXML::DocType
-# uninitialized constant REXML::Document
-# uninitialized constant REXML::Document
-# uninitialized constant REXML::Element
-# uninitialized constant REXML::Element
-# uninitialized constant REXML::ElementDecl
-# uninitialized constant REXML::ElementDecl
-# uninitialized constant REXML::Elements
-# uninitialized constant REXML::Elements
-# uninitialized constant REXML::Entity
-# uninitialized constant REXML::Entity
-# uninitialized constant REXML::EntityConst
-# uninitialized constant REXML::EntityConst
-# uninitialized constant REXML::ExternalEntity
-# uninitialized constant REXML::ExternalEntity
-# uninitialized constant REXML::Formatters
-# Did you mean?  FormattingHelper
-# uninitialized constant REXML::Formatters
-# Did you mean?  FormattingHelper
-# uninitialized constant REXML::Functions
-# uninitialized constant REXML::Functions
-# uninitialized constant REXML::Instruction
-# Did you mean?  Struct
-# uninitialized constant REXML::Instruction
-# Did you mean?  Struct
-# uninitialized constant REXML::Namespace
-# uninitialized constant REXML::Namespace
-# uninitialized constant REXML::Node
-# uninitialized constant REXML::Node
-# uninitialized constant REXML::NotationDecl
-# uninitialized constant REXML::NotationDecl
-# uninitialized constant REXML::Output
-# uninitialized constant REXML::Output
-# uninitialized constant REXML::Parent
-# Did you mean?  Parser
-# uninitialized constant REXML::Parent
-# Did you mean?  Parser
-# uninitialized constant REXML::Parsers::StreamParser
-# uninitialized constant REXML::Parsers::StreamParser
-# uninitialized constant REXML::Parsers::TreeParser
-# uninitialized constant REXML::Parsers::TreeParser
-# uninitialized constant REXML::Parsers::XPathParser
-# uninitialized constant REXML::Parsers::XPathParser
+# uninitialized constant REXML::Parsers::XPathParser::NAME
+# Did you mean?  REXML::Parsers::XPathParser::QNAME
+# uninitialized constant REXML::Parsers::XPathParser::NAMECHAR
+# Did you mean?  REXML::Parsers::XPathParser::NAME_CHAR
+# uninitialized constant REXML::Parsers::XPathParser::NAME_CHAR
+# Did you mean?  REXML::Parsers::XPathParser::NAME_STR
+#                REXML::Parsers::XPathParser::NAMECHAR
+# uninitialized constant REXML::Parsers::XPathParser::NAME_START_CHAR
+# uninitialized constant REXML::Parsers::XPathParser::NAME_STR
+# Did you mean?  REXML::Parsers::XPathParser::NCNAME_STR
+# uninitialized constant REXML::Parsers::XPathParser::NCNAME_STR
+# Did you mean?  REXML::Parsers::XPathParser::NAME_STR
+# uninitialized constant REXML::Parsers::XPathParser::NMTOKEN
+# Did you mean?  REXML::Parsers::XPathParser::NMTOKENS
+# uninitialized constant REXML::Parsers::XPathParser::NMTOKENS
+# Did you mean?  REXML::XMLTokens
+# uninitialized constant REXML::Parsers::XPathParser::REFERENCE
 # uninitialized constant REXML::QuickPath
 # uninitialized constant REXML::QuickPath
 # uninitialized constant REXML::SAX2Listener
 # uninitialized constant REXML::SAX2Listener
-# uninitialized constant REXML::Security
-# Did you mean?  SecurityError
-# uninitialized constant REXML::Security
-# Did you mean?  SecurityError
-# uninitialized constant REXML::StreamListener
-# uninitialized constant REXML::StreamListener
 # uninitialized constant REXML::SyncEnumerator
 # uninitialized constant REXML::SyncEnumerator
-# uninitialized constant REXML::Text
-# uninitialized constant REXML::Text
-# uninitialized constant REXML::Validation
-# uninitialized constant REXML::Validation
-# uninitialized constant REXML::XMLDecl
-# uninitialized constant REXML::XMLDecl
-# uninitialized constant REXML::XPath
-# uninitialized constant REXML::XPath
-# uninitialized constant REXML::XPathParser
-# uninitialized constant REXML::XPathParser
+# uninitialized constant REXML::XPathParser::NAME
+# uninitialized constant REXML::XPathParser::NAMECHAR
+# Did you mean?  REXML::XPathParser::NAME_CHAR
+# uninitialized constant REXML::XPathParser::NAME_CHAR
+# Did you mean?  REXML::XPathParser::NAME_STR
+#                REXML::XPathParser::NAMECHAR
+# uninitialized constant REXML::XPathParser::NAME_START_CHAR
+# uninitialized constant REXML::XPathParser::NAME_STR
+# Did you mean?  REXML::XPathParser::NCNAME_STR
+# uninitialized constant REXML::XPathParser::NCNAME_STR
+# Did you mean?  REXML::XPathParser::NAME_STR
+# uninitialized constant REXML::XPathParser::NMTOKEN
+# Did you mean?  REXML::XPathParser::NMTOKENS
+# uninitialized constant REXML::XPathParser::NMTOKENS
+# Did you mean?  REXML::XMLTokens
+# uninitialized constant REXML::XPathParser::REFERENCE
 # uninitialized constant RSpec::Core::ExampleGroup::BE_PREDICATE_REGEX
 # uninitialized constant RSpec::Core::ExampleGroup::DYNAMIC_MATCHER_REGEX
 # uninitialized constant RSpec::Core::ExampleGroup::HAS_REGEX
@@ -3958,37 +2684,37 @@
 # uninitialized constant Rack::Request::FORM_DATA_MEDIA_TYPES
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_FOR
 # Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_PORT
 #                Rack::Request::HTTP_X_FORWARDED_HOST
+#                Rack::Request::HTTP_X_FORWARDED_PORT
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_HOST
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_FOR
+# Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
+#                Rack::Request::HTTP_X_FORWARDED_SSL
 #                Rack::Request::HTTP_X_FORWARDED_PORT
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 #                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_PORT
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_FOR
+# Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
+#                Rack::Request::HTTP_X_FORWARDED_SSL
 #                Rack::Request::HTTP_X_FORWARDED_HOST
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 #                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_FOR
-#                Rack::Request::HTTP_X_FORWARDED_PORT
+# Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
+#                Rack::Request::HTTP_X_FORWARDED_SSL
 #                Rack::Request::HTTP_X_FORWARDED_HOST
+#                Rack::Request::HTTP_X_FORWARDED_PORT
 #                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_FOR
-#                Rack::Request::HTTP_X_FORWARDED_PORT
+# Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
+#                Rack::Request::HTTP_X_FORWARDED_SSL
 #                Rack::Request::HTTP_X_FORWARDED_HOST
+#                Rack::Request::HTTP_X_FORWARDED_PORT
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_SSL
 # Did you mean?  Rack::Request::HTTP_X_FORWARDED_FOR
-#                Rack::Request::HTTP_X_FORWARDED_PORT
 #                Rack::Request::HTTP_X_FORWARDED_HOST
+#                Rack::Request::HTTP_X_FORWARDED_PORT
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 #                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::PARSEABLE_DATA_MEDIA_TYPES
@@ -4122,32 +2848,32 @@
 # uninitialized constant Ripper::Lexer::EVENTS
 # Did you mean?  Ripper::EVENTS
 # uninitialized constant Ripper::Lexer::EXPR_ARG
-# Did you mean?  Ripper::EXPR_BEG
-#                Ripper::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
 #                Ripper::Lexer::EXPR_BEG
+#                Ripper::EXPR_BEG
 # uninitialized constant Ripper::Lexer::EXPR_ARG_ANY
-# Did you mean?  Ripper::Lexer::EXPR_BEG_ANY
+# Did you mean?  Ripper::EXPR_ARG_ANY
+#                Ripper::Lexer::EXPR_END_ANY
+#                Ripper::Lexer::EXPR_BEG_ANY
 #                Ripper::EXPR_END_ANY
 #                Ripper::EXPR_BEG_ANY
-#                Ripper::Lexer::EXPR_END_ANY
-#                Ripper::EXPR_ARG_ANY
 # uninitialized constant Ripper::Lexer::EXPR_BEG
-# Did you mean?  Ripper::Lexer::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
+#                Ripper::Lexer::EXPR_ARG
 #                Ripper::EXPR_BEG
-#                Ripper::EXPR_ARG
 # uninitialized constant Ripper::Lexer::EXPR_BEG_ANY
-# Did you mean?  Ripper::EXPR_BEG_ANY
+# Did you mean?  Ripper::EXPR_END_ANY
 #                Ripper::Lexer::EXPR_END_ANY
-#                Ripper::Lexer::EXPR_ARG_ANY
 #                Ripper::EXPR_ARG_ANY
-#                Ripper::EXPR_END_ANY
+#                Ripper::EXPR_BEG_ANY
+#                Ripper::Lexer::EXPR_ARG_ANY
 # uninitialized constant Ripper::Lexer::EXPR_CLASS
 # Did you mean?  Ripper::EXPR_CLASS
 # uninitialized constant Ripper::Lexer::EXPR_CMDARG
 # Did you mean?  Ripper::Lexer::EXPR_ARG
 #                Ripper::EXPR_ARG
-#                Ripper::EXPR_CMDARG
 #                Ripper::Lexer::EXPR_ENDARG
+#                Ripper::EXPR_CMDARG
 #                Ripper::EXPR_ENDARG
 # uninitialized constant Ripper::Lexer::EXPR_DOT
 # Did you mean?  Ripper::EXPR_DOT
@@ -4155,34 +2881,34 @@
 # Did you mean?  Ripper::Lexer::EXPR_MID
 #                Ripper::EXPR_MID
 #                Ripper::EXPR_END
-#                Ripper::Lexer::EXPR_ENDFN
 #                Ripper::EXPR_ENDFN
+#                Ripper::Lexer::EXPR_ENDFN
 # uninitialized constant Ripper::Lexer::EXPR_ENDARG
-# Did you mean?  Ripper::Lexer::EXPR_ARG
-#                Ripper::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
+#                Ripper::Lexer::EXPR_ARG
 #                Ripper::EXPR_END
 #                Ripper::EXPR_ENDFN
 #                Ripper::Lexer::EXPR_ENDFN
 #                Ripper::Lexer::EXPR_CMDARG
 #                Ripper::EXPR_CMDARG
 #                Ripper::EXPR_ENDARG
-#                Ripper::Lexer::EXPR_END_ANY
 #                Ripper::EXPR_END_ANY
+#                Ripper::Lexer::EXPR_END_ANY
 # uninitialized constant Ripper::Lexer::EXPR_ENDFN
 # Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_ENDFN
-#                Ripper::EXPR_ENDARG
 #                Ripper::Lexer::EXPR_ENDARG
-#                Ripper::Lexer::EXPR_END_ANY
+#                Ripper::EXPR_ENDARG
 #                Ripper::EXPR_END_ANY
+#                Ripper::Lexer::EXPR_END_ANY
 # uninitialized constant Ripper::Lexer::EXPR_END_ANY
 # Did you mean?  Ripper::EXPR_END_ANY
+#                Ripper::EXPR_BEG_ANY
+#                Ripper::EXPR_ARG_ANY
 #                Ripper::Lexer::EXPR_ARG_ANY
 #                Ripper::Lexer::EXPR_BEG_ANY
-#                Ripper::EXPR_ARG_ANY
-#                Ripper::EXPR_BEG_ANY
-#                Ripper::Lexer::EXPR_ENDFN
 #                Ripper::EXPR_ENDFN
+#                Ripper::Lexer::EXPR_ENDFN
 #                Ripper::Lexer::EXPR_ENDARG
 #                Ripper::EXPR_ENDARG
 # uninitialized constant Ripper::Lexer::EXPR_FITEM
@@ -4201,14 +2927,14 @@
 # Did you mean?  Ripper::EXPR_LABEL
 #                Ripper::EXPR_LABELED
 # uninitialized constant Ripper::Lexer::EXPR_MID
-# Did you mean?  Ripper::Lexer::EXPR_END
+# Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_MID
-#                Ripper::EXPR_END
+#                Ripper::Lexer::EXPR_END
 # uninitialized constant Ripper::Lexer::EXPR_NONE
 # Did you mean?  Ripper::Lexer::EXPR_DOT
 #                Ripper::Lexer::EXPR_END
-#                Ripper::EXPR_DOT
 #                Ripper::EXPR_END
+#                Ripper::EXPR_DOT
 #                Ripper::EXPR_NONE
 #                Ripper::Lexer::EXPR_FNAME
 #                Ripper::EXPR_FNAME
@@ -4261,32 +2987,32 @@
 # uninitialized constant Ripper::SexpBuilder::EVENTS
 # Did you mean?  Ripper::EVENTS
 # uninitialized constant Ripper::SexpBuilder::EXPR_ARG
-# Did you mean?  Ripper::EXPR_BEG
-#                Ripper::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
 #                Ripper::SexpBuilder::EXPR_BEG
+#                Ripper::EXPR_BEG
 # uninitialized constant Ripper::SexpBuilder::EXPR_ARG_ANY
-# Did you mean?  Ripper::SexpBuilder::EXPR_BEG_ANY
+# Did you mean?  Ripper::EXPR_ARG_ANY
+#                Ripper::SexpBuilder::EXPR_END_ANY
+#                Ripper::SexpBuilder::EXPR_BEG_ANY
 #                Ripper::EXPR_END_ANY
 #                Ripper::EXPR_BEG_ANY
-#                Ripper::SexpBuilder::EXPR_END_ANY
-#                Ripper::EXPR_ARG_ANY
 # uninitialized constant Ripper::SexpBuilder::EXPR_BEG
-# Did you mean?  Ripper::SexpBuilder::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
+#                Ripper::SexpBuilder::EXPR_ARG
 #                Ripper::EXPR_BEG
-#                Ripper::EXPR_ARG
 # uninitialized constant Ripper::SexpBuilder::EXPR_BEG_ANY
-# Did you mean?  Ripper::EXPR_BEG_ANY
+# Did you mean?  Ripper::EXPR_END_ANY
 #                Ripper::SexpBuilder::EXPR_END_ANY
-#                Ripper::SexpBuilder::EXPR_ARG_ANY
 #                Ripper::EXPR_ARG_ANY
-#                Ripper::EXPR_END_ANY
+#                Ripper::EXPR_BEG_ANY
+#                Ripper::SexpBuilder::EXPR_ARG_ANY
 # uninitialized constant Ripper::SexpBuilder::EXPR_CLASS
 # Did you mean?  Ripper::EXPR_CLASS
 # uninitialized constant Ripper::SexpBuilder::EXPR_CMDARG
 # Did you mean?  Ripper::SexpBuilder::EXPR_ARG
 #                Ripper::EXPR_ARG
-#                Ripper::EXPR_CMDARG
 #                Ripper::SexpBuilder::EXPR_ENDARG
+#                Ripper::EXPR_CMDARG
 #                Ripper::EXPR_ENDARG
 # uninitialized constant Ripper::SexpBuilder::EXPR_DOT
 # Did you mean?  Ripper::EXPR_DOT
@@ -4294,34 +3020,34 @@
 # Did you mean?  Ripper::SexpBuilder::EXPR_MID
 #                Ripper::EXPR_MID
 #                Ripper::EXPR_END
-#                Ripper::SexpBuilder::EXPR_ENDFN
 #                Ripper::EXPR_ENDFN
+#                Ripper::SexpBuilder::EXPR_ENDFN
 # uninitialized constant Ripper::SexpBuilder::EXPR_ENDARG
-# Did you mean?  Ripper::SexpBuilder::EXPR_ARG
-#                Ripper::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
+#                Ripper::SexpBuilder::EXPR_ARG
 #                Ripper::EXPR_END
 #                Ripper::EXPR_ENDFN
 #                Ripper::SexpBuilder::EXPR_ENDFN
 #                Ripper::SexpBuilder::EXPR_CMDARG
 #                Ripper::EXPR_CMDARG
 #                Ripper::EXPR_ENDARG
-#                Ripper::SexpBuilder::EXPR_END_ANY
 #                Ripper::EXPR_END_ANY
+#                Ripper::SexpBuilder::EXPR_END_ANY
 # uninitialized constant Ripper::SexpBuilder::EXPR_ENDFN
 # Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_ENDFN
-#                Ripper::EXPR_ENDARG
 #                Ripper::SexpBuilder::EXPR_ENDARG
-#                Ripper::SexpBuilder::EXPR_END_ANY
+#                Ripper::EXPR_ENDARG
 #                Ripper::EXPR_END_ANY
+#                Ripper::SexpBuilder::EXPR_END_ANY
 # uninitialized constant Ripper::SexpBuilder::EXPR_END_ANY
 # Did you mean?  Ripper::EXPR_END_ANY
+#                Ripper::EXPR_BEG_ANY
+#                Ripper::EXPR_ARG_ANY
 #                Ripper::SexpBuilder::EXPR_ARG_ANY
 #                Ripper::SexpBuilder::EXPR_BEG_ANY
-#                Ripper::EXPR_ARG_ANY
-#                Ripper::EXPR_BEG_ANY
-#                Ripper::SexpBuilder::EXPR_ENDFN
 #                Ripper::EXPR_ENDFN
+#                Ripper::SexpBuilder::EXPR_ENDFN
 #                Ripper::SexpBuilder::EXPR_ENDARG
 #                Ripper::EXPR_ENDARG
 # uninitialized constant Ripper::SexpBuilder::EXPR_FITEM
@@ -4340,14 +3066,14 @@
 # Did you mean?  Ripper::EXPR_LABEL
 #                Ripper::EXPR_LABELED
 # uninitialized constant Ripper::SexpBuilder::EXPR_MID
-# Did you mean?  Ripper::SexpBuilder::EXPR_END
+# Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_MID
-#                Ripper::EXPR_END
+#                Ripper::SexpBuilder::EXPR_END
 # uninitialized constant Ripper::SexpBuilder::EXPR_NONE
 # Did you mean?  Ripper::SexpBuilder::EXPR_DOT
 #                Ripper::SexpBuilder::EXPR_END
-#                Ripper::EXPR_DOT
 #                Ripper::EXPR_END
+#                Ripper::EXPR_DOT
 #                Ripper::EXPR_NONE
 #                Ripper::SexpBuilder::EXPR_FNAME
 #                Ripper::EXPR_FNAME
@@ -4550,32 +3276,32 @@
 # uninitialized constant Ripper::SexpBuilderPP::EVENTS
 # Did you mean?  Ripper::EVENTS
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_ARG
-# Did you mean?  Ripper::EXPR_BEG
-#                Ripper::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
 #                Ripper::SexpBuilderPP::EXPR_BEG
+#                Ripper::EXPR_BEG
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_ARG_ANY
-# Did you mean?  Ripper::SexpBuilderPP::EXPR_BEG_ANY
+# Did you mean?  Ripper::EXPR_ARG_ANY
+#                Ripper::SexpBuilderPP::EXPR_END_ANY
+#                Ripper::SexpBuilderPP::EXPR_BEG_ANY
 #                Ripper::EXPR_END_ANY
 #                Ripper::EXPR_BEG_ANY
-#                Ripper::SexpBuilderPP::EXPR_END_ANY
-#                Ripper::EXPR_ARG_ANY
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_BEG
-# Did you mean?  Ripper::SexpBuilderPP::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
+#                Ripper::SexpBuilderPP::EXPR_ARG
 #                Ripper::EXPR_BEG
-#                Ripper::EXPR_ARG
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_BEG_ANY
-# Did you mean?  Ripper::EXPR_BEG_ANY
+# Did you mean?  Ripper::EXPR_END_ANY
 #                Ripper::SexpBuilderPP::EXPR_END_ANY
-#                Ripper::SexpBuilderPP::EXPR_ARG_ANY
 #                Ripper::EXPR_ARG_ANY
-#                Ripper::EXPR_END_ANY
+#                Ripper::EXPR_BEG_ANY
+#                Ripper::SexpBuilderPP::EXPR_ARG_ANY
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_CLASS
 # Did you mean?  Ripper::EXPR_CLASS
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_CMDARG
 # Did you mean?  Ripper::SexpBuilderPP::EXPR_ARG
 #                Ripper::EXPR_ARG
-#                Ripper::EXPR_CMDARG
 #                Ripper::SexpBuilderPP::EXPR_ENDARG
+#                Ripper::EXPR_CMDARG
 #                Ripper::EXPR_ENDARG
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_DOT
 # Did you mean?  Ripper::EXPR_DOT
@@ -4583,34 +3309,34 @@
 # Did you mean?  Ripper::SexpBuilderPP::EXPR_MID
 #                Ripper::EXPR_MID
 #                Ripper::EXPR_END
-#                Ripper::SexpBuilderPP::EXPR_ENDFN
 #                Ripper::EXPR_ENDFN
+#                Ripper::SexpBuilderPP::EXPR_ENDFN
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_ENDARG
-# Did you mean?  Ripper::SexpBuilderPP::EXPR_ARG
-#                Ripper::EXPR_ARG
+# Did you mean?  Ripper::EXPR_ARG
+#                Ripper::SexpBuilderPP::EXPR_ARG
 #                Ripper::EXPR_END
 #                Ripper::EXPR_ENDFN
 #                Ripper::SexpBuilderPP::EXPR_ENDFN
 #                Ripper::SexpBuilderPP::EXPR_CMDARG
 #                Ripper::EXPR_CMDARG
 #                Ripper::EXPR_ENDARG
-#                Ripper::SexpBuilderPP::EXPR_END_ANY
 #                Ripper::EXPR_END_ANY
+#                Ripper::SexpBuilderPP::EXPR_END_ANY
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_ENDFN
 # Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_ENDFN
-#                Ripper::EXPR_ENDARG
 #                Ripper::SexpBuilderPP::EXPR_ENDARG
-#                Ripper::SexpBuilderPP::EXPR_END_ANY
+#                Ripper::EXPR_ENDARG
 #                Ripper::EXPR_END_ANY
+#                Ripper::SexpBuilderPP::EXPR_END_ANY
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_END_ANY
 # Did you mean?  Ripper::EXPR_END_ANY
+#                Ripper::EXPR_BEG_ANY
+#                Ripper::EXPR_ARG_ANY
 #                Ripper::SexpBuilderPP::EXPR_ARG_ANY
 #                Ripper::SexpBuilderPP::EXPR_BEG_ANY
-#                Ripper::EXPR_ARG_ANY
-#                Ripper::EXPR_BEG_ANY
-#                Ripper::SexpBuilderPP::EXPR_ENDFN
 #                Ripper::EXPR_ENDFN
+#                Ripper::SexpBuilderPP::EXPR_ENDFN
 #                Ripper::SexpBuilderPP::EXPR_ENDARG
 #                Ripper::EXPR_ENDARG
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_FITEM
@@ -4629,14 +3355,14 @@
 # Did you mean?  Ripper::EXPR_LABEL
 #                Ripper::EXPR_LABELED
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_MID
-# Did you mean?  Ripper::SexpBuilderPP::EXPR_END
+# Did you mean?  Ripper::EXPR_END
 #                Ripper::EXPR_MID
-#                Ripper::EXPR_END
+#                Ripper::SexpBuilderPP::EXPR_END
 # uninitialized constant Ripper::SexpBuilderPP::EXPR_NONE
 # Did you mean?  Ripper::SexpBuilderPP::EXPR_DOT
 #                Ripper::SexpBuilderPP::EXPR_END
-#                Ripper::EXPR_DOT
 #                Ripper::EXPR_END
+#                Ripper::EXPR_DOT
 #                Ripper::EXPR_NONE
 #                Ripper::SexpBuilderPP::EXPR_FNAME
 #                Ripper::EXPR_FNAME
@@ -4692,590 +3418,267 @@
 # uninitialized constant Rouge::Lexers::TCL::MAX_NULL_SCANS
 # uninitialized constant Rouge::Lexers::Varnish::MAX_NULL_SCANS
 # uninitialized constant Rouge::Lexers::YAML::MAX_NULL_SCANS
-# uninitialized constant RuboCop::AST::ArrayNode::ASSIGNMENTS
-# uninitialized constant RuboCop::AST::ArrayNode::BASIC_CONDITIONALS
-# uninitialized constant RuboCop::AST::ArrayNode::BASIC_LITERALS
-# uninitialized constant RuboCop::AST::ArrayNode::COMPARISON_OPERATORS
-# uninitialized constant RuboCop::AST::ArrayNode::COMPOSITE_LITERALS
-# uninitialized constant RuboCop::AST::ArrayNode::CONDITIONALS
-# uninitialized constant RuboCop::AST::ArrayNode::EQUALS_ASSIGNMENTS
-# uninitialized constant RuboCop::AST::ArrayNode::FALSEY_LITERALS
-# uninitialized constant RuboCop::AST::ArrayNode::IMMUTABLE_LITERALS
-# Did you mean?  RuboCop::AST::ArrayNode::MUTABLE_LITERALS
-# uninitialized constant RuboCop::AST::ArrayNode::KEYWORDS
-# uninitialized constant RuboCop::AST::ArrayNode::LITERALS
-# uninitialized constant RuboCop::AST::ArrayNode::MUTABLE_LITERALS
-# Did you mean?  RuboCop::AST::ArrayNode::IMMUTABLE_LITERALS
-# uninitialized constant RuboCop::AST::ArrayNode::OPERATOR_KEYWORDS
-# uninitialized constant RuboCop::AST::ArrayNode::REFERENCES
-# uninitialized constant RuboCop::AST::ArrayNode::SHORTHAND_ASSIGNMENTS
-# uninitialized constant RuboCop::AST::ArrayNode::SPECIAL_KEYWORDS
-# uninitialized constant RuboCop::AST::ArrayNode::TRUTHY_LITERALS
-# uninitialized constant RuboCop::AST::ArrayNode::VARIABLES
-# uninitialized constant RuboCop::AST::BlockNode::ASSIGNMENTS
-# uninitialized constant RuboCop::AST::BlockNode::BASIC_CONDITIONALS
-# uninitialized constant RuboCop::AST::BlockNode::BASIC_LITERALS
-# uninitialized constant RuboCop::AST::BlockNode::COMPARISON_OPERATORS
-# uninitialized constant RuboCop::AST::BlockNode::COMPOSITE_LITERALS
-# uninitialized constant RuboCop::AST::BlockNode::CONDITIONALS
-# uninitialized constant RuboCop::AST::BlockNode::EQUALS_ASSIGNMENTS
-# uninitialized constant RuboCop::AST::BlockNode::FALSEY_LITERALS
-# uninitialized constant RuboCop::AST::BlockNode::IMMUTABLE_LITERALS
-# Did you mean?  RuboCop::AST::BlockNode::MUTABLE_LITERALS
-# uninitialized constant RuboCop::AST::BlockNode::KEYWORDS
-# uninitialized constant RuboCop::AST::BlockNode::LITERALS
-# uninitialized constant RuboCop::AST::BlockNode::MUTABLE_LITERALS
-# Did you mean?  RuboCop::AST::BlockNode::IMMUTABLE_LITERALS
-# uninitialized constant RuboCop::AST::BlockNode::OPERATOR_KEYWORDS
-# uninitialized constant RuboCop::AST::BlockNode::REFERENCES
-# uninitialized constant RuboCop::AST::BlockNode::SHORTHAND_ASSIGNMENTS
-# uninitialized constant RuboCop::AST::BlockNode::SPECIAL_KEYWORDS
-# uninitialized constant RuboCop::AST::BlockNode::TRUTHY_LITERALS
-# uninitialized constant RuboCop::AST::BlockNode::VARIABLES
-# uninitialized constant RuboCop::AST::KeywordSplatNode::ASSIGNMENTS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::BASIC_CONDITIONALS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::BASIC_LITERALS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::COMPARISON_OPERATORS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::COMPOSITE_LITERALS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::CONDITIONALS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::EQUALS_ASSIGNMENTS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::FALSEY_LITERALS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::IMMUTABLE_LITERALS
-# Did you mean?  RuboCop::AST::KeywordSplatNode::MUTABLE_LITERALS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::KEYWORDS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::LITERALS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::MUTABLE_LITERALS
-# Did you mean?  RuboCop::AST::KeywordSplatNode::IMMUTABLE_LITERALS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::OPERATOR_KEYWORDS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::REFERENCES
-# uninitialized constant RuboCop::AST::KeywordSplatNode::SHORTHAND_ASSIGNMENTS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::SPECIAL_KEYWORDS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::TRUTHY_LITERALS
-# uninitialized constant RuboCop::AST::KeywordSplatNode::VARIABLES
-# uninitialized constant RuboCop::AST::MethodDispatchNode::ENUMERATOR_METHODS
-# uninitialized constant RuboCop::AST::MethodDispatchNode::OPERATOR_METHODS
-# uninitialized constant RuboCop::AST::PairNode::ASSIGNMENTS
-# uninitialized constant RuboCop::AST::PairNode::BASIC_CONDITIONALS
-# uninitialized constant RuboCop::AST::PairNode::BASIC_LITERALS
-# uninitialized constant RuboCop::AST::PairNode::COMPARISON_OPERATORS
-# uninitialized constant RuboCop::AST::PairNode::COMPOSITE_LITERALS
-# uninitialized constant RuboCop::AST::PairNode::CONDITIONALS
-# uninitialized constant RuboCop::AST::PairNode::EQUALS_ASSIGNMENTS
-# uninitialized constant RuboCop::AST::PairNode::FALSEY_LITERALS
-# uninitialized constant RuboCop::AST::PairNode::IMMUTABLE_LITERALS
-# Did you mean?  RuboCop::AST::PairNode::MUTABLE_LITERALS
-# uninitialized constant RuboCop::AST::PairNode::KEYWORDS
-# uninitialized constant RuboCop::AST::PairNode::LITERALS
-# uninitialized constant RuboCop::AST::PairNode::MUTABLE_LITERALS
-# Did you mean?  RuboCop::AST::PairNode::IMMUTABLE_LITERALS
-# uninitialized constant RuboCop::AST::PairNode::OPERATOR_KEYWORDS
-# uninitialized constant RuboCop::AST::PairNode::REFERENCES
-# uninitialized constant RuboCop::AST::PairNode::SHORTHAND_ASSIGNMENTS
-# uninitialized constant RuboCop::AST::PairNode::SPECIAL_KEYWORDS
-# uninitialized constant RuboCop::AST::PairNode::TRUTHY_LITERALS
-# uninitialized constant RuboCop::AST::PairNode::VARIABLES
-# uninitialized constant RuboCop::AST::RegexpNode::ASSIGNMENTS
-# uninitialized constant RuboCop::AST::RegexpNode::BASIC_CONDITIONALS
-# uninitialized constant RuboCop::AST::RegexpNode::BASIC_LITERALS
-# uninitialized constant RuboCop::AST::RegexpNode::COMPARISON_OPERATORS
-# uninitialized constant RuboCop::AST::RegexpNode::COMPOSITE_LITERALS
-# uninitialized constant RuboCop::AST::RegexpNode::CONDITIONALS
-# uninitialized constant RuboCop::AST::RegexpNode::EQUALS_ASSIGNMENTS
-# uninitialized constant RuboCop::AST::RegexpNode::FALSEY_LITERALS
-# uninitialized constant RuboCop::AST::RegexpNode::IMMUTABLE_LITERALS
-# Did you mean?  RuboCop::AST::RegexpNode::MUTABLE_LITERALS
-# uninitialized constant RuboCop::AST::RegexpNode::KEYWORDS
-# uninitialized constant RuboCop::AST::RegexpNode::LITERALS
-# uninitialized constant RuboCop::AST::RegexpNode::MUTABLE_LITERALS
-# Did you mean?  RuboCop::AST::RegexpNode::IMMUTABLE_LITERALS
-# uninitialized constant RuboCop::AST::RegexpNode::OPERATOR_KEYWORDS
-# uninitialized constant RuboCop::AST::RegexpNode::REFERENCES
-# uninitialized constant RuboCop::AST::RegexpNode::SHORTHAND_ASSIGNMENTS
-# uninitialized constant RuboCop::AST::RegexpNode::SPECIAL_KEYWORDS
-# uninitialized constant RuboCop::AST::RegexpNode::TRUTHY_LITERALS
-# uninitialized constant RuboCop::AST::RegexpNode::VARIABLES
-# uninitialized constant RuboCop::Cop::Bundler::DuplicatedGem::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Bundler::DuplicatedGem::LITERAL_REGEX
+# wrong constant name <Class:Colorizer>
+# wrong constant name <Class:InstrumentationSubcompiler>
+# wrong constant name <Class:NodePatternSubcompiler>
+# wrong constant name <Class:SequenceSubcompiler>
+# wrong constant name <Class:Trace>
+# wrong constant name comments
+# wrong constant name node_ids
+# wrong constant name tokens
+# wrong constant name <Class:Result>
+# wrong constant name compiler
+# wrong constant name initialize
+# wrong constant name node_pattern
+# wrong constant name pattern
+# wrong constant name test
+# uninitialized constant RuboCop::AST::NodePattern::Compiler::Debug::Colorizer::Result::Elem
+# wrong constant name color_map
+# wrong constant name colorize
+# wrong constant name colorizer
+# wrong constant name colorizer=
+# wrong constant name match_map
+# wrong constant name matched?
+# wrong constant name returned
+# wrong constant name returned=
+# wrong constant name ruby_ast
+# wrong constant name ruby_ast=
+# wrong constant name trace
+# wrong constant name trace=
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
+# wrong constant name <static-init>
+# wrong constant name do_compile
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant RuboCop::AST::NodePattern::Compiler::Debug::SequenceSubcompiler::DELTA
+# wrong constant name <static-init>
+# wrong constant name enter
+# wrong constant name matched?
+# wrong constant name success
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant RuboCop::AST::NodePattern::Node::Repetition::MAP
+# Did you mean?  RuboCop::AST::NodePattern::Node::MAP
+# uninitialized constant RuboCop::AST::NodePattern::Parser::Racc_Main_Parsing_Routine
+# uninitialized constant RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Id_C
+# Did you mean?  RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version_C
+# uninitialized constant RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version
+# Did you mean?  RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version_R
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version_C
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Version
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Id_C
+# uninitialized constant RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version_C
+# Did you mean?  RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version_R
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Version
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Id_C
+# uninitialized constant RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version_R
+# Did you mean?  RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version_C
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Version
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Id_C
+# uninitialized constant RuboCop::AST::NodePattern::Parser::Racc_Runtime_Type
+# uninitialized constant RuboCop::AST::NodePattern::Parser::Racc_Runtime_Version
+# Did you mean?  RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version
+# uninitialized constant RuboCop::AST::NodePattern::Parser::Racc_YY_Parse_Method
+# wrong constant name <Class:WithMeta>
+# wrong constant name <Class:Builder>
+# wrong constant name <Class:Lexer>
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Main_Parsing_Routine
+# Did you mean?  RuboCop::AST::NodePattern::Parser::Racc_Main_Parsing_Routine
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Core_Id_C
+# Did you mean?  RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Id_C
+#                RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Core_Version_C
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version_C
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Core_Version
+# Did you mean?  RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version
+#                RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Core_Version_C
+#                RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Core_Version_R
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version_R
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version_C
+#                RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Version
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Version
+#                RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Core_Id_C
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Id_C
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Core_Version_C
+# Did you mean?  RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Core_Version_R
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version_R
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version_C
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Version
+#                RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Version
+#                RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Core_Id_C
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Id_C
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Core_Version_R
+# Did you mean?  RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Core_Version_C
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version_R
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version_C
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Version
+#                RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Version
+#                RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Core_Id_C
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Id_C
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Type
+# Did you mean?  RuboCop::AST::NodePattern::Parser::Racc_Runtime_Type
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Version
+# Did you mean?  RuboCop::AST::NodePattern::Parser::Racc_Runtime_Version
+#                RuboCop::AST::NodePattern::Parser::WithMeta::Racc_Runtime_Core_Version
+#                RuboCop::AST::NodePattern::Parser::Racc_Runtime_Core_Version
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Racc_YY_Parse_Method
+# Did you mean?  RuboCop::AST::NodePattern::Parser::Racc_YY_Parse_Method
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Racc_arg
+# Did you mean?  RuboCop::AST::NodePattern::Parser::Racc_arg
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Racc_debug_parser
+# Did you mean?  RuboCop::AST::NodePattern::Parser::Racc_debug_parser
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Racc_token_to_s_table
+# Did you mean?  RuboCop::AST::NodePattern::Parser::Racc_token_to_s_table
+# wrong constant name comments
+# wrong constant name tokens
+# wrong constant name emit_atom
+# wrong constant name emit_call
+# wrong constant name emit_list
+# wrong constant name emit_unary_op
+# wrong constant name <static-init>
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Lexer::CALL
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Lexer::CONST_NAME
+# Did you mean?  RuboCop::AST::ConstNode
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Lexer::IDENTIFIER
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Lexer::NODE_TYPE
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Lexer::REGEXP
+# Did you mean?  Regexp
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Lexer::REGEXP_BODY
+# Did you mean?  RuboCop::AST::RegexpNode
+# uninitialized constant RuboCop::AST::NodePattern::Parser::WithMeta::Lexer::SYMBOL_NAME
+# Did you mean?  RuboCop::AST::SymbolNode
+# wrong constant name initialize
+# wrong constant name pos
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant RuboCop::Cop::Base::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Bundler::GemComment::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Bundler::GemComment::NON_PUBLIC_MODIFIERS
 # uninitialized constant RuboCop::Cop::Bundler::InsecureProtocolSource::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Bundler::InsecureProtocolSource::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Bundler::OrderedGems::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::EndKeywordAlignment::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Gemspec::DuplicatedAssignment::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Gemspec::DuplicatedAssignment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Gemspec::OrderedDependencies::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Gemspec::RequiredRubyVersion::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Gemspec::RequiredRubyVersion::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::AccessModifierIndentation::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::AccessModifierIndentation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::AccessModifierIndentation::SPACE
-# uninitialized constant RuboCop::Cop::Layout::AlignArguments::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::AlignArguments::SPACE
-# uninitialized constant RuboCop::Cop::Layout::AlignArray::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::AlignArray::SPACE
-# uninitialized constant RuboCop::Cop::Layout::AlignHash::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::AlignHash::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::AlignParameters::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::AlignParameters::SPACE
-# uninitialized constant RuboCop::Cop::Layout::BlockAlignment::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::BlockAlignment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::BlockEndNewline::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::BlockEndNewline::SPACE
-# uninitialized constant RuboCop::Cop::Layout::CaseIndentation::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::CaseIndentation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::CaseIndentation::SPACE
-# uninitialized constant RuboCop::Cop::Layout::ClassStructure::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::ClosingHeredocIndentation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::ClosingHeredocIndentation::OPENING_DELIMITER
-# uninitialized constant RuboCop::Cop::Layout::ClosingParenthesisIndentation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::ClosingParenthesisIndentation::SPACE
-# uninitialized constant RuboCop::Cop::Layout::CommentIndentation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::CommentIndentation::SPACE
-# uninitialized constant RuboCop::Cop::Layout::ConditionPosition::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::DefEndAlignment::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::DefEndAlignment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::ElseAlignment::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::ElseAlignment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::ElseAlignment::SPACE
-# uninitialized constant RuboCop::Cop::Layout::EmptyComment::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EmptyComment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::EmptyLineAfterGuardClause::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EmptyLineAfterGuardClause::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::EmptyLineAfterMagicComment::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EmptyLineAfterMagicComment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::EmptyLineBetweenDefs::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EmptyLineBetweenDefs::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::EmptyLines::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EmptyLines::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundAccessModifier::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundAccessModifier::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundArguments::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundArguments::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundBeginBody::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundBeginBody::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundBeginBody::MSG_DEFERRED
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundBeginBody::MSG_EXTRA
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundBeginBody::MSG_MISSING
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundBlockBody::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundBlockBody::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundBlockBody::MSG_DEFERRED
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundBlockBody::MSG_EXTRA
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundBlockBody::MSG_MISSING
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundBody::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundClassBody::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundClassBody::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundClassBody::MSG_DEFERRED
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundClassBody::MSG_EXTRA
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundClassBody::MSG_MISSING
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundExceptionHandlingKeywords::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundExceptionHandlingKeywords::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundExceptionHandlingKeywords::MSG_DEFERRED
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundExceptionHandlingKeywords::MSG_EXTRA
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundExceptionHandlingKeywords::MSG_MISSING
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundMethodBody::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundMethodBody::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundMethodBody::MSG_DEFERRED
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundMethodBody::MSG_EXTRA
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundMethodBody::MSG_MISSING
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundModuleBody::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundModuleBody::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundModuleBody::MSG_DEFERRED
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundModuleBody::MSG_EXTRA
-# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundModuleBody::MSG_MISSING
-# uninitialized constant RuboCop::Cop::Layout::EndOfLine::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::EndOfLine::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::ExtraSpacing::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::ExtraSpacing::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::FirstArrayElementLineBreak::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::FirstHashElementLineBreak::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::FirstMethodArgumentLineBreak::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::FirstMethodParameterLineBreak::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::HeredocArgumentClosingParenthesis::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::HeredocArgumentClosingParenthesis::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::IndentAssignment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::IndentAssignment::SPACE
-# uninitialized constant RuboCop::Cop::Layout::IndentFirstArgument::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::IndentFirstArgument::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::IndentFirstArgument::SPACE
-# uninitialized constant RuboCop::Cop::Layout::IndentFirstArrayElement::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::IndentFirstArrayElement::SPACE
-# uninitialized constant RuboCop::Cop::Layout::IndentFirstHashElement::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::IndentFirstHashElement::SPACE
-# uninitialized constant RuboCop::Cop::Layout::IndentFirstParameter::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::IndentFirstParameter::SPACE
-# uninitialized constant RuboCop::Cop::Layout::IndentHeredoc::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::IndentHeredoc::OPENING_DELIMITER
-# uninitialized constant RuboCop::Cop::Layout::IndentationConsistency::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::IndentationConsistency::SPACE
-# uninitialized constant RuboCop::Cop::Layout::IndentationWidth::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::IndentationWidth::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::IndentationWidth::SPACE
-# uninitialized constant RuboCop::Cop::Layout::InitialIndentation::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::InitialIndentation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::LeadingBlankLines::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::LeadingCommentSpace::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::LeadingCommentSpace::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::MultilineArrayBraceLayout::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::MultilineArrayLineBreaks::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::MultilineAssignmentLayout::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::MultilineAssignmentLayout::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::MultilineBlockLayout::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::MultilineBlockLayout::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::MultilineHashBraceLayout::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::MultilineHashKeyLineBreaks::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::MultilineMethodArgumentLineBreaks::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::MultilineMethodCallBraceLayout::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::MultilineMethodDefinitionBraceLayout::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::RescueEnsureAlignment::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::RescueEnsureAlignment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceAfterColon::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceAfterMethodName::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::SpaceAfterMethodName::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceAfterNot::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::SpaceAfterNot::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceAroundEqualsInParameterDefault::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::SpaceAroundEqualsInParameterDefault::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceAroundEqualsInParameterDefault::NO_SPACE_COMMAND
-# Did you mean?  RuboCop::Cop::Layout::SpaceAroundEqualsInParameterDefault::SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Layout::SpaceAroundEqualsInParameterDefault::SPACE_COMMAND
-# Did you mean?  RuboCop::Cop::Layout::SpaceAroundEqualsInParameterDefault::NO_SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Layout::SpaceAroundKeyword::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceAroundOperators::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::SpaceAroundOperators::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceBeforeBlockBraces::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::SpaceBeforeBlockBraces::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceBeforeComment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceBeforeFirstArg::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::SpaceBeforeFirstArg::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceInLambdaLiteral::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::SpaceInLambdaLiteral::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideArrayLiteralBrackets::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideArrayLiteralBrackets::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideArrayLiteralBrackets::NO_SPACE_COMMAND
-# Did you mean?  RuboCop::Cop::Layout::SpaceInsideArrayLiteralBrackets::SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideArrayLiteralBrackets::SPACE_COMMAND
-# Did you mean?  RuboCop::Cop::Layout::SpaceInsideArrayLiteralBrackets::NO_SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideArrayPercentLiteral::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideArrayPercentLiteral::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideHashLiteralBraces::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideHashLiteralBraces::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideHashLiteralBraces::NO_SPACE_COMMAND
-# Did you mean?  RuboCop::Cop::Layout::SpaceInsideHashLiteralBraces::SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideHashLiteralBraces::SPACE_COMMAND
-# Did you mean?  RuboCop::Cop::Layout::SpaceInsideHashLiteralBraces::NO_SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideParens::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideParens::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideParens::NO_SPACE_COMMAND
-# Did you mean?  RuboCop::Cop::Layout::SpaceInsideParens::SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideParens::SPACE_COMMAND
-# Did you mean?  RuboCop::Cop::Layout::SpaceInsideParens::NO_SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsidePercentLiteralDelimiters::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsidePercentLiteralDelimiters::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideRangeLiteral::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Gemspec::RequiredRubyVersion::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Layout::BeginEndAlignment::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Layout::BeginEndAlignment::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Layout::BeginEndAlignment::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Layout::EmptyLineAfterMultilineCondition::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Layout::EmptyLineAfterMultilineCondition::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Layout::EmptyLineAfterMultilineCondition::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Layout::SpaceAroundMethodCallOperator::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Layout::SpaceAroundMethodCallOperator::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Layout::SpaceAroundMethodCallOperator::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Layout::SpaceInsideReferenceBrackets::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Layout::SpaceInsideReferenceBrackets::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Layout::SpaceInsideReferenceBrackets::NO_SPACE_COMMAND
 # Did you mean?  RuboCop::Cop::Layout::SpaceInsideReferenceBrackets::SPACE_COMMAND
+# uninitialized constant RuboCop::Cop::Layout::SpaceInsideReferenceBrackets::SINGLE_SPACE_REGEXP
 # uninitialized constant RuboCop::Cop::Layout::SpaceInsideReferenceBrackets::SPACE_COMMAND
 # Did you mean?  RuboCop::Cop::Layout::SpaceInsideReferenceBrackets::NO_SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideStringInterpolation::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::SpaceInsideStringInterpolation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::Tab::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::Tab::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::Tab::SPACE
-# uninitialized constant RuboCop::Cop::Layout::TrailingWhitespace::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::TrailingWhitespace::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::AmbiguousBlockAssociation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::AmbiguousOperator::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::AmbiguousRegexpLiteral::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::AssignmentInCondition::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::BigDecimalNew::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::BooleanSymbol::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::CircularArgumentReference::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::BinaryOperatorWithIdenticalOperands::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::BinaryOperatorWithIdenticalOperands::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Lint::ConstantDefinitionInBlock::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::ConstantDefinitionInBlock::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Lint::ConstantResolution::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::ConstantResolution::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Lint::Debugger::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::DeprecatedClassMethods::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::DisjunctiveAssignmentInConstructor::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::DuplicateCaseCondition::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::DuplicateElsifCondition::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::DuplicateElsifCondition::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Lint::DuplicateMethods::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::DuplicatedKey::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::DuplicateRequire::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::DuplicateRescueException::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::DuplicateRescueException::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Lint::EachWithObjectArgument::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::ElseLayout::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::EmptyEnsure::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::EmptyExpression::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::EmptyInterpolation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::EmptyWhen::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::EndInMethod::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::EnsureReturn::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::EmptyConditionalBody::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::EmptyConditionalBody::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Lint::EmptyFile::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Lint::EmptyFile::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::EmptyFile::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Lint::ErbNewArguments::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Lint::ErbNewArguments::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::FlipFlop::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::FloatOutOfRange::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::FloatComparison::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::FormatParameterMismatch::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::HandleExceptions::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::HeredocMethodCallPosition::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Lint::HeredocMethodCallPosition::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::ImplicitStringConcatenation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::IneffectiveAccessModifier::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::HashCompareByIdentity::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::IdentityComparison::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::InheritException::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::InterpolationCheck::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::LiteralAsCondition::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::LiteralInInterpolation::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Lint::LiteralInInterpolation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::Loop::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::MissingCopEnableDirective::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Lint::MissingCopEnableDirective::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::MultipleCompare::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::NestedMethodDefinition::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::NestedPercentLiteral::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Lint::NestedPercentLiteral::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::NextWithoutAccumulator::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::NonLocalExitFromIterator::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::MissingSuper::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::MissingSuper::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Lint::MultipleComparison::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::NumberConversion::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::OrderedMagicComments::FROZEN_STRING_LITERAL
-# Did you mean?  RuboCop::Cop::FrozenStringLiteral
-#                RuboCop::Cop::Lint::OrderedMagicComments::FROZEN_STRING_LITERAL_TYPES
-# uninitialized constant RuboCop::Cop::Lint::OrderedMagicComments::FROZEN_STRING_LITERAL_ENABLED
-# Did you mean?  RuboCop::Cop::Lint::OrderedMagicComments::FROZEN_STRING_LITERAL_TYPES
-# uninitialized constant RuboCop::Cop::Lint::OrderedMagicComments::FROZEN_STRING_LITERAL_TYPES
-# Did you mean?  RuboCop::Cop::Lint::OrderedMagicComments::FROZEN_STRING_LITERAL_ENABLED
-# uninitialized constant RuboCop::Cop::Lint::OrderedMagicComments::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::ParenthesesAsGroupedExpression::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Lint::ParenthesesAsGroupedExpression::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::PercentStringArray::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Lint::PercentStringArray::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::PercentSymbolArray::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Lint::PercentSymbolArray::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::OutOfRangeRegexpRef::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::RaiseException::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::RandOne::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::RedundantWithIndex::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Lint::RedundantWithIndex::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::RedundantWithObject::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Lint::RedundantWithObject::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::RegexpAsCondition::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::RequireParentheses::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Lint::RequireParentheses::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::RescueException::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::RescueType::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::ReturnInVoidContext::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::SafeNavigationChain::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::SafeNavigationConsistency::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::SafeNavigationWithEmpty::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::ScriptPermission::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::ShadowedArgument::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::ShadowedException::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Lint::ShadowedException::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::ShadowingOuterLocalVariable::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::StringConversionInInterpolation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::Syntax::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::ToJSON::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::UnderscorePrefixedVariableName::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::UnifiedInteger::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::UnneededCopDisableDirective::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Lint::UnneededCopDisableDirective::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::UnneededCopDisableDirective::MINIMUM_SIMILARITY_TO_SUGGEST
-# uninitialized constant RuboCop::Cop::Lint::UnneededCopEnableDirective::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Lint::UnneededCopEnableDirective::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::UnneededCopEnableDirective::NO_SPACE_COMMAND
-# Did you mean?  RuboCop::Cop::Lint::UnneededCopEnableDirective::SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Lint::UnneededCopEnableDirective::SPACE_COMMAND
-# Did you mean?  RuboCop::Cop::Lint::UnneededCopEnableDirective::NO_SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Lint::UnneededRequireStatement::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Lint::UnneededRequireStatement::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::UnneededSplatExpansion::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::UnreachableCode::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::RedundantRequireStatement::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Lint::RedundantRequireStatement::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::RedundantSafeNavigation::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Lint::RedundantSafeNavigation::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::RedundantSafeNavigation::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Lint::SelfAssignment::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::SelfAssignment::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Lint::SendWithMixinArgument::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Lint::SendWithMixinArgument::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::StructNewOverride::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::TopLevelReturnWithArgument::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::TopLevelReturnWithArgument::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Lint::TrailingCommaInAttributeDeclaration::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Lint::TrailingCommaInAttributeDeclaration::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::TrailingCommaInAttributeDeclaration::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Lint::UnreachableLoop::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::UnreachableLoop::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Lint::UriEscapeUnescape::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::UriRegexp::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::UselessAccessModifier::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::UselessAssignment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::UselessAssignment::MINIMUM_SIMILARITY_TO_SUGGEST
-# uninitialized constant RuboCop::Cop::Lint::UselessComparison::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::UselessElseWithoutRescue::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::UselessSetterCall::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::Void::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Metrics::AbcSize::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Metrics::BlockLength::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Metrics::BlockLength::MSG
-# uninitialized constant RuboCop::Cop::Metrics::BlockNesting::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Metrics::CyclomaticComplexity::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Metrics::LineLength::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Metrics::LineLength::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Metrics::MethodLength::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Metrics::MethodLength::MSG
-# uninitialized constant RuboCop::Cop::Metrics::ParameterLists::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Metrics::PerceivedComplexity::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Naming::AccessorMethodName::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::UselessMethodDefinition::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::UselessMethodDefinition::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Lint::UselessTimes::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Lint::UselessTimes::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Naming::AsciiIdentifiers::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Naming::AsciiIdentifiers::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Naming::AsciiIdentifiers::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Naming::BinaryOperatorParameterName::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Naming::ClassAndModuleCamelCase::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Naming::ConstantName::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Naming::FileName::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Naming::FileName::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Naming::HeredocDelimiterCase::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Naming::HeredocDelimiterCase::OPENING_DELIMITER
-# uninitialized constant RuboCop::Cop::Naming::HeredocDelimiterNaming::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Naming::HeredocDelimiterNaming::OPENING_DELIMITER
-# uninitialized constant RuboCop::Cop::Naming::MemoizedInstanceVariableName::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Naming::MethodName::FORMATS
-# uninitialized constant RuboCop::Cop::Naming::MethodName::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Naming::RescuedExceptionsVariableName::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Naming::VariableName::FORMATS
-# uninitialized constant RuboCop::Cop::Naming::VariableName::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Naming::VariableNumber::FORMATS
-# uninitialized constant RuboCop::Cop::Naming::VariableNumber::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::Caller::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::CaseWhenSplat::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Performance::CaseWhenSplat::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::CaseWhenSplat::SPACE
-# uninitialized constant RuboCop::Cop::Performance::Casecmp::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::ChainArrayAllocation::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Performance::ChainArrayAllocation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::CompareWithBlock::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Performance::CompareWithBlock::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::Count::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Performance::Count::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::Detect::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::DoubleStartEndWith::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::EndWith::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::FixedSize::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::FlatMap::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Performance::FlatMap::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::OpenStruct::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::RangeInclude::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::RedundantBlockCall::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::RedundantMatch::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::RedundantMerge::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::RegexpMatch::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::ReverseEach::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Performance::ReverseEach::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::Size::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::StartWith::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::StringReplacement::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Performance::StringReplacement::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::TimesMap::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::UnfreezeString::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Performance::UriDefaultParser::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::ActionFilter::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::ActiveRecordAliases::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::ActiveRecordOverride::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::ActiveSupportAliases::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::ApplicationJob::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::ApplicationRecord::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::AssertNot::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::BelongsTo::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::Blank::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::BulkChangeTable::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::CreateTableWithTimestamps::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::Date::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::Delegate::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::DelegateAllowBlank::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::DynamicFindBy::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::EnumUniqueness::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::EnvironmentComparison::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::Exit::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::FilePath::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Rails::FilePath::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::FindBy::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Rails::FindBy::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::FindEach::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::HasAndBelongsToMany::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::HasManyOrHasOneDependent::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::HttpPositionalArguments::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::HttpStatus::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::IgnoredSkipActionFilterOption::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::InverseOf::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::LexicallyScopedActionFilter::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::LinkToBlank::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::NotNullColumn::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::Output::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::OutputSafety::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::PluralizationGrammar::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::Presence::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::Present::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::ReadWriteAttribute::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::RedundantAllowNil::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Rails::RedundantAllowNil::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::RedundantReceiverInWithOptions::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Rails::RedundantReceiverInWithOptions::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::ReflectionClassName::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::RefuteMethods::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::RelativeDateConstant::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Rails::RelativeDateConstant::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::RequestReferer::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::ReversibleMigration::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::SafeNavigation::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Rails::SafeNavigation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::SaveBang::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::ScopeArgs::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::SkipsModelValidations::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::TimeZone::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::UniqBeforePluck::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Rails::UniqBeforePluck::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::UnknownEnv::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Rails::UnknownEnv::MINIMUM_SIMILARITY_TO_SUGGEST
-# uninitialized constant RuboCop::Cop::Rails::Validation::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Naming::BinaryOperatorParameterName::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Security::Eval::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Security::JSONLoad::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Security::MarshalLoad::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Security::Open::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Security::YAMLLoad::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::SpaceBeforePunctuation::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Style::AccessModifierDeclarations::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::AccessorGrouping::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Style::AccessorGrouping::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::AccessorGrouping::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Style::AccessorGrouping::VISIBILITY_SCOPES
 # uninitialized constant RuboCop::Cop::Style::Alias::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::AndOr::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::AndOr::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::ArrayCoercion::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::ArrayCoercion::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Style::ArrayJoin::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::AsciiComments::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::AsciiComments::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::Attr::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Style::Attr::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::AutoResourceCleanup::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::BarePercentLiterals::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::BeginBlock::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::BlockComments::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::BlockComments::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::BlockDelimiters::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::BracesAroundHashParameters::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::BracesAroundHashParameters::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::BisectedAttrAccessor::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::BisectedAttrAccessor::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Style::BisectedAttrAccessor::VISIBILITY_SCOPES
 # uninitialized constant RuboCop::Cop::Style::CaseEquality::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::CharacterLiteral::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::ClassAndModuleChildren::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::ClassAndModuleChildren::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::CaseLikeIf::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Style::CaseLikeIf::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::CaseLikeIf::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Style::ClassCheck::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::ClassMethods::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::ClassEqualityComparison::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Style::ClassEqualityComparison::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::ClassMethodsDefinitions::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Style::ClassMethodsDefinitions::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::ClassMethodsDefinitions::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Style::ClassMethodsDefinitions::VISIBILITY_SCOPES
 # uninitialized constant RuboCop::Cop::Style::ClassVars::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::CollectionMethods::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::ColonMethodCall::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::ColonMethodDefinition::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::CommandLiteral::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::CommentAnnotation::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::CommentAnnotation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::CommentedKeyword::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Style::CombinableLoops::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::CombinableLoops::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Style::CommentedKeyword::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::ConditionalAssignment::ALIGN_WITH
-# uninitialized constant RuboCop::Cop::Style::ConditionalAssignment::END_ALIGNMENT
-# uninitialized constant RuboCop::Cop::Style::ConditionalAssignment::EQUAL
-# uninitialized constant RuboCop::Cop::Style::ConditionalAssignment::KEYWORD
-# uninitialized constant RuboCop::Cop::Style::ConditionalAssignment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::ConstantVisibility::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::Copyright::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::Copyright::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::DateTime::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::DefWithParentheses::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::CommentedKeyword::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Style::Dir::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::Documentation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::DocumentationMethod::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::DocumentationMethod::NON_PUBLIC_MODIFIERS
 # uninitialized constant RuboCop::Cop::Style::DoubleNegation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::EachForSimpleLoop::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::EachWithObject::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::EachWithObject::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::EmptyBlockParameter::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::EmptyBlockParameter::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::EmptyCaseCondition::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::EmptyCaseCondition::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::EmptyElse::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::EmptyElse::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::EmptyLambdaParameter::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::EmptyLambdaParameter::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::EmptyLiteral::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Style::EmptyLiteral::FROZEN_STRING_LITERAL
 # Did you mean?  RuboCop::Cop::FrozenStringLiteral
@@ -5285,105 +3688,56 @@
 # uninitialized constant RuboCop::Cop::Style::EmptyLiteral::FROZEN_STRING_LITERAL_TYPES
 # Did you mean?  RuboCop::Cop::Style::EmptyLiteral::FROZEN_STRING_LITERAL_ENABLED
 # uninitialized constant RuboCop::Cop::Style::EmptyLiteral::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::EmptyMethod::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::Encoding::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::Encoding::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::EndBlock::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::EvalWithLocation::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::EvenOdd::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::ExpandPathArguments::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Style::ExpandPathArguments::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::For::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::For::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::ExplicitBlockArgument::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Style::ExplicitBlockArgument::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::ExplicitBlockArgument::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Style::ExponentialNotation::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::ExponentialNotation::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Style::FloatDivision::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::FormatString::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::FormatStringToken::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::FrozenStringLiteralComment::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::FrozenStringLiteralComment::FROZEN_STRING_LITERAL
-# Did you mean?  RuboCop::Cop::FrozenStringLiteral
-#                RuboCop::Cop::Style::FrozenStringLiteralComment::FROZEN_STRING_LITERAL_TYPES
-# uninitialized constant RuboCop::Cop::Style::FrozenStringLiteralComment::FROZEN_STRING_LITERAL_ENABLED
-# Did you mean?  RuboCop::Cop::Style::FrozenStringLiteralComment::FROZEN_STRING_LITERAL_TYPES
-# uninitialized constant RuboCop::Cop::Style::FrozenStringLiteralComment::FROZEN_STRING_LITERAL_TYPES
-# Did you mean?  RuboCop::Cop::Style::FrozenStringLiteralComment::FROZEN_STRING_LITERAL_ENABLED
-# uninitialized constant RuboCop::Cop::Style::FrozenStringLiteralComment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::GlobalVars::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::GuardClause::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::HashSyntax::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::HashSyntax::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::IdenticalConditionalBranches::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::IfInsideElse::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::IfUnlessModifier::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::IfUnlessModifierOfIfUnless::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::IfWithSemicolon::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::GlobalStdStream::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::GlobalStdStream::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Style::HashLikeCase::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::HashLikeCase::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Style::ImplicitRuntimeError::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::InfiniteLoop::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::InlineComment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::InverseMethods::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::InverseMethods::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::IpAddresses::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::Lambda::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::LineEndConcatenation::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::LineEndConcatenation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MethodCallWithArgsParentheses::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MethodCallWithoutArgsParentheses::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MethodCalledOnDoEndBlock::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::MethodCalledOnDoEndBlock::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MethodDefParentheses::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::MethodDefParentheses::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MethodMissingSuper::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MinMax::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MissingElse::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MissingRespondToMissing::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MixinGrouping::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::KeywordParametersOrder::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Style::KeywordParametersOrder::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::KeywordParametersOrder::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Style::LambdaCall::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::MixinUsage::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::ModuleFunction::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MultilineBlockChain::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::MultilineBlockChain::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MultilineIfModifier::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MultilineIfModifier::SPACE
-# uninitialized constant RuboCop::Cop::Style::MultilineIfThen::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::MultilineIfThen::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::MultilineMemoization::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MultilineMethodSignature::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MultilineTernaryOperator::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MultipleComparison::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MutableConstant::FROZEN_STRING_LITERAL
-# Did you mean?  RuboCop::Cop::FrozenStringLiteral
-#                RuboCop::Cop::Style::MutableConstant::FROZEN_STRING_LITERAL_TYPES
-# uninitialized constant RuboCop::Cop::Style::MutableConstant::FROZEN_STRING_LITERAL_ENABLED
-# Did you mean?  RuboCop::Cop::Style::MutableConstant::FROZEN_STRING_LITERAL_TYPES
-# uninitialized constant RuboCop::Cop::Style::MutableConstant::FROZEN_STRING_LITERAL_TYPES
-# Did you mean?  RuboCop::Cop::Style::MutableConstant::FROZEN_STRING_LITERAL_ENABLED
-# uninitialized constant RuboCop::Cop::Style::MutableConstant::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::NestedModifier::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::NestedModifier::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::NestedParenthesizedCalls::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::NestedParenthesizedCalls::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::NestedTernaryOperator::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::Next::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::Next::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::MultilineMemoization::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Style::NilComparison::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::NonNilCheck::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::Not::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Style::Not::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::NumericLiteralPrefix::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::NumericLiterals::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::NumericPredicate::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::OneLineConditional::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::OptionHash::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::OptionalArguments::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::OrAssignment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::ParallelAssignment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::PercentQLiterals::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::PercentQLiterals::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::PerlBackrefs::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::OptionalBooleanParameter::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::OptionalBooleanParameter::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Style::PreferredHashMethods::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::Proc::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::RaiseArgs::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::RandomWithOffset::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::RedundantBegin::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::RedundantAssignment::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::RedundantAssignment::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Style::RedundantConditional::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::RedundantConditional::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Style::RedundantConditional::SPACE
 # uninitialized constant RuboCop::Cop::Style::RedundantException::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::RedundantFetchBlock::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Style::RedundantFetchBlock::FROZEN_STRING_LITERAL
+# Did you mean?  RuboCop::Cop::FrozenStringLiteral
+#                RuboCop::Cop::Style::RedundantFetchBlock::FROZEN_STRING_LITERAL_TYPES
+# uninitialized constant RuboCop::Cop::Style::RedundantFetchBlock::FROZEN_STRING_LITERAL_ENABLED
+# Did you mean?  RuboCop::Cop::Style::RedundantFetchBlock::FROZEN_STRING_LITERAL_TYPES
+# uninitialized constant RuboCop::Cop::Style::RedundantFetchBlock::FROZEN_STRING_LITERAL_TYPES
+# Did you mean?  RuboCop::Cop::Style::RedundantFetchBlock::FROZEN_STRING_LITERAL_ENABLED
+# uninitialized constant RuboCop::Cop::Style::RedundantFetchBlock::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::RedundantFetchBlock::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Style::RedundantFileExtensionInRequire::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::RedundantFreeze::FROZEN_STRING_LITERAL
 # Did you mean?  RuboCop::Cop::FrozenStringLiteral
 #                RuboCop::Cop::Style::RedundantFreeze::FROZEN_STRING_LITERAL_TYPES
@@ -5392,97 +3746,31 @@
 # uninitialized constant RuboCop::Cop::Style::RedundantFreeze::FROZEN_STRING_LITERAL_TYPES
 # Did you mean?  RuboCop::Cop::Style::RedundantFreeze::FROZEN_STRING_LITERAL_ENABLED
 # uninitialized constant RuboCop::Cop::Style::RedundantFreeze::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::RedundantReturn::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::RedundantReturn::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::RedundantRegexpCharacterClass::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::RedundantRegexpCharacterClass::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Style::RedundantSelf::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::RedundantSortBy::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::RedundantSortBy::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::RegexpLiteral::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::RegexpLiteral::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::RescueModifier::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::RescueModifier::SPACE
-# uninitialized constant RuboCop::Cop::Style::RescueStandardError::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::RescueStandardError::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::ReturnNil::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::SafeNavigation::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::SafeNavigation::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::RedundantSelf::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Style::RedundantSelfAssignment::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Style::RedundantSelfAssignment::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::RedundantSelfAssignment::RESTRICT_ON_SEND
+# uninitialized constant RuboCop::Cop::Style::RedundantSort::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Style::RedundantSort::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::Sample::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::SelfAssignment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::Semicolon::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::Semicolon::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::Send::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::SignalException::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::SingleLineBlockParams::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::SingleLineMethods::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::SingleLineMethods::SPACE
-# uninitialized constant RuboCop::Cop::Style::SpecialGlobalVars::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::StabbyLambdaParentheses::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::SingleArgumentDig::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::SlicingWithRange::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::SoleNestedConditional::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::SoleNestedConditional::RESTRICT_ON_SEND
 # uninitialized constant RuboCop::Cop::Style::StderrPuts::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Style::StderrPuts::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::StringHashKeys::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::StringLiterals::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::StringMethods::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::StringConcatenation::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::Strip::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Style::Strip::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::StructInheritance::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::SymbolArray::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::SymbolLiteral::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::SymbolProc::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::SymbolProc::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::TernaryParentheses::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::TernaryParentheses::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::TernaryParentheses::NO_SPACE_COMMAND
-# Did you mean?  RuboCop::Cop::Style::TernaryParentheses::SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Style::TernaryParentheses::SPACE_COMMAND
-# Did you mean?  RuboCop::Cop::Style::TernaryParentheses::NO_SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Style::TrailingBodyOnClass::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::TrailingBodyOnClass::SPACE
-# uninitialized constant RuboCop::Cop::Style::TrailingBodyOnMethodDefinition::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::TrailingBodyOnMethodDefinition::SPACE
-# uninitialized constant RuboCop::Cop::Style::TrailingBodyOnModule::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::TrailingBodyOnModule::SPACE
-# uninitialized constant RuboCop::Cop::Style::TrailingMethodEndStatement::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::TrailingMethodEndStatement::SPACE
-# uninitialized constant RuboCop::Cop::Style::TrailingUnderscoreVariable::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::TrailingUnderscoreVariable::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::TrailingUnderscoreVariable::NO_SPACE_COMMAND
-# Did you mean?  RuboCop::Cop::Style::TrailingUnderscoreVariable::SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Style::TrailingUnderscoreVariable::SPACE_COMMAND
-# Did you mean?  RuboCop::Cop::Style::TrailingUnderscoreVariable::NO_SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Style::TrivialAccessors::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::UnlessElse::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::UnlessElse::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::UnneededCapitalW::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::UnneededCapitalW::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::UnneededCondition::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::UnneededCondition::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::UnneededInterpolation::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::UnneededInterpolation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::UnneededPercentQ::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::UnneededSort::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::UnneededSort::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::UnpackFirst::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::VariableInterpolation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::WhenThen::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::WhileUntilDo::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::WhileUntilModifier::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::WordArray::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::YodaCondition::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::YodaCondition::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::ZeroLengthPredicate::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::SurroundingSpace::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::TrailingComma::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Formatter::ClangStyleFormatter::COLOR_FOR_SEVERITY
-# uninitialized constant RuboCop::Formatter::FuubarStyleFormatter::COLOR_FOR_SEVERITY
-# uninitialized constant RuboCop::Formatter::FuubarStyleFormatter::ELLIPSES
-# uninitialized constant RuboCop::Formatter::ProgressFormatter::COLOR_FOR_SEVERITY
-# uninitialized constant RuboCop::Formatter::ProgressFormatter::ELLIPSES
-# uninitialized constant RuboCop::MagicComment::EmacsComment::TOKEN
-# Did you mean?  RuboCop::Token
-#                RuboCop::MagicComment::TOKEN
-# uninitialized constant RuboCop::MagicComment::VimComment::TOKEN
-# Did you mean?  RuboCop::Token
-#                RuboCop::MagicComment::TOKEN
+# wrong constant name <Class:Compiler>
+# wrong constant name <Class:Lexer>
 # wrong constant name pretty_print_children
 # wrong constant name <static-init>
 # wrong constant name enabled?
@@ -5522,37 +3810,37 @@
 # uninitialized constant Sinatra::Request::FORM_DATA_MEDIA_TYPES
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_FOR
 # Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_PORT
 #                Sinatra::Request::HTTP_X_FORWARDED_HOST
+#                Sinatra::Request::HTTP_X_FORWARDED_PORT
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_HOST
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_FOR
+# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
+#                Sinatra::Request::HTTP_X_FORWARDED_SSL
 #                Sinatra::Request::HTTP_X_FORWARDED_PORT
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 #                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_PORT
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_FOR
+# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
+#                Sinatra::Request::HTTP_X_FORWARDED_SSL
 #                Sinatra::Request::HTTP_X_FORWARDED_HOST
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 #                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_FOR
-#                Sinatra::Request::HTTP_X_FORWARDED_PORT
+# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
+#                Sinatra::Request::HTTP_X_FORWARDED_SSL
 #                Sinatra::Request::HTTP_X_FORWARDED_HOST
+#                Sinatra::Request::HTTP_X_FORWARDED_PORT
 #                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_FOR
-#                Sinatra::Request::HTTP_X_FORWARDED_PORT
+# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
+#                Sinatra::Request::HTTP_X_FORWARDED_SSL
 #                Sinatra::Request::HTTP_X_FORWARDED_HOST
+#                Sinatra::Request::HTTP_X_FORWARDED_PORT
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_SSL
 # Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_FOR
-#                Sinatra::Request::HTTP_X_FORWARDED_PORT
 #                Sinatra::Request::HTTP_X_FORWARDED_HOST
+#                Sinatra::Request::HTTP_X_FORWARDED_PORT
 #                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 #                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::PARSEABLE_DATA_MEDIA_TYPES
@@ -5661,8 +3949,8 @@
 # uninitialized constant Temple::Filters::StringSplitter::SyntaxChecker::EXPR_ARG
 # Did you mean?  Temple::Filters::StringSplitter::SyntaxChecker::EXPR_BEG
 # uninitialized constant Temple::Filters::StringSplitter::SyntaxChecker::EXPR_ARG_ANY
-# Did you mean?  Temple::Filters::StringSplitter::SyntaxChecker::EXPR_END_ANY
-#                Temple::Filters::StringSplitter::SyntaxChecker::EXPR_BEG_ANY
+# Did you mean?  Temple::Filters::StringSplitter::SyntaxChecker::EXPR_BEG_ANY
+#                Temple::Filters::StringSplitter::SyntaxChecker::EXPR_END_ANY
 # uninitialized constant Temple::Filters::StringSplitter::SyntaxChecker::EXPR_BEG
 # Did you mean?  Temple::Filters::StringSplitter::SyntaxChecker::EXPR_ARG
 # uninitialized constant Temple::Filters::StringSplitter::SyntaxChecker::EXPR_BEG_ANY
@@ -5685,8 +3973,8 @@
 # Did you mean?  Temple::Filters::StringSplitter::SyntaxChecker::EXPR_ENDARG
 #                Temple::Filters::StringSplitter::SyntaxChecker::EXPR_END_ANY
 # uninitialized constant Temple::Filters::StringSplitter::SyntaxChecker::EXPR_END_ANY
-# Did you mean?  Temple::Filters::StringSplitter::SyntaxChecker::EXPR_BEG_ANY
-#                Temple::Filters::StringSplitter::SyntaxChecker::EXPR_ARG_ANY
+# Did you mean?  Temple::Filters::StringSplitter::SyntaxChecker::EXPR_ARG_ANY
+#                Temple::Filters::StringSplitter::SyntaxChecker::EXPR_BEG_ANY
 #                Temple::Filters::StringSplitter::SyntaxChecker::EXPR_ENDFN
 #                Temple::Filters::StringSplitter::SyntaxChecker::EXPR_ENDARG
 # uninitialized constant Temple::Filters::StringSplitter::SyntaxChecker::EXPR_FITEM
@@ -5699,8 +3987,8 @@
 # uninitialized constant Temple::Filters::StringSplitter::SyntaxChecker::EXPR_MID
 # Did you mean?  Temple::Filters::StringSplitter::SyntaxChecker::EXPR_END
 # uninitialized constant Temple::Filters::StringSplitter::SyntaxChecker::EXPR_NONE
-# Did you mean?  Temple::Filters::StringSplitter::SyntaxChecker::EXPR_END
-#                Temple::Filters::StringSplitter::SyntaxChecker::EXPR_DOT
+# Did you mean?  Temple::Filters::StringSplitter::SyntaxChecker::EXPR_DOT
+#                Temple::Filters::StringSplitter::SyntaxChecker::EXPR_END
 #                Temple::Filters::StringSplitter::SyntaxChecker::EXPR_FNAME
 # uninitialized constant Temple::Filters::StringSplitter::SyntaxChecker::EXPR_VALUE
 # uninitialized constant Temple::Filters::StringSplitter::SyntaxChecker::PARSER_EVENTS

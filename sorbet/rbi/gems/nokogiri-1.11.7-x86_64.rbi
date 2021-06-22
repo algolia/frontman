@@ -5,9 +5,9 @@
 #
 # If you would like to make changes to this file, great! Please create the gem's shim here:
 #
-#   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/nokogiri-1.11.3-x86_64/all/nokogiri-1.11.3-x86_64.rbi
+#   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/nokogiri-1.11.7-x86_64/all/nokogiri-1.11.7-x86_64.rbi
 #
-# nokogiri-1.11.3-x86_64-darwin
+# nokogiri-1.11.7-x86_64-darwin
 
 class Nokogiri::XML::ElementContent
   def c1; end

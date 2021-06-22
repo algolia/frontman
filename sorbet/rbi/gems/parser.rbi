@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/parser/all/parser.rbi
 #
-# parser-3.0.0.0
+# parser-3.0.1.1
 
 module Parser
 end
@@ -151,6 +151,7 @@ class Parser::Source::Buffer
   def first_line; end
   def freeze; end
   def initialize(name, first_line = nil, source: nil); end
+  def inspect; end
   def last_line; end
   def line_begins; end
   def line_for_position(position); end
@@ -215,6 +216,7 @@ class Parser::Source::Comment
   def loc; end
   def location; end
   def self.associate(ast, comments); end
+  def self.associate_by_identity(ast, comments); end
   def self.associate_locations(ast, comments); end
   def text; end
   def type; end
@@ -224,6 +226,7 @@ class Parser::Source::Comment::Associator
   def advance_through_directives; end
   def associate; end
   def associate_and_advance_comment(node); end
+  def associate_by_identity; end
   def associate_locations; end
   def children_in_source_order(node); end
   def current_comment_before?(node); end
@@ -288,6 +291,7 @@ class Parser::Source::Rewriter::Action
 end
 class Parser::Source::TreeRewriter
   def action_root; end
+  def action_summary; end
   def as_nested_actions; end
   def as_replacements; end
   def check_policy_validity; end
@@ -303,6 +307,7 @@ class Parser::Source::TreeRewriter
   def insert_after_multi(range, text); end
   def insert_before(range, content); end
   def insert_before_multi(range, text); end
+  def inspect; end
   def merge!(with); end
   def merge(with); end
   def process; end
