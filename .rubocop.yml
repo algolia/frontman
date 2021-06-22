@@ -7,6 +7,9 @@ AllCops:
 Style/Lambda:
   Enabled: false
 
+Gemspec/RubyVersionGlobalsUsage:
+  Enabled: false
+
 Gemspec/RequiredRubyVersion:
   Exclude:
     - 'frontman-ssg.gemspec'
