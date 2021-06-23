@@ -29,7 +29,7 @@ If you want to dive deeper into why and how we made Frontman faster than other t
 
 ## Installing Frontman
 
-First, make sure you're using Ruby version 2.3 or up. Then, install the Frontman gem on your machine:
+First, make sure you're using Ruby version 2.6 or up. Then, install the Frontman gem on your machine:
 
 ```sh
 gem install frontman-ssg
