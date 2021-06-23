@@ -12,12 +12,16 @@
 # wrong constant name <PackageRegistry>
 # wrong constant name <PackageRegistry>
 # wrong constant name <RESERVED_0>
+# wrong constant name <RESERVED_10>
 # wrong constant name <RESERVED_1>
 # wrong constant name <RESERVED_2>
 # wrong constant name <RESERVED_3>
 # wrong constant name <RESERVED_4>
 # wrong constant name <RESERVED_5>
 # wrong constant name <RESERVED_6>
+# wrong constant name <RESERVED_7>
+# wrong constant name <RESERVED_8>
+# wrong constant name <RESERVED_9>
 # wrong constant name <TypeAlias>
 # wrong constant name <TypeAlias>
 # wrong constant name <root>
@@ -524,8 +528,6 @@
 # wrong constant name scanner
 # wrong constant name tokens
 # wrong constant name <static-init>
-# uninitialized constant Configatron
-# uninitialized constant Configatron
 # uninitialized constant Continuation
 # uninitialized constant Continuation
 # uninitialized constant DBM
@@ -650,7 +652,6 @@
 # wrong constant name _dump
 # wrong constant name initialize
 # wrong constant name _load
-# wrong constant name chain
 # wrong constant name sum
 # wrong constant name +
 # wrong constant name <Class:ArithmeticSequence>
@@ -2001,7 +2002,6 @@
 # uninitialized constant OpenSSL::PKCS5::PKCS5Error
 # uninitialized constant OpenSSL::PKCS5::PKCS5Error
 # wrong constant name to_octet_string
-# wrong constant name add_certificate
 # wrong constant name alpn_protocols
 # wrong constant name alpn_protocols=
 # wrong constant name alpn_select_cb
