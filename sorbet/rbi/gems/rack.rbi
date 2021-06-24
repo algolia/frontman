@@ -19,6 +19,115 @@ module Rack::Auth::Digest
 end
 module Rack::Session
 end
+class Rack::ShowExceptions
+  def accepts_html?(env); end
+  def call(env); end
+  def dump_exception(exception); end
+  def h(obj); end
+  def initialize(app); end
+  def prefers_plaintext?(env); end
+  def pretty(env, exception); end
+  def template; end
+end
+class Rack::Request
+  def delete_param(k); end
+  def initialize(env); end
+  def params; end
+  def self.ip_filter; end
+  def self.ip_filter=(arg0); end
+  def update_param(k, v); end
+  include Rack::Request::Env
+  include Rack::Request::Helpers
+end
+module Rack::Request::Env
+  def add_header(key, v); end
+  def delete_header(name); end
+  def each_header(&block); end
+  def env; end
+  def fetch_header(name, &block); end
+  def get_header(name); end
+  def has_header?(name); end
+  def initialize(env); end
+  def initialize_copy(other); end
+  def set_header(name, v); end
+end
+module Rack::Request::Helpers
+  def GET; end
+  def POST; end
+  def [](key); end
+  def []=(key, value); end
+  def accept_encoding; end
+  def accept_language; end
+  def allowed_scheme(header); end
+  def authority; end
+  def base_url; end
+  def body; end
+  def content_charset; end
+  def content_length; end
+  def content_type; end
+  def cookies; end
+  def default_session; end
+  def delete?; end
+  def delete_param(k); end
+  def extract_proto_header(header); end
+  def form_data?; end
+  def forwarded_authority; end
+  def forwarded_for; end
+  def forwarded_port; end
+  def forwarded_scheme; end
+  def fullpath; end
+  def get?; end
+  def head?; end
+  def host; end
+  def host_authority; end
+  def host_with_port(authority = nil); end
+  def hostname; end
+  def ip; end
+  def link?; end
+  def logger; end
+  def media_type; end
+  def media_type_params; end
+  def multithread?; end
+  def options?; end
+  def params; end
+  def parse_http_accept_header(header); end
+  def parse_multipart; end
+  def parse_query(qs, d = nil); end
+  def parseable_data?; end
+  def patch?; end
+  def path; end
+  def path_info; end
+  def path_info=(s); end
+  def port; end
+  def post?; end
+  def put?; end
+  def query_parser; end
+  def query_string; end
+  def referer; end
+  def referrer; end
+  def reject_trusted_ip_addresses(ip_addresses); end
+  def request_method; end
+  def scheme; end
+  def script_name; end
+  def script_name=(s); end
+  def server_authority; end
+  def server_name; end
+  def server_port; end
+  def session; end
+  def session_options; end
+  def split_authority(authority); end
+  def split_header(value); end
+  def ssl?; end
+  def trace?; end
+  def trusted_proxy?(ip); end
+  def unlink?; end
+  def update_param(k, v); end
+  def url; end
+  def user_agent; end
+  def values_at(*keys); end
+  def wrap_ipv6(host); end
+  def xhr?; end
+end
 class Rack::QueryParser
   def initialize(params_class, key_space_limit, param_depth_limit); end
   def key_space_limit; end
@@ -138,115 +247,6 @@ class Rack::Utils::HeaderHash < Hash
   def replace(other); end
   def self.[](headers); end
   def to_hash; end
-end
-class Rack::ShowExceptions
-  def accepts_html?(env); end
-  def call(env); end
-  def dump_exception(exception); end
-  def h(obj); end
-  def initialize(app); end
-  def prefers_plaintext?(env); end
-  def pretty(env, exception); end
-  def template; end
-end
-class Rack::Request
-  def delete_param(k); end
-  def initialize(env); end
-  def params; end
-  def self.ip_filter; end
-  def self.ip_filter=(arg0); end
-  def update_param(k, v); end
-  include Rack::Request::Env
-  include Rack::Request::Helpers
-end
-module Rack::Request::Env
-  def add_header(key, v); end
-  def delete_header(name); end
-  def each_header(&block); end
-  def env; end
-  def fetch_header(name, &block); end
-  def get_header(name); end
-  def has_header?(name); end
-  def initialize(env); end
-  def initialize_copy(other); end
-  def set_header(name, v); end
-end
-module Rack::Request::Helpers
-  def GET; end
-  def POST; end
-  def [](key); end
-  def []=(key, value); end
-  def accept_encoding; end
-  def accept_language; end
-  def allowed_scheme(header); end
-  def authority; end
-  def base_url; end
-  def body; end
-  def content_charset; end
-  def content_length; end
-  def content_type; end
-  def cookies; end
-  def default_session; end
-  def delete?; end
-  def delete_param(k); end
-  def extract_proto_header(header); end
-  def form_data?; end
-  def forwarded_authority; end
-  def forwarded_for; end
-  def forwarded_port; end
-  def forwarded_scheme; end
-  def fullpath; end
-  def get?; end
-  def head?; end
-  def host; end
-  def host_authority; end
-  def host_with_port(authority = nil); end
-  def hostname; end
-  def ip; end
-  def link?; end
-  def logger; end
-  def media_type; end
-  def media_type_params; end
-  def multithread?; end
-  def options?; end
-  def params; end
-  def parse_http_accept_header(header); end
-  def parse_multipart; end
-  def parse_query(qs, d = nil); end
-  def parseable_data?; end
-  def patch?; end
-  def path; end
-  def path_info; end
-  def path_info=(s); end
-  def port; end
-  def post?; end
-  def put?; end
-  def query_parser; end
-  def query_string; end
-  def referer; end
-  def referrer; end
-  def reject_trusted_ip_addresses(ip_addresses); end
-  def request_method; end
-  def scheme; end
-  def script_name; end
-  def script_name=(s); end
-  def server_authority; end
-  def server_name; end
-  def server_port; end
-  def session; end
-  def session_options; end
-  def split_authority(authority); end
-  def split_header(value); end
-  def ssl?; end
-  def trace?; end
-  def trusted_proxy?(ip); end
-  def unlink?; end
-  def update_param(k, v); end
-  def url; end
-  def user_agent; end
-  def values_at(*keys); end
-  def wrap_ipv6(host); end
-  def xhr?; end
 end
 class Rack::Response
   def [](key); end

@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/listen/all/listen.rbi
 #
-# listen-3.4.0
+# listen-3.5.1
 
 module Listen
   def self.default_logger; end
@@ -49,12 +49,16 @@ class Listen::Record::Entry
   def root; end
   def sys_path; end
 end
+class Listen::Error < RuntimeError
+end
+class Listen::Error::NotStarted < Listen::Error
+end
+class Listen::Error::SymlinkLoop < Listen::Error
+end
 class Listen::Record::SymlinkDetector
   def _fail(symlinked, real_path); end
   def initialize; end
   def verify_unwatched!(entry); end
-end
-class Listen::Record::SymlinkDetector::Error < RuntimeError
 end
 class Listen::File
   def self.change(record, rel_path); end
@@ -249,10 +253,6 @@ class Listen::Event::Loop
   def wakeup_on_event; end
   extend Listen::FSM::ClassMethods
   include Listen::FSM
-end
-class Listen::Event::Loop::Error < RuntimeError
-end
-class Listen::Event::Loop::Error::NotStarted < Listen::Event::Loop::Error
 end
 class Listen::Event::Queue
   def <<(args); end

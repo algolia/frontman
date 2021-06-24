@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.6
   Exclude:
     - '**/Rakefile'
     - 'vendor/**/*'
@@ -18,7 +18,7 @@ Style/Documentation:
     - 'lib/**/*'
     - 'project-templates/**/*'
 
-Style/MethodMissingSuper:
+Lint/MissingSuper:
   Exclude:
     - 'lib/**/*'
 
@@ -48,6 +48,7 @@ Style/ClassVars:
     - 'lib/frontman/config.rb'
     - 'lib/frontman/resource.rb'
     - 'lib/frontman/data_store_file.rb'
+    - 'spec/frontman/sitemap_tree_spec.rb'
 
 Metrics/ClassLength:
   Exclude:
@@ -75,7 +76,7 @@ Metrics/BlockLength:
     - 'spec/**/*'
     - '*.gemspec'
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 100
   Exclude:
     - 'frontman-ssg.gemspec'
@@ -91,6 +92,6 @@ Metrics/ParameterLists:
   Exclude:
     - 'lib/frontman/app.rb'
 
-Lint/HandleExceptions:
+Lint/SuppressedException:
   Exclude:
     - 'lib/frontman/commands/serve.rb'

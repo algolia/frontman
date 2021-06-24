@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/simplecov/all/simplecov.rbi
 #
-# simplecov-0.21.1
+# simplecov-0.21.2
 
 module SimpleCov
   def self.adapt_coverage_result; end
@@ -134,6 +134,7 @@ end
 class SimpleCov::ExitCodes::MaximumCoverageDropCheck
   def compute_coverage_drop_data; end
   def coverage_drop_violations; end
+  def drop_percent(criterion); end
   def exit_code; end
   def failing?; end
   def initialize(result, maximum_coverage_drop); end

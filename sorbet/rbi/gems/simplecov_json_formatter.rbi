@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/simplecov_json_formatter/all/simplecov_json_formatter.rbi
 #
-# simplecov_json_formatter-0.1.2
+# simplecov_json_formatter-0.1.3
 
 module SimpleCovJSONFormatter
 end

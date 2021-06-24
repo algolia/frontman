@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/kramdown/all/kramdown.rbi
 #
-# kramdown-2.3.0
+# kramdown-2.3.1
 
 module Kramdown
   def self.data_dir; end

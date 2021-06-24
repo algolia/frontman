@@ -7,11 +7,15 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/ruby2_keywords/all/ruby2_keywords.rbi
 #
-# ruby2_keywords-0.0.2
+# ruby2_keywords-0.0.4
 
 class Module
   def ruby2_keywords(name, *arg1); end
 end
 class Proc
   def ruby2_keywords; end
+end
+class Hash
+  def self.ruby2_keywords_hash(hash); end
+  def self.ruby2_keywords_hash?(hash); end
 end
