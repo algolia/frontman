@@ -64,7 +64,14 @@ describe Frontman::App do
     expect { subject.data }.to raise_error NoMethodError
   end
 
-  it 'should work with import_config' do
+  it 'should work with require/import_config' do
+    expect(subject.require('spec/frontman/mocks/import_config'))
     expect(subject.import_config('spec/frontman/mocks/import_config'))
+  end
+
+  it 'should work with global_require' do
+    expect(subject.global_require('spec/frontman/mocks/global_require'))
+    expect(subject.app_method).to eq 'foo'
+    expect(::Foo.bar).to eq 'foobar'
   end
 end

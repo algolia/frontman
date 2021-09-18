@@ -20,7 +20,7 @@ describe Frontman::Bootstrapper do
     it 'should find all resources in a given folder' do
       resources = Frontman::Bootstrapper.resources_from_dir('spec/frontman/mocks')
 
-      expect(resources.size).to eq 17 # Number of non-YAML files in this folder
+      expect(resources.size).to eq 18 # Number of non-YAML files in this folder
     end
   end
 end
